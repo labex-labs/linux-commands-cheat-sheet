@@ -329,8 +329,8 @@ outlines:
   - title: Linux bzgrep Command with Practical Examples
   - title: Linux bzless Command with Practical Examples
   - title: Linux bzmore Command with Practical Examples
-- skills:
-    name: Process Management
+- skill:
+   name: Process Management
   labs:
   - title: Linux kill Command with Practical Examples
   - title: Linux pkill Command with Practical Examples
@@ -356,6 +356,7 @@ outlines:
   - title: Linux atrm Command with Practical Examples
   - title: Linux chrt Command with Practical Examples
   - title: Linux setsid Command with Practical Examples
+
 - skill:
     name: System Configuration and Settings
   labs:
