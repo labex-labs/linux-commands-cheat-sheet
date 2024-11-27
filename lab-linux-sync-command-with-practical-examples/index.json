@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sync Command with Practical Examples",
+  "description": "Explore the sync command in Linux, learn how to synchronize file system data, and verify the effectiveness of the sync command through practical examples.",
+  "meta": {
+    "title": "Linux sync Command with Practical Examples",
+    "description": "Explore the sync command in Linux, learn how to synchronize file system data, and verify the effectiveness of the sync command through practical examples.",
+    "keywords": "Linux, sync command, file system, data synchronization, disk utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the sync Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the sync command execution",
+            "file": "verify1-1.sh",
+            "hint": "It appears that you have not executed the `sync` command. Please run the `sync` command and try the verification again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Synchronize File System Data with sync Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the file system synchronization",
+            "file": "verify2-1.sh",
+            "hint": "It appears that the file system data has not been properly synchronized. Please ensure that you have executed the `sync` command and check the contents of the `test_file.txt` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verify the Effectiveness of the sync Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the file system data after simulated crash",
+            "file": "verify3-1.sh",
+            "hint": "It appears that the file system data was not properly preserved after the simulated system crash. Please ensure that you have executed the `sync` command before triggering the kernel panic, and check the contents of the `important_data.txt` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned the purpose of the `export` command in Linux, which is used to set environment variables that can be accessed by the current shell and any child processes. We started by checking the existing environment variables and then created a new environment variable using the `export` command. We also explored how to set environment variables and access them using the `echo` command. The `export` command makes the environment variables available to the current shell and any child processes, which can be useful for configuring the environment for applications or scripts.

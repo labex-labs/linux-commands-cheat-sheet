@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux grpunconv Command with Practical Examples",
+  "description": "Explore the grpunconv command in Linux, learn its purpose and syntax, and discover practical examples for removing groups from the system.",
+  "meta": {
+    "title": "Linux grpunconv Command with Practical Examples",
+    "description": "Explore the grpunconv command in Linux, learn its purpose and syntax, and discover practical examples for removing groups from the system.",
+    "keywords": "Linux, grpunconv, user management, group management, system administration, permissions"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of grpunconv",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify grpunconv command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `grpunconv` command can be executed without any errors.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Removing a Group from the System Using grpunconv",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify group removal",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the 'testgroup' group has been removed from the system after running the `grpunconv` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting grpunconv Errors and Edge Cases",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify grpunconv error handling",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `grpunconv` command can handle errors and edge cases, such as a read-only `/etc/group` file or the file already being in the traditional format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

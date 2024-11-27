@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux vmstat Command with Practical Examples",
+  "description": "Explore the powerful vmstat command in Linux, learn how to monitor system performance, and analyze CPU, memory, and disk I/O metrics with practical examples.",
+  "meta": {
+    "title": "Linux vmstat Command with Practical Examples",
+    "description": "Explore the powerful vmstat command in Linux, learn how to monitor system performance, and analyze CPU, memory, and disk I/O metrics with practical examples.",
+    "keywords": "Linux, vmstat, system monitoring, performance analysis, CPU, memory, disk I/O"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the vmstat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify vmstat command output",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the vmstat command is executed correctly and displays the expected output, which should include the \"procs\" header.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitoring System Performance with vmstat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify vmstat output for CPU, memory, and disk I/O",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the vmstat command displays the expected output, including the \"cpu\", \"memory\", and \"io\" sections.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyzing CPU, Memory, and Disk I/O with vmstat",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify vmstat output for CPU, memory, and disk I/O analysis",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the vmstat command displays the expected output, including the \"cpu\", \"memory\", and \"io\" sections, to allow for effective analysis of system performance.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

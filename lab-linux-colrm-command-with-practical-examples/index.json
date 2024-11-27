@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Linux colrm Command with Practical Examples",
+  "description": "Learn how to use the Linux colrm command to remove specific columns from a file. Explore practical examples and combine colrm with other commands for efficient text processing.",
+  "meta": {
+    "title": "Linux colrm Command with Practical Examples",
+    "description": "Learn how to use the Linux colrm command to remove specific columns from a file. Explore practical examples and combine colrm with other commands for efficient text processing.",
+    "keywords": "Linux, colrm, text processing, column removal, file manipulation, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the colrm Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the sample.txt file",
+            "file": "verify1-1.sh",
+            "hint": "The contents of the sample.txt file do not match the expected output after running the colrm command to remove the second and fourth columns.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Remove Specific Columns from a File",
+        "text": "step2.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Combine colrm with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

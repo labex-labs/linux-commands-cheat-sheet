@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux id Command with Practical Examples",
+  "description": "Explore the Linux id command and learn how to use it to identify user and group information, including user ID, group ID, and supplementary groups. Discover practical examples and additional options to customize the command's output.",
+  "meta": {
+    "title": "Linux id Command with Practical Examples",
+    "description": "Explore the Linux id command and learn how to use it to identify user and group information, including user ID, group ID, and supplementary groups. Discover practical examples and additional options to customize the command's output.",
+    "keywords": "Linux, id command, user management, group management, user ID, group ID, supplementary groups"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the id Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the output of the `id` command",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `id` command should display the user ID, group ID, and the supplementary groups that the current user belongs to.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify the User and Group Information Using the id Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the output of the `id` command",
+            "file": "verify2-1.sh",
+            "hint": "The output of the `id` command should display the user ID, group ID, and the supplementary groups that the current user belongs to.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Additional Options and Customizations of the id Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the output of the `id` command with options",
+            "file": "verify3-1.sh",
+            "hint": "The output of the `id` command with the `-u` and `-g` options should display the username and group name for the current user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

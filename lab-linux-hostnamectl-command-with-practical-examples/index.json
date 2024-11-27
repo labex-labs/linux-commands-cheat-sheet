@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux hostnamectl Command with Practical Examples",
+  "description": "Explore the Linux hostnamectl command and learn how to display system hostname information, change the hostname temporarily and permanently with practical examples.",
+  "meta": {
+    "title": "Linux hostnamectl Command with Practical Examples",
+    "description": "Explore the Linux hostnamectl command and learn how to display system hostname information, change the hostname temporarily and permanently with practical examples.",
+    "keywords": "Linux, hostnamectl, hostname, networking, system administration, command line, system information"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to hostnamectl Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify hostnamectl command output",
+            "file": "verify1-1.sh",
+            "hint": "The static hostname should be 'ubuntu' as shown in the example output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Displaying System Hostname Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify static hostname",
+            "file": "verify2-1.sh",
+            "hint": "The static hostname should be 'ubuntu' as shown in the example output.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify transient hostname",
+            "file": "verify2-2.sh",
+            "hint": "The transient hostname should be 'ubuntu' as shown in the example output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Changing System Hostname Temporarily and Permanently",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify temporary hostname change",
+            "file": "verify3-1.sh",
+            "hint": "The transient hostname should be 'new-hostname' as shown in the example output.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify permanent hostname change",
+            "file": "verify3-2.sh",
+            "hint": "The static and transient hostnames should be 'permanent-hostname' as shown in the example output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

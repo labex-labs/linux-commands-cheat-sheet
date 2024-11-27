@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `su` command in Linux, which stands for "switch user". The `su` command allows you to switch to another user account, typically a user with elevated privileges, such as the root user. You learned how to use the `su` command to switch to the root user account and to a specific user account, such as the `labex` user. The `-` option in the `su` command is important, as it ensures that the new user's environment is loaded, including the user's shell, environment variables, and home directory. You also learned how to manage privileges with the `su` command, allowing you to perform operations with elevated permissions.

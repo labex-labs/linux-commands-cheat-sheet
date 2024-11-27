@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned about the `bzdiff` command in Linux, which is used to compare the contents of compressed files without the need to decompress them first. We started by installing the `bzip2` package and creating several compressed files to demonstrate the usage of `bzdiff`. We then used the `bzdiff` command to compare the contents of these compressed files, learning how to identify differences and similarities between them. The lab also covered advanced options of the `bzdiff` command, allowing us to customize the comparison process and obtain more detailed information about the differences between the compressed files.

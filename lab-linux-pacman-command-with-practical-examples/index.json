@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux pacman Command with Practical Examples",
+  "description": "Explore the pacman package manager in Linux, learn how to install, update, search, and remove packages using practical examples.",
+  "meta": {
+    "title": "Linux pacman Command with Practical Examples",
+    "description": "Explore the pacman package manager in Linux, learn how to install, update, search, and remove packages using practical examples.",
+    "keywords": "Linux, pacman, package management, package installation, package update, package removal, package search"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the pacman Package Manager",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify pacman version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that the version of pacman installed on your system is 6.0.2.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Installing and Updating Packages with pacman",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the 'htop' package is installed on your system.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package update",
+            "file": "verify2-2.sh",
+            "hint": "Please ensure that all installed packages are up-to-date on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Searching for and Removing Packages with pacman",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify package search",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the search for the \"vim\" package returns at least one result.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package removal",
+            "file": "verify3-2.sh",
+            "hint": "Please ensure that the \"htop\" package has been removed from your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

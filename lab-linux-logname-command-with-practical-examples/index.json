@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux logname Command with Practical Examples",
+  "description": "Explore the Linux logname command, its syntax, and practical examples to understand the current user's login name. Learn how to effectively use this command for system monitoring and management tasks.",
+  "meta": {
+    "title": "Linux logname Command with Practical Examples",
+    "description": "Explore the Linux logname command, its syntax, and practical examples to understand the current user's login name. Learn how to effectively use this command for system monitoring and management tasks.",
+    "keywords": "Linux, logname, command, user, login, system, monitoring, management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the logname Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the logname command",
+            "file": "verify1-1.sh",
+            "hint": "The logname command should return the login name 'labex'. Please check your output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Syntax and Options of the logname Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the logname command syntax",
+            "file": "verify2-1.sh",
+            "hint": "The logname command should return the login name 'labex'. Please check your output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using the logname Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the logname command usage",
+            "file": "verify3-1.sh",
+            "hint": "The logname command should return the login name 'labex'. Please check your output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

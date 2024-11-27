@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dosfsck Command with Practical Examples",
+  "description": "Explore the Linux dosfsck command with practical examples. Learn how to check and repair errors on a FAT32 file system, and perform a thorough filesystem check and repair on a USB drive.",
+  "meta": {
+    "title": "Linux dosfsck Command with Practical Examples",
+    "description": "Explore the Linux dosfsck command with practical examples. Learn how to check and repair errors on a FAT32 file system, and perform a thorough filesystem check and repair on a USB drive.",
+    "keywords": "dosfsck, FAT32, filesystem, repair, USB, Linux, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the dosfsck Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the dosfsck command syntax",
+            "file": "verify1-1.sh",
+            "hint": "The `dosfsck` command should display the correct usage information when run with the `--help` option.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Check and Repair Errors on a FAT32 File System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the file system repair",
+            "file": "verify2-1.sh",
+            "hint": "The `dosfsck` command should not report any errors after the file system has been repaired.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform a Thorough Filesystem Check and Repair on a USB Drive",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the thorough file system check and repair",
+            "file": "verify3-1.sh",
+            "hint": "The `dosfsck` command should not report any errors after the thorough file system check and repair.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux setserial Command with Practical Examples",
+  "description": "Explore the Linux setserial command and learn how to configure serial port settings, identify port information, and troubleshoot serial communication issues.",
+  "meta": {
+    "title": "Linux setserial Command with Practical Examples",
+    "description": "Explore the Linux setserial command and learn how to configure serial port settings, identify port information, and troubleshoot serial communication issues.",
+    "keywords": "setserial, serial port, serial communication, Linux, system configuration, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of setserial Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify serial port information",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the `setserial -g /dev/ttyS*` command returns information about the serial ports, specifically that the UART type is \"16550A\". If the command does not output this information, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify Serial Port Information Using setserial",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify serial port information",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the `setserial -g /dev/ttyS*` command returns information about the serial ports, specifically that the UART type is \"16550A\". If the command does not output this information, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Serial Port Settings with setserial",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify serial port configuration",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the `setserial /dev/ttyS0 -a` command shows that the baud rate is set to 115200 bps and the `spd_cust` flag is enabled. If these conditions are not met, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux rmmod Command with Practical Examples",
+  "description": "Explore the Linux rmmod command and learn how to remove kernel modules effectively. Discover practical scenarios and examples to enhance your system configuration and settings.",
+  "meta": {
+    "title": "Linux rmmod Command with Practical Examples",
+    "description": "Explore the Linux rmmod command and learn how to remove kernel modules effectively. Discover practical scenarios and examples to enhance your system configuration and settings.",
+    "keywords": "Linux, rmmod, kernel module, system configuration, system settings, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of rmmod Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify that the vboxsf module has been removed",
+            "file": "verify1-1.sh",
+            "hint": "The vboxsf module should not be listed in the output of the `lsmod` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Remove a Kernel Module Using rmmod",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify that the vboxguest module has been removed",
+            "file": "verify2-1.sh",
+            "hint": "The vboxguest module should not be listed in the output of the `lsmod` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Practical Scenarios for Using rmmod",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify that the nvidia module has been removed",
+            "file": "verify3-1.sh",
+            "hint": "The nvidia module should not be listed in the output of the `lsmod` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

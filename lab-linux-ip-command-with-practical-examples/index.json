@@ -1,0 +1,101 @@
+{
+  "type": "lab",
+  "title": "Linux ip Command with Practical Examples",
+  "description": "Explore the powerful ip command in Linux, learn to manage network interfaces, and troubleshoot network issues effectively.",
+  "meta": {
+    "title": "Linux ip Command with Practical Examples",
+    "description": "Explore the powerful ip command in Linux, learn to manage network interfaces, and troubleshoot network issues effectively.",
+    "keywords": "Linux, ip command, network management, network troubleshooting, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the ip Command Syntax and Options",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the ip link show command",
+            "file": "verify1-1.sh",
+            "hint": "The `ip link show` command did not display the `eth0` interface. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Network Interfaces with the ip Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the ip link add command",
+            "file": "verify2-1.sh",
+            "hint": "The `ip link add` command did not create the `myint` interface. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the ip link set command",
+            "file": "verify2-2.sh",
+            "hint": "The `ip link set` command did not bring the `myint` interface up. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the ip link delete command",
+            "file": "verify2-3.sh",
+            "hint": "The `ip link delete` command did not remove the `myint` interface. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Network Issues Using the ip Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the ip route show command",
+            "file": "verify3-1.sh",
+            "hint": "The `ip route show` command did not display the default route. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the ip link set down command",
+            "file": "verify3-2.sh",
+            "hint": "The `ip link set dev eth0 down` command did not bring the `eth0` interface down. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the ip link set up command",
+            "file": "verify3-3.sh",
+            "hint": "The `ip link set dev eth0 up` command did not bring the `eth0` interface up. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

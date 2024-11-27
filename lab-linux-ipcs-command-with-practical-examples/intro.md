@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `ipcs` command, which provides information about Inter-Process Communication (IPC) resources on the system, such as shared memory, message queues, and semaphores. We will start by understanding the purpose and functionality of the `ipcs` command, then dive into the various options and flags to customize the output and gather specific information about these IPC resources. Finally, we will analyze the IPC resources and identify potential issues that may arise. This lab aims to equip you with the knowledge and skills to effectively monitor and manage IPC resources in your Linux environment.

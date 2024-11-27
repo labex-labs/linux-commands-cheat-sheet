@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux md5sum Command with Practical Examples",
+  "description": "Explore the md5sum command in Linux, learn how to generate and verify MD5 checksums for files, and ensure data integrity with practical examples.",
+  "meta": {
+    "title": "Linux md5sum Command with Practical Examples",
+    "description": "Explore the md5sum command in Linux, learn how to generate and verify MD5 checksums for files, and ensure data integrity with practical examples.",
+    "keywords": "Linux, md5sum, checksum, data integrity, file verification, backup, compression"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the md5sum Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the md5sum command",
+            "file": "verify1-1.sh",
+            "hint": "The MD5 checksum of the test.txt file should be e10adc3949ba59abbe56e057f20f883e. Please check the output of the md5sum command and ensure that it matches the expected value.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Generate MD5 Checksums for Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify MD5 checksums generation",
+            "file": "verify2-1.sh",
+            "hint": "The MD5 checksums of the files should be:\nfile1.txt: e10adc3949ba59abbe56e057f20f883e\nfile2.txt: c778c38f1bf5b425c468a45e316d71d2\nfile3.txt: 5d41402abc4b2a76b9719d911017c592\nPlease check the output of the md5sum command and ensure that the checksums match the expected values.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verify File Integrity Using MD5 Checksums",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file integrity using MD5 checksum",
+            "file": "verify3-1.sh",
+            "hint": "The expected MD5 checksum of the test.txt file is e10adc3949ba59abbe56e057f20f883e. Please check the output of the md5sum -c command and ensure that the checksum matches the expected value.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

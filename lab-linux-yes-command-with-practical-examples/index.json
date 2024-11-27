@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux yes Command with Practical Examples",
+  "description": "Explore the versatile Linux yes command and learn how to use it to generate repeated output, combine it with other commands, and automate various tasks.",
+  "meta": {
+    "title": "Linux yes Command with Practical Examples",
+    "description": "Explore the versatile Linux yes command and learn how to use it to generate repeated output, combine it with other commands, and automate various tasks.",
+    "keywords": "Linux, yes command, repeated output, automation, command line, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the yes Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the yes command output",
+            "file": "verify1-1.sh",
+            "hint": "The output of the yes command should be \"y\" repeated 5 times.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use yes Command to Generate Repeated Output",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the yes command output",
+            "file": "verify2-1.sh",
+            "hint": "The output of the yes command with the argument \"hello\" should be \"hello\" repeated 5 times.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine yes Command with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the yes command with rm",
+            "file": "verify3-1.sh",
+            "hint": "The yes command should have deleted the test_directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the yes command with dd",
+            "file": "verify3-2.sh",
+            "hint": "The yes command should have provided input to the dd command to write 10 MB of data to /dev/null.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

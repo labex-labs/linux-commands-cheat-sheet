@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `join` command to merge two or more files based on a common field. The `join` command is a powerful tool for text processing and editing, allowing you to combine data from multiple sources into a single output. You will start by understanding the purpose and syntax of the `join` command, then practice joining two files based on common fields, and finally learn how to join multiple files using this command. The lab covers practical examples and provides a comprehensive understanding of the `join` command's functionality, making it a valuable skill for data analysis and file management tasks in a Linux environment.

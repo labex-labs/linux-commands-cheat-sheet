@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ldd Command with Practical Examples",
+  "description": "Explore the ldd command in Linux, learn how to identify dynamic dependencies of binaries, and troubleshoot missing dependencies for effective software management.",
+  "meta": {
+    "title": "Linux ldd Command with Practical Examples",
+    "description": "Explore the ldd command in Linux, learn how to identify dynamic dependencies of binaries, and troubleshoot missing dependencies for effective software management.",
+    "keywords": "ldd, Linux, dynamic dependencies, troubleshoot, software management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the ldd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of the ldd command",
+            "file": "verify1-1.sh",
+            "hint": "The ldd command should show that the hello binary depends on the libmylib.so dynamic library, which is not found.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify Dynamic Dependencies of a Binary",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the dynamic dependencies of the hello binary",
+            "file": "verify2-1.sh",
+            "hint": "The ldd command should show that the hello binary depends on the libmylib.so dynamic library, which is not found.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Missing Dependencies",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the missing dependency is resolved",
+            "file": "verify3-1.sh",
+            "hint": "The ldd command should show that the hello binary can find the libmylib.so dynamic library.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

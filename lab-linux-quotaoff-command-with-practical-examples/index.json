@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux quotaoff Command with Practical Examples",
+  "description": "Learn how to disable disk quotas on a Linux file system using the quotaoff command. Understand the basics of disk quotas and their practical applications.",
+  "meta": {
+    "title": "Linux quotaoff Command with Practical Examples",
+    "description": "Learn how to disable disk quotas on a Linux file system using the quotaoff command. Understand the basics of disk quotas and their practical applications.",
+    "keywords": "Linux, disk quotas, quotaoff, file system, system configuration, system settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Disk Quotas in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify quota files existence",
+            "file": "verify1-1.sh",
+            "hint": "The quota files 'aquota.user' and 'aquota.group' should exist in the root directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Enabling Disk Quotas on a Linux File System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify user quota",
+            "file": "verify2-1.sh",
+            "hint": "The quota for the 'labex' user should be set and displayed by the 'repquota -u labex' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Using the quotaoff Command to Disable Disk Quotas",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify quotas are disabled",
+            "file": "verify3-1.sh",
+            "hint": "The 'repquota -a' command should show that quotas are disabled for all file systems.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

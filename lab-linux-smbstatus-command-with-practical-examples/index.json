@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux smbstatus Command with Practical Examples",
+  "description": "Explore the Linux smbstatus command, learn its purpose, options, and how to analyze active SMB connections and shared resources on your system.",
+  "meta": {
+    "title": "Linux smbstatus Command with Practical Examples",
+    "description": "Explore the Linux smbstatus command, learn its purpose, options, and how to analyze active SMB connections and shared resources on your system.",
+    "keywords": "Linux, smbstatus, SMB, networking, file sharing, command-line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of smbstatus Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify smbstatus command execution",
+            "file": "verify1-1.sh",
+            "hint": "The `smbstatus` command should display the header \"Service      pid     Machine       Connected at\" in the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore smbstatus Command Options and Flags",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify smbstatus command options",
+            "file": "verify2-1.sh",
+            "hint": "The `smbstatus --help` output should include the option \"-S, --shares\" to list the shared resources.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Active SMB Connections and Shared Resources",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify smbstatus command for shared resources",
+            "file": "verify3-1.sh",
+            "hint": "The `smbstatus -S` command should display the \"IPC$\" shared resource.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify smbstatus command for active connections",
+            "file": "verify3-2.sh",
+            "hint": "The `smbstatus` command should not display any active SMB connections.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

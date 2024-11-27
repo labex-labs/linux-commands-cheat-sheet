@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux factor Command with Practical Examples",
+  "description": "Explore the Linux factor command, its purpose, syntax, and practical examples to gain a deeper understanding of this useful miscellaneous utility.",
+  "meta": {
+    "title": "Linux factor Command with Practical Examples",
+    "description": "Explore the Linux factor command, its purpose, syntax, and practical examples to gain a deeper understanding of this useful miscellaneous utility.",
+    "keywords": "Linux, factor, command, utility, practical examples, prime factorization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the factor Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of the factor command",
+            "file": "verify1-1.sh",
+            "hint": "The output of 'factor 12' should be \"12: 2 2 3\", indicating that the prime factorization of 12 is 2 x 2 x 3.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Syntax and Usage of the factor Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the syntax and usage of the factor command",
+            "file": "verify2-1.sh",
+            "hint": "The output of 'factor 12 24 36' should be:\n12: 2 2 3\n24: 2 2 2 3\n36: 2 2 3 3",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using the factor Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the prime factorization of a large number",
+            "file": "verify3-1.sh",
+            "hint": "The output of 'factor 1234567' should be \"1234567: 3 7 59 2903\", indicating that the prime factorization of 1,234,567 is 3 x 7 x 59 x 2,903.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the prime factorization of a prime number",
+            "file": "verify3-2.sh",
+            "hint": "The output of 'factor 17' should be \"17: 17\", indicating that 17 is a prime number.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the greatest common divisor of two numbers",
+            "file": "verify3-3.sh",
+            "hint": "The output of 'factor 24 36' should show the prime factorizations of 24 and 36, and indicate that their greatest common divisor is 6.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

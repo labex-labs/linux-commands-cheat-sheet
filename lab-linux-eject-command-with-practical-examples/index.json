@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux eject Command with Practical Examples",
+  "description": "Explore the Linux eject command and learn how to use it to eject removable media devices and CD/DVD drives with practical examples.",
+  "meta": {
+    "title": "Linux eject Command with Practical Examples",
+    "description": "Explore the Linux eject command and learn how to use it to eject removable media devices and CD/DVD drives with practical examples.",
+    "keywords": "Linux, eject command, removable media, CD, DVD, file system, disk utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the eject Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the eject command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `eject` command is able to eject the CD/DVD drive successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Eject a Removable Media Device",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the USB drive is ejected",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the USB drive is no longer listed in the output of the `lsblk` command after running the `eject` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Eject a CD/DVD Drive",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the CD/DVD drive is ejected",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the CD/DVD drive is no longer listed in the output of the `lsblk` command after running the `eject` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

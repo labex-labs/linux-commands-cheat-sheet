@@ -1,0 +1,65 @@
+{
+  "type": "lab",
+  "title": "Linux emerge Command with Practical Examples",
+  "description": "Explore the powerful emerge command in Linux, learn how to install packages, update and upgrade your system with practical examples.",
+  "meta": {
+    "title": "Linux emerge Command with Practical Examples",
+    "description": "Explore the powerful emerge command in Linux, learn how to install packages, update and upgrade your system with practical examples.",
+    "keywords": "Linux, emerge, package management, system update, package installation, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the emerge Command",
+        "text": "step1.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Installing Packages Using emerge",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify emerge version",
+            "file": "verify2-1.sh",
+            "hint": "The emerge command version could not be verified. Please ensure the emerge command is installed and available in your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Updating and Upgrading the System with emerge",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify system update",
+            "file": "verify3-1.sh",
+            "hint": "The system update using the emerge command could not be verified. Please ensure you have successfully updated the system packages.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

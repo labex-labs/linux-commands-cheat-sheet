@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux nmap Command with Practical Examples",
+  "description": "Explore the powerful nmap command in Linux, learn its basic usage, and discover advanced techniques for network scanning and security analysis.",
+  "meta": {
+    "title": "Linux nmap Command with Practical Examples",
+    "description": "Explore the powerful nmap command in Linux, learn its basic usage, and discover advanced techniques for network scanning and security analysis.",
+    "keywords": "nmap, network scanning, security, Linux, network analysis, port scanning, vulnerability assessment"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of nmap",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify nmap installation",
+            "file": "verify1-1.sh",
+            "hint": "Looks like nmap is not installed. Please install it first using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Network Scanning with nmap",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify SYN scan",
+            "file": "verify2-1.sh",
+            "hint": "It looks like you haven't performed the SYN scan yet. Please run the provided SYN scan command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify UDP scan",
+            "file": "verify2-2.sh",
+            "hint": "It looks like you haven't performed the UDP scan yet. Please run the provided UDP scan command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize Advanced nmap Features",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify script scan",
+            "file": "verify3-1.sh",
+            "hint": "It looks like you haven't performed the script scan yet. Please run the provided script scan command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify scan result saving",
+            "file": "verify3-2.sh",
+            "hint": "It looks like you haven't saved the scan results. Please run the provided command to save the scan results.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

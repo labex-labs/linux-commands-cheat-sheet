@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux zdiff Command with Practical Examples",
+  "description": "Explore the zdiff command in Linux, a powerful tool for comparing compressed files. Learn its syntax, practical examples, and troubleshooting techniques to effectively manage compressed data.",
+  "meta": {
+    "title": "Linux zdiff Command with Practical Examples",
+    "description": "Explore the zdiff command in Linux, a powerful tool for comparing compressed files. Learn its syntax, practical examples, and troubleshooting techniques to effectively manage compressed data.",
+    "keywords": "Linux, zdiff, compressed files, comparison, troubleshooting, compression, archiving"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the zdiff Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify zdiff command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the zdiff command is available and functioning properly on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compare Compressed Files Using the zdiff Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify zdiff command usage for comparing compressed files",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the zdiff command can correctly identify the differences between the two compressed files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Differences Between Compressed Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify zdiff command usage for troubleshooting differences in compressed files",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the zdiff command can correctly identify the differences between the two compressed files with intentional differences.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

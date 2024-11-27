@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux swapon Command with Practical Examples",
+  "description": "Learn how to effectively manage swap space in Linux using the swapon command. Explore practical examples for checking swap usage, creating, and enabling swap files.",
+  "meta": {
+    "title": "Linux swapon Command with Practical Examples",
+    "description": "Learn how to effectively manage swap space in Linux using the swapon command. Explore practical examples for checking swap usage, creating, and enabling swap files.",
+    "keywords": "Linux, swapon, swap space, swap file, disk management, file system utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Concept of Swap Space in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the existence of swap space",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `free -m` command should show a non-zero value for the Swap total.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Check Current Swap Space Usage and Configuration",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the swap space configuration",
+            "file": "verify2-1.sh",
+            "hint": "The output of the `swapon --show` command should show at least one swap space device.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Enable a Swap File",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the swap file creation and activation",
+            "file": "verify3-1.sh",
+            "hint": "The output of the `swapon --show` command should include an entry for the /swapfile swap file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

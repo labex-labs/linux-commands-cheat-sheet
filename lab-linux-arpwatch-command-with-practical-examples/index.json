@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux arpwatch Command with Practical Examples",
+  "description": "Explore the arpwatch command in Linux, learn how to install and use it to monitor network activity, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux arpwatch Command with Practical Examples",
+    "description": "Explore the arpwatch command in Linux, learn how to install and use it to monitor network activity, and gain practical experience with real-world examples.",
+    "keywords": "Linux, arpwatch, network monitoring, network security, network activity, Ubuntu"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of arpwatch",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify arpwatch installation",
+            "file": "verify1-1.sh",
+            "hint": "It seems that arpwatch is not installed on your system. Please follow the installation steps provided in the previous section.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install arpwatch on Ubuntu 22.04",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify arpwatch installation",
+            "file": "verify2-1.sh",
+            "hint": "It seems that the arpwatch package is not installed correctly or the arpwatch service is not running. Please follow the installation steps provided in this section.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitor Network Activity with arpwatch",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify arpwatch monitoring",
+            "file": "verify3-1.sh",
+            "hint": "It seems that arpwatch is not monitoring the network activity as expected. Please ensure that the arpwatch service is running and check the log file for any recent activity.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

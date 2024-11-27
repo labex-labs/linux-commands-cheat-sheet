@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `pkill` command in Linux, which allows you to terminate processes by name or process ID (PID). You explored how to use `pkill` to terminate processes by their name, providing examples of terminating all processes with the name "firefox" using the default SIGTERM signal or the SIGKILL signal to force immediate termination. Additionally, you learned how to terminate processes by their PID using the `-P` option. The `pkill` command is a powerful tool for managing processes in a Linux system, but it should be used with caution to avoid accidentally terminating important system processes.

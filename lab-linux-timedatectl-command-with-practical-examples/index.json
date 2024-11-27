@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux timedatectl Command with Practical Examples",
+  "description": "Explore the timedatectl command in Linux, learn how to manage system date and time, configure time zone and NTP settings, and gain practical experience through hands-on examples.",
+  "meta": {
+    "title": "Linux timedatectl Command with Practical Examples",
+    "description": "Explore the timedatectl command in Linux, learn how to manage system date and time, configure time zone and NTP settings, and gain practical experience through hands-on examples.",
+    "keywords": "timedatectl, system time, time zone, NTP, Linux, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the timedatectl Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the time zone has been changed",
+            "file": "verify1-1.sh",
+            "hint": "The time zone has not been changed to America/New_York. Please check the output of the `timedatectl` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage System Date and Time with timedatectl",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the system date and time have been changed",
+            "file": "verify2-1.sh",
+            "hint": "The system date and time have not been changed to 2023-04-13 12:00:00 UTC. Please check the output of the `timedatectl` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Time Zone and NTP Settings",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the time zone has been changed",
+            "file": "verify3-1.sh",
+            "hint": "The time zone has not been changed to America/Los_Angeles. Please check the output of the `timedatectl` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the NTP service is active",
+            "file": "verify3-2.sh",
+            "hint": "The NTP service is not active. Please check the output of the `timedatectl` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

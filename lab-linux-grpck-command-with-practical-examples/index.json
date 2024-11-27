@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux grpck Command with Practical Examples",
+  "description": "Explore the Linux grpck command, which verifies the integrity of the group file. Learn how to use grpck to identify and repair group file issues, ensuring the proper management of user groups on your system.",
+  "meta": {
+    "title": "Linux grpck Command with Practical Examples",
+    "description": "Explore the Linux grpck command, which verifies the integrity of the group file. Learn how to use grpck to identify and repair group file issues, ensuring the proper management of user groups on your system.",
+    "keywords": "Linux, grpck, group file, system management, user groups, file integrity, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the grpck Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the grpck command is available",
+            "file": "verify1-1.sh",
+            "hint": "The grpck command does not appear to be available on your system. Please ensure that the necessary packages are installed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verify Group File Integrity Using grpck",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the group file is valid",
+            "file": "verify2-1.sh",
+            "hint": "The group file still contains errors. Please run the grpck command to verify and repair the group file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Repair Group File Issues with grpck",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the group file is valid",
+            "file": "verify3-1.sh",
+            "hint": "The group file still contains errors. Please run the grpck command with the -r option to repair the group file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

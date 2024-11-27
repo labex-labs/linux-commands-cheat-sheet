@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and syntax of the `indent` command in Linux. The `indent` command is a tool used to format C/C++ source code by indenting it according to a specific set of rules. You explored the basic syntax of the command and some common options for customizing the formatting. Then, you learned how to use the `indent` command to format C/C++ source code, including how to apply different formatting options and customize the output. Finally, you discovered how to use the `indent` command to enforce specific coding styles by leveraging its various configuration options.

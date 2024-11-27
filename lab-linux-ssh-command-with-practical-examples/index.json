@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux ssh Command with Practical Examples",
+  "description": "Learn how to use the SSH command to securely connect to remote Linux servers, transfer files, and more. Explore practical examples and master the essential skills for remote system administration.",
+  "meta": {
+    "title": "Linux ssh Command with Practical Examples",
+    "description": "Learn how to use the SSH command to securely connect to remote Linux servers, transfer files, and more. Explore practical examples and master the essential skills for remote system administration.",
+    "keywords": "Linux, SSH, remote access, file transfer, system administration, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to SSH (Secure Shell)",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify SSH connection",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the SSH server is running on the Ubuntu container and you can successfully connect to the remote server using the `ssh labex@localhost` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Connecting to a Remote Linux Server via SSH",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify SSH connection",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can connect to the remote server using the `ssh labex@localhost` command and execute commands on the remote system.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify SSH command execution",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that you can execute commands on the remote server using the `ssh labex@localhost [command]` syntax, and that the output contains the expected result (e.g., the presence of the 'test.txt' file in the '~/project' directory).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Transferring Files Between Local and Remote Hosts Using SCP",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file transfer from local to remote",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the 'test_file.txt' file has been successfully transferred from the local machine to the remote server using the `scp` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file transfer from remote to local",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the 'test_file.txt' file has been successfully transferred from the remote server to the local machine using the `scp` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

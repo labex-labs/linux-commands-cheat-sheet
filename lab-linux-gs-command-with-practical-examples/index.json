@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux gs Command with Practical Examples",
+  "description": "Explore the versatile gs command in Linux, learn to convert PDF files to various image formats, and optimize PDF files by reducing file size.",
+  "meta": {
+    "title": "Linux gs Command with Practical Examples",
+    "description": "Explore the versatile gs command in Linux, learn to convert PDF files to various image formats, and optimize PDF files by reducing file size.",
+    "keywords": "gs command, PDF conversion, PDF optimization, image formats, file size reduction"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the gs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify gs command syntax",
+            "file": "verify1-1.sh",
+            "hint": "The gs command is not available. Please ensure that Ghostscript is installed in your environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Convert PDF Files to Different Image Formats Using gs",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify PDF to JPEG conversion",
+            "file": "verify2-1.sh",
+            "hint": "The JPEG conversion was not successful. Please check your gs command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify PDF to PNG conversion",
+            "file": "verify2-2.sh",
+            "hint": "The PNG conversion was not successful. Please check your gs command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify PDF to TIFF conversion",
+            "file": "verify2-3.sh",
+            "hint": "The TIFF conversion was not successful. Please check your gs command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Optimize PDF Files by Reducing File Size with gs",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify PDF optimization",
+            "file": "verify3-1.sh",
+            "hint": "The PDF optimization was not successful. Please check your gs command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

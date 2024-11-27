@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we first explored the purpose of the `factor` command in Linux, which is used to find the prime factorization of a given number. We learned that prime factorization is the process of breaking down a number into its prime factors, and the `factor` command can be used to quickly identify the prime factors of a number. We then examined the syntax and usage of the `factor` command, including how to use it with a single number, multiple numbers, and input redirection to read numbers from a file. The `factor` command can be a useful tool for understanding the underlying structure of numbers, particularly in mathematical and scientific applications.

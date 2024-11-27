@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `nice` command, which allows you to adjust the priority of a process. We will start by understanding the concept of process priority and how the `nice` command works, then move on to practical examples of using `nice` to manage process scheduling. The lab covers checking the current niceness value of a process, running commands with different niceness values, and adjusting the priority of running processes. This lab provides a hands-on approach to understanding and utilizing the `nice` command for effective process management in a Linux environment.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux uucico Command with Practical Examples",
+  "description": "Explore the uucico command in Linux, learn how to configure it for file transfer, and execute remote connections and file transfers using practical examples.",
+  "meta": {
+    "title": "Linux uucico Command with Practical Examples",
+    "description": "Explore the uucico command in Linux, learn how to configure it for file transfer, and execute remote connections and file transfers using practical examples.",
+    "keywords": "Linux, uucico, file transfer, remote connection, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to uucico Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify uucico version",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the output of `uucico --version` command matches the expected version \"uucico (UUCP) 1.07\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configuring uucico for File Transfer",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify uucico configuration",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the output of `sudo uucico -r1 -ssystem` command includes the \"Connected.\" message, indicating a successful connection to the remote system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Executing uucico for Remote Connection and File Transfer",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file transfer",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the output of `sudo uucico -r1 -ssystem -l ~/project/test_file.txt -r ~/project/test_file.txt` command includes the \"Sending ~/project/test_file.txt to /home/remote_user/uucp/test_file.txt\" message, indicating the file was transferred successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux sh Command with Practical Examples",
+  "description": "Explore the power of the Linux sh command through practical examples. Learn shell scripting basics, utilize variables and parameters, and implement conditional statements and loops to automate tasks efficiently.",
+  "meta": {
+    "title": "Linux sh Command with Practical Examples",
+    "description": "Explore the power of the Linux sh command through practical examples. Learn shell scripting basics, utilize variables and parameters, and implement conditional statements and loops to automate tasks efficiently.",
+    "keywords": "Linux, shell scripting, bash, variables, conditional statements, loops, automation, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of Shell Scripting",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the \"hello.sh\" script",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the \"hello.sh\" script in the ~/project directory and that it contains the \"echo \"Hello, World!\"\" command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the \"variables.sh\" script",
+            "file": "verify1-2.sh",
+            "hint": "Make sure you have created the \"variables.sh\" script in the ~/project directory and that it contains the variable assignment and \"echo\" command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize Shell Variables and Parameters",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the \"args.sh\" script",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created the \"args.sh\" script in the ~/project directory and that it uses the correct shell variables to access the command-line arguments.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the \"env_vars.sh\" script",
+            "file": "verify2-2.sh",
+            "hint": "Make sure you have created the \"env_vars.sh\" script in the ~/project directory and that it uses the correct shell variables to access the environment variables.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Implement Conditional Statements and Loops",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the \"if_else.sh\" script",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created the \"if_else.sh\" script in the ~/project directory and that it uses the correct conditional statement to check the value of the NUM variable.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the \"for_loop.sh\" script",
+            "file": "verify3-2.sh",
+            "hint": "Make sure you have created the \"for_loop.sh\" script in the ~/project directory and that it uses the correct `for` loop to iterate over the list of numbers.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

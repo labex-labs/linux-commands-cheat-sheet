@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux apt-get Command with Practical Examples",
+  "description": "Learn how to effectively use the apt-get command in Linux for package management, including installing, updating, removing, and cleaning up packages.",
+  "meta": {
+    "title": "Linux apt-get Command with Practical Examples",
+    "description": "Learn how to effectively use the apt-get command in Linux for package management, including installing, updating, removing, and cleaning up packages.",
+    "keywords": "Linux, apt-get, package management, installation, update, removal, system cleanup"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of apt-get Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify package index update",
+            "file": "verify1-1.sh",
+            "hint": "It appears that you did not successfully update the package index using the `apt-get update` command. Please try running the command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install and Update Packages Using apt-get",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify2-1.sh",
+            "hint": "It appears that the `tree` package was not successfully installed. Please try running the `apt-get install tree` command again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package upgrade",
+            "file": "verify2-2.sh",
+            "hint": "It seems that the package upgrade using `apt-get upgrade` was not successful. Please try running the command again to update your installed packages to their latest versions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Remove Packages and Clean the System with apt-get",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify package removal",
+            "file": "verify3-1.sh",
+            "hint": "It appears that the `tree` package was not successfully removed. Please try running the `apt-get remove tree` command again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify system cleanup",
+            "file": "verify3-2.sh",
+            "hint": "It seems that the system cleanup using `apt-get clean` and `apt-get autoremove` was not successful. Please try running these commands again to free up disk space on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

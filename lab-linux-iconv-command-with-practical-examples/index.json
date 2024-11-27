@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux iconv Command with Practical Examples",
+  "description": "Explore the powerful iconv command in Linux, which enables seamless encoding conversion and handling of multilingual text. Learn practical examples to enhance your text processing capabilities.",
+  "meta": {
+    "title": "Linux iconv Command with Practical Examples",
+    "description": "Explore the powerful iconv command in Linux, which enables seamless encoding conversion and handling of multilingual text. Learn practical examples to enhance your text processing capabilities.",
+    "keywords": "iconv, encoding conversion, multilingual text, text processing, Linux utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the iconv Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify iconv command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can use the `iconv` command to convert text from UTF-8 to ISO-8859-1 encoding.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Encoding Conversion Using iconv",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify UTF-8 to ISO-8859-1 conversion",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can convert the UTF-8 text file to ISO-8859-1 encoding correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify UTF-8 to UTF-16 conversion",
+            "file": "verify2-2.sh",
+            "hint": "Make sure you can convert the UTF-8 text file to UTF-16 encoding correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Handling Multilingual Text with iconv",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify multilingual text conversion with transliteration",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can convert the multilingual text file to ISO-8859-1 encoding with transliteration correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

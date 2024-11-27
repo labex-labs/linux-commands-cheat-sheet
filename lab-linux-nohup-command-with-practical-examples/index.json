@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux nohup Command with Practical Examples",
+  "description": "Learn how to use the nohup command to run long-running processes in the background, even after you log out of your terminal. Explore practical examples and understand the purpose of this powerful Linux tool.",
+  "meta": {
+    "title": "Linux nohup Command with Practical Examples",
+    "description": "Learn how to use the nohup command to run long-running processes in the background, even after you log out of your terminal. Explore practical examples and understand the purpose of this powerful Linux tool.",
+    "keywords": "nohup, process management, background processes, long-running tasks, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the nohup Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify nohup command usage",
+            "file": "verify1-1.sh",
+            "hint": "The nohup process you started in the previous step should still be running. Use the ps command to verify that the process is still active.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Run a Long-Running Process Using nohup",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify nohup process running",
+            "file": "verify2-1.sh",
+            "hint": "The long-running process you started using nohup should still be running. Use the ps command to verify that the process is still active.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Redirect nohup Output to a File",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify nohup output redirected",
+            "file": "verify3-1.sh",
+            "hint": "The long-running process you started using nohup should still be running, and its output should be redirected to the `~/project/output.log` file. Use the ps and cat commands to verify this.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

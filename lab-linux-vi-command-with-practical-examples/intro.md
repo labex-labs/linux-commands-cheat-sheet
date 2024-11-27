@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the powerful vi text editor on the Linux operating system. The lab covers the basic navigation and editing commands in vi, as well as more advanced operations. You will start by understanding the fundamentals of the vi editor, such as opening the editor, moving the cursor, entering insert mode, and saving or quitting the editor. Then, you will explore more advanced text editing techniques, including searching, replacing, and performing various operations on the text. By the end of this lab, you will have a solid understanding of how to effectively use the vi editor for efficient text processing and editing in the Linux environment.

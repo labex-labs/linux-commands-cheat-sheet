@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux date Command with Practical Examples",
+  "description": "Explore the Linux date command and learn how to display, format, and manipulate date and time information on your system.",
+  "meta": {
+    "title": "Linux date Command with Practical Examples",
+    "description": "Explore the Linux date command and learn how to display, format, and manipulate date and time information on your system.",
+    "keywords": "Linux, date command, time, format, system management, system monitoring"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the date Command Syntax",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify date command syntax",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `date --help` command should include the basic syntax for the `date` command, which is `date [OPTION]... [+FORMAT]`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Display Current Date and Time",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify date command output",
+            "file": "verify2-1.sh",
+            "hint": "The output of the `date` command should match the current date and time in the default format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Format Date and Time Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify date command formatting",
+            "file": "verify3-1.sh",
+            "hint": "The output of the `date` command with the specified formatting should match the current date and time.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

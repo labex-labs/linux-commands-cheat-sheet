@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `look` command to search for specific words or phrases in text files. The `look` command is a useful tool for quickly finding lines that start with a given string of characters. You will explore the purpose and syntax of the `look` command, and practice combining it with other Linux commands for more advanced text processing tasks. The lab covers searching the system dictionary, as well as searching custom text files, with options to make the search case-insensitive and limit the output. This lab provides practical examples to help you become more proficient in text processing and editing using the Linux command line.

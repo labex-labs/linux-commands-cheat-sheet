@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux minicom Command with Practical Examples",
+  "description": "Explore the Linux minicom command with practical examples. Learn how to install, configure, and use minicom to connect to serial devices, customize settings, and enhance your user experience.",
+  "meta": {
+    "title": "Linux minicom Command with Practical Examples",
+    "description": "Explore the Linux minicom command with practical examples. Learn how to install, configure, and use minicom to connect to serial devices, customize settings, and enhance your user experience.",
+    "keywords": "Linux, minicom, serial communication, serial device, terminal emulator, configuration, customization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install and Configure minicom on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify minicom installation",
+            "file": "verify1-1.sh",
+            "hint": "It seems that minicom is not installed on your system. Please follow the installation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Connect to a Serial Device Using minicom",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify serial device connection",
+            "file": "verify2-1.sh",
+            "hint": "It seems that you were unable to connect to the serial device using minicom. Please check the serial port path and baud rate settings, and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize minicom Settings for Better User Experience",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify screen color change",
+            "file": "verify3-1.sh",
+            "hint": "It seems that you were unable to change the screen color settings in minicom. Please follow the steps to customize the settings and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

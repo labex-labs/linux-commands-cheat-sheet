@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux users Command with Practical Examples",
+  "description": "Explore the Linux users command and learn how to manage user accounts, understand user privileges and permissions, and implement password policy and user management.",
+  "meta": {
+    "title": "Linux users Command with Practical Examples",
+    "description": "Explore the Linux users command and learn how to manage user accounts, understand user privileges and permissions, and implement password policy and user management.",
+    "keywords": "Linux, users, user management, permissions, password policy, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Manage User Accounts",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify user account creation",
+            "file": "verify1-1.sh",
+            "hint": "The user 'newuser' should have been created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Understand User Privileges and Permissions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify user and group permissions",
+            "file": "verify2-1.sh",
+            "hint": "The user 'newuser' should have read, write, and execute permissions on the '/opt/myapp' directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Implement Password Policy and User Management",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify password policy enforcement",
+            "file": "verify3-1.sh",
+            "hint": "The password policy should be enforced, and the user should not be able to set a weak password.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

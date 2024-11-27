@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux newgrp Command with Practical Examples",
+  "description": "Explore the Linux newgrp command and learn how to create, switch, and manage group permissions. Gain practical knowledge for effective user and permission management in your Linux environment.",
+  "meta": {
+    "title": "Linux newgrp Command with Practical Examples",
+    "description": "Explore the Linux newgrp command and learn how to create, switch, and manage group permissions. Gain practical knowledge for effective user and permission management in your Linux environment.",
+    "keywords": "Linux, newgrp, group management, user permissions, command-line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the newgrp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the user's primary group has been changed",
+            "file": "verify1-1.sh",
+            "hint": "The user's primary group should be set to \"developers\" after running the `newgrp` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Switch to a New Group",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the new group has been created",
+            "file": "verify2-1.sh",
+            "hint": "The \"project-team\" group should have been created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the user's primary group has been changed",
+            "file": "verify2-2.sh",
+            "hint": "The user's primary group should be set to \"project-team\" after running the `newgrp` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Group Permissions with newgrp",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the shared directory has been created",
+            "file": "verify3-1.sh",
+            "hint": "The `~/project/shared` directory should have been created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the new file has been created in the shared directory",
+            "file": "verify3-2.sh",
+            "hint": "The `project-file.txt` file should have been created in the `~/project/shared` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

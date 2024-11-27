@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux smbclient Command with Practical Examples",
+  "description": "Explore the smbclient command in Linux, learn how to connect to Windows shares, list files and directories, and perform practical operations.",
+  "meta": {
+    "title": "Linux smbclient Command with Practical Examples",
+    "description": "Explore the smbclient command in Linux, learn how to connect to Windows shares, list files and directories, and perform practical operations.",
+    "keywords": "smbclient, Linux, Windows share, file management, network communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install smbclient on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify smbclient installation",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that the smbclient package is installed correctly. You can run the `smbclient --version` command to verify the installation.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Connect to a Windows Share Using smbclient",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify smbclient connection",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that you have the correct UNC path, username, and password for the Windows share. You can try running the `smbclient //windows-server/share -U username%password -c 'ls'` command to verify the connection.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "List Files and Directories on a Windows Share",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file and directory listing",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that you have the correct UNC path, username, and password for the Windows share. You can try running the `smbclient //windows-server/share -U username%password -c 'ls'` command to verify the file and directory listing.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

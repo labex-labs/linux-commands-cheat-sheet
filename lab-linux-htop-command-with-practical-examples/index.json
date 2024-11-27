@@ -1,0 +1,65 @@
+{
+  "type": "lab",
+  "title": "Linux htop Command with Practical Examples",
+  "description": "Explore the powerful htop command in Linux, a real-time system monitoring tool. Learn how to navigate, interact, and customize htop to efficiently monitor and manage your system resources.",
+  "meta": {
+    "title": "Linux htop Command with Practical Examples",
+    "description": "Explore the powerful htop command in Linux, a real-time system monitoring tool. Learn how to navigate, interact, and customize htop to efficiently monitor and manage your system resources.",
+    "keywords": "Linux, htop, system monitoring, system management, process management, resource monitoring, system optimization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to htop Command",
+        "text": "step1.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Navigating and Interacting with htop",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify htop is running",
+            "file": "verify2-1.sh",
+            "hint": "It looks like `htop` is not running. Make sure to start the `htop` command before proceeding.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Advanced htop Features and Customization",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify htop customization",
+            "file": "verify3-1.sh",
+            "hint": "It looks like the CPU usage graph is not being displayed in `htop`. Make sure to enable the \"Detailed CPU time graph\" option in the `htop` setup menu.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

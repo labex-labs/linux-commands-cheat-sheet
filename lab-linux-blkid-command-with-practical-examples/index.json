@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux blkid Command with Practical Examples",
+  "description": "Explore the blkid command in Linux, a powerful tool for identifying filesystem types and querying disk attributes. Learn practical examples to enhance your system management skills.",
+  "meta": {
+    "title": "Linux blkid Command with Practical Examples",
+    "description": "Explore the blkid command in Linux, a powerful tool for identifying filesystem types and querying disk attributes. Learn practical examples to enhance your system management skills.",
+    "keywords": "blkid, Linux, filesystem, disk attributes, system management, disk utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to blkid Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify blkid command output",
+            "file": "verify1-1.sh",
+            "hint": "The blkid command should return information about the block devices, including the filesystem type. Verify that the output contains \"TYPE=\\\"ext4\\\"\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identifying Filesystem Types with blkid",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify blkid filesystem type filtering",
+            "file": "verify2-1.sh",
+            "hint": "The blkid command should be able to filter the output to only show block devices with the ext4 filesystem type. Verify that the output contains \"TYPE=\\\"ext4\\\"\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Querying Disk Attributes with blkid",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify blkid disk attribute query",
+            "file": "verify3-1.sh",
+            "hint": "The blkid command should be able to display the UUID for the /dev/sda1 block device. Verify that the output contains the expected UUID value.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

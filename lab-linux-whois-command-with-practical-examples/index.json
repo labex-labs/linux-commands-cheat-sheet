@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux whois Command with Practical Examples",
+  "description": "Explore the whois command in Linux, learn its syntax, and discover practical examples to retrieve domain information and customize the output.",
+  "meta": {
+    "title": "Linux whois Command with Practical Examples",
+    "description": "Explore the whois command in Linux, learn its syntax, and discover practical examples to retrieve domain information and customize the output.",
+    "keywords": "whois, Linux, domain information, network, communication, lookup, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the whois Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the whois command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you can successfully run the `whois` command and that it returns the expected output for the `example.com` domain.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieve Domain Information Using the whois Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the whois command for example.com",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can successfully run the `whois` command for the `example.com` domain and that it returns the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the whois command for google.com",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that you can successfully run the `whois` command for the `google.com` domain and that it returns the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize whois Output and Handle Exceptions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify customized whois output",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can successfully run the `whois` command with the `-h` option to specify the WHOIS server, and that it returns the expected output for the `example.com` domain.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify handling whois exceptions",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that you can handle the exception when running the `whois` command for a non-existent domain, and that it returns the expected error message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

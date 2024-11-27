@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux tcpdump Command with Practical Examples",
+  "description": "Learn how to use the powerful tcpdump command to capture and analyze network traffic on Linux systems. Discover practical examples and techniques for filtering and monitoring network data.",
+  "meta": {
+    "title": "Linux tcpdump Command with Practical Examples",
+    "description": "Learn how to use the powerful tcpdump command to capture and analyze network traffic on Linux systems. Discover practical examples and techniques for filtering and monitoring network data.",
+    "keywords": "tcpdump, network traffic, packet capture, network analysis, Linux, network monitoring, network troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to tcpdump Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify tcpdump installation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the tcpdump command is installed and available in your system's PATH.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Capturing Network Traffic with tcpdump",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify network traffic capture",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can capture at least one network packet using the tcpdump command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify network capture file",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that the network capture file 'network_capture.pcap' is created in the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Filtering Network Traffic with tcpdump",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify HTTP traffic capture",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can capture at least one HTTP packet using the tcpdump command with the 'tcp port 80' filter.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify IP address filtering",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that you can capture at least one packet for the IP address 172.17.0.2 using the tcpdump command with the 'host' filter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

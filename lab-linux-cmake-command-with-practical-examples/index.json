@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux cmake Command with Practical Examples",
+  "description": "Learn how to use the CMake tool to build and manage C++ projects on Linux. This lab covers installing CMake, creating a simple C++ project, and understanding different build configurations.",
+  "meta": {
+    "title": "Linux cmake Command with Practical Examples",
+    "description": "Learn how to use the CMake tool to build and manage C++ projects on Linux. This lab covers installing CMake, creating a simple C++ project, and understanding different build configurations.",
+    "keywords": "CMake, C++, Linux, build, configuration, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install CMake on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify CMake Installation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure that CMake is installed and the version is 3.22.1. You can check the version by running `cmake --version`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Simple C++ Project with CMake",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify C++ Project Creation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure that the cpp-project directory, main.cpp, CMakeLists.txt, and the built cpp-project executable exist, and that the executable outputs \"Hello, CMake!\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Understand CMake Build Configurations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Debug Build Configuration",
+            "file": "verify3-1.sh",
+            "hint": "Make sure that the build directory exists and the executable outputs \"Build Configuration: Debug\".",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Release Build Configuration",
+            "file": "verify3-2.sh",
+            "hint": "Make sure that the build directory exists and the executable outputs \"Build Configuration: Release\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

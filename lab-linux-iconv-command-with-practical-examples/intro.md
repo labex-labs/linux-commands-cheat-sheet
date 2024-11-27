@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `iconv` command, a powerful tool for converting text between different character encodings. The `iconv` command is part of the GNU C Library and is widely used for handling multilingual text. You will explore the basic syntax of the `iconv` command, learn how to check the available character encodings on your system, and perform various encoding conversions on text files, including converting from UTF-8 to ISO-8859-1 (Latin-1) and UTF-16 encodings. This lab provides practical examples to help you effectively manage and work with text data in different character encodings.

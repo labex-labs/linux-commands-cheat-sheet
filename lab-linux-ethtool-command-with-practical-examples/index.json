@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ethtool Command with Practical Examples",
+  "description": "Explore the ethtool command in Linux, a powerful tool for retrieving and modifying network interface settings. Learn how to use ethtool to diagnose and troubleshoot network issues.",
+  "meta": {
+    "title": "Linux ethtool Command with Practical Examples",
+    "description": "Explore the ethtool command in Linux, a powerful tool for retrieving and modifying network interface settings. Learn how to use ethtool to diagnose and troubleshoot network issues.",
+    "keywords": "Linux, ethtool, network interface, network settings, network troubleshooting, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the ethtool Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ethtool version",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the ethtool version installed on your system is 5.15.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieve Network Interface Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify network interface information",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the ethtool command can successfully retrieve information about the eth0 network interface, and that the link is detected as \"yes\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify Network Interface Settings",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify network interface settings",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the ethtool command has successfully changed the speed to 100Mb/s and the duplex mode to Full for the eth0 network interface.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

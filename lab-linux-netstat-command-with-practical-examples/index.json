@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux netstat Command with Practical Examples",
+  "description": "Explore the netstat command, a powerful network troubleshooting tool. Learn how to analyze network connections, statistics, and diagnose network issues on Linux systems.",
+  "meta": {
+    "title": "Linux netstat Command with Practical Examples",
+    "description": "Explore the netstat command, a powerful network troubleshooting tool. Learn how to analyze network connections, statistics, and diagnose network issues on Linux systems.",
+    "keywords": "netstat, network troubleshooting, network connections, network statistics, Linux, networking"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the netstat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify netstat command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `netstat -antp` command should display at least one network connection in the LISTEN state.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Network Connections Using the netstat Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify network connection exploration",
+            "file": "verify2-1.sh",
+            "hint": "The `netstat -antp` command should display at least one network connection in the LISTEN state and one in the ESTABLISHED state.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Network Statistics and Troubleshoot Network Issues",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify network statistics analysis",
+            "file": "verify3-1.sh",
+            "hint": "The `netstat -s` command should display TCP statistics, and the `netstat -i` command should display network interface statistics for the `enp0s3` interface.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

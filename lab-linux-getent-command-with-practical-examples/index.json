@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux getent Command with Practical Examples",
+  "description": "Explore the versatile getent command in Linux, learn how to retrieve user and group information, and discover practical examples to enhance your system administration skills.",
+  "meta": {
+    "title": "Linux getent Command with Practical Examples",
+    "description": "Explore the versatile getent command in Linux, learn how to retrieve user and group information, and discover practical examples to enhance your system administration skills.",
+    "keywords": "getent, Linux, user information, group information, system administration, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the getent Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify getent command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `getent` command usage information should display the expected format: \"Usage: getent database [key ...]\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieving User Information Using getent",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify getent user information",
+            "file": "verify2-1.sh",
+            "hint": "The `getent passwd labex` command should display the expected user information for the 'labex' user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieving Group Information Using getent",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify getent group information",
+            "file": "verify3-1.sh",
+            "hint": "The `getent group labex` command should display the expected group information for the 'labex' group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

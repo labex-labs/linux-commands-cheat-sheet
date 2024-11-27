@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ispell Command with Practical Examples",
+  "description": "Learn how to use the ispell command in Linux to check the spelling of single words and text files. Explore practical examples and gain proficiency in text processing and editing.",
+  "meta": {
+    "title": "Linux ispell Command with Practical Examples",
+    "description": "Learn how to use the ispell command in Linux to check the spelling of single words and text files. Explore practical examples and gain proficiency in text processing and editing.",
+    "keywords": "Linux, ispell, spell check, text processing, text editing, Ubuntu, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install ispell on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ispell installation",
+            "file": "verify1-1.sh",
+            "hint": "The ispell command does not seem to be installed. Please follow the steps to install it.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use ispell to Check Spelling of a Single Word",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify ispell single word check",
+            "file": "verify2-1.sh",
+            "hint": "The word in the word.txt file does not seem to be corrected. Please follow the steps to use ispell to check and correct the spelling.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use ispell to Check Spelling of a Text File",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify ispell text file check",
+            "file": "verify3-1.sh",
+            "hint": "The text.txt file still contains misspelled words. Please follow the steps to use ispell to check and correct the spelling.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

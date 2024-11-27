@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux iotop Command with Practical Examples",
+  "description": "Explore the Linux iotop command, a powerful tool for monitoring disk I/O usage. Learn how to install, configure, and utilize iotop to analyze system performance and identify resource-intensive processes.",
+  "meta": {
+    "title": "Linux iotop Command with Practical Examples",
+    "description": "Explore the Linux iotop command, a powerful tool for monitoring disk I/O usage. Learn how to install, configure, and utilize iotop to analyze system performance and identify resource-intensive processes.",
+    "keywords": "Linux, iotop, disk I/O, system monitoring, performance analysis, process identification"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of iotop",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify iotop command exists",
+            "file": "verify1-1.sh",
+            "hint": "The iotop command does not appear to be installed on your system. Please follow the instructions in the next step to install and configure iotop.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install and Configure iotop on Ubuntu 22.04",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify iotop is installed",
+            "file": "verify2-1.sh",
+            "hint": "The iotop command does not appear to be installed on your system. Please follow the instructions in this step to install iotop.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Disk I/O Usage with iotop",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify iotop output",
+            "file": "verify3-1.sh",
+            "hint": "The iotop command does not appear to be displaying any disk I/O usage information. Please ensure that iotop is installed and running correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

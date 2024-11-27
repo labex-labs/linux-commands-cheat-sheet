@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux joe Command with Practical Examples",
+  "description": "Explore the powerful joe text editor on Ubuntu 22.04. Learn how to install, create, edit, and customize files using the joe command-line tool.",
+  "meta": {
+    "title": "Linux joe Command with Practical Examples",
+    "description": "Explore the powerful joe text editor on Ubuntu 22.04. Learn how to install, create, edit, and customize files using the joe command-line tool.",
+    "keywords": "linux, joe, text editor, ubuntu, file editing, command line, customization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install joe Text Editor on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify joe is installed",
+            "file": "verify1-1.sh",
+            "hint": "The joe text editor does not appear to be installed. Please run the installation command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Edit Files Using the joe Text Editor",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file creation",
+            "file": "verify2-1.sh",
+            "hint": "The example.txt file does not appear to have been created. Please try creating the file again using the joe text editor.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file editing",
+            "file": "verify2-2.sh",
+            "hint": "The example.txt file does not appear to have been edited correctly. Please try editing the file again using the joe text editor.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize joe Text Editor Settings",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom settings",
+            "file": "verify3-1.sh",
+            "hint": "The custom joe text editor settings do not appear to have been applied correctly. Please check the contents of the ~/.joerc file and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

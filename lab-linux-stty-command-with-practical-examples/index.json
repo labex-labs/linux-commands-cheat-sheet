@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux stty Command with Practical Examples",
+  "description": "Explore the stty command in Linux, learn how to modify terminal settings, and discover practical examples to enhance your system configuration skills.",
+  "meta": {
+    "title": "Linux stty Command with Practical Examples",
+    "description": "Explore the stty command in Linux, learn how to modify terminal settings, and discover practical examples to enhance your system configuration skills.",
+    "keywords": "stty command, terminal settings, system configuration, Linux, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the stty Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify stty command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have correctly used the stty command to set the terminal speed to 9600 baud, the number of rows to 30, and the number of columns to 100.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify Terminal Settings Using the stty Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify stty command usage",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have correctly used the stty command to set the terminal to use 7-bit character mode, enable hardware flow control, and set the terminal to ignore and generate a signal for break conditions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using the stty Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Ctrl+C interrupt disabled",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have successfully disabled the Ctrl+C interrupt using the stty command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify erase character changed to Backspace",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that you have successfully changed the erase character to Backspace using the stty command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,5 @@
+# Introduction
+
+In this lab, we will explore the Linux `rsh` (remote shell) command and learn how to use it for remote system administration tasks. The lab covers the introduction to the `rsh` command, establishing remote shell connections, and executing remote commands. We will also discuss the potential installation requirements and any deprecation concerns related to the `rsh` command. The goal of this lab is to provide practical examples and understanding of the `rsh` command for effective system monitoring and management.
+
+The lab starts by introducing the `rsh` command, its basic syntax, and how to check if it is installed on your system. If the `rsh` command is not installed, the lab provides instructions on how to install it. The next step focuses on establishing a remote shell connection using the `rsh` command, including the necessary permissions and the process of connecting to a remote system. Finally, the lab demonstrates how to execute remote commands on the connected system using the `rsh` command.

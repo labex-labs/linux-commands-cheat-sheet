@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux poweroff Command with Practical Examples",
+  "description": "Learn how to safely shut down your Linux system using the poweroff command, including practical examples and automating system shutdown with cron.",
+  "meta": {
+    "title": "Linux poweroff Command with Practical Examples",
+    "description": "Learn how to safely shut down your Linux system using the poweroff command, including practical examples and automating system shutdown with cron.",
+    "keywords": "Linux, poweroff, shutdown, system, cron, automation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the poweroff Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify poweroff command execution",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have executed the `poweroff` command in the terminal.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Safely Shut Down the System Using the poweroff Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify poweroff command execution",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have executed the `poweroff` command in the terminal.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate System Shutdown with Cron and the poweroff Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Cron job creation",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have created a Cron job to automatically shut down the system using the `poweroff` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

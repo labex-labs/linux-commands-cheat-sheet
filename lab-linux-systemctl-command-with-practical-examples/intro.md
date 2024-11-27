@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `systemctl` command, the primary tool for managing system services in Linux. You will understand the purpose and functionality of `systemctl`, learn how to manage system services using various `systemctl` commands, and configure automatic service startup. The lab covers the essential aspects of service management, including starting, stopping, enabling, and disabling services, as well as viewing their status and logs. This lab is designed to provide you with practical experience in system configuration and settings using the powerful `systemctl` command.

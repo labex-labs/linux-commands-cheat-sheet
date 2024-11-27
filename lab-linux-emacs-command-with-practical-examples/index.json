@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux emacs Command with Practical Examples",
+  "description": "Explore the powerful emacs text editor with this hands-on lab. Learn basic commands, shortcuts, and how to customize emacs for efficient text processing and editing.",
+  "meta": {
+    "title": "Linux emacs Command with Practical Examples",
+    "description": "Explore the powerful emacs text editor with this hands-on lab. Learn basic commands, shortcuts, and how to customize emacs for efficient text processing and editing.",
+    "keywords": "emacs, text processing, text editing, Linux, customization, shortcuts"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Getting Started with emacs",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify emacs installation",
+            "file": "verify1-1.sh",
+            "hint": "It seems that emacs is not installed on your system. Please follow the instructions to install emacs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Basic emacs Commands and Shortcuts",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify basic emacs commands",
+            "file": "verify2-1.sh",
+            "hint": "It seems that you have not practiced the basic emacs commands covered in this step. Please review the instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing emacs with Configuration Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify emacs configuration",
+            "file": "verify3-1.sh",
+            "hint": "It seems that the emacs configuration file was not created or modified correctly. Please review the instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

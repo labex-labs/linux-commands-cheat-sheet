@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `mpartition` command to create, resize, and delete partitions on storage devices. The `mpartition` command is a powerful tool for managing disk partitions, allowing you to allocate storage space for different purposes, such as separating your operating system, data, and swap space. The lab will cover the purpose and syntax of the `mpartition` command, as well as practical examples of creating, resizing, and deleting partitions. By the end of the lab, you will have a solid understanding of how to effectively manage disk partitions using the `mpartition` command.

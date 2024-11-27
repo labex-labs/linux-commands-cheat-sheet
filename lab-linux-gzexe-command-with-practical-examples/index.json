@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux gzexe Command with Practical Examples",
+  "description": "Explore the gzexe command in Linux, learn how to compress and decompress executable files, and discover practical examples of its usage.",
+  "meta": {
+    "title": "Linux gzexe Command with Practical Examples",
+    "description": "Explore the gzexe command in Linux, learn how to compress and decompress executable files, and discover practical examples of its usage.",
+    "keywords": "Linux, gzexe, compression, executable, file, backup, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of gzexe Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify gzexe version",
+            "file": "verify1-1.sh",
+            "hint": "The gzexe version should be 1.10 or a compatible version. Please check the output of the `gzexe --version` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compress Executable Files Using gzexe",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify compressed file size",
+            "file": "verify2-1.sh",
+            "hint": "The compressed file size should be smaller than the original file size. Please check the output of the `du -h` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify compressed file execution",
+            "file": "verify2-2.sh",
+            "hint": "The compressed file should execute and output \"This is a sample executable file.\". Please check the output of the compressed file execution.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decompress and Execute Compressed Executable Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify compressed file execution",
+            "file": "verify3-1.sh",
+            "hint": "The compressed file should execute and output \"This is a sample executable file.\". Please check the output of the compressed file execution.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify decompressed file execution",
+            "file": "verify3-2.sh",
+            "hint": "The decompressed file should execute and output \"This is a sample executable file.\". Please check the output of the decompressed file execution.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

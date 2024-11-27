@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cu Command with Practical Examples",
+  "description": "Explore the Linux cu command, a powerful tool for establishing remote connections and transferring files between systems. Learn practical examples and techniques to enhance your networking and communication skills.",
+  "meta": {
+    "title": "Linux cu Command with Practical Examples",
+    "description": "Explore the Linux cu command, a powerful tool for establishing remote connections and transferring files between systems. Learn practical examples and techniques to enhance your networking and communication skills.",
+    "keywords": "Linux, cu command, remote connection, file transfer, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the cu Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify cu command installation",
+            "file": "verify1-1.sh",
+            "hint": "The cu command is not installed on your system. Please install it using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Establishing a Connection Using the cu Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify cu connection",
+            "file": "verify2-1.sh",
+            "hint": "Unable to establish a connection using the cu command. Please check the device and baud rate settings.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Transferring Files with the cu Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file transfer",
+            "file": "verify3-1.sh",
+            "hint": "The file transfer using the cu command was not successful. Please check the connection and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux apmd Command with Practical Examples",
+  "description": "Explore the Linux apmd command and learn how to monitor battery status, configure automated power management, and optimize your system's power efficiency.",
+  "meta": {
+    "title": "Linux apmd Command with Practical Examples",
+    "description": "Explore the Linux apmd command and learn how to monitor battery status, configure automated power management, and optimize your system's power efficiency.",
+    "keywords": "apmd, power management, battery status, system configuration, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the apmd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify apmd installation",
+            "file": "verify1-1.sh",
+            "hint": "It seems that the `apmd` package is not installed. Please run the installation command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitoring Battery Status with apmd",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify battery status command",
+            "file": "verify2-1.sh",
+            "hint": "It seems that the battery status is not being reported correctly. Please check the `apmd` command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configuring apmd for Automated Power Management",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify low battery event configuration",
+            "file": "verify3-1.sh",
+            "hint": "It seems that the low battery event configuration is not set up correctly. Please check the `/etc/apm/event.d/default.script` file and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

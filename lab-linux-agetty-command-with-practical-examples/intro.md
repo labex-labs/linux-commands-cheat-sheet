@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `agetty` command and its practical applications. The lab covers understanding the purpose and usage of the `agetty` command, configuring it for serial console access, and managing user login processes. We will learn how `agetty` is responsible for displaying the login prompt, handling the user login process, initializing the terminal settings, and launching the user's shell after a successful login. Additionally, we will configure `agetty` to enable serial console access on our system. This lab provides a comprehensive understanding of the `agetty` command and its role in managing user login processes in a Linux environment.

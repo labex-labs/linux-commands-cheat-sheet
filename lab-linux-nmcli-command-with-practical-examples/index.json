@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux nmcli Command with Practical Examples",
+  "description": "Explore the power of the nmcli command in managing network interfaces, troubleshooting connectivity issues, and gaining a deeper understanding of Linux networking.",
+  "meta": {
+    "title": "Linux nmcli Command with Practical Examples",
+    "description": "Explore the power of the nmcli command in managing network interfaces, troubleshooting connectivity issues, and gaining a deeper understanding of Linux networking.",
+    "keywords": "nmcli, Linux networking, network configuration, network troubleshooting, network management, interface management, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to nmcli Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify nmcli version",
+            "file": "verify1-1.sh",
+            "hint": "The `nmcli` version should be 1.36.0. Please check the output of `nmcli --version` and ensure it matches the expected version.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configuring Network Interfaces with nmcli",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify network interface configuration",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the `eth0` interface is in the \"connected\" state and the `my-ethernet` connection has the correct IPv4 address configuration (192.168.1.100/24).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting Network Issues with nmcli",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify network interface status",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the `eth0` interface is in the \"connected\" state after reconnecting the `my-ethernet` connection.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkbootdisk Command with Practical Examples",
+  "description": "Learn how to use the mkbootdisk command to create a bootable USB drive for Linux systems. Explore practical examples and troubleshoot issues with the bootable USB drive.",
+  "meta": {
+    "title": "Linux mkbootdisk Command with Practical Examples",
+    "description": "Learn how to use the mkbootdisk command to create a bootable USB drive for Linux systems. Explore practical examples and troubleshoot issues with the bootable USB drive.",
+    "keywords": "Linux, mkbootdisk, bootable USB, disk utilities, file system, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of mkbootdisk Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the mkbootdisk command exists",
+            "file": "verify1-1.sh",
+            "hint": "The mkbootdisk command does not seem to be installed on your system. Please ensure that the necessary packages are installed before proceeding.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Bootable USB Drive Using mkbootdisk",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the bootable USB drive",
+            "file": "verify2-1.sh",
+            "hint": "The verification script was unable to read the first 1MB of the USB drive. Please ensure that the USB drive was created successfully using the mkbootdisk command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Issues with Bootable USB Drive",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the USB drive is bootable",
+            "file": "verify3-1.sh",
+            "hint": "The verification script was unable to read the boot sector of the USB drive. This may indicate that the USB drive was not created successfully or that there are issues with the bootable media.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the purpose and usage of the `lspci` command in Linux. The `lspci` command is a powerful tool that provides detailed information about the Peripheral Component Interconnect (PCI) buses and devices connected to the system. We learned how to use the basic `lspci` command to display the PCI devices installed on the system, including their device names, vendor information, and other relevant details. This information can be useful for troubleshooting hardware issues, identifying the components of the system, and understanding the overall hardware configuration. We also discussed how the `lspci` command can be used with various options and flags to display more specific information about the PCI devices.

@@ -1,0 +1,5 @@
+# Introduction
+
+In this lab, you will learn how to use the powerful ex command in Linux for text processing and editing. The ex command is a line-oriented text editor that allows you to perform various editing operations on files directly from the command line. The lab covers the basics of the ex command, including understanding its syntax, performing basic editing operations, and automating ex commands using scripts. This lab is suitable for users who want to enhance their text processing and editing skills in a Linux environment.
+
+The lab is divided into three main steps. First, you will learn the basics of the ex command, such as opening files, navigating through lines, inserting and appending text, and saving and quitting. Next, you will explore more advanced editing operations, including deleting lines, searching and replacing text, and copying and moving lines. Finally, you will learn how to automate ex commands using scripts, allowing you to streamline your text editing workflows.

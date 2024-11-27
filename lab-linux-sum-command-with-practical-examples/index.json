@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sum Command with Practical Examples",
+  "description": "Explore the Linux sum command with practical examples, including basic summation operations and handling floating-point numbers. Gain proficiency in file checksum calculations and data verification.",
+  "meta": {
+    "title": "Linux sum Command with Practical Examples",
+    "description": "Explore the Linux sum command with practical examples, including basic summation operations and handling floating-point numbers. Gain proficiency in file checksum calculations and data verification.",
+    "keywords": "Linux, sum command, file checksum, data verification, floating-point, backup, compression"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the sum Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the sum command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can properly use the `sum` command to calculate the checksum of files and display the total sum.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Basic Summation Operations",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify basic summation operations",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use the `sum` command to calculate the checksum and total sum of both integer and floating-point number files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Handle Floating-Point Numbers with sum",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify handling of floating-point numbers",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you understand the differences in how the `sum` command handles floating-point numbers when using different algorithms (default, BSD, and System V).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

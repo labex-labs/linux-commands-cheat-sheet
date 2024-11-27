@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux gzip Command with Practical Examples",
+  "description": "Explore the gzip command in Linux, learn how to compress and decompress files, and discover advanced techniques for efficient data compression.",
+  "meta": {
+    "title": "Linux gzip Command with Practical Examples",
+    "description": "Explore the gzip command in Linux, learn how to compress and decompress files, and discover advanced techniques for efficient data compression.",
+    "keywords": "Linux, gzip, compression, decompression, archiving, file management, data storage"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the gzip Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the gzip command was used to compress a file",
+            "file": "verify1-1.sh",
+            "hint": "It looks like you haven't compressed the `example.txt` file using the `gzip` command. Please run the `gzip` command on the file and verify that the compressed file `example.txt.gz` has been created in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compress and Decompress Files Using gzip",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the file was compressed using gzip",
+            "file": "verify2-1.sh",
+            "hint": "It looks like you haven't compressed the `example.txt` file using the `gzip` command. Please run the `gzip` command on the file and verify that the compressed file `example.txt.gz` has been created in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the file was decompressed using gzip",
+            "file": "verify2-2.sh",
+            "hint": "It looks like you haven't decompressed the `example.txt.gz` file using the `gzip -d` or `gunzip` command. Please run the appropriate command to decompress the file and verify that the original `example.txt` file has been created in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced gzip Options and Techniques",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the directory was compressed recursively",
+            "file": "verify3-1.sh",
+            "hint": "It looks like you haven't compressed the `~/project/documents` directory recursively using the `gzip -r` command. Please run the appropriate command to compress the directory and verify that the `documents.gz` file has been created in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the file was compressed with maximum compression level",
+            "file": "verify3-2.sh",
+            "hint": "It looks like you haven't compressed the `example.txt` file using the maximum compression level `-9`. Please run the `gzip -9 example.txt` command and verify that the compression ratio is 100%.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

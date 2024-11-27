@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the crontab command, which is used to schedule recurring tasks in Linux. You started by checking the current crontab entries for the `labex` user and found that there were no cron jobs scheduled. You then created a simple script called `hello.sh` and added a new cron job to run it every minute. To verify that the cron job was running, you checked the system log and saw the "Hello from cron job!" message. Next, you created a new script called `backup.sh` that would perform a simple backup operation, and you scheduled it to run every 5 minutes using crontab.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux install Command with Practical Examples",
+  "description": "Learn how to install Linux packages using various commands like apt-get, apt, and Snap. Explore practical examples and gain proficiency in package management on your Linux system.",
+  "meta": {
+    "title": "Linux install Command with Practical Examples",
+    "description": "Learn how to install Linux packages using various commands like apt-get, apt, and Snap. Explore practical examples and gain proficiency in package management on your Linux system.",
+    "keywords": "Linux, install, apt-get, apt, Snap, package management, Linux utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Linux Packages Using apt-get",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify1-1.sh",
+            "hint": "The `tree` package does not appear to be installed correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install Linux Packages Using apt",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify2-1.sh",
+            "hint": "The `htop` package does not appear to be installed correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install Linux Packages Using Snap",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify3-1.sh",
+            "hint": "The `vlc` package does not appear to be installed correctly using Snap. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `scriptreplay` command in Linux, which allows you to replay previously recorded terminal sessions. You first checked if the `script` command was installed on your system, and then used it to record a sample terminal session. The recorded session was saved to a file, and you then used the `scriptreplay` command to replay the recorded session. The `scriptreplay` command can be a useful tool for troubleshooting, training, or sharing terminal sessions with others. Additionally, you learned how to use the `script` command to record your terminal sessions, which can be useful for various purposes such as troubleshooting, training, or creating documentation.

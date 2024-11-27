@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux case Command with Practical Examples",
+  "description": "Explore the case command in Linux, learn its syntax and usage, and apply it to automate file management and backup operations.",
+  "meta": {
+    "title": "Linux case Command with Practical Examples",
+    "description": "Explore the case command in Linux, learn its syntax and usage, and apply it to automate file management and backup operations.",
+    "keywords": "Linux, case command, file extensions, backup automation, shell scripting, command-line utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Syntax and Usage of the case Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the usage of the case command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can correctly identify the file type using the case command. Check the output in your terminal history to verify the correct usage.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Implement case Statement for File Extensions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the case statement for file extensions",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the script correctly identifies the file types and prints the appropriate messages. Check your terminal history to verify the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate Backup Operations with case Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the backup script",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the backup script creates the correct backup files and prints the appropriate messages for each file type. Check your terminal history and the contents of the backup directory to verify the script's output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

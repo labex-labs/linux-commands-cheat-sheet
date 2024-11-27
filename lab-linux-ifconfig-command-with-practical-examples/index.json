@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ifconfig Command with Practical Examples",
+  "description": "Explore the ifconfig command in Linux, learn its syntax and options, and discover practical examples to configure network interfaces.",
+  "meta": {
+    "title": "Linux ifconfig Command with Practical Examples",
+    "description": "Explore the ifconfig command in Linux, learn its syntax and options, and discover practical examples to configure network interfaces.",
+    "keywords": "Linux, ifconfig, network configuration, network interfaces, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the ifconfig Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ifconfig command output",
+            "file": "verify1-1.sh",
+            "hint": "The ifconfig command should display information about your network interfaces, including the IP address, subnet mask, and MAC address. Make sure to run the command with sudo privileges.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Basic Syntax and Options of ifconfig",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify ifconfig options",
+            "file": "verify2-1.sh",
+            "hint": "The ifconfig command should have assigned the IP address 192.168.1.100 with a subnet mask of 255.255.255.0 to the eth0 interface. Make sure to run the command with sudo privileges.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Network Interfaces Using ifconfig",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify interface creation and configuration",
+            "file": "verify3-1.sh",
+            "hint": "The ifconfig command should have created a new network interface named enp0s8 with the IP address 192.168.2.100 and subnet mask 255.255.255.0. Make sure to run the commands with sudo privileges.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

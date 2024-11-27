@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux rar Command with Practical Examples",
+  "description": "Explore the rar command in Linux with practical examples. Learn how to install the rar package, create and extract rar archives, and manage them with advanced options.",
+  "meta": {
+    "title": "Linux rar Command with Practical Examples",
+    "description": "Explore the rar command in Linux with practical examples. Learn how to install the rar package, create and extract rar archives, and manage them with advanced options.",
+    "keywords": "Linux, rar, compression, archiving, Ubuntu, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install rar Package on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify rar package installation",
+            "file": "verify1-1.sh",
+            "hint": "The rar package does not seem to be installed correctly. Please review the installation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Extract rar Archives",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify rar archive creation",
+            "file": "verify2-1.sh",
+            "hint": "The sample.rar archive does not seem to have been created. Please review the steps to create the archive.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify rar archive extraction",
+            "file": "verify2-2.sh",
+            "hint": "The files were not extracted correctly from the sample.rar archive. Please review the steps to extract the archive.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage rar Archives with Advanced Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify rar archive creation with password",
+            "file": "verify3-1.sh",
+            "hint": "The sample_encrypted.rar archive does not seem to have been created. Please review the steps to create the encrypted archive.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify rar archive extraction with password",
+            "file": "verify3-2.sh",
+            "hint": "The files were not extracted correctly from the sample_encrypted.rar archive. Please review the steps to extract the encrypted archive.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify rar archive deletion",
+            "file": "verify3-3.sh",
+            "hint": "The sample_encrypted.rar archive does not seem to have been deleted. Please review the steps to delete the archive.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

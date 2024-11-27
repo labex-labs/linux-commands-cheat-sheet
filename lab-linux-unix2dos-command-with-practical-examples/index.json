@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux unix2dos Command with Practical Examples",
+  "description": "Learn how to use the unix2dos command to convert text files from Unix to DOS format, handle newline characters, and perform practical text processing tasks on Linux/Unix systems.",
+  "meta": {
+    "title": "Linux unix2dos Command with Practical Examples",
+    "description": "Learn how to use the unix2dos command to convert text files from Unix to DOS format, handle newline characters, and perform practical text processing tasks on Linux/Unix systems.",
+    "keywords": "unix2dos, text conversion, newline characters, text processing, Linux, Unix"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to unix2dos Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the unix2dos command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the sample_unix.txt file was converted from Unix to DOS format, and the output contains the Carriage Return (^M) character at the end of each line.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Converting Text Files from Unix to DOS Format",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the unix2dos command for multiple files",
+            "file": "verify2-1.sh",
+            "hint": "Make sure all the sample_unix*.txt files were converted from Unix to DOS format, and the output of each file contains the Carriage Return (^M) character at the end of each line.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Handling Newline Characters in Text Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the removal of CR characters",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the sample_unix.txt file contains only LF newline characters and no CR characters.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the dos2unix command",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the sample_unix.txt and sample_unix2.txt files have the same contents after using the dos2unix command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

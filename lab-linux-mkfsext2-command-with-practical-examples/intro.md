@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `mkfs.ext2` command to create an ext2 file system on a partition. The ext2 file system is one of the oldest and most widely used file systems in the Linux operating system. You will learn how to create an ext2 file system with custom parameters, such as block size and number of inodes. The lab also covers the basics of the `mkfs.ext2` command, including its syntax and common options. This lab is designed to help you develop your skills in disk and file system utilities, which are essential for system administration tasks in a Linux environment.

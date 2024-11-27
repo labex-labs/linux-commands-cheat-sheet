@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux lshw Command with Practical Examples",
+  "description": "Explore the lshw command, a powerful tool for gathering detailed hardware information on your Linux system. Learn how to use lshw to customize output and save data to a file for analysis.",
+  "meta": {
+    "title": "Linux lshw Command with Practical Examples",
+    "description": "Explore the lshw command, a powerful tool for gathering detailed hardware information on your Linux system. Learn how to use lshw to customize output and save data to a file for analysis.",
+    "keywords": "lshw, Linux, hardware, system monitoring, system management, hardware information, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the lshw Command and Its Purpose",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lshw command output",
+            "file": "verify1-1.sh",
+            "hint": "The lshw command should output information about the CPU in your system. Please ensure that the command is executed correctly and that the output contains CPU-related information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore System Hardware Information Using lshw",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lshw -short output",
+            "file": "verify2-1.sh",
+            "hint": "The lshw -short command should output information about the processor in your system. Please ensure that the command is executed correctly and that the output contains processor-related information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize lshw Output and Save to a File",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify hardware_info.xml file",
+            "file": "verify3-1.sh",
+            "hint": "The lshw command should have created a hardware_info.xml file in the current directory. Please ensure that the file exists and contains the hardware information.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify network_info.xml file",
+            "file": "verify3-2.sh",
+            "hint": "The lshw command should have created a network_info.xml file in the current directory. Please ensure that the file exists and contains the network hardware information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `smbstatus` command and its practical applications. The `smbstatus` command is a useful tool for monitoring and troubleshooting SMB (Server Message Block) connections and shared resources on a Linux system. We will start by understanding the purpose of the `smbstatus` command, then dive into the various options and flags it provides to customize the output. Finally, we will analyze the active SMB connections and shared resources on the system. This lab aims to equip you with the knowledge and skills to effectively manage and monitor SMB-related activities on your Linux environment.

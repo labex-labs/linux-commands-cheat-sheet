@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux clear Command with Practical Examples",
+  "description": "Explore the clear command in Linux, learn how to clear the terminal screen, and automate the process with a Bash script. Enhance your command-line skills and improve your workflow.",
+  "meta": {
+    "title": "Linux clear Command with Practical Examples",
+    "description": "Explore the clear command in Linux, learn how to clear the terminal screen, and automate the process with a Bash script. Enhance your command-line skills and improve your workflow.",
+    "keywords": "Linux, clear command, terminal, Bash script, command-line, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the clear Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the clear command",
+            "file": "verify1-1.sh",
+            "hint": "The clear command should clear the terminal screen and leave it empty. Please try running the clear command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Clear the Terminal Screen with the clear Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the clear command",
+            "file": "verify2-1.sh",
+            "hint": "The clear command should clear the terminal screen and leave it empty. Please try running the clear command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate Terminal Clearing with a Bash Script",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the clear.sh script",
+            "file": "verify3-1.sh",
+            "hint": "Please make sure you have created the clear.sh script in the ~/project directory, and that it contains the necessary commands to clear the terminal screen and print a message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

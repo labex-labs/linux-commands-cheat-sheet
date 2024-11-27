@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux whatis Command with Practical Examples",
+  "description": "Explore the Linux whatis command, its purpose, syntax, and practical use cases. Learn how to effectively utilize this utility to quickly retrieve information about commands and system components.",
+  "meta": {
+    "title": "Linux whatis Command with Practical Examples",
+    "description": "Explore the Linux whatis command, its purpose, syntax, and practical use cases. Learn how to effectively utilize this utility to quickly retrieve information about commands and system components.",
+    "keywords": "Linux, whatis, command, utility, manual, information, system, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of whatis Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify whatis command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `whatis` command should display a brief description for the `ls` command, indicating that it is used to list directory contents.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Syntax and Options of whatis Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify whatis command options",
+            "file": "verify2-1.sh",
+            "hint": "The `whatis` command should display the expected output when using the `-a`, `-n`, and `-r` options.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Demonstrate Practical Use Cases of whatis Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify whatis command usage for practical cases",
+            "file": "verify3-1.sh",
+            "hint": "The `whatis` command should display the expected output when used to find information about the `du` command, search for user-related commands, and check the manual section for the `passwd` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux losetup Command with Practical Examples",
+  "description": "Explore the Linux losetup command with practical examples. Learn how to create, attach, and detach loopback devices, a useful tool for working with disk images and file systems.",
+  "meta": {
+    "title": "Linux losetup Command with Practical Examples",
+    "description": "Explore the Linux losetup command with practical examples. Learn how to create, attach, and detach loopback devices, a useful tool for working with disk images and file systems.",
+    "keywords": "Linux, losetup, loopback device, disk image, file system, disk utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the losetup Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify losetup -a output",
+            "file": "verify1-1.sh",
+            "hint": "The `losetup -a` command should display the currently active loopback devices on your system. If no loopback devices are found, please check the output of the command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a Loopback Device",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify loopback device creation",
+            "file": "verify2-1.sh",
+            "hint": "The `losetup -a` command should display the `/dev/loop0` device attached to the `~/project/disk.img` file. If the loopback device is not found, please check the output of the command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Attaching and Detaching a Loopback Device",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify loopback device detachment",
+            "file": "verify3-1.sh",
+            "hint": "The `losetup -a` command should not display the `/dev/loop0` device attached to the `~/project/disk.img` file after running the `sudo losetup -d /dev/loop0` command. If the loopback device is still attached, please check the output of the command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify loopback device reattachment",
+            "file": "verify3-2.sh",
+            "hint": "The `losetup -a` command should display the `/dev/loop0` device attached to the `~/project/disk.img` file after running the `sudo losetup /dev/loop0 ~/project/disk.img` command. If the loopback device is not reattached, please check the output of the command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

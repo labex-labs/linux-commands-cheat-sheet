@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkdosfs Command with Practical Examples",
+  "description": "Learn how to use the mkdosfs command to create a DOS filesystem on a partition or format a USB drive. This lab covers the basics of the mkdosfs command and provides practical examples.",
+  "meta": {
+    "title": "Linux mkdosfs Command with Practical Examples",
+    "description": "Learn how to use the mkdosfs command to create a DOS filesystem on a partition or format a USB drive. This lab covers the basics of the mkdosfs command and provides practical examples.",
+    "keywords": "Linux, mkdosfs, DOS filesystem, USB drive, partition, formatting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to mkdosfs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the DOS filesystem was created",
+            "file": "verify1-1.sh",
+            "hint": "The `file` command should identify the device as a \"DOS/MBR boot sector\", indicating that the DOS filesystem was created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a DOS Filesystem on a Partition",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the DOS filesystem was created",
+            "file": "verify2-1.sh",
+            "hint": "The `file` command should identify the device as a \"DOS/MBR boot sector\", indicating that the DOS filesystem was created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Formatting a USB Drive with DOS Filesystem",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the USB drive was formatted with a DOS filesystem",
+            "file": "verify3-1.sh",
+            "hint": "The `file` command should identify the device as a \"DOS/MBR boot sector\", indicating that the USB drive was formatted with a DOS filesystem.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

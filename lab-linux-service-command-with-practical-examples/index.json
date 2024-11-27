@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux service Command with Practical Examples",
+  "description": "Explore the Linux service command, learn how to manage system services, and troubleshoot service issues with practical examples.",
+  "meta": {
+    "title": "Linux service Command with Practical Examples",
+    "description": "Explore the Linux service command, learn how to manage system services, and troubleshoot service issues with practical examples.",
+    "keywords": "Linux, service command, system services, service management, troubleshooting, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Linux service Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the service command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `service` command usage information should be displayed when running `sudo service --help`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage System Services Using the service Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the service command usage for managing services",
+            "file": "verify2-1.sh",
+            "hint": "The `service` command should be able to start, stop, and check the status of the Apache2 service.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Service Issues with Practical Examples",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the service troubleshooting steps",
+            "file": "verify3-1.sh",
+            "hint": "The steps to stop, start, and verify the Apache2 service should work as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

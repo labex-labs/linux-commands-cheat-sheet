@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux pgrep Command with Practical Examples",
+  "description": "Explore the pgrep command in Linux, a powerful tool for searching and monitoring processes by name. Learn practical examples to enhance your process management skills.",
+  "meta": {
+    "title": "Linux pgrep Command with Practical Examples",
+    "description": "Explore the pgrep command in Linux, a powerful tool for searching and monitoring processes by name. Learn practical examples to enhance your process management skills.",
+    "keywords": "Linux, pgrep, process management, process search, process monitoring, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of pgrep Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify pgrep command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the pgrep command returns the PID(s) of the 'bash' process on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use pgrep to Search for Processes by Name",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify pgrep command with options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the pgrep command with the provided options returns the expected PIDs on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine pgrep with Other Commands for Advanced Process Monitoring",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify pgrep with ps command",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the combination of pgrep and ps commands returns the expected process details on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

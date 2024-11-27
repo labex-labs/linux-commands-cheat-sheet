@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux banner Command with Practical Examples",
+  "description": "Explore the versatile banner command in Linux, learn how to display custom messages, and customize the appearance of your banners for various use cases.",
+  "meta": {
+    "title": "Linux banner Command with Practical Examples",
+    "description": "Explore the versatile banner command in Linux, learn how to display custom messages, and customize the appearance of your banners for various use cases.",
+    "keywords": "Linux, banner command, custom message, banner appearance, terminal, command-line, utility"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the banner Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the banner command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `banner` command should display the usage information when run without any arguments.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Display a Custom Message Using the banner Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the banner command output",
+            "file": "verify2-1.sh",
+            "hint": "The `banner` command should display the \"Hello, World!\" message in the expected ASCII-art format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the Banner's Appearance",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the banner command with custom options",
+            "file": "verify3-1.sh",
+            "hint": "The `banner` command should display the \"Customized Banner\" message with the specified font and width.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

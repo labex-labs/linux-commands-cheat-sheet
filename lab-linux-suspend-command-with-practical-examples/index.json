@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux suspend Command with Practical Examples",
+  "description": "Explore the Linux suspend command and learn how to suspend and resume the system, as well as manage power states effectively.",
+  "meta": {
+    "title": "Linux suspend Command with Practical Examples",
+    "description": "Explore the Linux suspend command and learn how to suspend and resume the system, as well as manage power states effectively.",
+    "keywords": "Linux, suspend, power management, system control, system monitoring, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Linux suspend Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the system can be suspended to RAM",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the `systemctl suspend` command runs without any errors and the system enters the Suspend to RAM state.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the system can be suspended to disk (hibernate)",
+            "file": "verify1-2.sh",
+            "hint": "Make sure the `systemctl hibernate` command runs without any errors and the system enters the Suspend to Disk (Hibernate) state.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Suspend and Resume the System Using the suspend Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the system can be suspended to RAM and resumed",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the `systemctl suspend` command runs without any errors, the system enters the Suspend to RAM state, and the system resumes successfully.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the system can be suspended to disk (hibernated) and resumed",
+            "file": "verify2-2.sh",
+            "hint": "Make sure the `systemctl hibernate` command runs without any errors, the system enters the Suspend to Disk (Hibernate) state, and the system resumes successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Power States with the suspend Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the system can be put into the Suspend to RAM (S3) state",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the `systemctl suspend` command runs without any errors, the system enters the Suspend to RAM (S3) state, and the system resumes successfully.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the system can be put into the Suspend to Disk (S4) state",
+            "file": "verify3-2.sh",
+            "hint": "Make sure the `systemctl hibernate` command runs without any errors, the system enters the Suspend to Disk (S4) state, and the system resumes successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

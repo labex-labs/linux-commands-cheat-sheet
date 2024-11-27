@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned the basics of the nmap (Network Mapper) command, a powerful tool used for network discovery and security auditing. We started by installing nmap on our Ubuntu 22.04 Docker container and then explored its basic usage, including performing a simple TCP connect scan and a more detailed scan with version detection and OS fingerprinting. We learned how to use the nmap command to identify running services and detect potential vulnerabilities on a target host. In the next step, we will explore more advanced nmap features to further enhance our network scanning and security assessment capabilities.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux acpid Command with Practical Examples",
+  "description": "Explore the Linux acpid command, learn how to configure it to monitor power events, and create custom event handlers for practical applications.",
+  "meta": {
+    "title": "Linux acpid Command with Practical Examples",
+    "description": "Explore the Linux acpid command, learn how to configure it to monitor power events, and create custom event handlers for practical applications.",
+    "keywords": "acpid, power management, event handling, Linux utilities, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the acpid Command and Its Purpose",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify acpid service status",
+            "file": "verify1-1.sh",
+            "hint": "The acpid service should be running. Please check the status of the service using the `systemctl status acpid` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure acpid to Monitor Power Events",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lid-close event handler",
+            "file": "verify2-1.sh",
+            "hint": "The lid-close event handler should log a message to the system log when the laptop lid is closed. Please check the /var/log/syslog file for the expected log message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create Custom acpid Event Handlers",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify low-battery event handler",
+            "file": "verify3-1.sh",
+            "hint": "The low-battery event handler should log a message to the system log when the battery level drops below 20%. Please check the /var/log/syslog file for the expected log message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

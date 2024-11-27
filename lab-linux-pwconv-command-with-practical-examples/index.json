@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux pwconv Command with Practical Examples",
+  "description": "Explore the Linux pwconv command and learn how to create and manage user passwords effectively. Understand the purpose of pwconv and troubleshoot any password conversion issues.",
+  "meta": {
+    "title": "Linux pwconv Command with Practical Examples",
+    "description": "Explore the Linux pwconv command and learn how to create and manage user passwords effectively. Understand the purpose of pwconv and troubleshoot any password conversion issues.",
+    "keywords": "Linux, pwconv, user management, password, conversion, troubleshoot"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the pwconv Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the existence of /etc/shadow file",
+            "file": "verify1-1.sh",
+            "hint": "The /etc/shadow file should exist after running the pwconv command. Please ensure that you have executed the pwconv command successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Manage User Passwords Using pwconv",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the creation of the newuser account",
+            "file": "verify2-1.sh",
+            "hint": "The newuser account should be created successfully. Please ensure that you have executed the useradd command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the password information in /etc/shadow",
+            "file": "verify2-2.sh",
+            "hint": "The password information for the newuser account should be present in the /etc/shadow file after running the pwconv command. Please ensure that you have executed the pwconv command successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Password Conversion Issues with pwconv",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the password information in /etc/shadow",
+            "file": "verify3-1.sh",
+            "hint": "The password information for the newuser2 account should be present in the /etc/shadow file after running the pwconv command. Please ensure that you have executed the pwunconv and pwconv commands correctly to troubleshoot the issue.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the password field in /etc/passwd",
+            "file": "verify3-2.sh",
+            "hint": "The password field for the newuser2 account in the /etc/passwd file should be 'x' after running the pwconv command. Please ensure that you have executed the pwunconv and pwconv commands correctly to troubleshoot the issue.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

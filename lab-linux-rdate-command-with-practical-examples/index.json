@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux rdate Command with Practical Examples",
+  "description": "Explore the Linux rdate command and learn how to synchronize your system time with remote NTP servers. Automate time synchronization using cron for reliable and consistent timekeeping.",
+  "meta": {
+    "title": "Linux rdate Command with Practical Examples",
+    "description": "Explore the Linux rdate command and learn how to synchronize your system time with remote NTP servers. Automate time synchronization using cron for reliable and consistent timekeeping.",
+    "keywords": "Linux, rdate, time synchronization, NTP, cron, system configuration, system settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the rdate Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify rdate command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the `rdate` command can successfully synchronize the system time with the `time.nist.gov` NTP server, and that the `date` command shows the updated time.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Synchronize System Time with Remote NTP Server",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify system time synchronization",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the `rdate` command can successfully synchronize the system time with the `time.nist.gov` NTP server, and that the `date` command shows the updated time.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate Time Synchronization with Cron",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Cron job",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the Cron job for the `sync_time.sh` script is set up correctly, and that the system logs show the `rdate` command being executed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

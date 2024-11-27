@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux batch Command with Practical Examples",
+  "description": "Explore the power of the Linux batch command through practical examples. Automate repetitive tasks, utilize conditional statements, and leverage loops to streamline your workflow.",
+  "meta": {
+    "title": "Linux batch Command with Practical Examples",
+    "description": "Explore the power of the Linux batch command through practical examples. Automate repetitive tasks, utilize conditional statements, and leverage loops to streamline your workflow.",
+    "keywords": "Linux, batch, automation, bash, scripting, process management, conditional statements, loops"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of Batch Processing in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the batch file creation and execution",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have created the 'batch_example.sh' file in the '~/project' directory and that all three commands in the file were executed successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate Repetitive Tasks with Bash Scripts",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the script creation and execution",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have created the 'list_files.sh' script in the '~/project' directory and that it was executed successfully, generating the 'file_list.txt' file with the correct file list.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize Conditional Statements and Loops in Batch Processing",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the script creation and execution",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have created the 'file_size_check.sh' script in the '~/project' directory and that it was executed successfully, with the correct action taken based on the file size of '~/project/file_list.txt'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

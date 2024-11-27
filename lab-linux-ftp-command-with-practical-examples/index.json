@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux ftp Command with Practical Examples",
+  "description": "Explore the Linux ftp command with practical examples, including connecting to an FTP server, transferring files and directories, and understanding the basics of File Transfer Protocol.",
+  "meta": {
+    "title": "Linux ftp Command with Practical Examples",
+    "description": "Explore the Linux ftp command with practical examples, including connecting to an FTP server, transferring files and directories, and understanding the basics of File Transfer Protocol.",
+    "keywords": "Linux, ftp, file transfer, networking, communication, FTP server, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to FTP (File Transfer Protocol)",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify FTP understanding",
+            "file": "verify1-1.sh",
+            "hint": "Please review the information provided in the \"Introduction to FTP (File Transfer Protocol)\" step and ensure you understand the basic concepts of FTP.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Connecting to an FTP Server Using the ftp Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify FTP connection",
+            "file": "verify2-1.sh",
+            "hint": "Ensure you can successfully connect to the FTP server using the `ftp` command. Check the output for the \"Login successful\" message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Transferring Files and Directories with FTP",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file upload",
+            "file": "verify3-1.sh",
+            "hint": "Ensure you can successfully upload a file to the remote FTP server using the `put` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file download",
+            "file": "verify3-2.sh",
+            "hint": "Ensure you can successfully download a file from the remote FTP server using the `get` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

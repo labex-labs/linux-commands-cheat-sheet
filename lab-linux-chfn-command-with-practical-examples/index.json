@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux chfn Command with Practical Examples",
+  "description": "Explore the Linux chfn command, which allows you to modify user information such as the full name, office location, and phone number. Learn practical examples and advanced options to effectively manage user profiles.",
+  "meta": {
+    "title": "Linux chfn Command with Practical Examples",
+    "description": "Explore the Linux chfn command, which allows you to modify user information such as the full name, office location, and phone number. Learn practical examples and advanced options to effectively manage user profiles.",
+    "keywords": "Linux, chfn, user management, user information, full name, office, phone number"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the chfn Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the user's full name has been updated",
+            "file": "verify1-1.sh",
+            "hint": "The user's full name should be updated to \"John Doe\". Please check the output of the `chfn -f` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify User Information Using chfn",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the user information has been updated",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the user information has been updated correctly. Check the output of the `chfn -f` command to verify the changes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced chfn Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the user information has been reset",
+            "file": "verify3-1.sh",
+            "hint": "The user information should have been reset to the default values. Please check the output of the `chfn -f` command to verify the changes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux umask Command with Practical Examples",
+  "description": "Explore the Linux umask command and learn how to modify file and directory permissions effectively. Discover practical examples to apply umask in various scenarios.",
+  "meta": {
+    "title": "Linux umask Command with Practical Examples",
+    "description": "Explore the Linux umask command and learn how to modify file and directory permissions effectively. Discover practical examples to apply umask in various scenarios.",
+    "keywords": "Linux, umask, file permissions, directory permissions, user management, security, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the umask Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current umask value",
+            "file": "verify1-1.sh",
+            "hint": "The current umask value should be 0022. Please check the output of the `umask` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modifying File and Directory Permissions with umask",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the permissions of new files and directories",
+            "file": "verify2-1.sh",
+            "hint": "The permissions of the new file should be -rw-rw-r-- and the permissions of the new directory should be drwxrwxr-x.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Applying umask in Different Scenarios",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the permissions of the sensitive file",
+            "file": "verify3-1.sh",
+            "hint": "The permissions of the sensitive file should be -rw-------. Please check the output of the `ls -l` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the permissions of the shared directory and file",
+            "file": "verify3-2.sh",
+            "hint": "The permissions of the shared directory should be drwxrwx--- and the permissions of the shared file should be -rw-rw----. Please check the output of the `ls -l` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

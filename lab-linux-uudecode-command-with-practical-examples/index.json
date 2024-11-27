@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux uudecode Command with Practical Examples",
+  "description": "Learn how to use the uudecode command in Linux to decode uuencoded files. Explore practical examples and understand the purpose of this useful tool for backup and compression tasks.",
+  "meta": {
+    "title": "Linux uudecode Command with Practical Examples",
+    "description": "Learn how to use the uudecode command in Linux to decode uuencoded files. Explore practical examples and understand the purpose of this useful tool for backup and compression tasks.",
+    "keywords": "Linux, uudecode, uuencode, file decoding, backup, compression"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of uudecode Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the decoded file",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `sample.txt` file exists in the current directory and that it contains the expected text content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decode a Uuencoded File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the decoded file",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `sample2.txt` file exists in the current directory and that it contains the expected text content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decode Multiple Uuencoded Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the decoded files",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `sample3.txt` and `sample4.txt` files exist in the current directory and that they contain the expected text content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

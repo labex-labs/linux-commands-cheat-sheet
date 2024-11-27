@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux chage Command with Practical Examples",
+  "description": "Explore the chage command in Linux, learn how to modify user password expiration dates, and enforce password expiration policies for enhanced system security.",
+  "meta": {
+    "title": "Linux chage Command with Practical Examples",
+    "description": "Explore the chage command in Linux, learn how to modify user password expiration dates, and enforce password expiration policies for enhanced system security.",
+    "keywords": "Linux, chage command, password expiration, password policy, system management, system security"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the chage Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify user password expiration date",
+            "file": "verify1-1.sh",
+            "hint": "The password expiration date for the labex user should be set to Feb 01, 2023.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify User Password Expiration Date",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify user password expiration date",
+            "file": "verify2-1.sh",
+            "hint": "The password expiration date for the labex user should be set to Apr 01, 2023.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Enforce Password Expiration Policy",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify password expiration policy",
+            "file": "verify3-1.sh",
+            "hint": "The password expiration policy for the labex user should be:\n- Minimum password age: 7 days\n- Maximum password age: 90 days\n- Password expiration warning: 7 days",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

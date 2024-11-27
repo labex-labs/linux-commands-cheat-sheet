@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dos2unix Command with Practical Examples",
+  "description": "Learn how to use the dos2unix command to convert text files from DOS to Unix format. Explore practical examples and automate the conversion process with shell scripts.",
+  "meta": {
+    "title": "Linux dos2unix Command with Practical Examples",
+    "description": "Learn how to use the dos2unix command to convert text files from DOS to Unix format. Explore practical examples and automate the conversion process with shell scripts.",
+    "keywords": "dos2unix, text file conversion, Unix, DOS, shell script, automation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the dos2unix Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dos2unix command version",
+            "file": "verify1-1.sh",
+            "hint": "The dos2unix command version could not be verified. Please ensure that the dos2unix command is installed and accessible in your environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Converting Text Files from DOS to Unix Format",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file conversion",
+            "file": "verify2-1.sh",
+            "hint": "The verification script failed to confirm that the text files were properly converted from DOS to Unix format. Please review the steps and ensure that the dos2unix command was used correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automating dos2unix Conversion with Shell Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify script execution",
+            "file": "verify3-1.sh",
+            "hint": "The verification script could not confirm that the convert_to_unix.sh script was executed successfully and that all text files were converted to Unix format. Please review the script and ensure that it is working as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

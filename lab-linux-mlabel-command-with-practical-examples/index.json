@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux mlabel Command with Practical Examples",
+  "description": "Explore the mlabel command in Linux, learn how to create and manage volume labels, and discover advanced options for disk and file system management.",
+  "meta": {
+    "title": "Linux mlabel Command with Practical Examples",
+    "description": "Explore the mlabel command in Linux, learn how to create and manage volume labels, and discover advanced options for disk and file system management.",
+    "keywords": "mlabel, Linux, volume label, disk management, file system, disk utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mlabel Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current volume label",
+            "file": "verify1-1.sh",
+            "hint": "The volume label of /dev/sdb1 should be \"My New Label\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Manage Volume Labels Using the mlabel Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the volume label creation",
+            "file": "verify2-1.sh",
+            "hint": "The volume label of /dev/sdb1 should be \"My Data Volume\".",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the volume label update",
+            "file": "verify2-2.sh",
+            "hint": "The volume label of /dev/sdb1 should be \"Updated Data Volume\".",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the volume label removal",
+            "file": "verify2-3.sh",
+            "hint": "The volume label of /dev/sdb1 should be removed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced mlabel Command Options and Scenarios",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the volume label with an invalid character",
+            "file": "verify3-1.sh",
+            "hint": "The volume label of /dev/sdb1 should be \"My Invalid Label*\".",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the volume label on a mounted file system",
+            "file": "verify3-2.sh",
+            "hint": "The volume label of the mounted /dev/sdb1 file system should be \"Mounted Volume\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

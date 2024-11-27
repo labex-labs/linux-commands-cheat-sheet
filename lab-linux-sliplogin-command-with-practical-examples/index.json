@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sliplogin Command with Practical Examples",
+  "description": "Explore the sliplogin command in Linux, learn how to configure it, and troubleshoot any issues that may arise, with practical examples to enhance your system monitoring and management skills.",
+  "meta": {
+    "title": "Linux sliplogin Command with Practical Examples",
+    "description": "Explore the sliplogin command in Linux, learn how to configure it, and troubleshoot any issues that may arise, with practical examples to enhance your system monitoring and management skills.",
+    "keywords": "Linux, sliplogin, system management, system monitoring, troubleshooting, configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the sliplogin Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify sliplogin command usage",
+            "file": "verify1-1.sh",
+            "hint": "The sliplogin command does not seem to be available or functioning correctly on your system. Please ensure that the necessary packages are installed and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure the sliplogin Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify sliplogin configuration",
+            "file": "verify2-1.sh",
+            "hint": "The sliplogin command does not seem to be configured correctly or the SLIP interface is not properly set up. Please review the configuration file and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot the sliplogin Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify sliplogin troubleshooting",
+            "file": "verify3-1.sh",
+            "hint": "The sliplogin command is still not working correctly after the troubleshooting steps. Please review the troubleshooting process and ensure that the serial device, configuration, and system logs are all properly set up.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

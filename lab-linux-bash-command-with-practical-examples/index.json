@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux bash Command with Practical Examples",
+  "description": "Explore the power of Linux bash commands with practical examples. Learn essential file system navigation, file and directory manipulation, and data searching and filtering techniques.",
+  "meta": {
+    "title": "Linux bash Command with Practical Examples",
+    "description": "Explore the power of Linux bash commands with practical examples. Learn essential file system navigation, file and directory manipulation, and data searching and filtering techniques.",
+    "keywords": "Linux, bash, commands, scripting, programming, file system, navigation, file management, data filtering"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Navigating the File System with Basic Linux Commands",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify current working directory",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the current working directory is /home/labex/project.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify directory contents",
+            "file": "verify1-2.sh",
+            "hint": "Ensure that the current directory contains the files file1.txt, file2.txt, and the directories newdir and subdirectory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manipulating Files and Directories using Linux Commands",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file creation and copy",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the newfile.txt file is created in the current directory and the copyfile.txt file is created in the newdir directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file deletion",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that the newfile.txt file is deleted from the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Searching and Filtering Data with Linux Utilities",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify grep search",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the grep command can find the words \"male\" and \"female\" in the data.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify awk data extraction",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the awk command can correctly extract the second field (age) from the data.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

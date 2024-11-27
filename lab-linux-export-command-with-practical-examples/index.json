@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux export Command with Practical Examples",
+  "description": "Explore the power of the Linux export command with practical examples. Learn how to set environment variables, understand its purpose, and apply it effectively in your system configuration and settings.",
+  "meta": {
+    "title": "Linux export Command with Practical Examples",
+    "description": "Explore the power of the Linux export command with practical examples. Learn how to set environment variables, understand its purpose, and apply it effectively in your system configuration and settings.",
+    "keywords": "Linux, export command, environment variables, system configuration, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the export Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify environment variable",
+            "file": "verify1-1.sh",
+            "hint": "The `export` command was not used correctly to set the `MY_VARIABLE` environment variable.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Set Environment Variables Using the export Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify environment variables",
+            "file": "verify2-1.sh",
+            "hint": "The `export` command was not used correctly to set the environment variables.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Practical Examples of the export Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify environment variable usage",
+            "file": "verify3-1.sh",
+            "hint": "The `export` command was not used correctly to set the environment variables for the practical examples.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

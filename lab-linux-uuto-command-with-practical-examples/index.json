@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux uuto Command with Practical Examples",
+  "description": "Explore the uuto command in Linux, learn how to send and receive files securely, and discover practical use cases for this powerful communication tool.",
+  "meta": {
+    "title": "Linux uuto Command with Practical Examples",
+    "description": "Explore the uuto command in Linux, learn how to send and receive files securely, and discover practical use cases for this powerful communication tool.",
+    "keywords": "Linux, uuto, file transfer, secure communication, networking, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the uuto Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the uuto command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have used the `uuto` command correctly to send the `example.txt` file to the remote user `remote_user@remote_host`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Sending Files Using the uuto Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the uuto command usage for file transfer",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have used the `uuto` command correctly to send the `example.txt` file to the remote user `remote_user@remote_host`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Receiving Files with the uuto Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the uupick command usage for file reception",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have used the `uupick` command correctly to retrieve the `example.txt` file that was sent to your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

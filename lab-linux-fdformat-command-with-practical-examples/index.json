@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fdformat Command with Practical Examples",
+  "description": "Explore the fdformat command in Linux, learn how to format a floppy disk, and troubleshoot any issues that may arise during the process.",
+  "meta": {
+    "title": "Linux fdformat Command with Practical Examples",
+    "description": "Explore the fdformat command in Linux, learn how to format a floppy disk, and troubleshoot any issues that may arise during the process.",
+    "keywords": "fdformat, Linux, floppy disk, formatting, disk utilities, file system"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the fdformat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the fdformat command syntax",
+            "file": "verify1-1.sh",
+            "hint": "The `fdformat` command does not seem to be available or the syntax is not as expected. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Format a Floppy Disk Using the fdformat Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the floppy disk formatting",
+            "file": "verify2-1.sh",
+            "hint": "The floppy disk formatting does not seem to have completed successfully. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verify the Formatted Floppy Disk and Troubleshoot Issues",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the floppy disk contents",
+            "file": "verify3-1.sh",
+            "hint": "The floppy disk contents could not be verified. Please check the formatting and troubleshooting steps, and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

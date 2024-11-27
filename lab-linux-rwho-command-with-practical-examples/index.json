@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux rwho Command with Practical Examples",
+  "description": "Explore the rwho command in Linux, which allows you to monitor users logged into remote systems. Learn how to utilize this tool for user monitoring and system management.",
+  "meta": {
+    "title": "Linux rwho Command with Practical Examples",
+    "description": "Explore the rwho command in Linux, which allows you to monitor users logged into remote systems. Learn how to utilize this tool for user monitoring and system management.",
+    "keywords": "Linux, rwho, user monitoring, system management, remote login, system monitoring"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the rwho Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the rwho command output",
+            "file": "verify1-1.sh",
+            "hint": "The `rwho` command should display information about the currently logged-in users, including the user \"labex\". Please ensure that the `rwho` command is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Output of the rwho Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the rwho command output fields",
+            "file": "verify2-1.sh",
+            "hint": "The `rwho` command should display the expected output fields, including \"User\", \"tty\", \"host\", \"login@\", \"idle\", and \"where\". Please ensure that the output contains all of these fields.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize the rwho Command for User Monitoring",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the rwho command in a loop",
+            "file": "verify3-1.sh",
+            "hint": "The `rwho` command should be executed in a loop, displaying the output every 5 seconds. The output should contain the \"User\" field, indicating that the command is working as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

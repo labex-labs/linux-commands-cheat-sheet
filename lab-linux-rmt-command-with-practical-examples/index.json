@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux rmt Command with Practical Examples",
+  "description": "Explore the rmt command in Linux, learn how to backup and restore files, and automate backups using cron jobs. Enhance your system administration skills with practical examples.",
+  "meta": {
+    "title": "Linux rmt Command with Practical Examples",
+    "description": "Explore the rmt command in Linux, learn how to backup and restore files, and automate backups using cron jobs. Enhance your system administration skills with practical examples.",
+    "keywords": "Linux, rmt command, backup, restore, cron job, system administration, compression"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the rmt Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify rmt command version",
+            "file": "verify1-1.sh",
+            "hint": "The `rmt` command version should be \"rmt (GNU tar) 1.34\". Please check the output of the `rmt --version` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Backup and Restore Files Using rmt",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify backup and restore",
+            "file": "verify2-1.sh",
+            "hint": "The `test_file.txt` should exist in the `~/project` directory, and its contents should match \"This is a test file.\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automating Backup with rmt in a Cron Job",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify backup script",
+            "file": "verify3-1.sh",
+            "hint": "The `backup.sh` script should exist in the `~/project` directory, and it should contain the line that uses the `rmt` command to backup the `~/project` directory to the remote host.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Cron job",
+            "file": "verify3-2.sh",
+            "hint": "The Cron job should be configured to run the `backup.sh` script every day at 2:00 AM.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

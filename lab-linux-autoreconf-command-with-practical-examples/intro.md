@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the purpose and usage of the `autoreconf` command in Linux. The `autoreconf` command is a tool used to automatically generate the necessary build system files, such as `configure` scripts and `Makefile`s, for software projects that use the GNU Autotools build system. This includes tools like `autoconf`, `automake`, and `libtool`, which help to create a standardized build process for software projects, making it easier to compile and install the software on different platforms. We will prepare the development environment and apply the `autoreconf` command to a sample project, demonstrating its practical usage and benefits.

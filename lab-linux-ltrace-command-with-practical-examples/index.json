@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ltrace Command with Practical Examples",
+  "description": "Explore the ltrace command in Linux, which allows you to trace system calls and library calls, helping you identify potential issues and optimize application performance.",
+  "meta": {
+    "title": "Linux ltrace Command with Practical Examples",
+    "description": "Explore the ltrace command in Linux, which allows you to trace system calls and library calls, helping you identify potential issues and optimize application performance.",
+    "keywords": "Linux, ltrace, system calls, library calls, process management, performance optimization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of ltrace",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the installation of ltrace",
+            "file": "verify1-1.sh",
+            "hint": "It seems that the ltrace package is not installed. Please install it first using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Trace System Calls and Library Calls with ltrace",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the output of ltrace",
+            "file": "verify2-1.sh",
+            "hint": "It seems that the ltrace output does not contain the expected 'sleep(2)' call. Please check your code and the ltrace command to ensure that the system call is being traced correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze the Output of ltrace and Identify Potential Issues",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the memory leak in the leaks.c program",
+            "file": "verify3-1.sh",
+            "hint": "It seems that the ltrace output does not contain the expected 'malloc(400)' call or a 'free()' call, indicating that the memory leak in the leaks.c program has not been identified correctly. Please review your code and the ltrace command to ensure that the memory leak is being properly detected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

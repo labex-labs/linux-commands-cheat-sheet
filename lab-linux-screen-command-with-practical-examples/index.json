@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux screen Command with Practical Examples",
+  "description": "Explore the powerful screen command in Linux, learn to create and manage multiple terminal sessions, and discover practical examples to boost your process management skills.",
+  "meta": {
+    "title": "Linux screen Command with Practical Examples",
+    "description": "Explore the powerful screen command in Linux, learn to create and manage multiple terminal sessions, and discover practical examples to boost your process management skills.",
+    "keywords": "Linux, screen, process management, terminal, session, multitasking"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the screen Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify screen installation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the screen command is installed on your system. You can install it using the command:",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating and Navigating Screen Sessions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify creating screen sessions",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can create a new screen session with the name \"mysession\" using the command:",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Detaching and Reattaching Screen Sessions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify detaching and reattaching screen sessions",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can:\n\n1. Create a new screen session named \"myapp\".\n2. Start a long-running process (e.g., a web server) inside the screen session.\n3. Detach from the screen session using `Ctrl+A` followed by `d`.\n4. Reattach to the \"myapp\" screen session using the `screen -r myapp` command.\n5. Stop the long-running process and exit the screen session.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

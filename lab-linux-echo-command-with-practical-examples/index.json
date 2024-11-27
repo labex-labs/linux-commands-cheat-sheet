@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux echo Command with Practical Examples",
+  "description": "Explore the versatile echo command in Linux, learn its basic syntax, and discover practical examples for printing text, using variable substitution, and formatting output.",
+  "meta": {
+    "title": "Linux echo Command with Practical Examples",
+    "description": "Explore the versatile echo command in Linux, learn its basic syntax, and discover practical examples for printing text, using variable substitution, and formatting output.",
+    "keywords": "Linux, echo command, text output, variable substitution, formatting, console, terminal, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basic Syntax of the echo Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify echo command basic usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the echo command is printing the expected output \"Hello, World!\" without a trailing newline.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use echo to Print Text to the Console",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify echo command for printing text",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the echo command is printing the expected output \"Hello, World!\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize echo for Variable Substitution and Formatting",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify echo command for variable substitution and formatting",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the echo command is correctly substituting the variable and using the formatting escape sequences.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux g++ Command with Practical Examples",
+  "description": "Learn the basics of the g++ command, compile a simple C++ program, and explore compiler flags and optimization techniques in this practical Linux programming lab.",
+  "meta": {
+    "title": "Linux g++ Command with Practical Examples",
+    "description": "Learn the basics of the g++ command, compile a simple C++ program, and explore compiler flags and optimization techniques in this practical Linux programming lab.",
+    "keywords": "g++, C++, Linux, programming, compilation, optimization, scripting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of g++ Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify g++ version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that you have the correct version of g++ (11.3.0) installed in your Ubuntu 22.04 Docker container.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify hello.cpp compilation",
+            "file": "verify1-2.sh",
+            "hint": "Please ensure that you have successfully compiled the hello.cpp file and that the output matches \"Hello, World!\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compile a Simple C++ Program with g++",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify simple.cpp compilation",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that you have successfully compiled the simple.cpp file and that the output matches \"a + b = 30\".",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify g++ compiler flags",
+            "file": "verify2-2.sh",
+            "hint": "Please ensure that you can successfully compile the simple.cpp file using the -g, -Wall, and -Wextra compiler flags.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore g++ Compiler Flags and Optimization",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify optimization levels",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that you can successfully compile the optimize.cpp file using the -O0, -O2, and -O3 optimization levels, and that the output includes the \"real\" timing information.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify -march=native and -ffast-math flags",
+            "file": "verify3-2.sh",
+            "hint": "Please ensure that you can successfully compile the optimize.cpp file using the -march=native and -ffast-math compiler flags, and that the output includes the \"real\" timing information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

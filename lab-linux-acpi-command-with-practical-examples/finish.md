@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `acpi` command, which provides information about the Advanced Configuration and Power Interface (ACPI) on your system. You first checked if the `acpi` command was installed and learned how to install it if necessary. Then, you ran the `acpi` command to see the basic information it provides, such as the battery status and the current temperature of the system. You also explored the various options available with the `acpi` command, such as the `-b` option to get information about the battery status only. Finally, you learned how to use the `acpi` command to monitor the battery status in more detail, including information about the battery's design capacity, last full capacity, technology, voltage, cycle count, and condition.

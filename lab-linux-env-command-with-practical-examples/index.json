@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux env Command with Practical Examples",
+  "description": "Explore the env command in Linux, learn how to modify environment variables, and execute commands with custom environments for improved system configuration and settings.",
+  "meta": {
+    "title": "Linux env Command with Practical Examples",
+    "description": "Explore the env command in Linux, learn how to modify environment variables, and execute commands with custom environments for improved system configuration and settings.",
+    "keywords": "Linux, env command, environment variables, system configuration, command execution, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the env Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current environment variables",
+            "file": "verify1-1.sh",
+            "hint": "The environment variable `MY_VAR` with the value \"Hello, World!\" should be present in the output of the `env` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify Environment Variables Using the env Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the modification of the environment variable",
+            "file": "verify2-1.sh",
+            "hint": "The value of the `MY_VAR` environment variable should be \"Goodbye, World!\" when running the command `env MY_VAR=\"Goodbye, World!\" echo $MY_VAR`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Execute Commands with Custom Environment Variables",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the execution of a command with custom environment variables",
+            "file": "verify3-1.sh",
+            "hint": "The output of the command `env MY_MESSAGE=\"Hello\" MY_NAME=\"John\" echo \"$MY_MESSAGE, my name is $MY_NAME!\"` should be \"Hello, my name is John!\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

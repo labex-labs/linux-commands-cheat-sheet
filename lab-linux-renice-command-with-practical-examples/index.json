@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux renice Command with Practical Examples",
+  "description": "Explore the Linux renice command to adjust process priority, with practical examples showcasing its usage and benefits in process management.",
+  "meta": {
+    "title": "Linux renice Command with Practical Examples",
+    "description": "Explore the Linux renice command to adjust process priority, with practical examples showcasing its usage and benefits in process management.",
+    "keywords": "Linux, renice, process management, priority, performance, system optimization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the renice Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify renice command usage",
+            "file": "verify1-1.sh",
+            "hint": "Use the `renice` command to change the priority of a process with PID 1234 to 5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjust Process Priority with renice",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify renice command usage",
+            "file": "verify2-1.sh",
+            "hint": "Use the `renice` command to change the priority of a process to 5 and then to -5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of renice Command Usage",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify renice command usage in practical examples",
+            "file": "verify3-1.sh",
+            "hint": "Use the `renice` command to change the priority of processes as demonstrated in the practical examples.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux last Command with Practical Examples",
+  "description": "Explore the Linux last command, which displays information about the last users who have logged into the system. Learn how to use it effectively with practical examples.",
+  "meta": {
+    "title": "Linux last Command with Practical Examples",
+    "description": "Explore the Linux last command, which displays information about the last users who have logged into the system. Learn how to use it effectively with practical examples.",
+    "keywords": "Linux, last command, user management, login history, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the last Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the last command output",
+            "file": "verify1-1.sh",
+            "hint": "The `last` command output should contain entries for the user `labex`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the last Command Output",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the last command output with options",
+            "file": "verify2-1.sh",
+            "hint": "The `last` command output should contain the expected information when using the `-n 3`, `-x`, and `-i` options.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Specific last Command Entries",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the last command output for specific user",
+            "file": "verify3-1.sh",
+            "hint": "The `last labex` command output should contain entries for the user `labex`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the last command output for specific user and terminal",
+            "file": "verify3-2.sh",
+            "hint": "The `last labex pts/0` command output should contain entries for the user `labex` on the `pts/0` terminal.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

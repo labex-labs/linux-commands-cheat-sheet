@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bzcat Command with Practical Examples",
+  "description": "Explore the bzcat command in Linux, a powerful tool for decompressing gzipped files. Learn how to use bzcat with practical examples and combine it with other Linux commands.",
+  "meta": {
+    "title": "Linux bzcat Command with Practical Examples",
+    "description": "Explore the bzcat command in Linux, a powerful tool for decompressing gzipped files. Learn how to use bzcat with practical examples and combine it with other Linux commands.",
+    "keywords": "bzcat, Linux, gzip, compression, decompression, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of bzcat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the bzcat command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `bzcat` command correctly displays the contents of the Bzip2-compressed file `sample.txt.bz2`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decompress Gzipped Files Using bzcat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the bzcat command with Gzipped files",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `bzcat` command correctly displays the contents of the Gzipped file `sample.txt.gz`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine bzcat with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the use of bzcat with other commands",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `bzcat` command can be successfully combined with `grep` to search for the word \"banana\" and with `wc` to count the number of words in the Bzip2-compressed file `sample.txt.bz2`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

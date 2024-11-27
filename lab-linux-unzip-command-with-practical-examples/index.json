@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux unzip Command with Practical Examples",
+  "description": "Learn how to use the unzip command in Linux to extract files from compressed ZIP archives, including password-protected ones.",
+  "meta": {
+    "title": "Linux unzip Command with Practical Examples",
+    "description": "Learn how to use the unzip command in Linux to extract files from compressed ZIP archives, including password-protected ones.",
+    "keywords": "Linux, unzip, zip, compression, archiving, file extraction, password-protected"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the unzip Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the unzip command syntax",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `unzip -h` command should include the \"Usage: unzip\" line. Please check the output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Extract Files from a Compressed ZIP Archive",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the files are extracted",
+            "file": "verify2-1.sh",
+            "hint": "The `example` directory and the three text files (`file1.txt`, `file2.txt`, and `file3.txt`) should be present in the `~/project/example` directory after running the `unzip` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Unzip a Password-Protected ZIP File",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the password-protected file is extracted",
+            "file": "verify3-1.sh",
+            "hint": "The `protected` directory and the `protected_file.txt` file should be present in the `~/project/protected` directory after running the `unzip` command with the correct password.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

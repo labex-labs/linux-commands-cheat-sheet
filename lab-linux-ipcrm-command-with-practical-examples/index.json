@@ -1,0 +1,108 @@
+{
+  "type": "lab",
+  "title": "Linux ipcrm Command with Practical Examples",
+  "description": "Explore the Linux ipcrm command, which allows you to remove shared memory segments, message queues, and semaphores. Learn the command syntax, options, and practical examples to effectively manage IPC objects on your system.",
+  "meta": {
+    "title": "Linux ipcrm Command with Practical Examples",
+    "description": "Explore the Linux ipcrm command, which allows you to remove shared memory segments, message queues, and semaphores. Learn the command syntax, options, and practical examples to effectively manage IPC objects on your system.",
+    "keywords": "linux, ipcrm, ipc, shared memory, message queues, semaphores, system administration, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand IPC (Inter-Process Communication) Objects",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify IPC objects",
+            "file": "verify1-1.sh",
+            "hint": "The `ipcs` command should show at least one shared memory segment, one semaphore array, and one message queue on the system.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify IPC object ownership",
+            "file": "verify1-2.sh",
+            "hint": "The IPC objects should be owned by the `labex` user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the ipcrm Command Syntax and Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify shared memory removal",
+            "file": "verify2-1.sh",
+            "hint": "The shared memory segment with ID 0 should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify all IPC objects removal",
+            "file": "verify2-2.sh",
+            "hint": "All IPC objects (shared memory, semaphores, and message queues) should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Remove Shared Memory Segments, Message Queues, and Semaphores",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify shared memory removal",
+            "file": "verify3-1.sh",
+            "hint": "The shared memory segment with ID 0 should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify message queue removal",
+            "file": "verify3-2.sh",
+            "hint": "The message queue with ID 0 should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify semaphore removal",
+            "file": "verify3-3.sh",
+            "hint": "The semaphore set with ID 0 should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify all IPC objects removal",
+            "file": "verify3-4.sh",
+            "hint": "All IPC objects (shared memory, semaphores, and message queues) should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

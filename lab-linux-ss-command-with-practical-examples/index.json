@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ss Command with Practical Examples",
+  "description": "Explore the Linux ss command, learn its syntax, and discover practical examples to analyze network connections, socket statistics, and states.",
+  "meta": {
+    "title": "Linux ss Command with Practical Examples",
+    "description": "Explore the Linux ss command, learn its syntax, and discover practical examples to analyze network connections, socket statistics, and states.",
+    "keywords": "Linux, ss command, network connections, socket statistics, network analysis, networking tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the ss Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the ss command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can run the `ss` command with the `-t` option to display TCP sockets.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Network Connections Using the ss Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the ss command usage",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can run the `ss` command with the `-a`, `-l`, and `-ltp` options to display all network connections, listening sockets, and process information for listening sockets, respectively.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Socket Statistics and States with the ss Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the ss command for socket statistics and states",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can run the `ss` command with the `-t -i` and `-o` options to display detailed TCP socket information and socket states, respectively.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

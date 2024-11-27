@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored Python's built-in functions and string manipulation commands, and learned how to automate file and directory management using Python. We covered commonly used functions like `print()`, `len()`, `type()`, `abs()`, `round()`, and `math.sqrt()`, and explored various string manipulation methods such as `strip()`, `replace()`, `split()`, and `join()`. Additionally, we learned how to create, read, write, and delete files and directories programmatically using Python's built-in `os` and `shutil` modules. These skills can be applied to a wide range of tasks, from data processing to system administration.

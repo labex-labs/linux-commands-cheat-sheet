@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the Linux `rsh` (remote shell) command and its practical applications. First, we learned about the basic syntax and usage of the `rsh` command, which allows you to execute commands on a remote system over a network connection. We then discussed how to establish a remote shell connection using the `rsh` command, which typically requires the remote system to have a `.rhosts` file that allows connections from your system. Finally, we covered how to execute remote commands with `rsh`, enabling you to perform system administration tasks, remote monitoring, and more on a remote system.

@@ -1,0 +1,49 @@
+{
+  "type": "lab",
+  "title": "Linux col Command with Practical Examples",
+  "description": "Explore the versatile col command in Linux, learn how to manipulate tabular data, and combine it with other commands for advanced text formatting.",
+  "meta": {
+    "title": "Linux col Command with Practical Examples",
+    "description": "Explore the versatile col command in Linux, learn how to manipulate tabular data, and combine it with other commands for advanced text formatting.",
+    "keywords": "col command, text processing, tabular data, Linux, formatting, text editing"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the col Command",
+        "text": "step1.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Use col to Manipulate Tabular Data",
+        "text": "step2.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Combine col with Other Linux Commands for Advanced Formatting",
+        "text": "step3.md",
+        "verify": [],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

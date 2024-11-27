@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `ifconfig` command and learn how to use it to configure and manage network interfaces on a Linux system. We will start by understanding the purpose of the `ifconfig` command, which is used to display network interface information, configure network settings, and troubleshoot network-related issues. Then, we will dive into the basic syntax and available options of the `ifconfig` command, allowing us to effectively interact with and control our network interfaces. Finally, we will put our knowledge into practice by configuring network interfaces using the `ifconfig` command.

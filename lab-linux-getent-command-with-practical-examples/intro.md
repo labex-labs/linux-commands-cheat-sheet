@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn about the `getent` command, a versatile tool in Linux for retrieving information from various databases, such as user accounts, group information, and more. The lab covers the basic usage of the `getent` command, including how to retrieve user and group information. The `getent` command is a powerful utility that can be used to query a variety of databases, including `/etc/passwd`, `/etc/group`, `/etc/hosts`, `/etc/services`, and `/etc/protocols`. You will explore examples of using the `getent` command to retrieve information for specific users and groups, as well as for all users and groups on the system.

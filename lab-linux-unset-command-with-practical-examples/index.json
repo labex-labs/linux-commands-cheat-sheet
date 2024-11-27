@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux unset Command with Practical Examples",
+  "description": "Explore the unset command in Linux, learn how to unset environment variables and shell functions, and apply practical examples to enhance your system configuration and settings.",
+  "meta": {
+    "title": "Linux unset Command with Practical Examples",
+    "description": "Explore the unset command in Linux, learn how to unset environment variables and shell functions, and apply practical examples to enhance your system configuration and settings.",
+    "keywords": "Linux, unset command, environment variables, shell functions, system configuration, settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the unset Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify environment variable unset",
+            "file": "verify1-1.sh",
+            "hint": "The `MY_VAR` environment variable should be unset after running the provided commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Unset Environment Variables",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify environment variables unset",
+            "file": "verify2-1.sh",
+            "hint": "All the environment variables (VAR1, VAR2, VAR3) should be unset after running the provided commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Unset Shell Functions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify shell function unset",
+            "file": "verify3-1.sh",
+            "hint": "The `my_function` shell function should be unset after running the provided commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux domainname Command with Practical Examples",
+  "description": "Explore the Linux domainname command and learn how to set, display, and manage domain names across network interfaces with practical examples.",
+  "meta": {
+    "title": "Linux domainname Command with Practical Examples",
+    "description": "Explore the Linux domainname command and learn how to set, display, and manage domain names across network interfaces with practical examples.",
+    "keywords": "Linux, domainname, network, interface, domain name, configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the domainname Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current domain name",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the domain name is set to 'example.com' using the 'domainname' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Set and Display the Domain Name",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the current domain name",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the domain name is set to 'mycompany.com' using the 'domainname' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Domain Name Across Network Interfaces",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the domain name for the new interface",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the domain name for the new interface is set to 'example.net' using the 'domainname' command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the domain name is reverted to the original setting",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the domain name is reverted to the original setting 'mycompany.com' using the 'domainname' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

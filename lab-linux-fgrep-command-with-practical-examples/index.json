@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fgrep Command with Practical Examples",
+  "description": "Explore the fgrep command in Linux, a powerful tool for searching fixed strings in text files. Learn practical examples and techniques to efficiently manipulate text data.",
+  "meta": {
+    "title": "Linux fgrep Command with Practical Examples",
+    "description": "Explore the fgrep command in Linux, a powerful tool for searching fixed strings in text files. Learn practical examples and techniques to efficiently manipulate text data.",
+    "keywords": "fgrep, Linux, text processing, text editing, string search, file search, command line, text manipulation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the fgrep Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the understanding of fgrep command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure you understand the basic syntax of the fgrep command, including how to search for a fixed string in a file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use fgrep to Search for a Fixed String in Text Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the use of fgrep to search for a fixed string",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure you can use the fgrep command to search for a fixed string in a text file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine fgrep with Other Linux Commands for Efficient Text Manipulation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the combination of fgrep with other commands",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure you can combine the fgrep command with other Linux commands to efficiently manipulate text data.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

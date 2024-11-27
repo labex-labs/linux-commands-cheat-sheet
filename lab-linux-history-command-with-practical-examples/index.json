@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux history Command with Practical Examples",
+  "description": "Explore the powerful Linux history command and learn how to effectively manage and analyze command history for improved productivity and troubleshooting.",
+  "meta": {
+    "title": "Linux history Command with Practical Examples",
+    "description": "Explore the powerful Linux history command and learn how to effectively manage and analyze command history for improved productivity and troubleshooting.",
+    "keywords": "linux, history command, command history, bash, shell, terminal, productivity, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the history Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the history command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the history command is displaying the expected output and that you can execute commands from the history.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the History Command Options and Customization",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify history command options",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the environment variables for history command options (HISTSIZE, HISTFILESIZE, HISTCONTROL, HISTTIMEFORMAT) are set correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze and Manage Command History in Linux",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify command history analysis",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the command to analyze the most frequently used commands in the history is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify command history management",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the command to delete or clear the command history is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

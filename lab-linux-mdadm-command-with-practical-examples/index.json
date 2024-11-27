@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux mdadm Command with Practical Examples",
+  "description": "Explore the power of the Linux mdadm command with this practical lab. Learn to create, manage, and monitor software RAID arrays, enhancing your system's storage and reliability.",
+  "meta": {
+    "title": "Linux mdadm Command with Practical Examples",
+    "description": "Explore the power of the Linux mdadm command with this practical lab. Learn to create, manage, and monitor software RAID arrays, enhancing your system's storage and reliability.",
+    "keywords": "Linux, mdadm, software RAID, disk management, file system utilities, storage, reliability"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Concept of Software RAID",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify understanding of software RAID",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have the `mdadm` package installed, which is used to manage software RAID arrays in Linux.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Software RAID Array Using mdadm",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify creation of RAID 5 array",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the `mdadm --detail /dev/md0` command shows a RAID level of 5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage and Monitor the Software RAID Array",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify addition of spare disk",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the `mdadm --detail /dev/md0` command shows that there is 1 spare device in the RAID array.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify degraded RAID array",
+            "file": "verify3-2.sh",
+            "hint": "Make sure the `mdadm --detail /dev/md0` command shows that the RAID array is in a \"clean, degraded\" state.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

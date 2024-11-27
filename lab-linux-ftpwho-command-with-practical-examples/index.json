@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ftpwho Command with Practical Examples",
+  "description": "Explore the ftpwho command in Linux, learn its options, and analyze its output to monitor FTP server connections and user activities.",
+  "meta": {
+    "title": "Linux ftpwho Command with Practical Examples",
+    "description": "Explore the ftpwho command in Linux, learn its options, and analyze its output to monitor FTP server connections and user activities.",
+    "keywords": "ftpwho, Linux, FTP, network monitoring, user activity, connection tracking"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the ftpwho Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ftpwho command output",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the ftpwho command is displaying at least one active FTP connection in the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the ftpwho Command Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify ftpwho command options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the ftpwho command with the -a option is displaying at least one active FTP connection in the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze ftpwho Command Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify ftpwho command output analysis",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the ftpwho command output contains the user information for both \"labex\" and \"admin\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

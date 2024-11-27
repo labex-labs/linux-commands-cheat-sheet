@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fold Command with Practical Examples",
+  "description": "Explore the Linux fold command and its practical applications for text processing and editing. Learn to fold text files with different column widths and combine the fold command with other Linux tools.",
+  "meta": {
+    "title": "Linux fold Command with Practical Examples",
+    "description": "Explore the Linux fold command and its practical applications for text processing and editing. Learn to fold text files with different column widths and combine the fold command with other Linux tools.",
+    "keywords": "Linux, fold command, text processing, text editing, column width, command line, file manipulation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the fold Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the fold command syntax",
+            "file": "verify1-1.sh",
+            "hint": "The `fold` command usage information could not be found. Please ensure you have correctly run the `fold --help` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Fold Text Files with Different Column Widths",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the fold command with different widths",
+            "file": "verify2-1.sh",
+            "hint": "The `fold` command did not produce the expected output when using different column widths. Please ensure you are correctly using the `-w` option to specify the desired column width.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine the fold Command with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the fold command with other Linux commands",
+            "file": "verify3-1.sh",
+            "hint": "The combination of the `fold` command with other Linux commands did not produce the expected output. Please ensure you are correctly using the `fold` command with `cat`, `grep`, and `sed` as shown in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

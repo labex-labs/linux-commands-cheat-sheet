@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux aclocal Command with Practical Examples",
+  "description": "Explore the aclocal command in Linux, learn how to generate the aclocal.m4 file, and integrate it with Autoconf for effective build automation.",
+  "meta": {
+    "title": "Linux aclocal Command with Practical Examples",
+    "description": "Explore the aclocal command in Linux, learn how to generate the aclocal.m4 file, and integrate it with Autoconf for effective build automation.",
+    "keywords": "Linux, aclocal, Autoconf, build automation, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to aclocal Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify aclocal.m4 file creation",
+            "file": "verify1-1.sh",
+            "hint": "The aclocal.m4 file should have been created in the current directory. Please ensure that the file is present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Generating aclocal.m4 File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify aclocal.m4 file content",
+            "file": "verify2-1.sh",
+            "hint": "The aclocal.m4 file should contain the expected macro definitions, such as AM_INIT_AUTOMAKE. Please ensure that the file has been generated correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Integrating aclocal with Autoconf",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify configure script generation",
+            "file": "verify3-1.sh",
+            "hint": "The configure script should have been generated in the current directory. Please ensure that the script is present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

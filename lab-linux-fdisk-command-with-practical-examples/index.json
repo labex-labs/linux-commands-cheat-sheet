@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fdisk Command with Practical Examples",
+  "description": "Learn how to use the fdisk command in Linux to create, delete, and resize partitions. Explore practical examples and understand the command's syntax and purpose.",
+  "meta": {
+    "title": "Linux fdisk Command with Practical Examples",
+    "description": "Learn how to use the fdisk command in Linux to create, delete, and resize partitions. Explore practical examples and understand the command's syntax and purpose.",
+    "keywords": "Linux, fdisk, partitions, disk management, file system utilities, disk partitioning, disk resizing"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the fdisk Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose and syntax of the fdisk command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can list the partition table for the /dev/sda device using the `fdisk -l /dev/sda` command, and that the `fdisk --help` output includes the description \"Create, delete, resize, etc. a partition\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a New Partition Using the fdisk Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the creation of a new partition",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the `fdisk -l /dev/sda` output shows the new `/dev/sda2` partition with a size of 10 GB.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Delete and Resize Partitions with the fdisk Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the deletion and resizing of partitions",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the `/dev/sda2` partition is no longer present, and the `/dev/sda1` partition size is 20 GB.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

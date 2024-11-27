@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux skill Command with Practical Examples",
+  "description": "Explore the Linux skill command and its practical applications in process management. Learn to manage files, use redirection and pipes, and automate tasks with shell scripting.",
+  "meta": {
+    "title": "Linux skill Command with Practical Examples",
+    "description": "Explore the Linux skill command and its practical applications in process management. Learn to manage files, use redirection and pipes, and automate tasks with shell scripting.",
+    "keywords": "Linux, skill command, process management, file management, redirection, pipes, shell scripting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Manage Files and Directories with Basic Linux Commands",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify directory and file management",
+            "file": "verify1-1.sh",
+            "hint": "Ensure you have created the 'directory2' directory, moved 'file3.txt' to the 'directory1' subdirectory, and deleted 'file1.txt' as per the instructions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Understand and Use Redirection and Pipes in the Linux Terminal",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify redirection and pipes",
+            "file": "verify2-1.sh",
+            "hint": "Ensure you have created the 'file1.txt' file with the expected content, and the 'file_list.txt' file contains the directory listings.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate Repetitive Tasks with Shell Scripting",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify shell script execution",
+            "file": "verify3-1.sh",
+            "hint": "Ensure you have created the 'file_operations.sh' script and that it creates the 'new_directory' directory and 'new_file.txt' file as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

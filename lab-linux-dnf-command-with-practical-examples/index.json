@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux dnf Command with Practical Examples",
+  "description": "Explore the powerful dnf command in Linux, learn how to install, update, manage packages and dependencies, and leverage package groups for efficient package management.",
+  "meta": {
+    "title": "Linux dnf Command with Practical Examples",
+    "description": "Explore the powerful dnf command in Linux, learn how to install, update, manage packages and dependencies, and leverage package groups for efficient package management.",
+    "keywords": "Linux, dnf, package management, package installation, package update, package groups, dependencies"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the dnf Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dnf version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that the dnf version installed on the system is 4.9.0.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install and Update Packages using dnf",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify \"tree\" package installation",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the 'tree' package is installed on the system.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package updates",
+            "file": "verify2-2.sh",
+            "hint": "Please ensure that all installed packages are up-to-date.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Package Groups and Dependencies with dnf",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify \"Development Tools\" group installation",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the 'Development Tools' group is installed on the system.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify \"tree\" package dependencies",
+            "file": "verify3-2.sh",
+            "hint": "Please ensure that all dependencies for the 'tree' package are installed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

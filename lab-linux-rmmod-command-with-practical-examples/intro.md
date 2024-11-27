@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `rmmod` command, which is used to remove a kernel module from the running system. Kernel modules are pieces of code that can be loaded and unloaded into the kernel as needed, providing a way to extend the functionality of the kernel. The lab will cover understanding the purpose of the `rmmod` command, removing a kernel module using `rmmod`, and exploring practical scenarios for its usage. We will start by listing the currently loaded kernel modules using the `lsmod` command, and then demonstrate how to remove a specific module using `rmmod`.

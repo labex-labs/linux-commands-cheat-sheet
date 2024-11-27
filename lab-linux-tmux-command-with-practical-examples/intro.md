@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the tmux command-line tool to manage and control multiple terminal sessions on your Linux system. Tmux, a powerful terminal multiplexer, allows you to create, access, and switch between multiple terminal sessions within a single window, making it particularly useful when working on complex tasks that require multiple terminal windows. You will start by learning about the basics of tmux, including how to install it and start a new session. Then, you will explore how to navigate and manage tmux sessions, including creating new sessions, switching between sessions, and closing sessions. Finally, you will learn how to customize tmux by modifying its configuration files.

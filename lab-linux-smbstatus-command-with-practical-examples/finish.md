@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we first explored the purpose of the `smbstatus` command in Linux, which is used to display information about active SMB connections and shared resources on a system. We learned that SMB is a network file-sharing protocol, and the `smbstatus` command provides a way to monitor and troubleshoot SMB-related activities. We then examined the different options and flags available with the `smbstatus` command, which allow users to customize the output and gather specific information about SMB connections and shared resources. Finally, we will analyze the active SMB connections and shared resources on the system using the `smbstatus` command.

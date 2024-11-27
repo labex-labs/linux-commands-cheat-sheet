@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux clock Command with Practical Examples",
+  "description": "Explore the Linux clock command and learn how to display the current date and time, as well as set the system clock using practical examples.",
+  "meta": {
+    "title": "Linux clock Command with Practical Examples",
+    "description": "Explore the Linux clock command and learn how to display the current date and time, as well as set the system clock using practical examples.",
+    "keywords": "Linux, clock command, date, time, system clock, configuration, settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the clock Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current date and time",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the current date is set to 2023-04-19 and the current time is set to 10:00:00.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Display Current Date and Time",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the current date and time",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the current date is set to 2023-04-19 and the current time is set to 10:00:00.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Set the System Clock",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the system clock is set correctly",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the current date is set to 2023-04-20 and the current time is set to 11:30:00.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

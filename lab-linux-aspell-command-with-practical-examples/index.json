@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux aspell Command with Practical Examples",
+  "description": "Explore the Linux aspell command and learn how to correct spelling errors in text files, customize the aspell dictionary, and adjust preferences for efficient text processing and editing.",
+  "meta": {
+    "title": "Linux aspell Command with Practical Examples",
+    "description": "Explore the Linux aspell command and learn how to correct spelling errors in text files, customize the aspell dictionary, and adjust preferences for efficient text processing and editing.",
+    "keywords": "Linux, aspell, text processing, spelling correction, dictionary, preferences"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install aspell Package on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify aspell package installation",
+            "file": "verify1-1.sh",
+            "hint": "The aspell package does not appear to be installed. Please follow the installation steps again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Correct Spelling Errors in a Text File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify spelling corrections",
+            "file": "verify2-1.sh",
+            "hint": "The spelling errors in the sample.txt file do not appear to be corrected properly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize aspell Dictionary and Preferences",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom dictionary and preferences",
+            "file": "verify3-1.sh",
+            "hint": "The custom dictionary and preferences do not appear to be set correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

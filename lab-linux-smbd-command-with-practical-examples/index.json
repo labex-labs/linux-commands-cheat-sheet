@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux smbd Command with Practical Examples",
+  "description": "Explore the smbd command, a key component of the Samba server, and learn how to configure, manage, and secure Samba shares on your Linux system.",
+  "meta": {
+    "title": "Linux smbd Command with Practical Examples",
+    "description": "Explore the smbd command, a key component of the Samba server, and learn how to configure, manage, and secure Samba shares on your Linux system.",
+    "keywords": "smbd, Samba, file sharing, Linux, networking, permissions, server configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the smbd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify smbd service status",
+            "file": "verify1-1.sh",
+            "hint": "The smbd service should be running to proceed with the next steps. Please start the service and try the verification again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configuring the Samba Server",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Samba configuration",
+            "file": "verify2-1.sh",
+            "hint": "The Samba share configuration should be present in the /etc/samba/smb.conf file. Please check the file and try the verification again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Samba user",
+            "file": "verify2-2.sh",
+            "hint": "The Samba user 'labex' should be configured with a password. Please check the user configuration and try the verification again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Managing Samba Shares and Permissions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify new Samba share",
+            "file": "verify3-1.sh",
+            "hint": "The new Samba share 'shared' should be configured in the /etc/samba/smb.conf file. Please check the file and try the verification again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify share permissions",
+            "file": "verify3-2.sh",
+            "hint": "The /home/labex/project/shared directory should be owned by the 'labex' user and group. Please check the directory permissions and try the verification again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

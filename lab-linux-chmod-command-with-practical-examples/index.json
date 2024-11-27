@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux chmod Command with Practical Examples",
+  "description": "Explore the Linux chmod command with hands-on examples. Learn how to manage file permissions, change access rights, and recursively modify permissions for directories and files.",
+  "meta": {
+    "title": "Linux chmod Command with Practical Examples",
+    "description": "Explore the Linux chmod command with hands-on examples. Learn how to manage file permissions, change access rights, and recursively modify permissions for directories and files.",
+    "keywords": "Linux, chmod, file permissions, user management, directory permissions, file access, security"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding File Permissions in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify file permissions",
+            "file": "verify1-1.sh",
+            "hint": "The permissions for the file 'example.txt' should be '-rw-r--r--'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Changing File Permissions Using the chmod Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file permissions",
+            "file": "verify2-1.sh",
+            "hint": "The permissions for the file 'example.txt' should be '-rw-r--r--'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Recursively Changing Permissions of Directories and Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify directory permissions",
+            "file": "verify3-1.sh",
+            "hint": "The permissions for the directory '~/project/documents' should be 'drwxrwxr-x'.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file permissions",
+            "file": "verify3-2.sh",
+            "hint": "The permissions for the directory '~/project/documents/reports' should be 'drwxrwxr-x'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

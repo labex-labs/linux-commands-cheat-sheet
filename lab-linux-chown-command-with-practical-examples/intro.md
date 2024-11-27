@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `chown` command and its practical applications for managing file ownership and permissions. We will start by understanding the fundamental concepts of file ownership and permissions in the Linux operating system. Then, we will learn how to use the `chown` command to change the owner and group of files and directories, including the ability to recursively apply changes to an entire directory tree. This lab will provide you with the necessary knowledge and skills to effectively manage user access and control file ownership in a Linux environment.

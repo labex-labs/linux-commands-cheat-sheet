@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux wall Command with Practical Examples",
+  "description": "Explore the Linux wall command and its practical applications, including sending messages to all logged-in users and scheduling broadcast messages using cron.",
+  "meta": {
+    "title": "Linux wall Command with Practical Examples",
+    "description": "Explore the Linux wall command and its practical applications, including sending messages to all logged-in users and scheduling broadcast messages using cron.",
+    "keywords": "Linux, wall command, broadcast message, cron, system administration, communication, networking"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the wall Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the wall command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `wall` command is working correctly by verifying that the test message is displayed to all logged-in users.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Send a Message to All Logged-in Users",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the wall command",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `wall` command is working correctly by verifying that the test message is displayed to all logged-in users.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Schedule a Broadcast Message Using cron",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the scheduled broadcast message",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the cron job to send the scheduled broadcast message has been set up correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

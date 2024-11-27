@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn about the purpose and importance of the `sudo` command in Linux. The `sudo` command allows users to execute commands with the security privileges of another user, typically the superuser or root user. This is essential for system administration tasks, as it enables users to perform actions that require elevated permissions, such as installing software, modifying system configurations, or accessing protected resources, while maintaining the security of the system. You will explore the usage of the `sudo` command, learn how to manage user permissions, and understand the importance of using `sudo` properly to secure your Linux system.

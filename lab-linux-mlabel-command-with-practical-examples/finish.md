@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and basic syntax of the `mlabel` command in Linux, which is used to create, change, or remove volume labels on file systems. You explored how to display the current volume label, create a new volume label, and remove an existing volume label using various `mlabel` options. Then, you practiced managing volume labels, including creating a new label, verifying the current label, and changing an existing label. Finally, you explored advanced `mlabel` command options and scenarios, such as handling errors and using the command in different file system contexts.

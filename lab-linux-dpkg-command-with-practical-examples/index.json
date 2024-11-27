@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dpkg Command with Practical Examples",
+  "description": "Explore the dpkg command in Linux, learn to install and manage packages, and troubleshoot package installation issues. Gain practical experience in package management using this essential Linux tool.",
+  "meta": {
+    "title": "Linux dpkg Command with Practical Examples",
+    "description": "Explore the dpkg command in Linux, learn to install and manage packages, and troubleshoot package installation issues. Gain practical experience in package management using this essential Linux tool.",
+    "keywords": "dpkg, package management, Linux, installation, troubleshooting, package, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the dpkg Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dpkg version",
+            "file": "verify1-1.sh",
+            "hint": "The expected dpkg version is 1.21.1ubuntu2.1, but the actual version on your system is different. Please ensure that you are running the command in the correct environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install and Manage Packages Using dpkg",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the example-package is installed correctly. If the package is not installed or in a broken state, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Package Installation Issues with dpkg",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify package installation issues",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the installation of the example-package-with-deps.deb package fails, as expected. It then attempts to resolve any dependency issues using the dpkg --configure -a and apt-get -f install commands. Finally, it checks if there are any remaining broken packages using the dpkg --audit command. If any issues are found, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

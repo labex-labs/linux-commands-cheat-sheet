@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux usermod Command with Practical Examples",
+  "description": "Explore the Linux usermod command and learn how to modify user account properties, change a user's primary group, and disable user account expiration using practical examples.",
+  "meta": {
+    "title": "Linux usermod Command with Practical Examples",
+    "description": "Explore the Linux usermod command and learn how to modify user account properties, change a user's primary group, and disable user account expiration using practical examples.",
+    "keywords": "Linux, usermod, user management, permissions, account properties, primary group, account expiration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Modify User Account Properties",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify user full name",
+            "file": "verify1-1.sh",
+            "hint": "The user's full name is not set to \"John Doe\" as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Change User's Primary Group",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify user's primary group",
+            "file": "verify2-1.sh",
+            "hint": "The user's primary group is not set to \"developers\" as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Disable User Account Expiration",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify user account expiration",
+            "file": "verify3-1.sh",
+            "hint": "The user account expiration is not disabled as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

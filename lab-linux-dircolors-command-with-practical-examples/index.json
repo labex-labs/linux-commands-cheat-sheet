@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux dircolors Command with Practical Examples",
+  "description": "Explore the Linux dircolors command and learn how to customize directory and file colors, manage configuration files, and enhance your command-line experience.",
+  "meta": {
+    "title": "Linux dircolors Command with Practical Examples",
+    "description": "Explore the Linux dircolors command and learn how to customize directory and file colors, manage configuration files, and enhance your command-line experience.",
+    "keywords": "Linux, dircolors, file colors, directory colors, configuration, command-line, terminal"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of dircolors Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dircolors command output",
+            "file": "verify1-1.sh",
+            "hint": "The `dircolors --print-database` command should display the current color settings, including the \"NORMAL 00\" line.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize Directory and File Colors",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify custom dircolors configuration",
+            "file": "verify2-1.sh",
+            "hint": "The custom dircolors configuration file should contain the \"DIR 01;32\" line, and the \"ls -l\" command should display the directory in bold green.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage dircolors Configuration Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom dircolors configuration file",
+            "file": "verify3-1.sh",
+            "hint": "The custom dircolors configuration file should exist at ~/.dircolors and contain the \"DIR 01;32\" line.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify dircolors configuration is applied",
+            "file": "verify3-2.sh",
+            "hint": "The \"ls -l\" command should display the directory in bold green, indicating that the custom dircolors configuration is being used.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

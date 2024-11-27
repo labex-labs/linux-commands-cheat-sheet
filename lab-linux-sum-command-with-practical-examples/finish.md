@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the `sum` command in Linux, which is used to calculate the checksum of a file or a group of files. We learned the basic syntax of the `sum` command, including the available options such as `-r`, `-s`, and `-w`. We practiced using the `sum` command to calculate the checksum of a single file as well as multiple files, and we also learned how to display the total sum of all input files using the `-s` option. Additionally, we practiced performing basic summation operations on files by creating sample files and using the `sum` command to calculate the checksum of each file individually.

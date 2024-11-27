@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sdiff Command with Practical Examples",
+  "description": "Explore the sdiff command in Linux, a powerful tool for comparing and merging text files. Learn its syntax, practical examples, and how to customize the output for efficient text processing and editing.",
+  "meta": {
+    "title": "Linux sdiff Command with Practical Examples",
+    "description": "Explore the sdiff command in Linux, a powerful tool for comparing and merging text files. Learn its syntax, practical examples, and how to customize the output for efficient text processing and editing.",
+    "keywords": "sdiff, Linux, text processing, file comparison, file merging, text editing, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the sdiff Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the sdiff command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the sdiff command is installed and working correctly on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compare Two Text Files Using the sdiff Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the sdiff command usage",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the sample files file1.txt and file2.txt exist in the current directory, and that the sdiff command is comparing them correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the Output of the sdiff Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the sdiff command customization",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the sample files file1.txt and file2.txt exist in the current directory, and that you can use the various options of the sdiff command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

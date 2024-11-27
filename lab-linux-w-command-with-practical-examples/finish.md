@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned how to use the `w` command in Linux to understand user login sessions and monitor system load and resource utilization. We explored the information provided by the `w` command, including the username of logged-in users, the terminal they are using, the time they logged in, their idle time, and their current activity. We also learned how to use various options with the `w` command to get more detailed information, such as omitting the header line, showing only the name, terminal, and login time, and displaying idle time in a shorter format. Finally, we discussed how to analyze user login sessions and system performance using the `w` command and other related tools.

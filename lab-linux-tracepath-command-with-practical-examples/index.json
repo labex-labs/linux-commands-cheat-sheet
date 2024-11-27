@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux tracepath Command with Practical Examples",
+  "description": "Explore the tracepath command in Linux, learn how to trace the path to a remote host, and troubleshoot network issues using practical examples.",
+  "meta": {
+    "title": "Linux tracepath Command with Practical Examples",
+    "description": "Explore the tracepath command in Linux, learn how to trace the path to a remote host, and troubleshoot network issues using practical examples.",
+    "keywords": "Linux, tracepath, network troubleshooting, network path, remote host, network diagnostics"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of tracepath Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the `tracepath` command output",
+            "file": "verify1-1.sh",
+            "hint": "The `tracepath` command output should include the \"Resume: pmtu\" line, indicating that the command was able to trace the path to the remote host.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the number of hops",
+            "file": "verify1-2.sh",
+            "hint": "The `tracepath` command output should show at least 5 hops to the remote host.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Trace the Path to a Remote Host Using tracepath",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the `tracepath` command output",
+            "file": "verify2-1.sh",
+            "hint": "The `tracepath` command output should include the \"Resume: pmtu\" line, indicating that the command was able to trace the path to the remote host.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the number of hops",
+            "file": "verify2-2.sh",
+            "hint": "The `tracepath` command output should show at least 5 hops to the remote host.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Network Issues with tracepath",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the `tracepath` output with blocked connection",
+            "file": "verify3-1.sh",
+            "hint": "The `tracepath` command output should show \"no reply\" when the connection to the remote host is blocked by the firewall.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the `tracepath` output with restored connection",
+            "file": "verify3-2.sh",
+            "hint": "The `tracepath` command output should include the \"Resume: pmtu\" line when the connection to the remote host is restored.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

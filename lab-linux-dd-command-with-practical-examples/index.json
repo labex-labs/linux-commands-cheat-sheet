@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dd Command with Practical Examples",
+  "description": "Explore the powerful dd command in Linux, learn how to create backup images of USB drives, and restore them. Gain practical skills in disk and file system utilities.",
+  "meta": {
+    "title": "Linux dd Command with Practical Examples",
+    "description": "Explore the powerful dd command in Linux, learn how to create backup images of USB drives, and restore them. Gain practical skills in disk and file system utilities.",
+    "keywords": "Linux, dd command, backup, restore, USB drive, disk utilities, file system"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the dd Command Syntax and Options",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dd command syntax and options",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure you understand the basic syntax and common options of the dd command, as described in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Backup Image of a USB Drive",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify USB drive backup",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure you have created a backup image of the USB drive in the `~/project/usb_backup.img` file, and that the backup image is valid by checking the first block of the USB drive.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Restore a Backup Image to a USB Drive",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify USB drive restoration",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure you have restored the backup image to the USB drive correctly. The verification checks the first block of the USB drive and compares the backup image file with the restored data on the USB drive.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

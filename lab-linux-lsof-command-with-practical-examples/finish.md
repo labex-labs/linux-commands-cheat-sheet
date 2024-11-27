@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you will learn how to use the `lsof` command, which stands for "list open files". The `lsof` command is a powerful tool in Linux that allows you to identify which processes have open files and network connections. You will start by running the `lsof` command without any arguments to understand the various columns of information it provides, such as the process name, process ID, file descriptor, file type, and file name. You will then learn how to use the `-p` option to view the open files for a specific process. Finally, you will explore how to use the `lsof` command to locate network connections on your system.

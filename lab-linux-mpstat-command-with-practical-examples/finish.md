@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and usage of the `mpstat` command in Linux. The `mpstat` command is a powerful tool for monitoring and analyzing CPU utilization metrics across multiple CPUs. You explored how to use the `mpstat` command to obtain detailed information about CPU activity, including CPU utilization, interrupts, context switches, and more. You also learned how to monitor CPU utilization for specific CPUs. Additionally, you explored the various CPU utilization metrics provided by the `mpstat` command, such as `%usr`, `%sys`, and `%idle`, which can be used to identify performance bottlenecks, optimize resource allocation, and troubleshoot system issues.

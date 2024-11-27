@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux update-rc.d Command with Practical Examples",
+  "description": "Learn how to use the update-rc.d command to configure services to start automatically at boot, manage service startup priorities, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux update-rc.d Command with Practical Examples",
+    "description": "Learn how to use the update-rc.d command to configure services to start automatically at boot, manage service startup priorities, and gain practical experience with real-world examples.",
+    "keywords": "Linux, update-rc.d, system configuration, service management, boot startup, priority management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of update-rc.d Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the nginx service is enabled to start at boot",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the nginx service is enabled to start at boot by looking for the nginx service symlink in the /etc/rc2.d directory. If the symlink is found, the verification passes. If not, the verification fails.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Services to Start Automatically at Boot",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the nginx service is enabled to start at boot",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the nginx service is running, which indicates that it has been enabled to start at boot. If the service is running, the verification passes. If the service is not running, the verification fails.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Service Startup Priorities with update-rc.d",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the startup priority of the rsyslog service",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the rsyslog service has a startup priority of 18 by looking for the \"S18rsyslog\" symlink in the /etc/rc2.d directory. If the symlink is found, the verification passes. If not, the verification fails.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

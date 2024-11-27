@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `chmod` command and its practical applications in managing file permissions. We will start by understanding the fundamental concepts of file permissions in Linux, including the different permission categories (owner, group, and others) and permission types (read, write, and execute). We will then learn how to use the `chmod` command to change the permissions of files and directories, both individually and recursively. This lab aims to provide you with a comprehensive understanding of file permissions management in the Linux operating system.

@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux pico Command with Practical Examples",
+  "description": "Explore the pico text editor, a user-friendly command-line tool for text processing and editing on Linux systems. Learn basic commands, customization options, and practical examples to enhance your productivity.",
+  "meta": {
+    "title": "Linux pico Command with Practical Examples",
+    "description": "Explore the pico text editor, a user-friendly command-line tool for text processing and editing on Linux systems. Learn basic commands, customization options, and practical examples to enhance your productivity.",
+    "keywords": "pico, text editor, Linux, command-line, text processing, editing, customization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the pico Text Editor",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify pico installation",
+            "file": "verify1-1.sh",
+            "hint": "Looks like pico is not installed on the system. Please ensure that pico is installed before proceeding with the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Basic pico Commands and Functionality",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify new file creation",
+            "file": "verify2-1.sh",
+            "hint": "It looks like you haven't created the new_file.txt file in the ~/project directory. Please make sure to create the file using the pico editor.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file content",
+            "file": "verify2-2.sh",
+            "hint": "The content of the new_file.txt file does not match the expected content. Please make sure to add the sample text as shown in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing the pico Editor Environment",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify .pinerc file creation",
+            "file": "verify3-1.sh",
+            "hint": "It looks like the ~/.pinerc file was not created. Please make sure to create the file using the pico editor.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify .pinerc file content",
+            "file": "verify3-2.sh",
+            "hint": "The content of the ~/.pinerc file does not match the expected content. Please make sure to add the customization options as shown in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

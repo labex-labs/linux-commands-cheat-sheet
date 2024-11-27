@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose of the `mkinitrd` command in Linux, which is used to create an initial RAM disk (initramfs) image. The initramfs is a critical component of the Linux boot process, as it contains the necessary drivers and modules required to mount the root file system. You then explored how to create a custom initramfs image by including additional drivers, modules, or utilities that are not part of the default initramfs. Finally, you learned how to troubleshoot kernel boot issues using the `mkinitrd` command, which can be helpful in scenarios where the default initramfs is unable to mount the root file system.

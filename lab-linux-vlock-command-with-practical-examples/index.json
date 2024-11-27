@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux vlock Command with Practical Examples",
+  "description": "Explore the Linux vlock command, which allows you to lock the current terminal session, providing a secure way to protect your system when stepping away from your computer.",
+  "meta": {
+    "title": "Linux vlock Command with Practical Examples",
+    "description": "Explore the Linux vlock command, which allows you to lock the current terminal session, providing a secure way to protect your system when stepping away from your computer.",
+    "keywords": "Linux, vlock, terminal, security, system management, lock, unlock"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the vlock Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the vlock command can lock and unlock the terminal",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can successfully lock and unlock the terminal using the `vlock` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Lock the Current Terminal Session with vlock",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the vlock command can lock the terminal",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can successfully lock the terminal using the `vlock` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Unlock the Terminal Session and Resume Work",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the terminal can be unlocked",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can successfully unlock the terminal using the `vlock -u` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

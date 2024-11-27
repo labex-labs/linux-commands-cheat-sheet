@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux uncompress Command with Practical Examples",
+  "description": "Learn how to use the uncompress command in Linux to decompress Gzipped files. Understand the purpose of the command and troubleshoot compression and decompression issues.",
+  "meta": {
+    "title": "Linux uncompress Command with Practical Examples",
+    "description": "Learn how to use the uncompress command in Linux to decompress Gzipped files. Understand the purpose of the command and troubleshoot compression and decompression issues.",
+    "keywords": "Linux, uncompress, Gzip, decompression, compression, archiving"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the uncompress Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of the uncompress command",
+            "file": "verify1-1.sh",
+            "hint": "The uncompress command is not installed or not available in your environment. Please ensure that the GNU gzip package is installed before proceeding with the next steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decompress a Gzipped File Using the uncompress Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the decompression of the Gzipped file",
+            "file": "verify2-1.sh",
+            "hint": "The decompressed file 'sample.txt' does not exist or the contents do not match the expected output. Please ensure that you have successfully decompressed the Gzipped file using the uncompress command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Compression and Decompression Issues",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the troubleshooting of compression and decompression issues",
+            "file": "verify3-1.sh",
+            "hint": "The uncompress command was able to decompress the Gzipped or corrupted files, which is unexpected. Please ensure that you have properly simulated the compression and decompression issues as described in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux route Command with Practical Examples",
+  "description": "Explore the Linux route command and learn how to configure static and dynamic routing using practical examples. Gain a deeper understanding of network routing and management.",
+  "meta": {
+    "title": "Linux route Command with Practical Examples",
+    "description": "Explore the Linux route command and learn how to configure static and dynamic routing using practical examples. Gain a deeper understanding of network routing and management.",
+    "keywords": "Linux, route command, networking, static routing, dynamic routing, network management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the route Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the routing table",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the routing table contains the route to the 192.168.1.0/24 network that was added in the previous step. If the route is not present, the script will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Static Routes Using the route Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the static route",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the routing table contains the static route to the 192.168.2.0/24 network that was added in the previous step. If the route is not present, the script will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Dynamic Routing with the route Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the default route",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the routing table contains the default route with the gateway 10.0.0.1 that was added in the previous step. If the default route is not present, the script will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

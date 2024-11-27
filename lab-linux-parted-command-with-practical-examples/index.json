@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux parted Command with Practical Examples",
+  "description": "Explore the powerful parted command in Linux, learn to create, manage, resize, and delete partitions, and gain practical skills for disk and file system management.",
+  "meta": {
+    "title": "Linux parted Command with Practical Examples",
+    "description": "Explore the powerful parted command in Linux, learn to create, manage, resize, and delete partitions, and gain practical skills for disk and file system management.",
+    "keywords": "parted, partitions, disk management, file system, Linux utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the parted Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify parted version",
+            "file": "verify1-1.sh",
+            "hint": "The parted version installed in the Docker container should be 3.4.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Manage Partitions with parted",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify disk image and partition",
+            "file": "verify2-1.sh",
+            "hint": "The disk image file should exist in the ~/project directory, and the parted print command should show the partition information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Resize and Delete Partitions with parted",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify partition resizing",
+            "file": "verify3-1.sh",
+            "hint": "The parted print command should show that the partition size is 0.50GB after the resizing operation.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify partition deletion",
+            "file": "verify3-2.sh",
+            "hint": "The parted print command should not show any partition information after the deletion operation.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

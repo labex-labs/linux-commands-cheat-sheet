@@ -1,0 +1,101 @@
+{
+  "type": "lab",
+  "title": "Linux ping Command with Practical Examples",
+  "description": "Explore the ping command in Linux, learn how to use it for local and remote network troubleshooting, and gain practical experience with various ping command options.",
+  "meta": {
+    "title": "Linux ping Command with Practical Examples",
+    "description": "Explore the ping command in Linux, learn how to use it for local and remote network troubleshooting, and gain practical experience with various ping command options.",
+    "keywords": "Linux, ping, network, troubleshooting, connectivity, remote, local, diagnostics"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the Basics of ping Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ping to local loopback",
+            "file": "verify1-1.sh",
+            "hint": "The ping command to the local loopback address 127.0.0.1 should be successful.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify ping to remote host",
+            "file": "verify1-2.sh",
+            "hint": "The ping command to the remote host google.com should be successful.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Pinging Local and Remote Hosts",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify ping to local host",
+            "file": "verify2-1.sh",
+            "hint": "The ping command to the local host 192.168.1.1 should be successful.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify ping to remote host",
+            "file": "verify2-2.sh",
+            "hint": "The ping command to the remote host github.com should be successful.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting Network Issues with ping",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify ping to unreachable host",
+            "file": "verify3-1.sh",
+            "hint": "The ping command to the unreachable host 8.8.8.8 should show 100% packet loss.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify ping to host with high response time",
+            "file": "verify3-2.sh",
+            "hint": "The ping command to the host slowweb.com should show a response time of around 1000 ms.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify ping to host with high packet loss",
+            "file": "verify3-3.sh",
+            "hint": "The ping command to the host lossy.com should show a 50% packet loss.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

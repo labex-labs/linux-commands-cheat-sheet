@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux logout Command with Practical Examples",
+  "description": "Explore the Linux logout command, learn its purpose, and discover practical examples to automate logout sessions using shell scripts.",
+  "meta": {
+    "title": "Linux logout Command with Practical Examples",
+    "description": "Explore the Linux logout command, learn its purpose, and discover practical examples to automate logout sessions using shell scripts.",
+    "keywords": "Linux, logout, command, session, shell script, automation, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the logout Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify logout command",
+            "file": "verify1-1.sh",
+            "hint": "It seems that you have not executed the `logout` command. Please try running the `logout` command to complete this step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Logout from the Current Session",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify logout command",
+            "file": "verify2-1.sh",
+            "hint": "It seems that you have not executed the `logout` command. Please try running the `logout` command to complete this step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate Logout Using Shell Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify auto_logout.sh script",
+            "file": "verify3-1.sh",
+            "hint": "It seems that you have not created the `auto_logout.sh` script or the script does not contain the `logout` command. Please create the script and include the `logout` command to complete this step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and usage of the `pgrep` command in Linux. The `pgrep` command is a powerful tool that allows you to search for running processes based on their name or other criteria, which can be helpful in various scenarios, such as monitoring system processes, automating tasks, or troubleshooting issues. You also learned how to use `pgrep` to search for processes by their name, including using additional options to refine your search, such as searching for processes that start with a specific name, are owned by a specific user, or contain a specific string in their name.

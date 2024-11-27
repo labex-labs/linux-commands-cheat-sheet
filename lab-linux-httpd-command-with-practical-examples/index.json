@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux httpd Command with Practical Examples",
+  "description": "Explore the Linux httpd command with practical examples, including installing Apache HTTP Server, starting, stopping, and restarting the server, and configuring virtual hosts.",
+  "meta": {
+    "title": "Linux httpd Command with Practical Examples",
+    "description": "Explore the Linux httpd command with practical examples, including installing Apache HTTP Server, starting, stopping, and restarting the server, and configuring virtual hosts.",
+    "keywords": "Linux, httpd, Apache, HTTP Server, virtual hosts, web server, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Apache HTTP Server on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Apache HTTP Server installation",
+            "file": "verify1-1.sh",
+            "hint": "Looks like the Apache HTTP Server is not running. Please check the installation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Start, Stop, and Restart the Apache HTTP Server",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Apache HTTP Server status",
+            "file": "verify2-1.sh",
+            "hint": "Looks like the Apache HTTP Server is not running. Please check the start, stop, and restart commands and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Apache Virtual Hosts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Apache Virtual Hosts configuration",
+            "file": "verify3-1.sh",
+            "hint": "Looks like the Apache virtual hosts are not configured correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

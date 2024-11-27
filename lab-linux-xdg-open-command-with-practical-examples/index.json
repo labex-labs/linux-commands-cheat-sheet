@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux xdg-open Command with Practical Examples",
+  "description": "Explore the versatile xdg-open command in Linux, which allows you to open files and directories with their default applications, and customize the default associations.",
+  "meta": {
+    "title": "Linux xdg-open Command with Practical Examples",
+    "description": "Explore the versatile xdg-open command in Linux, which allows you to open files and directories with their default applications, and customize the default associations.",
+    "keywords": "xdg-open, Linux, file management, default applications, desktop integration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the xdg-open Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify xdg-open version",
+            "file": "verify1-1.sh",
+            "hint": "The xdg-open version should be 2.28.0 or higher.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Open Files and Directories with xdg-open",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify sample.txt file creation",
+            "file": "verify2-1.sh",
+            "hint": "The sample.txt file should be created in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify opening sample.txt with default application",
+            "file": "verify2-2.sh",
+            "hint": "The sample.txt file should open with the default text editor application.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the Default Applications with xdg-open",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom.txt file creation",
+            "file": "verify3-1.sh",
+            "hint": "The custom.txt file should be created in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify opening custom.txt with gedit",
+            "file": "verify3-2.sh",
+            "hint": "The custom.txt file should open with the gedit text editor.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

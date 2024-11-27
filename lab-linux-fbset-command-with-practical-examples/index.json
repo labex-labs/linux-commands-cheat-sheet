@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fbset Command with Practical Examples",
+  "description": "Explore the fbset command in Linux, learn how to adjust screen resolution and depth, and customize display settings for optimal performance.",
+  "meta": {
+    "title": "Linux fbset Command with Practical Examples",
+    "description": "Explore the fbset command in Linux, learn how to adjust screen resolution and depth, and customize display settings for optimal performance.",
+    "keywords": "Linux, fbset, screen resolution, display settings, command line, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the fbset Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify fbset command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you can run the 'fbset -i' and 'fbset -l' commands without any errors.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjust Screen Resolution and Depth Using fbset",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify screen resolution and depth changes",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the screen resolution is set to 800x600 and the color depth is set to 32-bit.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize Display Settings with fbset",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify display settings customization",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the screen resolution is set to 800x600 and the color depth is set to 32-bit, frame buffer acceleration is enabled, and the display settings are saved to the /etc/fb.modes file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux modinfo Command with Practical Examples",
+  "description": "Explore the Linux modinfo command, which provides detailed information about kernel modules. Learn how to use modinfo to troubleshoot module issues and optimize system configuration.",
+  "meta": {
+    "title": "Linux modinfo Command with Practical Examples",
+    "description": "Explore the Linux modinfo command, which provides detailed information about kernel modules. Learn how to use modinfo to troubleshoot module issues and optimize system configuration.",
+    "keywords": "Linux, modinfo, kernel modules, system configuration, troubleshooting, module information"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the modinfo Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the modinfo command version",
+            "file": "verify1-1.sh",
+            "hint": "The modinfo command version should be 2.6.32-504.16.2.el6 or a similar version.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Module Information Using modinfo",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the list of loaded kernel modules",
+            "file": "verify2-1.sh",
+            "hint": "The output of `modinfo -F filename -a` should include the ext4 module.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Module Issues with modinfo",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the error message for a non-existent module",
+            "file": "verify3-1.sh",
+            "hint": "The output of `sudo modprobe non_existent_module` should contain the message \"non_existent_module not found\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

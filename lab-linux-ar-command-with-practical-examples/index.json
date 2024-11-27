@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ar Command with Practical Examples",
+  "description": "Explore the Linux ar command for creating, managing, and manipulating static libraries. Learn how to build, extract, and list the contents of static libraries through practical examples.",
+  "meta": {
+    "title": "Linux ar Command with Practical Examples",
+    "description": "Explore the Linux ar command for creating, managing, and manipulating static libraries. Learn how to build, extract, and list the contents of static libraries through practical examples.",
+    "keywords": "Linux, ar command, static libraries, compression, archiving, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the ar Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ar command help",
+            "file": "verify1-1.sh",
+            "hint": "The `ar` command help output does not contain the expected \"Usage: ar\" text. Please ensure you have correctly executed the `ar --help` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating Static Libraries with ar",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify static library creation",
+            "file": "verify2-1.sh",
+            "hint": "The static library `libhello.a` was not created correctly or does not contain the `hello.o` object file. Please review the steps to create the static library.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Extracting and Listing Contents of Static Libraries",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify static library usage",
+            "file": "verify3-1.sh",
+            "hint": "The static library usage was not successful. Please review the steps to compile and run the program using the static library, as well as the steps to list and extract the contents of the static library.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

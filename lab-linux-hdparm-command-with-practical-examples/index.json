@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux hdparm Command with Practical Examples",
+  "description": "Explore the hdparm command in Linux, learn how to measure disk performance, and optimize disk configurations for improved system performance.",
+  "meta": {
+    "title": "Linux hdparm Command with Practical Examples",
+    "description": "Explore the hdparm command in Linux, learn how to measure disk performance, and optimize disk configurations for improved system performance.",
+    "keywords": "hdparm, disk performance, disk optimization, Linux, system performance"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of hdparm",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify hdparm command output",
+            "file": "verify1-1.sh",
+            "hint": "The `hdparm -i /dev/sda` command did not return the expected output. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Measure Disk Performance with hdparm",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify hdparm read performance",
+            "file": "verify2-1.sh",
+            "hint": "The `hdparm -t /dev/sda` command did not return the expected output. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify hdparm cached read performance",
+            "file": "verify2-2.sh",
+            "hint": "The `hdparm -T /dev/sda` command did not return the expected output. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Optimize Disk Performance using hdparm",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify read-ahead cache setting",
+            "file": "verify3-1.sh",
+            "hint": "The `hdparm -i /dev/sda` command did not show the expected read-ahead cache setting. Please ensure you have run the `hdparm -r1 /dev/sda` command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify advanced power management setting",
+            "file": "verify3-2.sh",
+            "hint": "The `hdparm -B /dev/sda` command did not show the expected advanced power management setting. Please ensure you have run the `hdparm -B 254 /dev/sda` command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify write-caching setting",
+            "file": "verify3-3.sh",
+            "hint": "The `hdparm -W /dev/sda` command did not show the expected write-caching setting. Please ensure you have run the `hdparm -W1 /dev/sda` command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

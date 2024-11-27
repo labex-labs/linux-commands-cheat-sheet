@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux umount Command with Practical Examples",
+  "description": "Explore the Linux umount command, learn how to unmount mounted file systems, and discover practical examples to manage your file system effectively.",
+  "meta": {
+    "title": "Linux umount Command with Practical Examples",
+    "description": "Explore the Linux umount command, learn how to unmount mounted file systems, and discover practical examples to manage your file system effectively.",
+    "keywords": "Linux, umount, file system, mount, unmount, disk management, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the umount Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the umount command",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the /mnt/example mount point is still present in the output of the `mount` command. If the mount point is still present, the script will exit with a non-zero status, indicating that the umount operation was not successful.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Unmount a Mounted File System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the umount command",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the /mnt/example2 mount point is still present in the output of the `mount` command. If the mount point is still present, the script will exit with a non-zero status, indicating that the umount operation was not successful.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Unmount a Mounted File System Forcefully",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the umount command",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the /mnt/example3 mount point is still present in the output of the `mount` command. If the mount point is still present, the script will exit with a non-zero status, indicating that the umount operation was not successful.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

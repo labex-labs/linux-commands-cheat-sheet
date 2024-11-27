@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dump Command with Practical Examples",
+  "description": "Explore the Linux dump command for full system backups. Learn how to perform a complete system backup and restore data from the dump file, with practical examples.",
+  "meta": {
+    "title": "Linux dump Command with Practical Examples",
+    "description": "Explore the Linux dump command for full system backups. Learn how to perform a complete system backup and restore data from the dump file, with practical examples.",
+    "keywords": "Linux, dump, backup, restore, compression, system, data"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the Linux dump Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dump command version",
+            "file": "verify1-1.sh",
+            "hint": "The dump command version should be 0.4b41. Please check the output of the `sudo dump --version` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Performing a Full System Backup with dump",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify full backup creation",
+            "file": "verify2-1.sh",
+            "hint": "The full backup file should be created at ~/backup/full_backup.dump. Please check if the file exists.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Restoring Data from a dump Backup",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify restored directory",
+            "file": "verify3-1.sh",
+            "hint": "The restored directory at ~/restore should not be empty. Please check the contents of the directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the `setsid` command in Linux, which is used to detach a process from the current session and run it in the background. We learned that `setsid` creates a new session with the calling process as the session leader, isolating the process from the current session and its signals or terminal input/output. We demonstrated how to use `setsid` to run a simple `sleep` command in the background, and how to verify that the process is running in a separate session. Additionally, we learned how to use `setsid` to detach a process from the current session, allowing long-running processes to continue running even if the current terminal is closed.

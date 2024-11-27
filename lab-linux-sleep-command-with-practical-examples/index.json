@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sleep Command with Practical Examples",
+  "description": "Explore the Linux sleep command and its practical applications. Learn how to use sleep with time intervals and combine it with other commands for efficient task automation.",
+  "meta": {
+    "title": "Linux sleep Command with Practical Examples",
+    "description": "Explore the Linux sleep command and its practical applications. Learn how to use sleep with time intervals and combine it with other commands for efficient task automation.",
+    "keywords": "Linux, sleep command, time intervals, task automation, command line, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the sleep Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify sleep command",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the `sleep 2` command is executed correctly and the output \"Completed\" is displayed. If the output is not as expected, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use sleep Command with Time Intervals",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify sleep with multiple intervals",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the total duration of the three `sleep` commands is between 8 and 10 seconds. If the duration is not within this range, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine sleep with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify sleep in a loop",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the loop with `sleep 1` is executed 5 times. If the loop is not executed the expected 5 times, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

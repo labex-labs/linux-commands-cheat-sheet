@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux scp Command with Practical Examples",
+  "description": "Learn how to use the scp command to securely copy files and directories between local and remote hosts in Linux. Explore practical examples and understand the command's key features.",
+  "meta": {
+    "title": "Linux scp Command with Practical Examples",
+    "description": "Learn how to use the scp command to securely copy files and directories between local and remote hosts in Linux. Explore practical examples and understand the command's key features.",
+    "keywords": "scp, file transfer, remote host, secure copy, Linux, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to scp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify scp command usage",
+            "file": "verify1-1.sh",
+            "hint": "It seems you have not used the scp command yet. Please review the step and try using the scp command to copy a file between the local and remote hosts.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Copying Files Between Local and Remote Hosts",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file copy between local and remote hosts",
+            "file": "verify2-1.sh",
+            "hint": "It seems you have not successfully copied files between the local and remote hosts. Please review the step and try using the scp command to copy files in both directions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Recursive Copying of Directories with scp",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify recursive directory copy",
+            "file": "verify3-1.sh",
+            "hint": "It seems you have not successfully copied directories recursively between the local and remote hosts. Please review the step and try using the scp command with the -r option to copy directories.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

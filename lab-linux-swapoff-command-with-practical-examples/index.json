@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux swapoff Command with Practical Examples",
+  "description": "Learn how to disable swap partitions and swap files using the swapoff command in Linux. Understand the purpose of swapoff and explore practical examples to manage swap space effectively.",
+  "meta": {
+    "title": "Linux swapoff Command with Practical Examples",
+    "description": "Learn how to disable swap partitions and swap files using the swapoff command in Linux. Understand the purpose of swapoff and explore practical examples to manage swap space effectively.",
+    "keywords": "Linux, swapoff, swap, disk management, file system, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the swapoff Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify that swap is disabled",
+            "file": "verify1-1.sh",
+            "hint": "The output of `free -h` should show that the Swap line has 0 Bytes for total, used, and free.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify Swap Partitions and Swap Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify swap partition information",
+            "file": "verify2-1.sh",
+            "hint": "The output of `sudo swapon -s` and `cat /proc/swaps` should both show the swap partition located at `/dev/sda2`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Disable Swap Using the swapoff Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify that swap is disabled",
+            "file": "verify3-1.sh",
+            "hint": "The output of `free -h` should show that the Swap line has 0 Bytes for total, used, and free.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux amixer Command with Practical Examples",
+  "description": "Explore the amixer command, a powerful Linux utility for adjusting sound card mixer settings. Learn how to control master volume, manage specific sound channels, and apply practical examples to enhance your audio experience.",
+  "meta": {
+    "title": "Linux amixer Command with Practical Examples",
+    "description": "Explore the amixer command, a powerful Linux utility for adjusting sound card mixer settings. Learn how to control master volume, manage specific sound channels, and apply practical examples to enhance your audio experience.",
+    "keywords": "amixer, Linux, sound control, volume adjustment, audio management, mixer settings, command line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to amixer Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify amixer command output",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the initial `amixer` command output shows the 'Master' volume at 100%, and if the subsequent `amixer set Master 50%` command sets the volume to 50%. If either of these checks fails, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjusting Master Volume with amixer",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify master volume adjustment",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the initial `amixer get Master` command shows the master volume at 100%, if the `amixer set Master 50%` command sets the volume to 50%, if the `amixer set Master 65536` command sets the volume to 100%, if the `amixer set Master mute` command mutes the volume, and if the `amixer set Master unmute` command unmutes the volume. If any of these checks fail, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Controlling Specific Sound Channels with amixer",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify sound channel control",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the `amixer scontrols` command lists the 'Headphone' channel, if the `amixer sset Headphone 50%` command sets the volume to 50%, if the `amixer sset Headphone mute` command mutes the channel, and if the `amixer sset Headphone unmute` command unmutes the channel. If any of these checks fail, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

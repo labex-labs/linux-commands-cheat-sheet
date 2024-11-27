@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux aptitude Command with Practical Examples",
+  "description": "Explore the aptitude package manager in Linux, learn how to search, install, upgrade, and remove packages, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux aptitude Command with Practical Examples",
+    "description": "Explore the aptitude package manager in Linux, learn how to search, install, upgrade, and remove packages, and gain practical experience with real-world examples.",
+    "keywords": "Linux, aptitude, package management, package search, package installation, package upgrade, package removal"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install and Update aptitude Package Manager",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify aptitude installation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `aptitude` command is available in your system's PATH.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Package Search and Information Lookup with aptitude",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify package search",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `aptitude search` command can find the 'nginx' package.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package information",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that the `aptitude show` command can display the correct information about the 'nginx' package.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install, Upgrade, and Remove Packages using aptitude",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the 'tree' package is installed correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package upgrade",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the 'vim' package is upgraded to the expected version.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package removal",
+            "file": "verify3-3.sh",
+            "hint": "Ensure that the 'tree' package is no longer installed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

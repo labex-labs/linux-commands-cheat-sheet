@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux netcat (nc) Command with Practical Examples",
+  "description": "Explore the versatile Linux netcat (nc) command and learn how to use it for server-client communication, file transfers, and other practical networking tasks.",
+  "meta": {
+    "title": "Linux netcat (nc) Command with Practical Examples",
+    "description": "Explore the versatile Linux netcat (nc) command and learn how to use it for server-client communication, file transfers, and other practical networking tasks.",
+    "keywords": "netcat, nc, Linux, networking, communication, file transfer, server, client"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Netcat (nc) Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Netcat installation",
+            "file": "verify1-1.sh",
+            "hint": "It seems that Netcat (nc) is not installed on your system. Please follow the installation steps provided in the previous section.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Netcat Server and Client Communication",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify server-client communication",
+            "file": "verify2-1.sh",
+            "hint": "It seems that the Netcat server and client communication was not successful. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Transferring Files Using Netcat",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file transfer",
+            "file": "verify3-1.sh",
+            "hint": "It seems that the file transfer using Netcat was not successful. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

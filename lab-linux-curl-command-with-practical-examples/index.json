@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux curl Command with Practical Examples",
+  "description": "Explore the versatile curl command in Linux, learn how to fetch web page content, download files, and more through practical examples.",
+  "meta": {
+    "title": "Linux curl Command with Practical Examples",
+    "description": "Explore the versatile curl command in Linux, learn how to fetch web page content, download files, and more through practical examples.",
+    "keywords": "Linux, curl, networking, communication, web, file download, HTTP, FTP"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to curl Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify curl version",
+            "file": "verify1-1.sh",
+            "hint": "The curl version installed in the environment should be 7.81.0.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Fetching Web Page Content with curl",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify curl homepage download",
+            "file": "verify2-1.sh",
+            "hint": "The curl_homepage.html file should be created, and it should contain the text \"curl - transfer data with URL\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Downloading Files Using curl",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify curl file download",
+            "file": "verify3-1.sh",
+            "hint": "The curl-7.81.0.tar.gz file should be created in the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

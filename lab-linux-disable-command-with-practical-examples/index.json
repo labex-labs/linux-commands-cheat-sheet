@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux disable Command with Practical Examples",
+  "description": "Explore the Linux disable command and learn how to disable services using practical examples. Understand the purpose and verify the disabled status of services.",
+  "meta": {
+    "title": "Linux disable Command with Practical Examples",
+    "description": "Explore the Linux disable command and learn how to disable services using practical examples. Understand the purpose and verify the disabled status of services.",
+    "keywords": "Linux, disable, service, command, utilities, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the disable Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the apache2 service is disabled",
+            "file": "verify1-1.sh",
+            "hint": "The apache2 service should be disabled. You can verify this by running `systemctl is-enabled apache2` and checking if the output contains 'disabled'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Disable a Service Using the disable Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the nginx service is disabled",
+            "file": "verify2-1.sh",
+            "hint": "The nginx service should be disabled. You can verify this by running `systemctl is-enabled nginx` and checking if the output contains 'disabled'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verify the Service Disabled Status",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the nginx service is disabled",
+            "file": "verify3-1.sh",
+            "hint": "The nginx service should be disabled. You can verify this by running `systemctl is-enabled nginx` and checking if the output contains 'disabled'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

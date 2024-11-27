@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux grpconv Command with Practical Examples",
+  "description": "Explore the grpconv command in Linux, learn how to create and manage user groups, and synchronize group passwords with practical examples.",
+  "meta": {
+    "title": "Linux grpconv Command with Practical Examples",
+    "description": "Explore the grpconv command in Linux, learn how to create and manage user groups, and synchronize group passwords with practical examples.",
+    "keywords": "Linux, grpconv, user groups, group management, password synchronization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the grpconv Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the grpconv command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the `grpconv` command can be executed without any errors.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Manage User Groups Using the grpconv Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the \"developers\" group",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the \"developers\" group exists and the \"labex\" user is a member of it.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Synchronize Group Passwords with the grpconv Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the \"finance\" group password",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the \"finance\" group password is synchronized and locked in the `/etc/gshadow` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

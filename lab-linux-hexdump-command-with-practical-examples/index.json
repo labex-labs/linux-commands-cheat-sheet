@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux hexdump Command with Practical Examples",
+  "description": "Explore the Linux hexdump command, a powerful tool for viewing and manipulating binary data. Learn how to use hexdump to analyze file contents, customize output, and gain insights into data structures.",
+  "meta": {
+    "title": "Linux hexdump Command with Practical Examples",
+    "description": "Explore the Linux hexdump command, a powerful tool for viewing and manipulating binary data. Learn how to use hexdump to analyze file contents, customize output, and gain insights into data structures.",
+    "keywords": "hexdump, binary data, file analysis, data manipulation, Linux utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the hexdump Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify hexdump command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the hexdump command is installed and you can run it on the example.txt file in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Viewing Binary Data with hexdump",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify hexdump command usage on binary file",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the hexdump command is installed and you can run it on the binary_file.bin file in the ~/project directory, including using the -n option to view a specific number of bytes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing the hexdump Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify hexdump command customization",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the hexdump command is installed and you can run it with the -v, -x, and -d options on the binary_file.bin file in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

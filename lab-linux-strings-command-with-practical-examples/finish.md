@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and usage of the `strings` command in Linux. The `strings` command is a utility that extracts printable character strings from binary files, including executable files, libraries, and other binary data. You explored the basic usage of the `strings` command and how to customize its behavior using various options, such as printing the file name and offset for each string found. Additionally, you learned how to use the `strings` command to explore strings in binary files, including compressed and encrypted files, which can be useful for further analysis or debugging of binary files.

@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux lpd Command with Practical Examples",
+  "description": "Explore the lpd command, a powerful tool for managing print jobs in Linux. Learn how to configure the lpd daemon, control print queues, and troubleshoot printing issues with practical examples.",
+  "meta": {
+    "title": "Linux lpd Command with Practical Examples",
+    "description": "Explore the lpd command, a powerful tool for managing print jobs in Linux. Learn how to configure the lpd daemon, control print queues, and troubleshoot printing issues with practical examples.",
+    "keywords": "Linux, lpd, printing, print jobs, print queues, network printing, command line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the lpd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lpd service status",
+            "file": "verify1-1.sh",
+            "hint": "The lpd service should be active and running on the system. Please check the service status using the `systemctl status lpd` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configuring the lpd Daemon",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify print queue creation",
+            "file": "verify2-1.sh",
+            "hint": "The 'myprinter' print queue should be listed when running the `sudo lpstat -a` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify print queue enablement",
+            "file": "verify2-2.sh",
+            "hint": "The 'myprinter' print queue should be listed as \"accepting requests\" when running the `sudo lpstat -a` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Managing Print Jobs with lpd",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify print job submission",
+            "file": "verify3-1.sh",
+            "hint": "The 'test_print.txt' file should be listed in the print queue when running the `sudo lpq myprinter` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify print job cancellation",
+            "file": "verify3-2.sh",
+            "hint": "The print queue should be empty when running the `sudo lpq myprinter` command after canceling the print job.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux journalctl Command with Practical Examples",
+  "description": "Explore the powerful journalctl command in Linux, learn how to filter and analyze system logs, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux journalctl Command with Practical Examples",
+    "description": "Explore the powerful journalctl command in Linux, learn how to filter and analyze system logs, and gain practical experience with real-world examples.",
+    "keywords": "journalctl, Linux, system logs, log analysis, system monitoring, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of journalctl",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify journalctl command execution",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can execute the `journalctl` command and see the log entries.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore journalctl Filtering Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify journalctl filtering by log level",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can filter the journalctl logs by log level (error and critical).",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify journalctl filtering by service",
+            "file": "verify2-2.sh",
+            "hint": "Make sure you can filter the journalctl logs by a specific service (sshd).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Logs Using journalctl Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify journalctl output in JSON format",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can view the journalctl logs in JSON format.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify journalctl filtering by process",
+            "file": "verify3-2.sh",
+            "hint": "Make sure you can filter the journalctl logs by a specific process (sshd).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

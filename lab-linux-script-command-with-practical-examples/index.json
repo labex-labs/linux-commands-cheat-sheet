@@ -1,0 +1,115 @@
+{
+  "type": "lab",
+  "title": "Linux script Command with Practical Examples",
+  "description": "Explore the power of shell scripting with this hands-on lab. Learn to write and execute simple scripts, use variables and command substitution, and implement conditional statements and loops for more complex tasks.",
+  "meta": {
+    "title": "Linux script Command with Practical Examples",
+    "description": "Explore the power of shell scripting with this hands-on lab. Learn to write and execute simple scripts, use variables and command substitution, and implement conditional statements and loops for more complex tasks.",
+    "keywords": "shell scripting, bash, variables, conditional statements, loops, command substitution"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Write and Execute a Simple Shell Script",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the script file exists",
+            "file": "verify1-1.sh",
+            "hint": "The script file `~/project/hello.sh` does not exist. Make sure to create the file and add the necessary content.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the script is executable",
+            "file": "verify1-2.sh",
+            "hint": "The script `~/project/hello.sh` is not executable. Make sure to run the `chmod +x` command to make the script executable.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the script output",
+            "file": "verify1-3.sh",
+            "hint": "The script `~/project/hello.sh` did not output \"Hello, World!\". Make sure the script contains the correct content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use Variables and Command Substitution in Shell Scripts",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the script file exists",
+            "file": "verify2-1.sh",
+            "hint": "The script file `~/project/variables.sh` does not exist. Make sure to create the file and add the necessary content.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the script is executable",
+            "file": "verify2-2.sh",
+            "hint": "The script `~/project/variables.sh` is not executable. Make sure to run the `chmod +x` command to make the script executable.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the script output",
+            "file": "verify2-3.sh",
+            "hint": "The script `~/project/variables.sh` did not output the expected content. Make sure the script contains the correct variable assignments and command substitution.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Implement Conditional Statements and Loops in Shell Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the script file exists",
+            "file": "verify3-1.sh",
+            "hint": "The script file `~/project/conditional_loops.sh` does not exist. Make sure to create the file and add the necessary content.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the script is executable",
+            "file": "verify3-2.sh",
+            "hint": "The script `~/project/conditional_loops.sh` is not executable. Make sure to run the `chmod +x` command to make the script executable.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the script output",
+            "file": "verify3-3.sh",
+            "hint": "The script `~/project/conditional_loops.sh` did not output the expected content. Make sure the script contains the correct conditional statement and loop implementation.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

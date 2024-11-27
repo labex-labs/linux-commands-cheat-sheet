@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bzcmp Command with Practical Examples",
+  "description": "Explore the bzcmp command in Linux, which allows you to compare compressed files. Learn how to use this utility effectively with practical examples.",
+  "meta": {
+    "title": "Linux bzcmp Command with Practical Examples",
+    "description": "Explore the bzcmp command in Linux, which allows you to compare compressed files. Learn how to use this utility effectively with practical examples.",
+    "keywords": "bzcmp, Linux, compressed files, comparison, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of bzcmp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify bzcmp version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that the bzcmp command version is 1.0.8 or compatible.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compare Compressed Files Using bzcmp",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify bzcmp comparison",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the bzcmp command correctly identifies the differences between the compressed files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced Options of bzcmp",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify bzcmp advanced options",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the bzcmp command can correctly compare the compressed files using the --ignore-case option.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

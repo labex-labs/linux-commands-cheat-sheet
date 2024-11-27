@@ -1,0 +1,115 @@
+{
+  "type": "lab",
+  "title": "Linux cpp Command with Practical Examples",
+  "description": "Explore the power of C++ programming in Linux, from compiling and running code to managing files and directories. Dive into practical examples and master essential Linux utilities for efficient C++ development.",
+  "meta": {
+    "title": "Linux cpp Command with Practical Examples",
+    "description": "Explore the power of C++ programming in Linux, from compiling and running code to managing files and directories. Dive into practical examples and master essential Linux utilities for efficient C++ development.",
+    "keywords": "C++, Linux, Compiler, g++, File System, Utilities, Programming, Coding"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Compile and Run C++ Programs in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify C++ program compilation",
+            "file": "verify1-1.sh",
+            "hint": "It looks like the C++ program was not compiled successfully. Please check the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify C++ program execution",
+            "file": "verify1-2.sh",
+            "hint": "The C++ program did not output the expected \"Hello, World!\" message. Please check your code and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize the g++ Compiler for C++ Development",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify C++ project structure",
+            "file": "verify2-1.sh",
+            "hint": "It looks like the C++ project structure was not created correctly. Please check the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify C++ program compilation",
+            "file": "verify2-2.sh",
+            "hint": "The C++ program was not compiled successfully. Please check the compilation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify C++ program execution",
+            "file": "verify2-3.sh",
+            "hint": "The C++ program did not output the expected message. Please check your code and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage C++ Code with the Linux File System",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify C++ project structure",
+            "file": "verify3-1.sh",
+            "hint": "It looks like the C++ project structure was not created correctly. Please check the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify C++ program compilation",
+            "file": "verify3-2.sh",
+            "hint": "The C++ program was not compiled successfully. Please check the compilation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify C++ program execution",
+            "file": "verify3-3.sh",
+            "hint": "The C++ program did not output the expected message. Please check your code and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file management",
+            "file": "verify3-4.sh",
+            "hint": "The build directory was not deleted as expected. Please check the file management steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux atrm Command with Practical Examples",
+  "description": "Explore the atrm command in Linux, which allows you to remove scheduled tasks. Learn how to troubleshoot and manage your system's scheduled tasks effectively.",
+  "meta": {
+    "title": "Linux atrm Command with Practical Examples",
+    "description": "Explore the atrm command in Linux, which allows you to remove scheduled tasks. Learn how to troubleshoot and manage your system's scheduled tasks effectively.",
+    "keywords": "Linux, atrm, process management, task scheduling, task removal, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the atrm Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the scheduled task was removed",
+            "file": "verify1-1.sh",
+            "hint": "The scheduled task with job ID 1 should have been removed using the `atrm` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Removing Scheduled Tasks with atrm",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify scheduled tasks were removed",
+            "file": "verify2-1.sh",
+            "hint": "The scheduled task with job ID 2 should have been removed using the `atrm` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting Scheduled Tasks with atrm",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the scheduled task was removed",
+            "file": "verify3-1.sh",
+            "hint": "The scheduled task with job ID 5 should have been removed using the `atrm` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

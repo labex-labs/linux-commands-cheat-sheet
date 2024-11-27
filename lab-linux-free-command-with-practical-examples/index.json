@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux free Command with Practical Examples",
+  "description": "Explore the Linux free command, learn its syntax, and analyze memory usage with practical examples. Customize the free command output to suit your system monitoring needs.",
+  "meta": {
+    "title": "Linux free Command with Practical Examples",
+    "description": "Explore the Linux free command, learn its syntax, and analyze memory usage with practical examples. Customize the free command output to suit your system monitoring needs.",
+    "keywords": "Linux, free command, memory usage, system monitoring, memory analysis, command line, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the free Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the free command output",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the output of the `free` command includes the \"Mem:\" and \"Swap:\" sections.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Memory Usage with the free Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the free command output",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the output of the `free -h` command includes the \"Mem:\" and \"Swap:\" sections in a human-readable format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the free Command Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the free command customization",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the output of the `free -h -t` command includes the \"Total:\" line, which displays the total memory and swap usage.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux yum Command with Practical Examples",
+  "description": "Explore the powerful yum package manager in Linux. Learn how to install, update, and remove packages using practical examples. Enhance your system management skills with this comprehensive lab.",
+  "meta": {
+    "title": "Linux yum Command with Practical Examples",
+    "description": "Explore the powerful yum package manager in Linux. Learn how to install, update, and remove packages using practical examples. Enhance your system management skills with this comprehensive lab.",
+    "keywords": "Linux, yum, package management, software installation, system administration, package updates, package removal"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to yum Package Manager",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify yum version",
+            "file": "verify1-1.sh",
+            "hint": "The yum version should be 4.4.2. Please check the output of the `yum --version` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Installing Packages Using yum",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify \"tree\" package installation",
+            "file": "verify2-1.sh",
+            "hint": "The \"tree\" package should be installed on your system. Please check the output of the `rpm -q tree` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Updating and Removing Packages with yum",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify \"tree\" package removal",
+            "file": "verify3-1.sh",
+            "hint": "The \"tree\" package should be removed from your system. Please check the output of the `rpm -q tree` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

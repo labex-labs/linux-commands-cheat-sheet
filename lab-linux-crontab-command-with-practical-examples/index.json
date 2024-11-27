@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux crontab Command with Practical Examples",
+  "description": "Explore the Linux crontab command and learn how to schedule recurring tasks. Discover practical examples to enhance your system management skills.",
+  "meta": {
+    "title": "Linux crontab Command with Practical Examples",
+    "description": "Explore the Linux crontab command and learn how to schedule recurring tasks. Discover practical examples to enhance your system management skills.",
+    "keywords": "Linux, crontab, task scheduling, system management, automation, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Crontab",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify crontab entry",
+            "file": "verify1-1.sh",
+            "hint": "The crontab entry '* * * * * /home/labex/project/hello.sh' is not present. Please check your crontab configuration.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Schedule a Recurring Task with Crontab",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify crontab entry",
+            "file": "verify2-1.sh",
+            "hint": "The crontab entry '*/5 * * * * /home/labex/project/backup.sh' is not present. Please check your crontab configuration.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify backup.txt file",
+            "file": "verify2-2.sh",
+            "hint": "The backup.txt file does not exist or does not contain the current date. Please check your cron job.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Crontab Entries",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify crontab entries",
+            "file": "verify3-1.sh",
+            "hint": "The crontab entries do not match the expected configuration. Please check your crontab management.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify backup.sh cron job is disabled",
+            "file": "verify3-2.sh",
+            "hint": "The backup.sh cron job is not disabled. Please check your crontab configuration.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

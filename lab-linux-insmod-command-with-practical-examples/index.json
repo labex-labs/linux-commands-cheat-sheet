@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux insmod Command with Practical Examples",
+  "description": "Explore the insmod command in Linux, learn how to compile and insert kernel modules, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux insmod Command with Practical Examples",
+    "description": "Explore the insmod command in Linux, learn how to compile and insert kernel modules, and gain practical experience with real-world examples.",
+    "keywords": "Linux, insmod, kernel module, system configuration, system settings, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the insmod Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the \"hello\" kernel module is loaded",
+            "file": "verify1-1.sh",
+            "hint": "The 'hello' kernel module should be loaded in the kernel. Use the 'lsmod' command to check if the module is present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compiling a Kernel Module",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the \"hello2\" kernel module is compiled",
+            "file": "verify2-1.sh",
+            "hint": "The 'hello2.o' object file should be present in the '~/project' directory after compiling the kernel module.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Inserting a Kernel Module with insmod",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the \"hello2\" kernel module is loaded",
+            "file": "verify3-1.sh",
+            "hint": "The 'hello2' kernel module should be loaded in the kernel. Use the 'lsmod' command to check if the module is present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

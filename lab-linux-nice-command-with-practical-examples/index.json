@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux nice Command with Practical Examples",
+  "description": "Explore the Linux nice command and learn how to adjust process priority for optimal system performance. Discover practical examples to enhance your process management skills.",
+  "meta": {
+    "title": "Linux nice Command with Practical Examples",
+    "description": "Explore the Linux nice command and learn how to adjust process priority for optimal system performance. Discover practical examples to enhance your process management skills.",
+    "keywords": "Linux, nice command, process management, priority, system performance, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the nice Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the niceness value of the current shell process",
+            "file": "verify1-1.sh",
+            "hint": "The niceness value of the current shell process should be 0.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjust Process Priority with nice",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the niceness value of the first sleep process",
+            "file": "verify2-1.sh",
+            "hint": "The niceness value of the first sleep process should be 0.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of using nice",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the niceness value of the CPU-intensive task",
+            "file": "verify3-1.sh",
+            "hint": "The niceness value of the CPU-intensive task should be 10.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the niceness value of the I/O-bound task",
+            "file": "verify3-2.sh",
+            "hint": "The niceness value of the I/O-bound task should be -5.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the niceness value of the background task",
+            "file": "verify3-3.sh",
+            "hint": "The niceness value of the background task should be 5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

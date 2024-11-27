@@ -1,0 +1,108 @@
+{
+  "type": "lab",
+  "title": "Linux ranlib Command with Practical Examples",
+  "description": "Explore the Linux ranlib command, learn how to create and manage static libraries, and discover practical examples to enhance your system administration skills.",
+  "meta": {
+    "title": "Linux ranlib Command with Practical Examples",
+    "description": "Explore the Linux ranlib command, learn how to create and manage static libraries, and discover practical examples to enhance your system administration skills.",
+    "keywords": "Linux, ranlib, static library, object files, command-line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of ranlib Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the static library is created",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the static library file `libmylib.a` using the `ar` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the `ranlib` command is used",
+            "file": "verify1-2.sh",
+            "hint": "Make sure you have used the `ranlib` command to update the symbol table in the static library `libmylib.a`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Static Library and Use ranlib",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the static library is created",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created the static library file `libmylib.a` using the `ar` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the `ranlib` command is used",
+            "file": "verify2-2.sh",
+            "hint": "Make sure you have used the `ranlib` command to update the symbol table in the static library `libmylib.a`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the program links against the static library",
+            "file": "verify2-3.sh",
+            "hint": "Make sure you have used the `-L.` and `-lmylib` options to link the program against the static library `libmylib.a`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verify the Updated Library Information",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the symbols in the static library",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the `nm` command shows the `myfunction` symbol defined in the static library `libmylib.a`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the object file in the static library",
+            "file": "verify3-2.sh",
+            "hint": "Make sure the `ar -t` command shows the `mylib.o` object file in the static library `libmylib.a`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the program links against the static library",
+            "file": "verify3-3.sh",
+            "hint": "Make sure you have used the `-L.` and `-lmylib` options to link the program against the static library `libmylib.a`, and that the program runs correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

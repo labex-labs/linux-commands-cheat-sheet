@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux iptables Command with Practical Examples",
+  "description": "Explore the powerful iptables firewall tool in Linux. Learn to manage firewall rules, implement advanced configurations, and secure your network with practical examples.",
+  "meta": {
+    "title": "Linux iptables Command with Practical Examples",
+    "description": "Explore the powerful iptables firewall tool in Linux. Learn to manage firewall rules, implement advanced configurations, and secure your network with practical examples.",
+    "keywords": "iptables, Linux firewall, network security, firewall rules, advanced iptables configurations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of iptables",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify iptables rules",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the rule to block traffic on port 80 is present in the iptables rules.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Firewall Rules with iptables",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify iptables rules",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the rule to allow SSH traffic (port 22) is present and the rule to block traffic on port 80 is removed in the iptables rules.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Implement Advanced iptables Configurations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify port forwarding rule",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the rule to forward traffic from port 8080 to port 80 on the local machine is present in the iptables NAT table.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify NAT masquerade rule",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the rule to masquerade outgoing traffic from the default interface (eth0) is present in the iptables NAT table.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

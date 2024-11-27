@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux seq Command with Practical Examples",
+  "description": "Explore the versatile seq command in Linux, learn how to generate numeric sequences, and customize them with step size and formatting.",
+  "meta": {
+    "title": "Linux seq Command with Practical Examples",
+    "description": "Explore the versatile seq command in Linux, learn how to generate numeric sequences, and customize them with step size and formatting.",
+    "keywords": "Linux, seq command, numeric sequences, step size, formatting, command-line utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the seq Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the understanding of seq command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you can generate a simple sequence of numbers from 1 to 5 using the `seq` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Generate Numeric Sequences with the seq Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify generating numeric sequences",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can generate a sequence of numbers from 1 to 10, with a step size of 2, using the `seq` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize Numeric Sequences with Step Size and Formatting",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify customizing numeric sequences",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can generate a sequence of numbers from 1 to 3, with a step size of 0.5, and format the output using the `%.2f` format specifier.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

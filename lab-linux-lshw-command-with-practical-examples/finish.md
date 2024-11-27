@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the `lshw` (List Hardware) command and its purpose in providing detailed information about the hardware components of your Linux system. The `lshw` command can gather information on various hardware components, such as CPU, memory, motherboard, disk drives, network interfaces, and more. You then explored how to use the `lshw` command to customize the output and focus on specific hardware information. This included learning about the various options available to filter and format the output, as well as how to save the hardware information to a file for future reference.

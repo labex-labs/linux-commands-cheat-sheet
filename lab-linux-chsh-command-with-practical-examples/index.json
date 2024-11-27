@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux chsh Command with Practical Examples",
+  "description": "Explore the Linux chsh command, learn how to change the default shell, and verify the changes with practical examples.",
+  "meta": {
+    "title": "Linux chsh Command with Practical Examples",
+    "description": "Explore the Linux chsh command, learn how to change the default shell, and verify the changes with practical examples.",
+    "keywords": "Linux, chsh, shell, user management, permission, default shell"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the chsh Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the default shell for the labex user",
+            "file": "verify1-1.sh",
+            "hint": "The default shell for the labex user should be set to /bin/zsh. Please check the output of the 'echo $SHELL' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Change the Default Shell Using chsh",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the default shell for the labex user",
+            "file": "verify2-1.sh",
+            "hint": "The default shell for the labex user should be set to /bin/zsh. Please check the output of the 'echo $SHELL' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verify the Changed Default Shell",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the default shell for the labex user",
+            "file": "verify3-1.sh",
+            "hint": "The default shell for the labex user should be set to /bin/zsh. Please check the output of the 'echo $SHELL' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux traceroute Command with Practical Examples",
+  "description": "Explore the traceroute command in Linux, learn how to trace the network path to a destination, and troubleshoot network issues using practical examples.",
+  "meta": {
+    "title": "Linux traceroute Command with Practical Examples",
+    "description": "Explore the traceroute command in Linux, learn how to trace the network path to a destination, and troubleshoot network issues using practical examples.",
+    "keywords": "Linux, traceroute, network, troubleshooting, path tracing, network issues"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the traceroute Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify traceroute command installation",
+            "file": "verify1-1.sh",
+            "hint": "The traceroute command is not installed. Please run the following commands to install it:\nsudo apt-get update\nsudo apt-get install -y traceroute",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Tracing the Network Path to a Destination",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify traceroute to www.google.com",
+            "file": "verify2-1.sh",
+            "hint": "The traceroute to www.google.com was not successful. Please try running the command again:\ntraceroute www.google.com",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting Network Issues with traceroute",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify traceroute to non-existent website",
+            "file": "verify3-1.sh",
+            "hint": "The traceroute to www.non-existent-website.com did not identify any network issues. Please try running the command again and look for any asterisks (*) in the output, which indicate a problem in the network path.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux mkswap Command with Practical Examples",
+  "description": "Learn how to use the Linux mkswap command to create and manage swap files, which provide additional virtual memory for your system. Includes practical examples and step-by-step instructions.",
+  "meta": {
+    "title": "Linux mkswap Command with Practical Examples",
+    "description": "Learn how to use the Linux mkswap command to create and manage swap files, which provide additional virtual memory for your system. Includes practical examples and step-by-step instructions.",
+    "keywords": "Linux, mkswap, swap file, virtual memory, disk management, file system utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the mkswap Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify if the system has a swap partition or file",
+            "file": "verify1-1.sh",
+            "hint": "The system does not have a swap partition or file configured. Please check the output of the `sudo swapon --show` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Swap File Using the mkswap Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify if the swap file is created",
+            "file": "verify2-1.sh",
+            "hint": "The swap file '~/project/swapfile' does not exist. Please create the swap file using the `dd` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify if the swap file is initialized",
+            "file": "verify2-2.sh",
+            "hint": "The swap file '~/project/swapfile' is not initialized. Please use the `mkswap` command to initialize the swap file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Enable the Swap File and Verify Its Usage",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify if the swap file is enabled",
+            "file": "verify3-1.sh",
+            "hint": "The swap file '~/project/swapfile' is not enabled. Please use the `swapon` command to enable the swap file.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the swap usage",
+            "file": "verify3-2.sh",
+            "hint": "The swap file '~/project/swapfile' is not being used by the system. Please check the output of the `free -h` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

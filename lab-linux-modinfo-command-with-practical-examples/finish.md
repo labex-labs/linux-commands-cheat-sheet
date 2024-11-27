@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the Linux `modinfo` command, which provides detailed information about kernel modules. We learned how to use `modinfo` to understand the characteristics of a specific kernel module, such as its filename, author, description, license, aliases, dependencies, and various configurable parameters. This command can be helpful when troubleshooting issues related to kernel modules or when trying to understand the functionality and configuration options of a specific module. We also explored how to use `modinfo` to troubleshoot module issues by examining the information it provides.

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `addr2line` command in Linux, which is a tool used to translate addresses into file names and line numbers. This is particularly useful when working with debugging information, such as stack traces or core dumps, to determine the source code location corresponding to a particular address. You will explore the basic syntax and options of `addr2line`, and learn how to use it to resolve addresses to function names and source file locations. The lab covers the purpose of the `addr2line` command, its basic usage, and provides practical examples to help you understand how to effectively use this tool when debugging issues in your programs.

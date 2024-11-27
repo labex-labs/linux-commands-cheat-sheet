@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dmesg Command with Practical Examples",
+  "description": "Explore the Linux kernel ring buffer using the dmesg command. Learn how to filter and analyze the output to monitor system events and troubleshoot issues.",
+  "meta": {
+    "title": "Linux dmesg Command with Practical Examples",
+    "description": "Explore the Linux kernel ring buffer using the dmesg command. Learn how to filter and analyze the output to monitor system events and troubleshoot issues.",
+    "keywords": "dmesg, kernel, ring buffer, system monitoring, troubleshooting, Linux, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the dmesg Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the dmesg command output",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can run the `dmesg` command and see the kernel version information in the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Kernel Ring Buffer with dmesg",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the dmesg command with filtering options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use the `dmesg` command with the `-l` option to filter the output by log level.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Filter and Analyze dmesg Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the dmesg command with filtering and analysis",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use the `dmesg` command with various filtering options to analyze the kernel ring buffer output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

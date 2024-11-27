@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cfdisk Command with Practical Examples",
+  "description": "Explore the cfdisk command in Linux, a powerful tool for partitioning and managing disk drives. Learn how to create, delete, and modify disk partitions effectively.",
+  "meta": {
+    "title": "Linux cfdisk Command with Practical Examples",
+    "description": "Explore the cfdisk command in Linux, a powerful tool for partitioning and managing disk drives. Learn how to create, delete, and modify disk partitions effectively.",
+    "keywords": "cfdisk, disk partitioning, disk management, Linux utilities, file system, storage management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to cfdisk Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify cfdisk command is available",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the cfdisk command is installed and available in your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Partitioning a Disk using cfdisk",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify disk partitioning",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have successfully created a 1GB Linux partition on the disk image file `~/project/disk.img`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Managing Disk Partitions with cfdisk",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify partition management",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have successfully managed the disk partitions on the `~/project/disk.img` file, and the final state has one Linux partition.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

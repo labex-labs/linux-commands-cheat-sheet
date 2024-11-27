@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux depmod Command with Practical Examples",
+  "description": "Explore the purpose of the depmod command, understand the dependency tree of kernel modules, and troubleshoot module dependencies using practical examples.",
+  "meta": {
+    "title": "Linux depmod Command with Practical Examples",
+    "description": "Explore the purpose of the depmod command, understand the dependency tree of kernel modules, and troubleshoot module dependencies using practical examples.",
+    "keywords": "Linux, depmod, kernel modules, dependency, troubleshoot, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the depmod Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the depmod command was executed",
+            "file": "verify1-1.sh",
+            "hint": "The depmod command should have generated the /lib/modules/5.15.0-1023-aws/modules.dep file. Please ensure that the command was executed successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Dependency Tree of Kernel Modules",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the dependency tree output",
+            "file": "verify2-1.sh",
+            "hint": "The depmod -n -a command should have displayed the dependency tree for the acpi_power_meter kernel module. Please ensure that the output contains the expected information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Module Dependencies with depmod",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the hello_dependent module was loaded",
+            "file": "verify3-1.sh",
+            "hint": "The hello_dependent module should have been loaded successfully and printed the \"Hello Dependent Module!\" message in the kernel logs. Please ensure that the module was loaded correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

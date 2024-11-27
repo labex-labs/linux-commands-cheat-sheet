@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux shutdown Command with Practical Examples",
+  "description": "Explore the Linux shutdown command and its practical applications, including immediate system shutdown and scheduled shutdowns at specific times.",
+  "meta": {
+    "title": "Linux shutdown Command with Practical Examples",
+    "description": "Explore the Linux shutdown command and its practical applications, including immediate system shutdown and scheduled shutdowns at specific times.",
+    "keywords": "Linux, shutdown, system management, system monitoring, command line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Linux shutdown Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the shutdown command usage",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure you can use the `shutdown` command with the `-h now` option to immediately shut down the system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Shut Down the System Immediately",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify immediate system shutdown",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure you can use the `shutdown` command with the `-h now` option to immediately shut down the system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Schedule a Shutdown at a Specific Time",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify scheduled system shutdown",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure you can schedule a system shutdown at a specific time using the `shutdown` command, and also cancel the scheduled shutdown.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

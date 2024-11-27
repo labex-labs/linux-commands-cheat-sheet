@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mpstat Command with Practical Examples",
+  "description": "Explore the Linux mpstat command, a powerful tool for monitoring and analyzing CPU utilization metrics across multiple CPUs. Learn how to use mpstat to gain insights into system performance and optimize resource allocation.",
+  "meta": {
+    "title": "Linux mpstat Command with Practical Examples",
+    "description": "Explore the Linux mpstat command, a powerful tool for monitoring and analyzing CPU utilization metrics across multiple CPUs. Learn how to use mpstat to gain insights into system performance and optimize resource allocation.",
+    "keywords": "Linux, mpstat, CPU utilization, system monitoring, performance analysis, resource optimization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of mpstat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mpstat command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have run the `mpstat` command and that it has output the expected CPU utilization metrics, including the `%usr`, `%sys`, and `%idle` columns.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore CPU Utilization Metrics with mpstat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify mpstat CPU utilization metrics",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have run the `mpstat -P ALL` command and that it has output the CPU utilization metrics for each individual CPU, including the `%usr`, `%sys`, and `%idle` columns.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze CPU Performance Across Multiple CPUs",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify mpstat CPU performance analysis",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have run the `mpstat -P ALL` command and that it has output the CPU utilization metrics for each individual CPU, including the `%usr`, `%sys`, and `%idle` columns.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

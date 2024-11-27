@@ -1,0 +1,101 @@
+{
+  "type": "lab",
+  "title": "Linux look Command with Practical Examples",
+  "description": "Learn how to use the Linux look command to search for specific words or phrases in text files. Explore practical examples and combine the look command with other Linux tools for efficient text processing.",
+  "meta": {
+    "title": "Linux look Command with Practical Examples",
+    "description": "Learn how to use the Linux look command to search for specific words or phrases in text files. Explore practical examples and combine the look command with other Linux tools for efficient text processing.",
+    "keywords": "Linux, look command, text processing, file search, command-line tools, text editing, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the look Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the look command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the look command is used correctly to search for words starting with \"apple\" and display the first 5 lines starting with \"app\" in the ~/project/words.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Search for Specific Words or Phrases in Text Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify searching for \"fox\" in sample.txt",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the look command can correctly find the word \"fox\" in the ~/project/sample.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify searching for \"quick brown\" in sample.txt",
+            "file": "verify2-2.sh",
+            "hint": "Make sure the look command can correctly find the phrase \"quick brown\" in the ~/project/sample.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify case-insensitive search for \"the\" in sample.txt",
+            "file": "verify2-3.sh",
+            "hint": "Make sure the look command with the -f option can correctly find the word \"the\" (case-insensitive) in the ~/project/sample.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify searching for lines starting with \"app\" in words.txt",
+            "file": "verify2-4.sh",
+            "hint": "Make sure the look command can correctly find lines starting with \"app\" in the ~/project/words.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine the look Command with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify searching for \"app\" with \"l\" using look and grep",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the combination of look and grep can correctly find words starting with \"app\" and containing \"l\" in the system dictionary.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify searching for employees with salary over $50,000",
+            "file": "verify3-2.sh",
+            "hint": "Make sure the combination of look, grep, and awk can correctly find employees with a salary over $50,000 in the ~/project/employees.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

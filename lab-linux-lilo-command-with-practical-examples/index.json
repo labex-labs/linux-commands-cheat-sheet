@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux lilo Command with Practical Examples",
+  "description": "Explore the lilo command, a powerful Linux boot loader, through practical examples. Learn how to configure lilo, troubleshoot issues, and enhance your system's boot process.",
+  "meta": {
+    "title": "Linux lilo Command with Practical Examples",
+    "description": "Explore the lilo command, a powerful Linux boot loader, through practical examples. Learn how to configure lilo, troubleshoot issues, and enhance your system's boot process.",
+    "keywords": "lilo, Linux boot loader, system configuration, boot process, troubleshooting, system settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the lilo Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lilo version",
+            "file": "verify1-1.sh",
+            "hint": "The lilo version installed on the system should be 22.8.1. Please check the output of the `sudo lilo -V` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configuring lilo Boot Loader",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lilo configuration file",
+            "file": "verify2-1.sh",
+            "hint": "The lilo configuration file should contain the \"label=Ubuntu 22.04\" entry. Please check the contents of the /etc/lilo.conf file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting lilo Issues",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify lilo log file",
+            "file": "verify3-1.sh",
+            "hint": "The lilo log file located at /var/log/lilo.log should not contain any error messages. Please check the contents of the log file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

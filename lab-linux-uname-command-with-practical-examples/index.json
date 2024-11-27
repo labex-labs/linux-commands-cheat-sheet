@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux uname Command with Practical Examples",
+  "description": "Explore the versatile uname command in Linux, which provides detailed information about your system's hardware and software configurations. Learn how to retrieve system details and combine options for comprehensive output.",
+  "meta": {
+    "title": "Linux uname Command with Practical Examples",
+    "description": "Explore the versatile uname command in Linux, which provides detailed information about your system's hardware and software configurations. Learn how to retrieve system details and combine options for comprehensive output.",
+    "keywords": "Linux, uname, system information, hardware, software, command line, system monitoring, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the uname Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify uname command output",
+            "file": "verify1-1.sh",
+            "hint": "The uname command should return 'Linux' as the kernel name. Please check your output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieve System Information Using uname",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify uname command output",
+            "file": "verify2-1.sh",
+            "hint": "The uname -s command should return 'Linux' as the kernel name. Please check your output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify /etc/os-release output",
+            "file": "verify2-2.sh",
+            "hint": "The /etc/os-release file should contain the 'Ubuntu' string. Please check the output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine uname Options for Detailed Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify uname -a output",
+            "file": "verify3-1.sh",
+            "hint": "The uname -a command should return output containing 'Linux' and 'x86_64'. Please check your output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify lsb_release -a output",
+            "file": "verify3-2.sh",
+            "hint": "The lsb_release -a command should return output containing 'Ubuntu'. Please check your output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

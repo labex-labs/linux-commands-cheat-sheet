@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux pinky Command with Practical Examples",
+  "description": "Explore the pinky command in Linux, learn its options and flags, and discover practical use cases to enhance your system management skills.",
+  "meta": {
+    "title": "Linux pinky Command with Practical Examples",
+    "description": "Explore the pinky command in Linux, learn its options and flags, and discover practical use cases to enhance your system management skills.",
+    "keywords": "pinky, Linux, command, utilities, user information, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the pinky Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the pinky command output",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the pinky command is displaying the correct information about the currently logged-in user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Options and Flags of pinky",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the pinky command options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the pinky command with the -fhi options is displaying the correct information about the user's full name, home directory, and idle time.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Use Cases of the pinky Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the pinky command usage",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the pinky command is displaying the correct information about the currently logged-in user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

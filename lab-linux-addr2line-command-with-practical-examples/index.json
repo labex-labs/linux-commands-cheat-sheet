@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux addr2line Command with Practical Examples",
+  "description": "Explore the addr2line command in Linux, a powerful tool for resolving addresses to function names and source file locations. Learn its basic syntax, options, and practical use cases.",
+  "meta": {
+    "title": "Linux addr2line Command with Practical Examples",
+    "description": "Explore the addr2line command in Linux, a powerful tool for resolving addresses to function names and source file locations. Learn its basic syntax, options, and practical use cases.",
+    "keywords": "addr2line, Linux, debugging, function names, source file locations, command line utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of addr2line Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the usage of addr2line command",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `addr2line` command should include the file name and line number associated with the provided address. Please check your command and output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Basic Syntax and Options of addr2line",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the usage of addr2line with options",
+            "file": "verify2-1.sh",
+            "hint": "The output of the `addr2line` command should include the function name and the file name and line number associated with the provided addresses. Please check your command and output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Resolve Addresses to Function Names and Source File Locations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the usage of addr2line to resolve addresses",
+            "file": "verify3-1.sh",
+            "hint": "The output of the `addr2line` command should include the function names and the file name and line numbers associated with the provided addresses. Please check your command and output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

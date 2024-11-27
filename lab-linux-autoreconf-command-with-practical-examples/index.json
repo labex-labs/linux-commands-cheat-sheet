@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux autoreconf Command with Practical Examples",
+  "description": "Explore the autoreconf command in Linux, learn its purpose, and apply it to a sample project. Gain hands-on experience in automating the build process for your software projects.",
+  "meta": {
+    "title": "Linux autoreconf Command with Practical Examples",
+    "description": "Explore the autoreconf command in Linux, learn its purpose, and apply it to a sample project. Gain hands-on experience in automating the build process for your software projects.",
+    "keywords": "autoreconf, Linux, build automation, software development, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of autoreconf Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the presence of generated build system files",
+            "file": "verify1-1.sh",
+            "hint": "The 'autoreconf' command should have generated the necessary build system files, including the 'configure' script. Verify that the 'configure' script is present in the project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Prepare the Development Environment for autoreconf",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the installation of Autotools packages",
+            "file": "verify2-1.sh",
+            "hint": "The 'autoconf', 'automake', and 'libtool' packages should be installed and available in the system's PATH. Verify that all three packages are installed correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Apply autoreconf to a Sample Project",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the presence of generated build system files",
+            "file": "verify3-1.sh",
+            "hint": "The 'autoreconf' command should have generated the necessary build system files, including the 'configure' script. Verify that the 'configure' script is present in the project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

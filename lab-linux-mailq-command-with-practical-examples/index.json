@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mailq Command with Practical Examples",
+  "description": "Explore the Linux mailq command, learn how to interpret its output, and manage the mail queue effectively. Gain practical knowledge for efficient email server administration.",
+  "meta": {
+    "title": "Linux mailq Command with Practical Examples",
+    "description": "Explore the Linux mailq command, learn how to interpret its output, and manage the mail queue effectively. Gain practical knowledge for efficient email server administration.",
+    "keywords": "Linux, mailq, mail queue, email server, administration, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the mailq Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the mailq command output",
+            "file": "verify1-1.sh",
+            "hint": "The `mailq` command should show that the mail queue is empty. If the output does not indicate an empty queue, please check your understanding of the `mailq` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the mailq Command Output and Interpret the Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the mailq command output",
+            "file": "verify2-1.sh",
+            "hint": "The `mailq` command should show the test emails you created earlier in the queue. If the test emails are not present, please check your understanding of the `mailq` command and the steps you performed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage the Mail Queue Using the mailq Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the mail queue management",
+            "file": "verify3-1.sh",
+            "hint": "The verification checks that the first email was deleted from the queue and the second email was held and then released successfully. If the output does not match the expected behavior, please review the steps you performed for managing the mail queue.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

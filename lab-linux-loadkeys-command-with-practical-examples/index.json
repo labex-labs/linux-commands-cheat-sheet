@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux loadkeys Command with Practical Examples",
+  "description": "Explore the Linux loadkeys command and learn how to change and customize your keyboard layout. Discover practical examples to enhance your system configuration and settings.",
+  "meta": {
+    "title": "Linux loadkeys Command with Practical Examples",
+    "description": "Explore the Linux loadkeys command and learn how to change and customize your keyboard layout. Discover practical examples to enhance your system configuration and settings.",
+    "keywords": "Linux, loadkeys, keyboard layout, system configuration, keyboard customization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the loadkeys Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current keyboard layout",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `loadkeys -c` command displays the current keyboard layout.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Changing the Keyboard Layout Using loadkeys",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the keyboard layout is changed to French",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `loadkeys -c` command displays the French keyboard layout.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing the Keyboard Layout with loadkeys",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the custom keyboard layout is loaded",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `loadkeys -c` command displays the custom mapping for the 'a' key.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

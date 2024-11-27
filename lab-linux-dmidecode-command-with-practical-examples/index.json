@@ -1,0 +1,101 @@
+{
+  "type": "lab",
+  "title": "Linux dmidecode Command with Practical Examples",
+  "description": "Explore the dmidecode command, a powerful tool for retrieving detailed hardware information on Linux systems. Learn how to display system hardware details and extract specific hardware data.",
+  "meta": {
+    "title": "Linux dmidecode Command with Practical Examples",
+    "description": "Explore the dmidecode command, a powerful tool for retrieving detailed hardware information on Linux systems. Learn how to display system hardware details and extract specific hardware data.",
+    "keywords": "dmidecode, Linux, hardware information, system monitoring, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to dmidecode Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dmidecode command installation",
+            "file": "verify1-1.sh",
+            "hint": "The dmidecode command is not installed. Please install it using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Displaying System Hardware Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify system information display",
+            "file": "verify2-1.sh",
+            "hint": "The system information was not displayed correctly. Please check the output of the dmidecode -t system command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify processor information display",
+            "file": "verify2-2.sh",
+            "hint": "The processor information was not displayed correctly. Please check the output of the dmidecode -t processor command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify memory information display",
+            "file": "verify2-3.sh",
+            "hint": "The memory information was not displayed correctly. Please check the output of the dmidecode -t memory command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Extracting Specific Hardware Details",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify BIOS information display",
+            "file": "verify3-1.sh",
+            "hint": "The BIOS information was not displayed correctly. Please check the output of the dmidecode -t bios command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify chassis information display",
+            "file": "verify3-2.sh",
+            "hint": "The chassis information was not displayed correctly. Please check the output of the dmidecode -t chassis command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify slot information display",
+            "file": "verify3-3.sh",
+            "hint": "The slot information was not displayed correctly. Please check the output of the dmidecode -t slot command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

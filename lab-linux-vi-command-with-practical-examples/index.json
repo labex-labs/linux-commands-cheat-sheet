@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux vi Command with Practical Examples",
+  "description": "Explore the powerful vi text editor in Linux, learn its basic navigation and editing commands, and dive into advanced features for efficient text processing.",
+  "meta": {
+    "title": "Linux vi Command with Practical Examples",
+    "description": "Explore the powerful vi text editor in Linux, learn its basic navigation and editing commands, and dive into advanced features for efficient text processing.",
+    "keywords": "vi, Linux, text editing, text processing, command line, navigation, editing, advanced operations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of vi Editor",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify vi editor is opened",
+            "file": "verify1-1.sh",
+            "hint": "It seems that you have not opened the vi editor. Please run the 'vi' command to open the editor.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Navigate and Edit Text in vi",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify cursor navigation",
+            "file": "verify2-1.sh",
+            "hint": "It seems that you have not been able to navigate the cursor and edit the text correctly. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify text editing",
+            "file": "verify2-2.sh",
+            "hint": "It appears that you have not been able to edit the text correctly. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Advanced Operations in vi",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify search and replace",
+            "file": "verify3-1.sh",
+            "hint": "It seems that you have not been able to perform the search and replace operation correctly. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify working with multiple files",
+            "file": "verify3-2.sh",
+            "hint": "It appears that you have not been able to work with multiple files in the vi editor. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify executing shell commands",
+            "file": "verify3-3.sh",
+            "hint": "It seems that you have not been able to execute shell commands from within the vi editor. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned the fundamental concepts of the iptables firewall in Linux, including its basic structure, tables, and built-in chains. You explored various iptables commands to manage firewall rules, such as listing existing rules, adding new rules, deleting rules, and saving the current configuration. You also gained an understanding of how to use the `filter` table for packet filtering, the `nat` table for network address translation, and the `mangle` table for specialized packet alterations. With this knowledge, you can now effectively configure and manage your Linux system's firewall using iptables.

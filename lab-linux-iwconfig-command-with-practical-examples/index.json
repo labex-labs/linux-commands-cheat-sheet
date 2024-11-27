@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux iwconfig Command with Practical Examples",
+  "description": "Explore the Linux iwconfig command, a powerful tool for configuring and troubleshooting wireless network interfaces. Learn how to set up wireless connections, manage network parameters, and diagnose connectivity issues.",
+  "meta": {
+    "title": "Linux iwconfig Command with Practical Examples",
+    "description": "Explore the Linux iwconfig command, a powerful tool for configuring and troubleshooting wireless network interfaces. Learn how to set up wireless connections, manage network parameters, and diagnose connectivity issues.",
+    "keywords": "Linux, iwconfig, wireless, network, interface, configuration, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of iwconfig Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the iwconfig command output",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the output of the `iwconfig` command shows a wireless network interface, such as `wlan0`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Wireless Network Interface Using iwconfig",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the wireless network interface configuration",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the output of the `iwconfig wlan0` command shows the ESSID \"my_wireless_network\", the frequency \"2.412 GHz\", and the bit rate \"54 Mb/s\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Wireless Network Issues with iwconfig",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the wireless signal level",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the wireless signal level is greater than -70 dBm.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

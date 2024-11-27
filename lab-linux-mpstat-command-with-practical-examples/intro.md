@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `mpstat` command to monitor and analyze CPU utilization metrics across multiple CPUs. The `mpstat` command is a powerful tool for identifying performance bottlenecks, optimizing resource allocation, and troubleshooting system issues. You will start by understanding the purpose and usage of the `mpstat` command, and then explore CPU utilization metrics in more detail, including CPU time spent in user mode, kernel mode, and idle. Finally, you will analyze CPU performance across multiple CPUs to gain a deeper understanding of your system's resource utilization.

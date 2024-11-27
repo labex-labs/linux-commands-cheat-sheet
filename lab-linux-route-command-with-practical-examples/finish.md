@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and syntax of the `route` command in Linux, which is used to view and manipulate the IP routing table. You explored the basic command structure and learned how to view the current routing table using the `show` command. You also learned how to add and remove static routes using the `add` and `del` commands, respectively. Next, you focused on configuring static routes, which are manually defined routes that take precedence over dynamic routes. You practiced adding, modifying, and removing static routes using the `route` command. Finally, you explored managing dynamic routing, where you learned how to use the `route` command to interact with dynamic routing protocols and update the routing table accordingly.

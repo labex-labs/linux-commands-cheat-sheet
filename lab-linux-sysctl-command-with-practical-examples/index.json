@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sysctl Command with Practical Examples",
+  "description": "Explore the sysctl command in Linux, learn how to modify kernel parameters, and persist configuration changes across reboots. Gain practical knowledge for system administration and optimization.",
+  "meta": {
+    "title": "Linux sysctl Command with Practical Examples",
+    "description": "Explore the sysctl command in Linux, learn how to modify kernel parameters, and persist configuration changes across reboots. Gain practical knowledge for system administration and optimization.",
+    "keywords": "sysctl, Linux, kernel parameters, system configuration, system optimization, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of sysctl Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify sysctl command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have used the sysctl command with the -w option to change the kernel.hostname parameter to \"myhost\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify Kernel Parameters Using sysctl Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify sysctl command usage",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have used the sysctl command with the -w option to set the net.ipv4.ip_forward parameter to 1 and the vm.swappiness parameter to 10.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Persist sysctl Configuration Changes Across Reboots",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify sysctl configuration persistence",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have added the net.ipv4.ip_forward=1 and vm.swappiness=10 parameters to the /etc/sysctl.conf file to make the changes persistent across reboots.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

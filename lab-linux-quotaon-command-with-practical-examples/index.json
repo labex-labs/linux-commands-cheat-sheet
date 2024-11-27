@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux quotaon Command with Practical Examples",
+  "description": "Explore the Linux quotaon command for managing disk quotas. Learn how to enable, monitor, and manage user disk quotas on your file system.",
+  "meta": {
+    "title": "Linux quotaon Command with Practical Examples",
+    "description": "Explore the Linux quotaon command for managing disk quotas. Learn how to enable, monitor, and manage user disk quotas on your file system.",
+    "keywords": "Linux, quotaon, disk quota, file system, user management, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Disk Quota Management",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify disk quota management is enabled",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that disk quota management is enabled on the root file system (`/`). You can use the `quotaon -a` command to verify the status.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Enabling Disk Quota on a File System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify disk quota is enabled on /data",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that disk quota management is enabled on the `/data` file system. You can use the `quotaon -a` command to verify the status.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify disk quota limits for labex user",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that the disk quota limits for the `labex` user are set correctly on the `/data` file system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitoring and Managing User Disk Quotas",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify disk quota usage for labex user",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `labex` user's disk quota usage on the `/data` file system matches the expected output, where the user has exceeded the soft limit of 5000 blocks and is in a grace period.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify disk quota management commands",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the `edquota`, `quota -v`, and `quota -l` commands work as expected for the `labex` user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

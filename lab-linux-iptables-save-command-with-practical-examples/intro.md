@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `iptables-save` command to backup and restore iptables firewall rules on a Linux system. The lab covers the purpose and functionality of `iptables-save`, how to backup and restore firewall rules, and how to automate the process using a Systemd service. This is a valuable skill for network administrators and security professionals who need to manage and maintain firewall configurations. The lab provides practical examples and step-by-step instructions to help you master the use of `iptables-save` for your networking and communication needs.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux uptime Command with Practical Examples",
+  "description": "Explore the Linux uptime command and its practical applications for monitoring system uptime and load average. Learn how to effectively utilize this tool for system management and troubleshooting.",
+  "meta": {
+    "title": "Linux uptime Command with Practical Examples",
+    "description": "Explore the Linux uptime command and its practical applications for monitoring system uptime and load average. Learn how to effectively utilize this tool for system management and troubleshooting.",
+    "keywords": "Linux, uptime, system monitoring, load average, system management, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the uptime Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify uptime command output",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the uptime command is executed correctly and displays the expected output, including the load average information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore uptime Command Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify uptime command options",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the uptime command with the various options (e.g., -p, -q, -s, -h) produces the expected output as shown in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze System Uptime and Load Average",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify uptime and load average analysis",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the uptime command output includes the uptime and load average information, and that you can interpret the meaning of the displayed values.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

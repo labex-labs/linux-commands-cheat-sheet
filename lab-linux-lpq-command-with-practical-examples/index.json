@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux lpq Command with Practical Examples",
+  "description": "Explore the lpq command in Linux, learn how to check the print queue status, and manage print jobs effectively.",
+  "meta": {
+    "title": "Linux lpq Command with Practical Examples",
+    "description": "Explore the lpq command in Linux, learn how to check the print queue status, and manage print jobs effectively.",
+    "keywords": "Linux, lpq, print queue, print job management, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the lpq Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the lpq command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can run the `lpq` command and see the expected output, which includes the \"Rank\" column.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Check the Print Queue Status Using the lpq Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the lpq command options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use the `-l` and `-P` options of the `lpq` command to display the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Print Jobs with the lpq Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the lprm command",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use the `lprm` command to remove a print job from the queue.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the lpc command",
+            "file": "verify3-2.sh",
+            "hint": "Make sure you can use the `lpc hold` and `lpc release` commands to pause and resume a print job.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

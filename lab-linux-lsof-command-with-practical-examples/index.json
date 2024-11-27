@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux lsof Command with Practical Examples",
+  "description": "Explore the powerful lsof command in Linux, learn how to identify open files by a process, and locate network connections. Gain practical system monitoring and management skills.",
+  "meta": {
+    "title": "Linux lsof Command with Practical Examples",
+    "description": "Explore the powerful lsof command in Linux, learn how to identify open files by a process, and locate network connections. Gain practical system monitoring and management skills.",
+    "keywords": "lsof, Linux, system monitoring, process management, network connections, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the lsof Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lsof command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can run the `lsof` command without any arguments, as well as with the `-p` and `-u` options to filter the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify Open Files by a Process",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lsof by process",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can find the PID of the nginx process and use the `lsof -p` command to list its open files. Also, verify that you can list open files by the `labex` user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Locate Network Connections Using lsof",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify lsof for network connections",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use the `lsof -i` command to list all network connections, the `lsof -i TCP` command to list only TCP connections, and the `lsof -i -u labex` command to list connections for the `labex` user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

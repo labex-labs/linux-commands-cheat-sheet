@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the powerful `dc` command-line calculator tool in Linux. You started by understanding the basic usage of `dc`, including how to launch the interactive mode and perform simple arithmetic operations like addition, subtraction, multiplication, and division. You then explored more advanced capabilities of `dc`, such as using functions for trigonometric calculations and logarithms. Throughout the lab, you practiced various examples to reinforce your understanding of the `dc` command and its versatility in performing complex mathematical computations from the terminal.

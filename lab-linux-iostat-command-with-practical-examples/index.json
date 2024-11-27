@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux iostat Command with Practical Examples",
+  "description": "Explore the powerful iostat command in Linux, learn to analyze CPU and I/O statistics, and monitor disk performance for effective system monitoring and management.",
+  "meta": {
+    "title": "Linux iostat Command with Practical Examples",
+    "description": "Explore the powerful iostat command in Linux, learn to analyze CPU and I/O statistics, and monitor disk performance for effective system monitoring and management.",
+    "keywords": "Linux, iostat, system monitoring, performance analysis, disk I/O, CPU statistics"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of iostat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify iostat command installation",
+            "file": "verify1-1.sh",
+            "hint": "The `iostat` command is not installed. Please install the `sysstat` package using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze CPU and I/O Statistics with iostat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify CPU and I/O statistics",
+            "file": "verify2-1.sh",
+            "hint": "The `iostat` command did not output the expected CPU and I/O statistics. Please ensure you have run the `iostat` command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitor Disk I/O Performance Using iostat",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify detailed disk I/O statistics",
+            "file": "verify3-1.sh",
+            "hint": "The `iostat -x` command did not output the expected detailed disk I/O statistics. Please ensure you have run the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

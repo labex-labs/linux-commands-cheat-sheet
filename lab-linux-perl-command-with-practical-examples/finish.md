@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we first introduced the Perl programming language and its usage in a Linux environment. We learned how to check the installed Perl version, create a simple Perl script, make it executable, and run it. Then, we explored executing Perl scripts in the Linux terminal, including passing command-line arguments and using the shebang line to run scripts directly. Finally, we covered practical examples of Perl commands for file manipulation, such as reading, writing, and modifying files. Through these steps, we gained a solid understanding of Perl programming and its applications in a Linux system.

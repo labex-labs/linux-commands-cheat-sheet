@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we first explored the Concurrent Versions System (CVS), a popular version control system used for managing source code and project files. We installed the CVS package on our Ubuntu 22.04 Docker container and learned about the key features of CVS, such as branching, merging, and conflict resolution. We then created a new CVS repository and checked out a project, which allows multiple users to collaborate on a project by tracking changes to files and directories. Finally, we learned how to commit changes to the CVS repository, ensuring that the project history is maintained and changes can be easily managed.

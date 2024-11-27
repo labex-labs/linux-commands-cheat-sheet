@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cc Command with Practical Examples",
+  "description": "Explore the versatile Linux cc command, learn its syntax, and compile C programs with practical examples. Discover compiler flags and optimization options to enhance your programming workflow.",
+  "meta": {
+    "title": "Linux cc Command with Practical Examples",
+    "description": "Explore the versatile Linux cc command, learn its syntax, and compile C programs with practical examples. Discover compiler flags and optimization options to enhance your programming workflow.",
+    "keywords": "Linux, cc command, C programming, compiler, optimization, GCC, Clang"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the cc Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the cc command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the cc command is installed and available on your system. You can try running 'cc --help' to see if the command is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compile a Simple C Program Using the cc Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the C program compilation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the hello.c file exists in the ~/project directory, the hello executable file was created, and the program outputs \"Hello, World!\" when executed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Compiler Flags and Optimization Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the use of compiler flags and optimization options",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the hello.c file exists in the ~/project directory, the hello executable file was created, and the compiled executable contains the expected debugging information and optimization level.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

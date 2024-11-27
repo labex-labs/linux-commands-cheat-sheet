@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux lsusb Command with Practical Examples",
+  "description": "Explore the Linux lsusb command and learn how to use it to identify USB device information on your system. Understand the purpose and basic usage of this powerful system monitoring tool.",
+  "meta": {
+    "title": "Linux lsusb Command with Practical Examples",
+    "description": "Explore the Linux lsusb command and learn how to use it to identify USB device information on your system. Understand the purpose and basic usage of this powerful system monitoring tool.",
+    "keywords": "Linux, lsusb, USB, system monitoring, device information, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of lsusb Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lsusb command execution",
+            "file": "verify1-1.sh",
+            "hint": "Ensure the `lsusb` command is available in your environment and that it returns the expected output showing USB root hubs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Basic Usage of lsusb Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lsusb verbose output",
+            "file": "verify2-1.sh",
+            "hint": "Ensure the `lsusb -v` command returns output containing the \"Device Descriptor\" section for at least one USB device.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify lsusb device search",
+            "file": "verify2-2.sh",
+            "hint": "Ensure the `lsusb -d 046d:c077` command returns output containing the \"M105 Optical Mouse\" device information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify USB Device Information with lsusb",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify lsusb device listing",
+            "file": "verify3-1.sh",
+            "hint": "Ensure the `lsusb` command returns output that includes USB root hubs.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify lsusb device details",
+            "file": "verify3-2.sh",
+            "hint": "Ensure the `lsusb -v -d 046d:c077` command returns output containing the \"M105 Optical Mouse\" device information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

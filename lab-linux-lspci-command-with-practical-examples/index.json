@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux lspci Command with Practical Examples",
+  "description": "Explore the lspci command in Linux, learn its purpose, understand its options and flags, and identify PCI devices on your system with practical examples.",
+  "meta": {
+    "title": "Linux lspci Command with Practical Examples",
+    "description": "Explore the lspci command in Linux, learn its purpose, understand its options and flags, and identify PCI devices on your system with practical examples.",
+    "keywords": "lspci, PCI devices, system configuration, hardware identification, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of lspci Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lspci command output",
+            "file": "verify1-1.sh",
+            "hint": "The lspci command should display information about the host bridge and other PCI devices on the system. Please check the output and ensure that it includes the host bridge details.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore lspci Command Options and Flags",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lspci command options",
+            "file": "verify2-1.sh",
+            "hint": "The lspci command with the -v option should display information about the kernel drivers in use for each PCI device. Please check the output and ensure that it includes this information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify PCI Devices on the System",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify PCI device identification",
+            "file": "verify3-1.sh",
+            "hint": "The lspci command should display information about the VGA compatible controller on your system. Please check the output and ensure that it includes the VGA controller details.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux gdb Command with Practical Examples",
+  "description": "Explore the power of the gdb debugger in Linux. Learn how to debug simple and multithreaded C programs, uncover bugs, and enhance your programming skills.",
+  "meta": {
+    "title": "Linux gdb Command with Practical Examples",
+    "description": "Explore the power of the gdb debugger in Linux. Learn how to debug simple and multithreaded C programs, uncover bugs, and enhance your programming skills.",
+    "keywords": "gdb, Linux, debugging, C programming, multithreaded, scripting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to gdb and Its Usage",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify gdb installation",
+            "file": "verify1-1.sh",
+            "hint": "Please install gdb using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Debugging a Simple C Program with gdb",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify gdb debugging",
+            "file": "verify2-1.sh",
+            "hint": "Please use gdb to debug the divide by zero issue in the simple.c program.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Debugging a Multithreaded C Program with gdb",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify gdb debugging of multithreaded program",
+            "file": "verify3-1.sh",
+            "hint": "Please use gdb to debug the race condition in the multithreaded.c program.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `tty` command in Linux to identify the current terminal device and manage terminal sessions. The `tty` command is a useful tool for system administrators and developers who need to interact with the terminal or automate terminal-based tasks. You will start by understanding the basic functionality of the `tty` command, then learn how to identify the current terminal device, and finally explore how to manage terminal sessions using the `tty` command. This lab provides practical examples to help you apply the concepts learned in a real-world scenario.

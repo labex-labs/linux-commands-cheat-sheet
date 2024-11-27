@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and syntax of the `seq` command in Linux, which is used to generate numeric sequences. The basic syntax includes the starting number, step size, and ending number. You explored examples of generating simple sequences, sequences with different starting points and step sizes, as well as descending sequences. Additionally, you learned about various options to customize the output, such as formatting, padding, and specifying a custom separator. In the second part of the lab, you delved deeper into generating numeric sequences using the `seq` command, covering more advanced use cases and exploring the versatility of this tool.

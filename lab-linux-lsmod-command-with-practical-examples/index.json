@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux lsmod Command with Practical Examples",
+  "description": "Explore the Linux lsmod command, which displays information about loaded kernel modules. Learn how to load and unload kernel modules, and understand the purpose and output of the lsmod command.",
+  "meta": {
+    "title": "Linux lsmod Command with Practical Examples",
+    "description": "Explore the Linux lsmod command, which displays information about loaded kernel modules. Learn how to load and unload kernel modules, and understand the purpose and output of the lsmod command.",
+    "keywords": "Linux, lsmod, kernel modules, system configuration, system settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of lsmod Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lsmod command output",
+            "file": "verify1-1.sh",
+            "hint": "The lsmod command should display a list of currently loaded kernel modules. If the output is empty, it means there are no kernel modules loaded on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Output of lsmod Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lsmod command output format",
+            "file": "verify2-1.sh",
+            "hint": "The output of the lsmod command should have a header row with the column names \"Module\", \"Size\", and \"Used by\". If the output does not match this format, there may be an issue with the command or the system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Load and Unload Kernel Modules",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify loading and unloading of kernel module",
+            "file": "verify3-1.sh",
+            "hint": "The verification script first tries to load the 'vboxguest' kernel module using the 'modprobe' command. It then checks if the module is successfully loaded by searching for it in the output of the 'lsmod' command.\n\nNext, the script tries to unload the 'vboxguest' module using the 'modprobe -r' command. It then checks if the module is successfully unloaded by searching for it in the output of the 'lsmod' command.\n\nIf both the loading and unloading of the kernel module are successful, the verification passes. If either of the operations fails, the verification will fail, and the corresponding error message will be displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux set Command with Practical Examples",
+  "description": "Explore the Linux set command, learn how to modify shell variables, manage environment variables, and apply practical examples to enhance your system configuration and settings.",
+  "meta": {
+    "title": "Linux set Command with Practical Examples",
+    "description": "Explore the Linux set command, learn how to modify shell variables, manage environment variables, and apply practical examples to enhance your system configuration and settings.",
+    "keywords": "Linux, set command, shell variables, environment variables, system configuration, settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the set Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the output of the set command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the output of the `set` command includes the `SHELL` variable set to `/bin/bash`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify Shell Variables Using the set Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the creation and modification of shell variables",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the MYVAR variable is created and modified correctly, and that the READONLY_VAR variable is unset.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Environment Variables with the set Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the creation and modification of environment variables",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the MYENV_VAR environment variable is created correctly, and that the READONLY_ENV_VAR environment variable is unset.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

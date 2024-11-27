@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux rpm Command with Practical Examples",
+  "description": "Explore the powerful rpm command in Linux, learn how to install, manage, query, and verify RPM packages, and gain practical experience through hands-on examples.",
+  "meta": {
+    "title": "Linux rpm Command with Practical Examples",
+    "description": "Explore the powerful rpm command in Linux, learn how to install, manage, query, and verify RPM packages, and gain practical experience through hands-on examples.",
+    "keywords": "rpm, package management, Linux, installation, query, verification"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the rpm Command and Its Use Cases",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify rpm command help",
+            "file": "verify1-1.sh",
+            "hint": "The rpm command help output should contain the \"Usage: rpm\" header.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install and Manage RPM Packages",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify htop installation",
+            "file": "verify2-1.sh",
+            "hint": "The htop package should be installed on the system.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify htop removal",
+            "file": "verify2-2.sh",
+            "hint": "The htop package should be removed from the system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform RPM Package Queries and Verifications",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify bash package information",
+            "file": "verify3-1.sh",
+            "hint": "The bash package information should show the correct version.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify coreutils package verification",
+            "file": "verify3-2.sh",
+            "hint": "The coreutils package verification should not show any modified files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

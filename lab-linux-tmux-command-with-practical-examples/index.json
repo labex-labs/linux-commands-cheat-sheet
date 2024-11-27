@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux tmux Command with Practical Examples",
+  "description": "Explore the powerful tmux command-line tool for managing and controlling multiple terminal sessions on a Linux system. Learn how to navigate, manage, and customize tmux for enhanced productivity.",
+  "meta": {
+    "title": "Linux tmux Command with Practical Examples",
+    "description": "Explore the powerful tmux command-line tool for managing and controlling multiple terminal sessions on a Linux system. Learn how to navigate, manage, and customize tmux for enhanced productivity.",
+    "keywords": "tmux, process management, terminal, session management, Linux, productivity"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to tmux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify tmux installation",
+            "file": "verify1-1.sh",
+            "hint": "It seems that tmux is not installed on your system. Please run the installation command provided in the step to install tmux.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Navigating and Managing tmux Sessions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify creating a new tmux session",
+            "file": "verify2-1.sh",
+            "hint": "It seems that you were unable to create a new tmux session named 'my-session'. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify switching between tmux sessions",
+            "file": "verify2-2.sh",
+            "hint": "It appears that you were unable to switch to the 'my-session' tmux session. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing tmux with Configuration Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify tmux configuration file",
+            "file": "verify3-1.sh",
+            "hint": "It seems that the tmux configuration file ~/.tmux.conf is not set up correctly. Please review the steps and ensure that the file contains the expected settings.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

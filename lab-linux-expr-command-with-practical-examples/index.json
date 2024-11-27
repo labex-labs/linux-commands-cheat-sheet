@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux expr Command with Practical Examples",
+  "description": "Explore the versatile expr command in Linux, learn its syntax, and discover practical examples for performing arithmetic operations, string manipulation, and conditional expressions.",
+  "meta": {
+    "title": "Linux expr Command with Practical Examples",
+    "description": "Explore the versatile expr command in Linux, learn its syntax, and discover practical examples for performing arithmetic operations, string manipulation, and conditional expressions.",
+    "keywords": "Linux, expr command, arithmetic operations, string manipulation, conditional expressions, text processing, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the expr Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify basic arithmetic operations",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that you have correctly performed the basic arithmetic operations using the `expr` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify string manipulation",
+            "file": "verify1-2.sh",
+            "hint": "Please ensure that you have correctly performed the string manipulation operations using the `expr` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify conditional expressions",
+            "file": "verify1-3.sh",
+            "hint": "Please ensure that you have correctly performed the conditional expressions using the `expr` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Basic Arithmetic Operations Using expr",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify basic arithmetic operations",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that you have correctly performed the basic arithmetic operations using the `expr` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Apply expr for String Manipulation and Conditional Expressions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify string manipulation",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that you have correctly performed the string manipulation operations using the `expr` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify conditional expressions",
+            "file": "verify3-2.sh",
+            "hint": "Please ensure that you have correctly performed the conditional expressions using the `expr` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

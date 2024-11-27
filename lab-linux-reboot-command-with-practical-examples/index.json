@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux reboot Command with Practical Examples",
+  "description": "Explore the Linux reboot command and learn how to reboot your system immediately or schedule a reboot at a specific time. Gain practical knowledge for system monitoring and management.",
+  "meta": {
+    "title": "Linux reboot Command with Practical Examples",
+    "description": "Explore the Linux reboot command and learn how to reboot your system immediately or schedule a reboot at a specific time. Gain practical knowledge for system monitoring and management.",
+    "keywords": "Linux, reboot, system management, system monitoring, command line, schedule, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the reboot Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the reboot command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have executed the `reboot` command in the terminal and that you are running on a Linux system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Reboot the System Immediately",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the system reboot",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the system has successfully rebooted and you are able to log back in.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Schedule a Reboot at a Specific Time",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the scheduled reboot",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have executed the `shutdown -r` command to schedule a reboot, and the `shutdown -c` command to cancel the scheduled reboot.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

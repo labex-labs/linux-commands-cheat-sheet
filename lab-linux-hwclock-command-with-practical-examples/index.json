@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux hwclock Command with Practical Examples",
+  "description": "Explore the Linux hwclock command, learn how to synchronize system time with hardware clock, and adjust the hardware clock manually for effective system time management.",
+  "meta": {
+    "title": "Linux hwclock Command with Practical Examples",
+    "description": "Explore the Linux hwclock command, learn how to synchronize system time with hardware clock, and adjust the hardware clock manually for effective system time management.",
+    "keywords": "Linux, hwclock, system time, hardware clock, time management, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of the hwclock Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify hardware clock time",
+            "file": "verify1-1.sh",
+            "hint": "The hardware clock time does not match the system time. Please ensure you have correctly synchronized the system time with the hardware clock using the `hwclock --systohc` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Synchronize System Time with Hardware Clock",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify system time synchronization",
+            "file": "verify2-1.sh",
+            "hint": "The system time is not synchronized with the hardware clock. Please ensure you have correctly synchronized the system time using the `hwclock --systohc` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjust Hardware Clock Manually",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify hardware clock adjustment",
+            "file": "verify3-1.sh",
+            "hint": "The hardware clock was not adjusted correctly. Please ensure you have used the `hwclock --set --date=\"2023-04-11 13:00:00\"` command to manually set the hardware clock to the desired time.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

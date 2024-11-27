@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux exit Command with Practical Examples",
+  "description": "Explore the Linux exit command and its practical usage in shell scripts. Learn how to terminate scripts, utilize different exit codes, and understand the purpose of this essential command.",
+  "meta": {
+    "title": "Linux exit Command with Practical Examples",
+    "description": "Explore the Linux exit command and its practical usage in shell scripts. Learn how to terminate scripts, utilize different exit codes, and understand the purpose of this essential command.",
+    "keywords": "Linux, exit command, shell script, system management, exit codes, script termination"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the exit Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the exit command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have used the `exit` command correctly in your script to terminate the execution with the desired exit status.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use the exit Command to Terminate a Shell Script",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the script termination",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the script you created terminates as expected when using the `exit` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize the exit Command with Different Exit Codes",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the script exit codes",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the script you created is using the appropriate exit codes to indicate the success or failure of different scenarios.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

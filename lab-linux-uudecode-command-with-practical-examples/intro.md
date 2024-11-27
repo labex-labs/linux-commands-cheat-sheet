@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `uudecode` command in Linux to decode files that have been encoded using the `uuencode` command. Uuencoding is a method of encoding binary data, such as images, documents, or executable files, into a format that can be safely transmitted over text-based communication channels. The lab covers understanding the purpose of the `uudecode` command, decoding a single uuencoded file, and decoding multiple uuencoded files. This lab is part of the Backup and Compression skill set, and the `uudecode` command is a useful tool for transferring binary files over text-based communication channels.

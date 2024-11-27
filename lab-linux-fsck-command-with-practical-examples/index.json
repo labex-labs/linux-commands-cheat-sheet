@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fsck Command with Practical Examples",
+  "description": "Explore the Linux fsck command, learn how to check filesystem integrity, and repair any issues using practical examples. Gain essential skills in disk and file system management.",
+  "meta": {
+    "title": "Linux fsck Command with Practical Examples",
+    "description": "Explore the Linux fsck command, learn how to check filesystem integrity, and repair any issues using practical examples. Gain essential skills in disk and file system management.",
+    "keywords": "Linux, fsck, filesystem, disk management, file system utilities, integrity check, repair, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the Purpose and Importance of fsck Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify understanding of fsck command purpose",
+            "file": "verify1-1.sh",
+            "hint": "It seems you have not explored the purpose of the fsck command. Please review the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Checking Filesystem Integrity with fsck",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify filesystem integrity check",
+            "file": "verify2-1.sh",
+            "hint": "It seems you have not performed the filesystem integrity check using the fsck command. Please review the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Repairing Filesystem Issues Using fsck",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify filesystem repair",
+            "file": "verify3-1.sh",
+            "hint": "It seems you have not repaired the corrupted filesystem using the fsck -y command. Please review the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

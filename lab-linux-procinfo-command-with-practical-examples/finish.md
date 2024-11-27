@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the powerful `procinfo` command in Linux, which provides a comprehensive overview of various system parameters. We started by installing the `procinfo` package and running the command to see the default system information output, including CPU, memory, swap, uptime, disk, and network usage. We then learned how to customize the `procinfo` output to focus on specific system information, such as CPU details, memory usage, and disk statistics. This hands-on experience with the `procinfo` command can be valuable for monitoring system performance and troubleshooting issues on Linux systems.

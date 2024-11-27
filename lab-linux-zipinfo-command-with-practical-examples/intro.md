@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `zipinfo` command in Linux to display detailed information about the contents of zip files. The lab covers understanding the `zipinfo` command, exploring its various options, and analyzing the contents of zip files. You will start by installing the necessary package and creating a sample zip file, then use the `zipinfo` command to explore the file's contents, including file names, sizes, compression methods, and modification dates. The lab also covers additional `zipinfo` command options for more concise and customized output. This lab provides practical examples to help you effectively manage and analyze zip files on your Linux system.

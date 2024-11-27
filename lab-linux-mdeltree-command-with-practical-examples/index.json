@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux mdeltree Command with Practical Examples",
+  "description": "Explore the mdeltree command in Linux, a powerful tool for recursively removing directories and handling symbolic links and permissions. Gain practical experience through step-by-step examples.",
+  "meta": {
+    "title": "Linux mdeltree Command with Practical Examples",
+    "description": "Explore the mdeltree command in Linux, a powerful tool for recursively removing directories and handling symbolic links and permissions. Gain practical experience through step-by-step examples.",
+    "keywords": "Linux, mdeltree, directory removal, recursive deletion, symbolic links, permissions"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the mdeltree Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mdeltree command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `mdeltree` command does not seem to be working correctly. Please ensure that you have the correct usage and options.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Removing Directories Recursively with mdeltree",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify directory removal",
+            "file": "verify2-1.sh",
+            "hint": "The `test_dir` directory does not seem to have been removed successfully. Please check your `mdeltree` command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Handling Symbolic Links and Permissions with mdeltree",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify symbolic link handling",
+            "file": "verify3-1.sh",
+            "hint": "The symbolic link does not seem to have been removed correctly. Please check your `mdeltree` command with the `-l` option.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify permission preservation",
+            "file": "verify3-2.sh",
+            "hint": "The permissions of the deleted directory do not seem to have been preserved. Please check your `mdeltree` command with the `-p` option.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

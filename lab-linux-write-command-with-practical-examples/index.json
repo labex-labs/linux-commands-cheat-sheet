@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux write Command with Practical Examples",
+  "description": "Explore the Linux write command and its practical applications, including sending messages to specific users and broadcasting messages to all logged-in users on the same system.",
+  "meta": {
+    "title": "Linux write Command with Practical Examples",
+    "description": "Explore the Linux write command and its practical applications, including sending messages to specific users and broadcasting messages to all logged-in users on the same system.",
+    "keywords": "Linux, write command, messaging, communication, system administration, user management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the write Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the write command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have used the write command to send a message to the user 'labex'. The message should be \"Hello, this is a test message.\"",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Send a Message to a Specific User on the Same System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the write command usage for a specific user",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have used the write command to send a message to the user 'labex'. The message should be \"This is a message for labex.\"",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Broadcast a Message to All Logged-in Users",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the wall command usage",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have used the wall command to broadcast the message \"Attention all users! This is an important announcement.\"",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

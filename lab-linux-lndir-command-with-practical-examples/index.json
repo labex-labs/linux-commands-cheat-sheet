@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux lndir Command with Practical Examples",
+  "description": "Explore the lndir command in Linux, learn how to create symbolic links, and manage them effectively. Discover practical examples to enhance your file system management skills.",
+  "meta": {
+    "title": "Linux lndir Command with Practical Examples",
+    "description": "Explore the lndir command in Linux, learn how to create symbolic links, and manage them effectively. Discover practical examples to enhance your file system management skills.",
+    "keywords": "lndir, symbolic links, file system, Linux utilities, disk management, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of lndir Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the creation of symbolic links",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `lndir` command was executed correctly and that symbolic links were created in the `~/project/destination` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create Symbolic Links Using lndir",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the creation of symbolic links",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `lndir` command was executed correctly and that symbolic links were created in the `~/project/destination2` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Symbolic Links with lndir",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the management of symbolic links",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `lndir` command was used to update the symbolic links, and that the symbolic link to `file4.txt` was removed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux aplay Command with Practical Examples",
+  "description": "Explore the aplay command in Linux, learn how to install required packages, play audio files, and discover various command options and flags for audio manipulation.",
+  "meta": {
+    "title": "Linux aplay Command with Practical Examples",
+    "description": "Explore the aplay command in Linux, learn how to install required packages, play audio files, and discover various command options and flags for audio manipulation.",
+    "keywords": "Linux, aplay, audio, command line, multimedia, sound, audio playback, audio utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install the Required Packages for aplay",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify aplay command is installed",
+            "file": "verify1-1.sh",
+            "hint": "The `aplay` command does not seem to be installed. Please follow the steps to install the required packages.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Play Audio Files Using the aplay Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify audio file playback",
+            "file": "verify2-1.sh",
+            "hint": "It seems the `aplay` command was not used to play the audio file. Please follow the steps to play the audio file using the `aplay` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore aplay Command Options and Flags",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify aplay command options",
+            "file": "verify3-1.sh",
+            "hint": "It seems you did not try the `aplay` command with the loop option as suggested. Please follow the steps to explore the available options and flags for the `aplay` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

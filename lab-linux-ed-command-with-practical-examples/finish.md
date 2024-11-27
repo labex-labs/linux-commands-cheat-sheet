@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the basic usage of the `ed` command, a powerful line-oriented text editor in Unix-like operating systems. You started by checking the version of `ed` installed in your Ubuntu 22.04 Docker container and then explored the various commands available in the `ed` editor, such as `a` for appending text, `c` for changing the current line, `d` for deleting the current line, `i` for inserting text, `l` for listing the current line, `p` for printing the current line, and `q` for quitting the editor. You then created a new file called `example.txt` and added some text to it using the `ed` command. Finally, you learned how to edit existing text files using the `ed` command.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux nslookup Command with Practical Examples",
+  "description": "Explore the nslookup command in Linux, learn how to perform basic DNS lookups, and troubleshoot DNS issues effectively.",
+  "meta": {
+    "title": "Linux nslookup Command with Practical Examples",
+    "description": "Explore the nslookup command in Linux, learn how to perform basic DNS lookups, and troubleshoot DNS issues effectively.",
+    "keywords": "Linux, nslookup, DNS, networking, troubleshooting, domain name resolution"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the nslookup Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify nslookup command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the nslookup command is available on your system and that you can perform a basic DNS lookup for the google.com domain.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Performing Basic DNS Lookups with nslookup",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify basic DNS lookup",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can perform the following DNS lookups using nslookup:\n1. Look up the IP address for the example.com domain\n2. Retrieve all DNS records for the example.com domain\n3. Perform a reverse DNS lookup for the 8.8.8.8 IP address",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting DNS Issues Using nslookup",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify DNS troubleshooting with nslookup",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can perform the following DNS troubleshooting tasks using nslookup:\n1. Simulate a DNS resolution failure for a non-existent domain\n2. Perform a DNS lookup using a specific DNS server (8.8.8.8)\n3. Identify the DNS servers responsible for the example.com domain",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

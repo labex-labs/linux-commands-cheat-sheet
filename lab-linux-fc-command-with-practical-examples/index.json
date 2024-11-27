@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fc Command with Practical Examples",
+  "description": "Explore the fc command in Linux, which allows you to edit and reexecute previous commands. Learn how to customize its behavior for improved productivity.",
+  "meta": {
+    "title": "Linux fc Command with Practical Examples",
+    "description": "Explore the fc command in Linux, which allows you to edit and reexecute previous commands. Learn how to customize its behavior for improved productivity.",
+    "keywords": "Linux, fc command, command history, command editing, command reexecution, productivity"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the fc Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the use of fc command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have used the fc command to edit and reexecute the command that created the file.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use fc to Edit and Reexecute Previous Commands",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the use of fc command to edit and reexecute a previous command",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have used the fc command to edit and reexecute the 'cat file.txt' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize fc Command Behavior",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the use of fc command with different options",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have used the fc command with the following options:\n- -e to specify the nano editor\n- -n -l to list the command history without line numbers\n- <start> <end> to edit a range of commands\n- -s to reexecute the edited command directly",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

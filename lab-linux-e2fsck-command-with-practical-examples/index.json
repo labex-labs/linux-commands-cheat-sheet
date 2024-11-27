@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux e2fsck Command with Practical Examples",
+  "description": "Explore the e2fsck command in Linux, learn how to check and repair corrupted Ext4 file systems, and perform dry runs to fix errors automatically.",
+  "meta": {
+    "title": "Linux e2fsck Command with Practical Examples",
+    "description": "Explore the e2fsck command in Linux, learn how to check and repair corrupted Ext4 file systems, and perform dry runs to fix errors automatically.",
+    "keywords": "Linux, e2fsck, file system, Ext4, disk repair, file system utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the e2fsck Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of the e2fsck command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the e2fsck command is installed and available in your system. If the command is not found, please install the necessary packages.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Check and Repair a Corrupted Ext4 File System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the file system is repaired",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `e2fsck` command reports the file system as \"clean\" after the repair operation. If the file system is not clean, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform a Dry Run and Fix Errors Automatically",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the file system is repaired",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `e2fsck` command reports the file system as \"clean\" after the automatic repair operation. If the file system is not clean, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

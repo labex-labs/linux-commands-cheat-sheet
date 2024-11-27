@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux logrotate Command with Practical Examples",
+  "description": "Explore the logrotate command in Linux, learn how to configure it for Apache web server logs, and customize the configuration for specific log files.",
+  "meta": {
+    "title": "Linux logrotate Command with Practical Examples",
+    "description": "Explore the logrotate command in Linux, learn how to configure it for Apache web server logs, and customize the configuration for specific log files.",
+    "keywords": "Linux, logrotate, log management, Apache, log rotation, system monitoring, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Logrotate Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify logrotate version",
+            "file": "verify1-1.sh",
+            "hint": "The logrotate version installed on your system does not match the expected version of 3.18.1. Please ensure that you have the correct version installed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Logrotate for Apache Web Server Logs",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Apache log rotation",
+            "file": "verify2-1.sh",
+            "hint": "The Apache log files were not rotated correctly. Please ensure that the logrotate configuration for Apache is set up properly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize Logrotate Configuration for Specific Log Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom log rotation",
+            "file": "verify3-1.sh",
+            "hint": "The custom log files were not rotated correctly. Please ensure that the logrotate configuration for the custom log file is set up properly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

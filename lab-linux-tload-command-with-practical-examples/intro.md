@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `tload` command in Linux to monitor the system load average and identify potential performance issues. The `tload` command displays a real-time graph of the system load average, which is a measure of the number of processes that are waiting to be executed by the CPU. You will learn how to interpret the `tload` output and understand the significance of the 1-minute, 5-minute, and 15-minute load averages. By the end of this lab, you will be able to use the `tload` command to proactively monitor your system's performance and take appropriate actions to optimize its performance.

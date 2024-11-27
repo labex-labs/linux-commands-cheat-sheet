@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the Linux `uptime` command, which provides information about the system's uptime and load average. We learned that the `uptime` command displays the current time, the system's uptime, the number of users currently logged in, and the system load averages for the past 1, 5, and 15 minutes. We also explored various options available with the `uptime` command, such as displaying the uptime in a more readable format, showing only the load average, and displaying the system boot time. These features allow users to customize the output and extract specific information as needed.

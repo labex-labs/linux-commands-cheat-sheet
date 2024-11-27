@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the Linux `nm` command, which is used to display the symbol information for object files. We first created a simple C program and compiled it into an executable file, then used the `nm` command to view the symbol information of the executable. We learned that the `nm` command provides various options to customize the output and filter the symbol information, such as displaying the file name, sorting the output by symbol name, and showing the symbol type and value. The lab provided a practical understanding of how to use the `nm` command to analyze the internal structure of executable files.

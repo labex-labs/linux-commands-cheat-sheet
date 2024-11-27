@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned how to initialize a new Git repository, configure your Git user name and email, add files to the repository, and commit the changes. You started by navigating to the project directory and using the `git init` command to create a new Git repository. Then, you configured your Git user name and email using the `git config` command. Next, you created a new file, `test.txt`, and used the `git add` command to stage it for commit. Finally, you used the `git status` command to check the status of the repository and understand the changes that were ready to be committed.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux chvt Command with Practical Examples",
+  "description": "Explore the chvt command in Linux, which allows you to switch between virtual terminals. Learn practical examples and automate virtual terminal switching for enhanced productivity.",
+  "meta": {
+    "title": "Linux chvt Command with Practical Examples",
+    "description": "Explore the chvt command in Linux, which allows you to switch between virtual terminals. Learn practical examples and automate virtual terminal switching for enhanced productivity.",
+    "keywords": "Linux, chvt, virtual terminals, terminal switching, automation, productivity"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the chvt Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify chvt command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can switch to virtual terminal 2 using the `chvt` command, and that virtual terminal 2 is listed when running `chvt -l`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Switch Between Virtual Terminals",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify virtual terminal switching",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can switch to each of the 6 virtual terminals using both the keyboard shortcuts and the `chvt` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate Virtual Terminal Switching",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify virtual terminal switching script",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the virtual terminal switching script is created, made executable, and can successfully switch between all 6 virtual terminals.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux biff Command with Practical Examples",
+  "description": "Explore the biff command in Linux, learn how to configure it to receive notifications, and customize the notification settings for enhanced productivity.",
+  "meta": {
+    "title": "Linux biff Command with Practical Examples",
+    "description": "Explore the biff command in Linux, learn how to configure it to receive notifications, and customize the notification settings for enhanced productivity.",
+    "keywords": "biff, Linux, notifications, utilities, productivity, customization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the biff Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify biff is enabled",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the biff command is enabled by running `biff y`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure biff to Receive Notifications",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify biff notification",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the biff notification is working correctly by creating a new file in the ~/project directory. Check the ~/.zsh_history file to see if the notification message was displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize biff Notification Settings",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify customized biff notification",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the customized biff notification is working correctly by creating a new file in the ~/project directory. Check the ~/.zsh_history file to see if the customized notification message was displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

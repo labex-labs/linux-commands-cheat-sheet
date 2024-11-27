@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux symlinks Command with Practical Examples",
+  "description": "Explore the power of symbolic links in Linux, learn how they differ from hard links, and discover practical use cases to enhance your file management skills.",
+  "meta": {
+    "title": "Linux symlinks Command with Practical Examples",
+    "description": "Explore the power of symbolic links in Linux, learn how they differ from hard links, and discover practical use cases to enhance your file management skills.",
+    "keywords": "Linux, symlinks, symbolic links, hard links, file management, disk and file system utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Create and Manage Symbolic Links",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify symbolic link creation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the symbolic link `~/project/symlink.txt` has been created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Understand the Difference Between Symbolic and Hard Links",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify hard link creation",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the hard link `~/project/hardlink.txt` has been created successfully and that it has the same inode number as the original `~/project/file.txt` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Use Cases of Symbolic Links",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify symbolic link usage",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the symbolic link `~/documents` has been created successfully and that it points to the `~/project/important-files` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

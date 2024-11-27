@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and functionality of the `iptables-save` command, which is used to save the current state of the iptables firewall rules to a file. This allows you to easily backup and restore your firewall configuration, which is useful in scenarios such as migrating firewall rules to a new system, restoring the firewall configuration after a system reboot or update, and automating the backup and restoration of firewall rules. You then learned how to backup and restore iptables firewall rules using the `iptables-save` and `iptables-restore` commands. Finally, you explored how to automate the `iptables-save` command using a Systemd service, which ensures that the firewall rules are automatically backed up on a regular basis.

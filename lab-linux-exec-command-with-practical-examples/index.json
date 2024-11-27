@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux exec Command with Practical Examples",
+  "description": "Explore the Linux exec command and its practical applications, including understanding the exec system call, executing external commands, and redirecting input/output.",
+  "meta": {
+    "title": "Linux exec Command with Practical Examples",
+    "description": "Explore the Linux exec command and its practical applications, including understanding the exec system call, executing external commands, and redirecting input/output.",
+    "keywords": "Linux, exec, system call, external commands, input/output redirection"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the exec System Call",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the exec system call",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have correctly implemented the `exec` system call in your C program, and that the output matches the expected behavior.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Execute External Commands with exec()",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the exec command execution",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have correctly implemented the `exec` system call to execute the `ls -l` and `echo` commands in your C programs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Redirect Input and Output with exec()",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the exec input redirection",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have correctly implemented the input redirection using `dup2` in your C program.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the exec output redirection",
+            "file": "verify3-2.sh",
+            "hint": "Make sure you have correctly implemented the output redirection using `dup2` and `open` in your C program.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

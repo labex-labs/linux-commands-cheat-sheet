@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the purpose and usage of the `modprobe` command in Linux. The `modprobe` command is used to load and remove kernel modules, which are essential components that extend the functionality of the Linux kernel. It simplifies the process by handling the dependencies between modules, ensuring that all required modules are loaded or unloaded correctly. We learned how to use `modprobe` to load and remove kernel modules, as well as how to verify the loaded modules using the `lsmod` command. The `modprobe` command provides a user-friendly way to manage kernel modules, making it more convenient than the lower-level `insmod` and `rmmod` commands.

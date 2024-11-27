@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux unrar Command with Practical Examples",
+  "description": "Explore the Linux unrar command and learn how to extract single and multi-part RAR archives on Ubuntu 22.04. Gain practical experience with this essential file compression and archiving tool.",
+  "meta": {
+    "title": "Linux unrar Command with Practical Examples",
+    "description": "Explore the Linux unrar command and learn how to extract single and multi-part RAR archives on Ubuntu 22.04. Gain practical experience with this essential file compression and archiving tool.",
+    "keywords": "Linux, unrar, RAR, archive, compression, extraction, Ubuntu, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install unrar Package on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify unrar package installation",
+            "file": "verify1-1.sh",
+            "hint": "The unrar package does not appear to be installed. Please run the installation command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Extract a Single RAR File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify extraction of single RAR file",
+            "file": "verify2-1.sh",
+            "hint": "The example.txt file was not extracted from the RAR archive. Please check your unrar command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Extract a Multi-Part RAR Archive",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify extraction of multi-part RAR archive",
+            "file": "verify3-1.sh",
+            "hint": "The example.txt file was not extracted from the multi-part RAR archive. Please check your unrar command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

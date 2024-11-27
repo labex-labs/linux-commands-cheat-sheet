@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ftpshut Command with Practical Examples",
+  "description": "Explore the ftpshut command in Linux, learn how to shut down the FTP server, and discover techniques for scheduling automatic FTP server shutdown.",
+  "meta": {
+    "title": "Linux ftpshut Command with Practical Examples",
+    "description": "Explore the ftpshut command in Linux, learn how to shut down the FTP server, and discover techniques for scheduling automatic FTP server shutdown.",
+    "keywords": "Linux, ftpshut, FTP server, shutdown, scheduling, network administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the ftpshut Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ftpshut command",
+            "file": "verify1-1.sh",
+            "hint": "The ftpshut command did not successfully shut down the FTP server. Please check the output of the ftpshut command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Shutting Down the FTP Server",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify FTP server shutdown",
+            "file": "verify2-1.sh",
+            "hint": "The FTP server is still running. Please check the output of the ftpshut command and try again to shut down the FTP server.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Scheduling Automatic FTP Server Shutdown",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify scheduled FTP server shutdown",
+            "file": "verify3-1.sh",
+            "hint": "The automatic FTP server shutdown does not appear to have been scheduled correctly. Please check the output of the ftpshut command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

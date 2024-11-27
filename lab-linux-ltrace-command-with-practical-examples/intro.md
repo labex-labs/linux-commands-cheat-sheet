@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `ltrace` command in Linux to trace system calls and library calls made by a process. `ltrace` is a powerful tool that can be useful for debugging and performance analysis. You will start by understanding the purpose and functionality of `ltrace`, and then explore how to use it to analyze the behavior of applications. The lab covers tracing system calls and library calls, as well as interpreting the output of `ltrace` to identify potential issues. Note that the `ltrace` command may require installation on some Linux distributions, and it is recommended to use more modern tools like `strace` for newer applications.

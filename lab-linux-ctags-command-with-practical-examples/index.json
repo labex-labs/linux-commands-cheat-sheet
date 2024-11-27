@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ctags Command with Practical Examples",
+  "description": "Explore the power of the ctags command in Linux, learn how to generate tags for C/C++ projects, and navigate source code efficiently.",
+  "meta": {
+    "title": "Linux ctags Command with Practical Examples",
+    "description": "Explore the power of the ctags command in Linux, learn how to generate tags for C/C++ projects, and navigate source code efficiently.",
+    "keywords": "ctags, Linux, C, C++, source code navigation, code indexing, programming, scripting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to ctags",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ctags installation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the ctags package is installed correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Generating Tags for a C/C++ Project",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify tags file generation",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the tags file is generated correctly in the `~/project/myproject` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Navigating Source Code with ctags",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify navigation with ctags",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the tags file contains the definition of the `main` function, and that you can navigate to it using the ctags command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux sar (System Activity Reporter) command to monitor and analyze system performance metrics. The sar command is a powerful tool that collects, reports, and saves system activity information, providing a comprehensive view of various performance metrics, including CPU utilization, memory usage, network traffic, and disk I/O. You will start by understanding the purpose of the sar command and how to install the required sysstat package. Then, you will explore the different options and flags available with the sar command to analyze specific system performance aspects. Finally, you will practice using the sar command to monitor and interpret system performance data.

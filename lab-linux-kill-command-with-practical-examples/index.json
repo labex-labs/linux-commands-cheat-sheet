@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux kill Command with Practical Examples",
+  "description": "Explore the Linux kill command, learn how to terminate processes, and discover advanced options for managing processes effectively.",
+  "meta": {
+    "title": "Linux kill Command with Practical Examples",
+    "description": "Explore the Linux kill command, learn how to terminate processes, and discover advanced options for managing processes effectively.",
+    "keywords": "Linux, kill command, process management, process termination, process control, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the kill Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the sleep process was terminated",
+            "file": "verify1-1.sh",
+            "hint": "The sleep process should have been terminated by the kill command. Please check if the process is still running.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Terminate Processes Using the kill Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the sleep process was terminated",
+            "file": "verify2-1.sh",
+            "hint": "The sleep process should have been terminated by the kill command. Please check if the process is still running.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced kill Command Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the sleep process was terminated using SIGINT",
+            "file": "verify3-1.sh",
+            "hint": "The sleep process should have been terminated by the kill -SIGINT command. Please check if the process is still running.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the sleep process was terminated using SIGKILL",
+            "file": "verify3-2.sh",
+            "hint": "The sleep process should have been terminated by the kill -9 command. Please check if the process is still running.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

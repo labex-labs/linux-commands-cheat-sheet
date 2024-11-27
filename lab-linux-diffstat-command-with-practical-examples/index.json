@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux diffstat Command with Practical Examples",
+  "description": "Explore the diffstat command, a powerful tool for analyzing changes in text files. Learn how to use diffstat to process patch files, Git diffs, and more, with practical examples.",
+  "meta": {
+    "title": "Linux diffstat Command with Practical Examples",
+    "description": "Explore the diffstat command, a powerful tool for analyzing changes in text files. Learn how to use diffstat to process patch files, Git diffs, and more, with practical examples.",
+    "keywords": "diffstat, Linux, text processing, patch files, Git, diff, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of the diffstat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify that the diffstat command was used to analyze a diff",
+            "file": "verify1-1.sh",
+            "hint": "It looks like you haven't used the `diffstat` command yet. Make sure to run the examples provided in the step to analyze the output of the `diff` command and Git diffs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Basic Usage of the diffstat Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify that the diffstat command was used with options",
+            "file": "verify2-1.sh",
+            "hint": "It looks like you haven't used the `diffstat` command with any options yet. Make sure to try out the examples provided in the step, such as setting the maximum number of files to display or changing the width of the histogram.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Apply diffstat to Analyze Patch Files and Git Diffs",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify that the diffstat command was used to analyze a patch file or Git diff",
+            "file": "verify3-1.sh",
+            "hint": "It looks like you haven't used the `diffstat` command to analyze a patch file or Git diff yet. Make sure to try out the examples provided in the step, such as creating a patch file and using `diffstat` to analyze it, or using `diffstat` with Git diffs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

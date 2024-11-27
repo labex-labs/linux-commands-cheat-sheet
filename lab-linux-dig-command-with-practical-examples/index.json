@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux dig Command with Practical Examples",
+  "description": "Explore the powerful dig command in Linux, learn its syntax, and practice various use cases for DNS lookups and advanced network troubleshooting.",
+  "meta": {
+    "title": "Linux dig Command with Practical Examples",
+    "description": "Explore the powerful dig command in Linux, learn its syntax, and practice various use cases for DNS lookups and advanced network troubleshooting.",
+    "keywords": "Linux, dig, DNS, networking, troubleshooting, command-line, lookup, advanced options"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the dig Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the dig command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the dig command is executed correctly and that it returns the expected IP address for the example.com domain.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Basic DNS Lookups Using dig",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the dig command for google.com",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the dig command is executed correctly and that it returns the expected IP address for the google.com domain.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the reverse DNS lookup for 8.8.8.8",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that the reverse DNS lookup using the dig -x command is executed correctly and that it returns the expected domain name for the 8.8.8.8 IP address.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced dig Options for Detailed DNS Information",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the dig +trace command for google.com",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the dig +trace command is executed correctly and that it returns the expected output, including the final IP address for the google.com domain.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the dig +norecurse command for google.com",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the dig +norecurse command is executed correctly and that it returns the expected output, including the IP address for the google.com domain.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the dig +short command for google.com",
+            "file": "verify3-3.sh",
+            "hint": "Ensure that the dig +short command is executed correctly and that it returns the expected IP address for the google.com domain.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

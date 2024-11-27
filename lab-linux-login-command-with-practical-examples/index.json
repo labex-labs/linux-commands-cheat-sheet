@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux login Command with Practical Examples",
+  "description": "Explore the login command in Linux, learn how to log in as a regular user and the root user, and gain practical experience with hands-on examples.",
+  "meta": {
+    "title": "Linux login Command with Practical Examples",
+    "description": "Explore the login command in Linux, learn how to log in as a regular user and the root user, and gain practical experience with hands-on examples.",
+    "keywords": "Linux, login, command, user, root, system management, system monitoring"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the login Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify login as regular user",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you can log in as the regular user 'labex' using the login command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Logging in as a Regular User",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify login as regular user",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can log in as the regular user 'labex' using the login command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Logging in as the Root User",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify login as root user",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can log in as the root user using the login command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

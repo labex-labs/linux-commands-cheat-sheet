@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `setserial` command and its practical applications. The lab aims to teach you how to identify serial port information, configure serial port settings, and troubleshoot issues related to serial communication on a Linux system. We will start by understanding the purpose of the `setserial` command, then move on to using it to retrieve detailed information about the serial ports on your system. Finally, we will demonstrate how to configure various serial port settings, such as baud rate and interrupt request (IRQ), using the `setserial` command.

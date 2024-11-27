@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux setleds Command with Practical Examples",
+  "description": "Learn how to use the setleds command to modify keyboard LED states, and automate LED state changes with shell scripts for efficient system configuration.",
+  "meta": {
+    "title": "Linux setleds Command with Practical Examples",
+    "description": "Learn how to use the setleds command to modify keyboard LED states, and automate LED state changes with shell scripts for efficient system configuration.",
+    "keywords": "setleds, keyboard, LED, system configuration, shell script, automation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of setleds Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current LED state",
+            "file": "verify1-1.sh",
+            "hint": "The current LED state should be \"00000000\" (all LEDs off).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify Keyboard LED States Using setleds",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the Num Lock LED state",
+            "file": "verify2-1.sh",
+            "hint": "The Num Lock LED should be in the \"on\" state (LED state should be \"00000002\").",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the Caps Lock and Scroll Lock LED state",
+            "file": "verify2-2.sh",
+            "hint": "The Caps Lock and Scroll Lock LEDs should be in the \"on\" state (LED state should be \"00000005\").",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate Keyboard LED State Changes with Shell Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the Num Lock LED state toggle",
+            "file": "verify3-1.sh",
+            "hint": "The Num Lock LED should be in the \"on\" state after running the toggle_num_lock.sh script.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the Caps Lock and Scroll Lock LED state",
+            "file": "verify3-2.sh",
+            "hint": "The Caps Lock and Scroll Lock LEDs should be in the \"on\" state after running the set_caps_scroll.sh script.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

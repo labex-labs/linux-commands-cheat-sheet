@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bzmore Command with Practical Examples",
+  "description": "Explore the bzmore command in Linux, a tool for viewing compressed text files. Learn its functionality and practical examples to enhance your compression and archiving skills.",
+  "meta": {
+    "title": "Linux bzmore Command with Practical Examples",
+    "description": "Explore the bzmore command in Linux, a tool for viewing compressed text files. Learn its functionality and practical examples to enhance your compression and archiving skills.",
+    "keywords": "Linux, bzmore, compression, archiving, text files, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the bzmore Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the bzmore command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can view the contents of the compressed file using the `bzmore` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Functionality of bzmore",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the bzmore command options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use the different options of the `bzmore` command to view the contents of the compressed file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using bzmore",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the bzmore command usage",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use the `bzmore` command to view the contents of compressed files, search for specific content, and view compressed man pages.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

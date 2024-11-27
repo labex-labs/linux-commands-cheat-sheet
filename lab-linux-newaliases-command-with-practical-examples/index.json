@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux newaliases Command with Practical Examples",
+  "description": "Explore the newaliases command in Linux, learn how to create and manage email aliases, and troubleshoot alias configuration for effective email management.",
+  "meta": {
+    "title": "Linux newaliases Command with Practical Examples",
+    "description": "Explore the newaliases command in Linux, learn how to create and manage email aliases, and troubleshoot alias configuration for effective email management.",
+    "keywords": "Linux, newaliases, email aliases, user management, permission management, email configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the newaliases Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the newaliases command updated the aliases database",
+            "file": "verify1-1.sh",
+            "hint": "The newaliases command should have created the /etc/aliases.db file. If the file does not exist, the command was not successful.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Manage Email Aliases Using newaliases",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the new email alias was created",
+            "file": "verify2-1.sh",
+            "hint": "The new 'info' email alias should have been added to the /etc/aliases file. If it is not present, the alias was not created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot and Verify Email Alias Configuration",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the email aliases are working",
+            "file": "verify3-1.sh",
+            "hint": "The email aliases should have been delivered successfully, as indicated by the log entries. If the log does not show the emails being delivered, there may be an issue with the alias configuration.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

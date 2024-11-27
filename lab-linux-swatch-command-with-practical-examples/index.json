@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux swatch Command with Practical Examples",
+  "description": "Explore the swatch command in Linux, a powerful tool for monitoring log files and setting up custom alerts. Learn how to configure swatch to monitor specific events and receive notifications.",
+  "meta": {
+    "title": "Linux swatch Command with Practical Examples",
+    "description": "Explore the swatch command in Linux, a powerful tool for monitoring log files and setting up custom alerts. Learn how to configure swatch to monitor specific events and receive notifications.",
+    "keywords": "swatch, Linux, log monitoring, system management, log analysis, alerts, notifications"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the swatch Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify swatch installation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the swatch command is installed and available in your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitor Log Files with swatch",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify swatch monitoring",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that swatch has detected the error message in the sample.log file and executed the configured action.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure swatch for Specific Alerts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify swatch alerts",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that swatch has triggered the configured alert scripts for the \"failed login\" and \"CRON\" log entries.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

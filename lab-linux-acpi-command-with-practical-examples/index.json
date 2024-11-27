@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux acpi Command with Practical Examples",
+  "description": "Explore the Linux acpi command and its practical applications, including monitoring battery status and customizing acpi behavior. Gain a comprehensive understanding of this versatile utility.",
+  "meta": {
+    "title": "Linux acpi Command with Practical Examples",
+    "description": "Explore the Linux acpi command and its practical applications, including monitoring battery status and customizing acpi behavior. Gain a comprehensive understanding of this versatile utility.",
+    "keywords": "Linux, acpi, battery, power management, command-line, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the acpi Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify acpi command installation",
+            "file": "verify1-1.sh",
+            "hint": "The acpi command is not installed on your system. Please install it using the command provided in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitoring Battery Status with acpi",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify battery status output",
+            "file": "verify2-1.sh",
+            "hint": "The battery status output does not contain the expected information about the battery's charging/discharging status or percentage.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing acpi Behavior",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom acpi configuration",
+            "file": "verify3-1.sh",
+            "hint": "The custom acpi configuration file /etc/acpi/custom.sh does not exist or does not contain the expected battery status format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

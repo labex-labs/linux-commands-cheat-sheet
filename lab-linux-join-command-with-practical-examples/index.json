@@ -1,0 +1,49 @@
+{
+  "type": "lab",
+  "title": "Linux join Command with Practical Examples",
+  "description": "Explore the power of the join command in Linux, learn its syntax, and apply it to merge files based on common fields. Gain practical experience through step-by-step examples.",
+  "meta": {
+    "title": "Linux join Command with Practical Examples",
+    "description": "Explore the power of the join command in Linux, learn its syntax, and apply it to merge files based on common fields. Gain practical experience through step-by-step examples.",
+    "keywords": "Linux, join command, text processing, file merging, data manipulation, command-line tools, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the join Command",
+        "text": "step1.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Join Two Files Based on Common Fields",
+        "text": "step2.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Join Multiple Files with the join Command",
+        "text": "step3.md",
+        "verify": [],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `mlabel` command in Linux to create, change, and remove volume labels on file systems. The `mlabel` command provides a simple and efficient way to manage volume labels, which can be useful for organizing and identifying storage devices. You will start by understanding the purpose and syntax of the `mlabel` command, and then explore how to create and manage volume labels using various options. The lab covers advanced `mlabel` command scenarios, providing practical examples to help you become proficient in using this disk and file system utility.

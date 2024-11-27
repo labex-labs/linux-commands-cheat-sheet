@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dir Command with Practical Examples",
+  "description": "Explore the Linux dir command and its practical applications for managing directories and files. Learn various options to customize directory listings and effectively navigate the file system.",
+  "meta": {
+    "title": "Linux dir Command with Practical Examples",
+    "description": "Explore the Linux dir command and its practical applications for managing directories and files. Learn various options to customize directory listings and effectively navigate the file system.",
+    "keywords": "Linux, dir command, directory listing, file management, navigation, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the dir Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the dir command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the dir command is listing the contents of the current directory correctly. The output should include directories like Desktop, Documents, Downloads, etc.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Directory Listing Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the dir command with options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the dir command with the -l option is displaying the long-format listing, which includes file permissions, ownership, size, and modification time.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Directories with dir Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify directory management with dir",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the dir command can create and remove directories as expected. The script will create a new directory, then remove it recursively.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

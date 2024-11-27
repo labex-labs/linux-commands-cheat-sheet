@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn about the Linux `arp` command and how to use it to manage the Address Resolution Protocol (ARP) cache. The `arp` command is a fundamental networking tool in Linux that allows you to view, add, and delete entries in the ARP cache, which maps IP addresses to their corresponding MAC addresses on a local network. Through practical examples, you will explore the basic syntax and options of the `arp` command, and learn how to effectively manage the ARP cache to troubleshoot network connectivity issues. This lab covers the essential aspects of the `arp` command, providing you with the knowledge and skills to optimize network communication on your Linux systems.

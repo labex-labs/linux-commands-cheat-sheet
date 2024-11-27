@@ -1,0 +1,65 @@
+{
+  "type": "lab",
+  "title": "Linux chpasswd Command with Practical Examples",
+  "description": "Explore the chpasswd command in Linux, learn how to change user passwords in batch mode, and automate password changes using shell scripts.",
+  "meta": {
+    "title": "Linux chpasswd Command with Practical Examples",
+    "description": "Explore the chpasswd command in Linux, learn how to change user passwords in batch mode, and automate password changes using shell scripts.",
+    "keywords": "chpasswd, Linux, password management, batch password change, shell script, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the chpasswd Command",
+        "text": "step1.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Changing User Passwords in Batch Mode",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify user password change",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the password for the 'labex' user has been changed to 'newpassword1' in the /etc/shadow file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automating Password Changes with Shell Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify password changes in script",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the passwords for the 'labex' and 'labuser' users have been changed to 'newpassword1' and 'newpassword2' respectively in the /etc/shadow file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

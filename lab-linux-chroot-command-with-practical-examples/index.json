@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux chroot Command with Practical Examples",
+  "description": "Explore the chroot command in Linux, learn how to create a chroot environment, and manage processes and file systems within the isolated environment.",
+  "meta": {
+    "title": "Linux chroot Command with Practical Examples",
+    "description": "Explore the chroot command in Linux, learn how to create a chroot environment, and manage processes and file systems within the isolated environment.",
+    "keywords": "chroot, Linux, system configuration, file system, process management, isolation, Ubuntu"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Use Cases of chroot",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current root directory",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the current directory is /home/labex/project before exiting the chroot environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Chroot Environment with Ubuntu 22.04",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the chroot environment",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can successfully create and enter the chroot environment at ~/project/chroot.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Processes and File System within the Chroot Environment",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file creation in chroot",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can create a file in the chroot environment at /.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify network access limitation in chroot",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that network access is limited within the chroot environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux disown Command with Practical Examples",
+  "description": "Explore the disown command in Linux, learn how to detach running processes from the shell, and manage their output effectively.",
+  "meta": {
+    "title": "Linux disown Command with Practical Examples",
+    "description": "Explore the disown command in Linux, learn how to detach running processes from the shell, and manage their output effectively.",
+    "keywords": "Linux, disown, process management, background processes, shell, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the disown Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the disown command",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the `sleep 1000` process is still running after using the `disown` command. If the process is not found, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Disown a Running Process in the Background",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the disowned process",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the `sleep 1000` process is still running after using the `disown` command. If the process is not found, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Disown Multiple Processes and Manage Their Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the disowned processes",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the `sleep 1000` and `sleep 2000` processes are still running after using the `disown` command. It also checks if the `process1.log` and `process2.log` files exist, indicating that the output of the disowned processes was redirected to those files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

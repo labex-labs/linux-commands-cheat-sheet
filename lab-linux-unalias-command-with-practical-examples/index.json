@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux unalias Command with Practical Examples",
+  "description": "Learn how to use the unalias command in Linux to temporarily disable aliases and manage them effectively in the terminal.",
+  "meta": {
+    "title": "Linux unalias Command with Practical Examples",
+    "description": "Learn how to use the unalias command in Linux to temporarily disable aliases and manage them effectively in the terminal.",
+    "keywords": "Linux, unalias, command, alias, terminal, system configuration, settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the unalias Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the unalias command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have created the alias for the 'ls' command and then executed the 'ls' command after disabling the alias.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Manage Aliases in the Terminal",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the git status alias",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have created the alias for the 'git status' command and then executed the 'gs' alias.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the git commit alias",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that you have created the alias for the 'git commit -m' command and then executed the 'gcm' alias.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Temporarily Disable Aliases Using the unalias Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the unalias command",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have created the alias for the 'll' command, disabled the alias using the 'unalias' command, and then executed the 'll' command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the unalias of multiple aliases",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that you have created the aliases for the 'll' and 'rm' commands, disabled the aliases using the 'unalias' command, and then executed the 'll' and 'rm' commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

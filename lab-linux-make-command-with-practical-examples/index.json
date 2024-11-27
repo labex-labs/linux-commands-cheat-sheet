@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux make Command with Practical Examples",
+  "description": "Explore the power of the make command in Linux, learn its syntax, and apply it to compile C programs with practical examples.",
+  "meta": {
+    "title": "Linux make Command with Practical Examples",
+    "description": "Explore the power of the make command in Linux, learn its syntax, and apply it to compile C programs with practical examples.",
+    "keywords": "Linux, make, Makefile, C programming, compilation, scripting, automation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the make Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the make command was used to compile the hello.c file",
+            "file": "verify1-1.sh",
+            "hint": "The Makefile provided in the step did not correctly compile the hello.c file. Please review the Makefile and make sure it is correctly defining the dependencies and build commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Simple Makefile and Compile a C Program",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the Makefile was used to compile the hello.c file",
+            "file": "verify2-1.sh",
+            "hint": "The Makefile provided in the step did not correctly compile the hello.c file. Please review the Makefile and make sure it is correctly defining the dependencies and build commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use Makefile Variables and Targets",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the Makefile variables and targets were used correctly",
+            "file": "verify3-1.sh",
+            "hint": "The Makefile provided in the step did not correctly use variables and targets to compile and clean the hello program. Please review the Makefile and make sure the variables and targets are defined and used correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

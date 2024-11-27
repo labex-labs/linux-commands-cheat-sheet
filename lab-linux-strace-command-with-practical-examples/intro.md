@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux strace command and learn how to use it to trace and monitor the system calls made by a running process. The strace command is a powerful tool that provides valuable insights into the inner workings of programs, which can be crucial for debugging and troubleshooting issues. We will start by introducing the strace command, then dive deeper into tracing system calls, and finally explore how to use strace for debugging processes. This lab will equip you with the skills to effectively utilize the strace command in your Linux system administration and development tasks.

@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux man Command with Practical Examples",
+  "description": "Explore the powerful Linux man command, learn how to navigate man pages, and perform targeted searches to effectively utilize system documentation.",
+  "meta": {
+    "title": "Linux man Command with Practical Examples",
+    "description": "Explore the powerful Linux man command, learn how to navigate man pages, and perform targeted searches to effectively utilize system documentation.",
+    "keywords": "Linux, man command, man pages, system documentation, command-line, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the man Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the man command was used to display the manual page for the ls command",
+            "file": "verify1-1.sh",
+            "hint": "It appears you have not used the `man` command to display the manual page for the `ls` command. Please follow the instructions in the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Structure and Navigation of man Pages",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the user navigated the man page for the ls command",
+            "file": "verify2-1.sh",
+            "hint": "It appears you have not explored the structure and navigation of the man page for the `ls` command. Please follow the instructions in the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Targeted Searches and Filtering with the man Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the user performed a targeted search for the \"sort\" keyword within the ls man page",
+            "file": "verify3-1.sh",
+            "hint": "It appears you have not performed a targeted search for the \"sort\" keyword within the `ls` man page. Please follow the instructions in the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the user filtered the man page by section",
+            "file": "verify3-2.sh",
+            "hint": "It appears you have not filtered the man page by section. Please follow the instructions in the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

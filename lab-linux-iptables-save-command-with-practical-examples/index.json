@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux iptables-save Command with Practical Examples",
+  "description": "This lab explores the iptables-save command, which allows you to backup and restore iptables firewall rules. Learn how to use iptables-save for effective firewall management and automation.",
+  "meta": {
+    "title": "Linux iptables-save Command with Practical Examples",
+    "description": "This lab explores the iptables-save command, which allows you to backup and restore iptables firewall rules. Learn how to use iptables-save for effective firewall management and automation.",
+    "keywords": "iptables, firewall, backup, restore, automation, networking, security"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of iptables-save",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify iptables-save command output",
+            "file": "verify1-1.sh",
+            "hint": "The iptables-save command should output the current firewall rules, including some ACCEPT rules. Verify that the output contains the expected rules.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Backup and Restore iptables Firewall Rules Using iptables-save",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify iptables-restore command",
+            "file": "verify2-1.sh",
+            "hint": "The iptables -L command should show the restored firewall rules, including some ACCEPT rules. Verify that the output contains the expected rules.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate iptables-save in a Systemd Service",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify iptables-save service",
+            "file": "verify3-1.sh",
+            "hint": "Verify that the iptables-save.service is enabled and running, and that the /etc/iptables/rules.v4 file contains the expected firewall rules.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ntsysv Command with Practical Examples",
+  "description": "Explore the ntsysv command in Linux, a powerful tool for configuring and managing system services. Learn how to use ntsysv to control runlevels and enable/disable services for efficient system administration.",
+  "meta": {
+    "title": "Linux ntsysv Command with Practical Examples",
+    "description": "Explore the ntsysv command in Linux, a powerful tool for configuring and managing system services. Learn how to use ntsysv to control runlevels and enable/disable services for efficient system administration.",
+    "keywords": "ntsysv, system services, runlevels, system configuration, Linux, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the ntsysv Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ntsysv command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the ntsysv command is installed and can be executed without any issues.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure System Services with ntsysv",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify apache2 service status",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the apache2 service is enabled and running after using the ntsysv command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Runlevels Using ntsysv",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify runlevel configuration",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the runlevel configuration was modified as expected, and the apache2 service is no longer enabled for runlevel 3.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

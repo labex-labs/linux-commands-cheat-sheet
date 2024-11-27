@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to effectively use the `history` command in Linux. The `history` command allows you to view and manage the command history in your terminal, which can be particularly useful for reviewing past actions, repeating previous commands, or troubleshooting issues. The lab covers the purpose and usage of the `history` command, as well as its various options and customization features. You will explore how to limit the number of commands displayed, search and filter the history, and even execute specific commands from the history. By the end of this lab, you will have a solid understanding of how to leverage the `history` command to enhance your Linux workflow.

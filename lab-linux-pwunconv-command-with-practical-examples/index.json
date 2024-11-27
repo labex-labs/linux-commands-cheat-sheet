@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux pwunconv Command with Practical Examples",
+  "description": "Explore the pwunconv command in Linux, which secures user passwords by moving them from the shadow file to the password file. Learn practical scenarios for using pwunconv to manage user permissions and enhance system security.",
+  "meta": {
+    "title": "Linux pwunconv Command with Practical Examples",
+    "description": "Explore the pwunconv command in Linux, which secures user passwords by moving them from the shadow file to the password file. Learn practical scenarios for using pwunconv to manage user permissions and enhance system security.",
+    "keywords": "Linux, pwunconv, user management, password security, permission management, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the pwunconv Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the passwords have been moved to /etc/passwd",
+            "file": "verify1-1.sh",
+            "hint": "The passwords have not been moved to the /etc/passwd file. Please run the `pwunconv` command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Securing User Passwords with pwunconv",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the passwords have been moved back to /etc/shadow",
+            "file": "verify2-1.sh",
+            "hint": "The passwords have not been moved back to the /etc/shadow file. Please run the `pwconv` command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Scenarios for Using pwunconv",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the passwords are still in /etc/shadow",
+            "file": "verify3-1.sh",
+            "hint": "The passwords are not in the /etc/shadow file. Please run the `pwconv` command to move the passwords back to the /etc/shadow file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

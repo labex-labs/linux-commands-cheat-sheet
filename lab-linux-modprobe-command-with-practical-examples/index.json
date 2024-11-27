@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux modprobe Command with Practical Examples",
+  "description": "Learn how to use the modprobe command to load and remove kernel modules in Linux, with practical examples to enhance your system configuration and settings.",
+  "meta": {
+    "title": "Linux modprobe Command with Practical Examples",
+    "description": "Learn how to use the modprobe command to load and remove kernel modules in Linux, with practical examples to enhance your system configuration and settings.",
+    "keywords": "Linux, modprobe, kernel modules, system configuration, system settings, load modules, remove modules"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of modprobe Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the 'bridge' module is loaded",
+            "file": "verify1-1.sh",
+            "hint": "The 'bridge' module should be loaded after running 'sudo modprobe bridge'. Please check the output of 'lsmod' to verify.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Load Kernel Modules with modprobe",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the 'nfs' module is loaded",
+            "file": "verify2-1.sh",
+            "hint": "The 'nfs' module should be loaded after running 'sudo modprobe nfs'. Please check the output of 'lsmod' to verify.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Remove Kernel Modules with modprobe",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the 'nfs' module is removed",
+            "file": "verify3-1.sh",
+            "hint": "The 'nfs' module should be removed after running 'sudo modprobe -r nfs'. Please check the output of 'lsmod' to verify.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

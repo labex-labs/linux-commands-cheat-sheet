@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux finger Command with Practical Examples",
+  "description": "Explore the Linux finger command, which provides user information, and learn how to customize its output for practical use in user and permission management.",
+  "meta": {
+    "title": "Linux finger Command with Practical Examples",
+    "description": "Explore the Linux finger command, which provides user information, and learn how to customize its output for practical use in user and permission management.",
+    "keywords": "Linux, finger command, user information, permission management, user management, command line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the finger Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify finger command is installed",
+            "file": "verify1-1.sh",
+            "hint": "The finger command is not installed. Please run the following command to install it:\nsudo apt-get update\nsudo apt-get install -y finger",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Displaying User Information with the finger Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify finger command displays user information",
+            "file": "verify2-1.sh",
+            "hint": "The finger command did not display information for the labex user. Please ensure the labex user is logged in and try running the finger command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing the finger Command Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify finger command with -l option",
+            "file": "verify3-1.sh",
+            "hint": "The finger command with -l option did not display the correct user information for the labex user. Please ensure the labex user is configured correctly and try running the command again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify finger command with -p option",
+            "file": "verify3-2.sh",
+            "hint": "The finger command with -p option did not display the correct user information for the labex user. Please ensure the labex user is configured correctly and try running the command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

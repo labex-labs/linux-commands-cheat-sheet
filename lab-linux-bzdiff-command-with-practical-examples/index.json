@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bzdiff Command with Practical Examples",
+  "description": "Explore the bzdiff command in Linux, which allows you to compare compressed files. Learn how to use bzdiff for effective file comparison and discover advanced options to enhance your workflow.",
+  "meta": {
+    "title": "Linux bzdiff Command with Practical Examples",
+    "description": "Explore the bzdiff command in Linux, which allows you to compare compressed files. Learn how to use bzdiff for effective file comparison and discover advanced options to enhance your workflow.",
+    "keywords": "bzdiff, Linux, compression, file comparison, archiving, decompression, command line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the bzdiff Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify bzdiff command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have created the two compressed files as instructed and that the `bzdiff` command correctly identifies the difference between them.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compare Compressed Files Using bzdiff",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify bzdiff command usage for comparing compressed files",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have created the compressed files as instructed and that the `bzdiff` command correctly identifies the differences and similarities between them.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced bzdiff Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify bzdiff advanced options",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can use the `-s`, `-q`, `--version`, and `-u` options with the `bzdiff` command as demonstrated in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

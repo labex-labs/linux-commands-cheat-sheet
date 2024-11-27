@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux uuencode Command with Practical Examples",
+  "description": "Explore the uuencode command in Linux, learn how to encode and decode files, and discover practical use cases for this versatile tool in backup and compression workflows.",
+  "meta": {
+    "title": "Linux uuencode Command with Practical Examples",
+    "description": "Explore the uuencode command in Linux, learn how to encode and decode files, and discover practical use cases for this versatile tool in backup and compression workflows.",
+    "keywords": "uuencode, Linux, file encoding, file decoding, backup, compression, data transfer"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to uuencode Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify uuencode command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the `example.txt` file and encoded/decoded it correctly using the uuencode and uudecode commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Encoding and Decoding Files with uuencode",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify uuencode and uudecode usage",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created the `binary_file.bin` and `example.txt.gz` files by encoding and decoding using the uuencode and uudecode commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Use Cases of uuencode",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify uuencode usage in practical scenarios",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created the `encoded_image.txt` file by encoding an image file, and the `embedded_binary.sh` file that embeds a binary file using uuencode.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

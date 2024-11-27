@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux reset Command with Practical Examples",
+  "description": "Explore the Linux reset command and learn how to restore the terminal to a known state, troubleshoot terminal issues, and more with practical examples.",
+  "meta": {
+    "title": "Linux reset Command with Practical Examples",
+    "description": "Explore the Linux reset command and learn how to restore the terminal to a known state, troubleshoot terminal issues, and more with practical examples.",
+    "keywords": "Linux, reset command, terminal, troubleshooting, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the reset Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the terminal has been restored",
+            "file": "verify1-1.sh",
+            "hint": "The terminal has not been restored to its default state. Please run the `reset` command and verify that the terminal is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Restore the Terminal to a Known State",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the terminal has been restored",
+            "file": "verify2-1.sh",
+            "hint": "The terminal has not been restored to its default state. Please run the `reset` command and verify that the terminal is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Terminal Issues with the reset Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the terminal has been restored",
+            "file": "verify3-1.sh",
+            "hint": "The terminal has not been restored to its default state. Please run the `reset` command and verify that the terminal is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

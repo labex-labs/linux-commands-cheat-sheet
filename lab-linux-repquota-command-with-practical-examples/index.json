@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux repquota Command with Practical Examples",
+  "description": "Explore the repquota command in Linux, learn how to retrieve disk quota information for users, and manage disk quota limits for multiple users.",
+  "meta": {
+    "title": "Linux repquota Command with Practical Examples",
+    "description": "Explore the repquota command in Linux, learn how to retrieve disk quota information for users, and manage disk quota limits for multiple users.",
+    "keywords": "Linux, repquota, disk quota, user management, system configuration, storage management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the repquota Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify repquota command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `repquota -u labex` command should display the disk quota information for the `labex` user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieve Disk Quota Information for a Specific User",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify disk quota information for testuser",
+            "file": "verify2-1.sh",
+            "hint": "The `repquota -u testuser` and `repquota -uv testuser` commands should display the correct disk quota information for the `testuser` user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Disk Quota Limits for Multiple Users",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify disk quota limits for multiple users",
+            "file": "verify3-1.sh",
+            "hint": "The `repquota -u user1` and `repquota -u user2` commands should display the correct disk quota limits for `user1` and `user2`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

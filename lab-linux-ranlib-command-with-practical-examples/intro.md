@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `ranlib` command and its practical applications. The `ranlib` command is used to generate an index to the contents of an archive file, which is typically a static library file. We will create a simple C program that uses a static library, and then demonstrate how to use the `ranlib` command to update the symbol table in the library, making it easier for the linker to access the symbols defined in the library. Additionally, we will cover the process of creating a static library and using the `ranlib` command to ensure its proper functionality.

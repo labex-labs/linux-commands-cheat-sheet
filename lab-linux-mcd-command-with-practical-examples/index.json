@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mcd Command with Practical Examples",
+  "description": "Explore the mcd command in Linux, which allows you to create nested directories efficiently. Learn practical examples and how to combine mcd with other Linux commands for effective file management.",
+  "meta": {
+    "title": "Linux mcd Command with Practical Examples",
+    "description": "Explore the mcd command in Linux, which allows you to create nested directories efficiently. Learn practical examples and how to combine mcd with other Linux commands for effective file management.",
+    "keywords": "Linux, mcd command, nested directories, file management, Disk and File System Utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the mcd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mcd command usage",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the current working directory is `~/project/example/subdir1/subdir2` after using the `mcd` command. If the directory is not as expected, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create Nested Directories with mcd",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify nested directory creation",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the current working directory is `~/project/docs/guides/python` and if the `~/project/docs/guides/linux` directory exists. If either of these conditions is not met, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine mcd with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify mcd with other commands",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the `example.txt` file exists in the `~/project/docs/guides/python` directory and the `file.txt` file exists in the `~/project/docs/guides/java/example` directory. If either of these files is missing, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ps Command with Practical Examples",
+  "description": "Explore the powerful Linux ps command and learn how to filter processes by user, monitor CPU and memory usage, and gain practical insights into system monitoring and management.",
+  "meta": {
+    "title": "Linux ps Command with Practical Examples",
+    "description": "Explore the powerful Linux ps command and learn how to filter processes by user, monitor CPU and memory usage, and gain practical insights into system monitoring and management.",
+    "keywords": "Linux, ps command, process monitoring, system management, CPU usage, memory usage"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the ps Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the ps command output",
+            "file": "verify1-1.sh",
+            "hint": "The `ps -ef` command did not return any processes owned by the `labex` user. Please ensure you have run the correct command to list all processes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Filter Processes by User",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify processes owned by labex user",
+            "file": "verify2-1.sh",
+            "hint": "The `ps -u labex` command did not return any processes owned by the `labex` user. Please ensure you have run the correct command to list all processes owned by the `labex` user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitor CPU and Memory Usage",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify CPU and memory usage output",
+            "file": "verify3-1.sh",
+            "hint": "The `ps -eo pid,user,%cpu,%mem,cmd` command did not return any processes owned by the `labex` user. Please ensure you have run the correct command to list the CPU and memory usage of running processes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

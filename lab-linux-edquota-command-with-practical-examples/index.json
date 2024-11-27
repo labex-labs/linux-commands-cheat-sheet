@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux edquota Command with Practical Examples",
+  "description": "Explore the Linux edquota command and learn how to manage user disk quotas, enable disk quota on a filesystem, and understand the concept of disk quota.",
+  "meta": {
+    "title": "Linux edquota Command with Practical Examples",
+    "description": "Explore the Linux edquota command and learn how to manage user disk quotas, enable disk quota on a filesystem, and understand the concept of disk quota.",
+    "keywords": "Linux, edquota, disk quota, filesystem, user management, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding Disk Quota Concept",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify understanding of disk quota concept",
+            "file": "verify1-1.sh",
+            "hint": "Please review the step content and ensure you understand the concept of disk quota in Linux.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Enabling Disk Quota on a Linux Filesystem",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify disk quota enabled",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that you have enabled disk quota on the /quota_fs file system as described in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Managing User Disk Quota with edquota Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify user disk quota",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that you have set the correct disk quota for the alice user as described in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

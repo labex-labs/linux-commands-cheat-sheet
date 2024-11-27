@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the purpose and usage of the `iwconfig` command in Linux. The `iwconfig` command is a powerful tool used to configure and manage wireless network interfaces, allowing users to set various parameters such as the ESSID (network name), frequency, bit rate, encryption keys, and more. We learned how to check the current status of the wireless network interface using `iwconfig` and how to configure the wireless network interface with specific settings. Understanding the `iwconfig` command is crucial for configuring and troubleshooting wireless network connections on a Linux system.

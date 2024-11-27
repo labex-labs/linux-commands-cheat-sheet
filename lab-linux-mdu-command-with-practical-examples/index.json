@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mdu Command with Practical Examples",
+  "description": "Explore the mdu command in Linux, learn to measure disk usage, and exclude specific files and directories from the analysis.",
+  "meta": {
+    "title": "Linux mdu Command with Practical Examples",
+    "description": "Explore the mdu command in Linux, learn to measure disk usage, and exclude specific files and directories from the analysis.",
+    "keywords": "Linux, mdu, disk usage, file system, directory, exclude"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mdu Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mdu command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you can run the `mdu` command with the `-h` option to display the disk usage of the `~/project` directory in a human-readable format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Measure the Disk Usage of a Directory",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify mdu command usage for a directory",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can run the `mdu` command with the `-h` option to display the correct disk usage of the `~/project/documents` directory, which should be 36K.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Exclude Specific Files and Directories from the mdu Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify mdu command exclusion",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can run the `mdu` command with the `-x` option to exclude the `~/project/temp` and `~/project/backup` directories, and that the total disk usage of the `~/project` directory is correctly reported as 60K.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

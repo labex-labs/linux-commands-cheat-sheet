@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux zypper Command with Practical Examples",
+  "description": "Explore the zypper command, a powerful package management tool for SUSE-based Linux distributions. Learn how to install, update, search, and remove packages using zypper with practical examples.",
+  "meta": {
+    "title": "Linux zypper Command with Practical Examples",
+    "description": "Explore the zypper command, a powerful package management tool for SUSE-based Linux distributions. Learn how to install, update, search, and remove packages using zypper with practical examples.",
+    "keywords": "zypper, package management, SUSE, Linux, installation, update, search, remove"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the zypper Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify zypper version",
+            "file": "verify1-1.sh",
+            "hint": "The zypper version should be 1.14.57. Please check the output of `sudo zypper --version` and ensure the version matches.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Installing and Updating Packages with zypper",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify htop installation",
+            "file": "verify2-1.sh",
+            "hint": "The `htop` package should be installed and available in the system. Please check the output of `which htop` to ensure the package is installed correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Searching and Removing Packages with zypper",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify vim package removal",
+            "file": "verify3-1.sh",
+            "hint": "The `vim` package should have been removed from the system. Please check the output of `which vim` to ensure the package is no longer installed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

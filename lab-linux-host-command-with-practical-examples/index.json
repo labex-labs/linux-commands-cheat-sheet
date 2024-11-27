@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux host Command with Practical Examples",
+  "description": "Explore the hostname command, manage hostnames with hostnamectl, and customize the hostname on Ubuntu 22.04 in this practical Linux networking lab.",
+  "meta": {
+    "title": "Linux host Command with Practical Examples",
+    "description": "Explore the hostname command, manage hostnames with hostnamectl, and customize the hostname on Ubuntu 22.04 in this practical Linux networking lab.",
+    "keywords": "Linux, hostname, hostnamectl, Ubuntu, networking, communication, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Explore the hostname Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify hostname command",
+            "file": "verify1-1.sh",
+            "hint": "The hostname should be set to 'ubuntu'. Please check the output of the 'hostname' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Hostnames with the hostnamectl Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify hostnamectl command",
+            "file": "verify2-1.sh",
+            "hint": "The hostname should be set to 'new-hostname'. Please check the output of the 'hostnamectl' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the Hostname on Ubuntu 22.04",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom hostname",
+            "file": "verify3-1.sh",
+            "hint": "The hostname should be set to 'my-custom-hostname'. Please check the output of the 'hostnamectl' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

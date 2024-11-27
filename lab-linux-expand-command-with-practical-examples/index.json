@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux expand Command with Practical Examples",
+  "description": "Explore the Linux expand command and learn how to convert tabs to spaces in single or multiple files, enhancing text processing and editing workflows.",
+  "meta": {
+    "title": "Linux expand Command with Practical Examples",
+    "description": "Explore the Linux expand command and learn how to convert tabs to spaces in single or multiple files, enhancing text processing and editing workflows.",
+    "keywords": "Linux, expand command, tabs to spaces, text processing, file editing, command line, productivity"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the expand Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of the expand command",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the expand command's help output mentions converting tabs to spaces, and if the output of running expand on the example.txt file contains the expected spaces instead of tabs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Expand Tabs to Spaces in a Single File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify tabs are expanded to spaces in a single file",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the output of running expand on example.txt contains the expected spaces, and if the expanded.txt file contains the expected expanded tabs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Expand Tabs to Spaces in Multiple Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify tabs are expanded to spaces in multiple files",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the output of running expand on the multiple files contains the expected spaces, and if the expanded files contain the expected expanded tabs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn about the Linux `uupick` command, which is used to extract files from UUENCODE encoded emails. The `uupick` command is part of the `sharutils` package, a collection of utilities for encoding and decoding files for transmission via email or other communication channels. You will learn how to use `uupick` to extract files from UUENCODE encoded data, and how to automate the process using shell scripts. This lab covers the basics of UUENCODE and the `uupick` command, providing practical examples to help you understand and apply this tool in your networking and communication tasks.

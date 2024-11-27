@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux cvs Command with Practical Examples",
+  "description": "Explore the Concurrent Versions System (CVS) command in Linux, learn how to create a repository, check out projects, and commit changes, with practical examples.",
+  "meta": {
+    "title": "Linux cvs Command with Practical Examples",
+    "description": "Explore the Concurrent Versions System (CVS) command in Linux, learn how to create a repository, check out projects, and commit changes, with practical examples.",
+    "keywords": "Linux, CVS, Concurrent Versions System, version control, repository, commit, checkout"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to CVS (Concurrent Versions System)",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify CVS installation",
+            "file": "verify1-1.sh",
+            "hint": "Looks like CVS is not installed. Please install it first by running the command:\nsudo apt-get install -y cvs",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a CVS Repository and Checking Out a Project",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify CVS repository creation",
+            "file": "verify2-1.sh",
+            "hint": "Looks like the CVS repository was not created. Please create the repository by running the following commands:\nsudo mkdir /tmp/cvsrepo\nsudo cvs -d /tmp/cvsrepo init",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify project checkout",
+            "file": "verify2-2.sh",
+            "hint": "Looks like the project was not checked out. Please check out the project by running the following command:\ncvs -d /tmp/cvsrepo checkout myproject",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Committing Changes to the CVS Repository",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify changes committed",
+            "file": "verify3-1.sh",
+            "hint": "Looks like the changes were not committed to the CVS repository. Please make sure to add and commit the changes to the repository.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to effectively use the Linux `apropos` command to search for relevant system commands and information. The `apropos` command allows you to search the system's manual pages (man pages) for commands that match a specific task or keyword, making it a valuable tool for exploring the available system utilities. You will start by understanding the purpose of the `apropos` command, then move on to performing basic searches and customizing your searches using regular expressions. This lab provides practical examples to help you become more proficient in utilizing the `apropos` command to find the right tools for your Linux system administration tasks.

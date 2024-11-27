@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the arpwatch command in Linux to monitor network activity and detect potential security issues. arpwatch is a network monitoring tool that tracks changes in Ethernet/IP address pairings, which can be useful for identifying ARP spoofing attacks and monitoring network behavior. You will start by understanding the purpose and functionality of arpwatch, then install it on your Ubuntu 22.04 system, and finally learn how to use it to monitor network activity. The lab covers the necessary steps to get started with arpwatch and provides practical examples of its usage.

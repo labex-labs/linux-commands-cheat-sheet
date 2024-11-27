@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux testparm Command with Practical Examples",
+  "description": "Explore the Linux testparm command, which verifies the syntax of Samba configuration files and analyzes Samba parameters. Learn practical examples to effectively manage and troubleshoot your Samba setup.",
+  "meta": {
+    "title": "Linux testparm Command with Practical Examples",
+    "description": "Explore the Linux testparm command, which verifies the syntax of Samba configuration files and analyzes Samba parameters. Learn practical examples to effectively manage and troubleshoot your Samba setup.",
+    "keywords": "Linux, Samba, testparm, configuration, network, troubleshooting, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of testparm Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify testparm command version",
+            "file": "verify1-1.sh",
+            "hint": "The testparm command version should be 4.15.5-Debian.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verify Samba Configuration File Syntax",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Samba configuration file syntax",
+            "file": "verify2-1.sh",
+            "hint": "The testparm command should report that the Samba configuration file is loaded successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Samba Configuration Parameters with testparm",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Samba configuration parameter analysis",
+            "file": "verify3-1.sh",
+            "hint": "The testparm command should show that the 'log file' parameter is set to '/var/log/samba/log.%m'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

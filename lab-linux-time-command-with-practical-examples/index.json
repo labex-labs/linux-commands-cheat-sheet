@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux time Command with Practical Examples",
+  "description": "Explore the Linux time command and learn how to measure the execution time of commands, analyze their performance, and optimize system efficiency.",
+  "meta": {
+    "title": "Linux time Command with Practical Examples",
+    "description": "Explore the Linux time command and learn how to measure the execution time of commands, analyze their performance, and optimize system efficiency.",
+    "keywords": "Linux, time command, command execution time, performance analysis, system monitoring, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the time Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the time command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can run the `time` command and see the output in your shell history.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Measure Execution Time of Commands",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the time command usage for a script",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can run the `time` command to measure the execution time of a script and see the output in your shell history.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Command Performance with time",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the time command usage for a CPU-bound task",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can run the `time` command to measure the execution time of a CPU-bound task and see the output in your shell history, including the real, user, and system CPU times.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

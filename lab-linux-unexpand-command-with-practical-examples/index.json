@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux unexpand Command with Practical Examples",
+  "description": "Explore the Linux unexpand command, which converts spaces to tabs, with practical examples. Learn how to customize the command and optimize text processing workflows.",
+  "meta": {
+    "title": "Linux unexpand Command with Practical Examples",
+    "description": "Explore the Linux unexpand command, which converts spaces to tabs, with practical examples. Learn how to customize the command and optimize text processing workflows.",
+    "keywords": "Linux, unexpand, command, text processing, text editing, spaces, tabs, conversion"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the unexpand Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the unexpand command",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the `sample.txt` file contains tab characters after running the `unexpand` command. If the file does not contain any tabs, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Expand Tabs to Spaces Using the unexpand Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the unexpand -a command",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the `sample.txt` file contains any tab characters after running the `unexpand -a` command. If the file still contains tabs, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the unexpand Command with Additional Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the unexpand -t 4 command",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the `sample.txt` file contains tab characters after running the `unexpand -t 4` command. If the file does not contain any tabs, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the unexpand -f command",
+            "file": "verify3-2.sh",
+            "hint": "The verification script checks if the `sample.txt` file contains leading spaces that have been converted to tabs after running the `unexpand -f` command. If the leading spaces are not converted, the verification will fail.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

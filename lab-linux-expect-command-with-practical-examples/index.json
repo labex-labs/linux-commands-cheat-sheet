@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux expect Command with Practical Examples",
+  "description": "Explore the power of the expect command in Linux. Learn to automate SSH login, handle prompts, and write responsive scripts for various tasks.",
+  "meta": {
+    "title": "Linux expect Command with Practical Examples",
+    "description": "Explore the power of the expect command in Linux. Learn to automate SSH login, handle prompts, and write responsive scripts for various tasks.",
+    "keywords": "expect, Linux, automation, SSH, scripting, programming, command-line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the expect Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify expect installation",
+            "file": "verify1-1.sh",
+            "hint": "Please install the expect package using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate SSH Login with expect",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify SSH login automation",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that your expect script is correctly automating the SSH login process.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Handle Prompts and Responses in Expect Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify prompt handling",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that your expect script is correctly handling the different prompts and responses.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

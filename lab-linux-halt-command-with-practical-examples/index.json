@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux halt Command with Practical Examples",
+  "description": "Explore the Linux halt command, learn how to shut down the system, and discover additional options for managing system shutdown processes.",
+  "meta": {
+    "title": "Linux halt Command with Practical Examples",
+    "description": "Explore the Linux halt command, learn how to shut down the system, and discover additional options for managing system shutdown processes.",
+    "keywords": "Linux, halt, system shutdown, system management, system monitoring"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the halt Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the halt command",
+            "file": "verify1-1.sh",
+            "hint": "It appears that you have not executed the `halt` command successfully. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Shut Down the System Using the halt Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the system has been shut down",
+            "file": "verify2-1.sh",
+            "hint": "It appears that you have not successfully shut down the system using the `halt` command. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Additional halt Command Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the halt --help command",
+            "file": "verify3-1.sh",
+            "hint": "It appears that you have not executed the `halt --help` command successfully. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the halt -i command",
+            "file": "verify3-2.sh",
+            "hint": "It appears that you have not executed the `halt -i` command successfully. Please review the step instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux zless Command with Practical Examples",
+  "description": "Explore the zless command in Linux, a powerful tool for viewing compressed files. Learn its syntax, options, and practical examples to enhance your compression and archiving skills.",
+  "meta": {
+    "title": "Linux zless Command with Practical Examples",
+    "description": "Explore the zless command in Linux, a powerful tool for viewing compressed files. Learn its syntax, options, and practical examples to enhance your compression and archiving skills.",
+    "keywords": "Linux, zless, compression, archiving, command-line, file management, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the zless Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the zless command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the zless command is installed and accessible in your environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Syntax and Options of the zless Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the zless command options",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the zless command supports the expected options and that you can access the help information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using the zless Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the zless command usage in practical examples",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the zless command can properly view and search the contents of various compressed files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

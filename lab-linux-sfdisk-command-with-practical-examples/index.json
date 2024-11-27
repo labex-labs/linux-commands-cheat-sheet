@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sfdisk Command with Practical Examples",
+  "description": "Explore the sfdisk command in Linux, learn how to partition disks, and backup/restore partition tables with practical examples.",
+  "meta": {
+    "title": "Linux sfdisk Command with Practical Examples",
+    "description": "Explore the sfdisk command in Linux, learn how to partition disks, and backup/restore partition tables with practical examples.",
+    "keywords": "sfdisk, disk partitioning, partition table, backup, restore, Linux utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to sfdisk Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify sfdisk version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that the version of sfdisk installed on your system is 2.38.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Partitioning a Disk with sfdisk",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify partition creation",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that you have created a single partition on the /dev/loop0 disk.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Backup and Restore Partition Table with sfdisk",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify partition table restoration",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the partition table on the /dev/loop0 disk has been restored correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

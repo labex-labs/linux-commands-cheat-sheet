@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux ytalk Command with Practical Examples",
+  "description": "Explore the Linux ytalk command, a tool for real-time text-based communication between users on the same system. Learn how to install, initiate, and utilize advanced features of ytalk for efficient collaboration and remote assistance.",
+  "meta": {
+    "title": "Linux ytalk Command with Practical Examples",
+    "description": "Explore the Linux ytalk command, a tool for real-time text-based communication between users on the same system. Learn how to install, initiate, and utilize advanced features of ytalk for efficient collaboration and remote assistance.",
+    "keywords": "Linux, ytalk, communication, collaboration, remote assistance, terminal, networking"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install the ytalk Package on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ytalk package installation",
+            "file": "verify1-1.sh",
+            "hint": "The ytalk package does not appear to be installed correctly. Please review the installation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Initiate a ytalk Session Between Two Users",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify ytalk session",
+            "file": "verify2-1.sh",
+            "hint": "The ytalk session does not appear to have been initiated correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced ytalk Features and Functionalities",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify private message",
+            "file": "verify3-1.sh",
+            "hint": "The private message feature of ytalk does not appear to have been used correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify broadcast message",
+            "file": "verify3-2.sh",
+            "hint": "The broadcast message feature of ytalk does not appear to have been used correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

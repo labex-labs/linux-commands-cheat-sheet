@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux aumix Command with Practical Examples",
+  "description": "Learn how to use the aumix command to adjust audio settings on your Ubuntu 22.04 system, including controlling master volume, muting and unmuting audio channels.",
+  "meta": {
+    "title": "Linux aumix Command with Practical Examples",
+    "description": "Learn how to use the aumix command to adjust audio settings on your Ubuntu 22.04 system, including controlling master volume, muting and unmuting audio channels.",
+    "keywords": "aumix, audio, volume, mute, unmute, Ubuntu, Linux, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install aumix Package on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify aumix package installation",
+            "file": "verify1-1.sh",
+            "hint": "The aumix package does not appear to be installed correctly. Please review the installation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjust Master Volume Level Using aumix",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify master volume adjustment",
+            "file": "verify2-1.sh",
+            "hint": "The master volume level does not appear to be set to 50%. Please review the steps to adjust the volume and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Mute and Unmute Audio Channels with aumix",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify audio channel mute and unmute",
+            "file": "verify3-1.sh",
+            "hint": "The audio channel mute and unmute operations did not work as expected. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

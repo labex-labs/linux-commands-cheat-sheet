@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux lpr Command with Practical Examples",
+  "description": "Learn how to use the lpr command in Linux to print text files and PDF documents. Explore practical examples and understand the command's functionality.",
+  "meta": {
+    "title": "Linux lpr Command with Practical Examples",
+    "description": "Learn how to use the lpr command in Linux to print text files and PDF documents. Explore practical examples and understand the command's functionality.",
+    "keywords": "Linux, lpr command, print, text file, PDF, command line, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the lpr Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the text file was printed",
+            "file": "verify1-1.sh",
+            "hint": "It seems the text file was not printed successfully. Please check the `lpr` command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Print a Text File Using the lpr Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the text file was printed",
+            "file": "verify2-1.sh",
+            "hint": "It seems the text file was not printed successfully. Please check the `lpr` command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Print a PDF File Using the lpr Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the PDF file was printed",
+            "file": "verify3-1.sh",
+            "hint": "It seems the PDF file was not printed successfully. Please check the `lpr` command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

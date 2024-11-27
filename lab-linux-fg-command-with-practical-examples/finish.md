@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you will learn about the purpose of the `fg` command in Linux, which is used to bring a background process to the foreground, allowing you to interact with it directly. You will also learn how to manage multiple background processes using the `fg` command, including how to bring a specific background process to the foreground by specifying its process ID (PID) or job number. The key learning points covered in this lab include understanding the difference between foreground and background processes, starting a process in the background, and using the `fg` command to bring a background process to the foreground.

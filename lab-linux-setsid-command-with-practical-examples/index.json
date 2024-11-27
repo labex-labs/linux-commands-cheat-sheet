@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux setsid Command with Practical Examples",
+  "description": "Explore the setsid command in Linux, learn how to detach processes from the current session, and run background processes effectively.",
+  "meta": {
+    "title": "Linux setsid Command with Practical Examples",
+    "description": "Explore the setsid command in Linux, learn how to detach processes from the current session, and run background processes effectively.",
+    "keywords": "setsid, process management, background processes, session, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the setsid Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify setsid command",
+            "file": "verify1-1.sh",
+            "hint": "The `setsid` command should have created a new session for the `sleep 60` command. Please check the output of `ps -o sid,pid,cmd | grep sleep` to verify that the process is running in a separate session.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Detaching a Process from the Current Session",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify detached process",
+            "file": "verify2-1.sh",
+            "hint": "The `setsid` command should have detached the `sleep 60` process from the current session. Please check the output of the process using `ps` and `cat /proc/<PID>/fd/1` to verify that the process completed successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Running Background Processes with setsid",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify background process",
+            "file": "verify3-1.sh",
+            "hint": "The `setsid` command should have started a background process that writes to the `~/project/output.txt` file. Please check the output of the file to verify that the process is running.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

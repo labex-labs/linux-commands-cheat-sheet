@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mount Command with Practical Examples",
+  "description": "Explore the Linux mount command with practical examples. Learn how to mount local and remote file systems, including NFS, to effectively manage storage and access data on your Linux system.",
+  "meta": {
+    "title": "Linux mount Command with Practical Examples",
+    "description": "Explore the Linux mount command with practical examples. Learn how to mount local and remote file systems, including NFS, to effectively manage storage and access data on your Linux system.",
+    "keywords": "Linux, mount, file system, NFS, storage, disk management, command-line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mount Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the mount command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have executed the `mount -t ext4 /dev/sdb1 /mnt` command correctly. You can verify the mounted file systems using the `mount` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Mount a Local File System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the mount operation",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have executed the `sudo mount -t ext4 /dev/sdb1 /mnt/local` command correctly. You can verify the mounted file system using the `mount` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Mount a Remote File System Using NFS",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the NFS mount operation",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have executed the `sudo mount -t nfs 192.168.1.100:/shared /mnt/nfs` command correctly. You can verify the mounted NFS file system using the `mount` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

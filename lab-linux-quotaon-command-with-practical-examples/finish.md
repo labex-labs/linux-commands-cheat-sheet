@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we first explored the concept of disk quota management in Linux, which allows system administrators to limit the amount of disk space that a user or group can consume on a file system. We then learned how to enable disk quota management on the root file system by installing the necessary packages, running the `quotacheck` command to build a table of the current disk usage, and enabling disk quota management with the `quotaon` command. Finally, we learned how to enable disk quota management on a separate file system by creating a new directory, mounting it as a separate file system, and enabling disk quota management on that file system.

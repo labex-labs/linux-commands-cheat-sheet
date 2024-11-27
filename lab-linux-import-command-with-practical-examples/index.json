@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux import Command with Practical Examples",
+  "description": "Explore the import command in Linux, learn how to import data from CSV files and Excel spreadsheets into database tables, and gain practical experience with this versatile utility.",
+  "meta": {
+    "title": "Linux import Command with Practical Examples",
+    "description": "Explore the import command in Linux, learn how to import data from CSV files and Excel spreadsheets into database tables, and gain practical experience with this versatile utility.",
+    "keywords": "Linux, import, CSV, Excel, database, data import, command-line, utility"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the import Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the import command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the import command is installed and the manual page contains the expected information about capturing the X server screen.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Import Data from a CSV File into a Database Table",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the CSV data import",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the data.csv file exists in the ~/project directory and the data has been imported correctly into the users table in the sample.db database.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Import Data from an Excel Spreadsheet into a Database Table",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the Excel data import",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the data.xlsx file exists in the ~/project directory, the xlsx2csv tool is installed, and the data has been imported correctly into the users table in the sample.db database.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

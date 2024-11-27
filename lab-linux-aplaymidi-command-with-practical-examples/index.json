@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux aplaymidi Command with Practical Examples",
+  "description": "Explore the aplaymidi command, a powerful Linux utility for playing MIDI files. Learn how to use it for basic playback, as well as advanced options for controlling MIDI devices.",
+  "meta": {
+    "title": "Linux aplaymidi Command with Practical Examples",
+    "description": "Explore the aplaymidi command, a powerful Linux utility for playing MIDI files. Learn how to use it for basic playback, as well as advanced options for controlling MIDI devices.",
+    "keywords": "aplaymidi, Linux, MIDI, audio, playback, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the aplaymidi Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify aplaymidi command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can list the available MIDI devices using the `aplaymidi -l` command and that the \"TiMidity port 0\" device is present in the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Play MIDI Files Using aplaymidi",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify MIDI file playback",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can play the MIDI file using the `aplaymidi -p 20:0 ~/project/example.mid` command. The Verification script checks if the command runs without any errors.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced aplaymidi Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify multiple device playback",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can play the MIDI file on both \"TiMidity port 0\" and \"TiMidity port 1\" devices using the `aplaymidi -p 20:0,20:1 ~/project/example.mid` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

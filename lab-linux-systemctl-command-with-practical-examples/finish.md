@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and functionality of the `systemctl` command, which is the primary tool for managing system services in Linux. You explored how to list all running services, check the status of a specific service, and understand the detailed information provided about each service. Next, you learned how to manage system services using various `systemctl` commands, such as starting, stopping, restarting, and enabling services. Finally, you discovered how to configure automatic service startup with `systemctl`, ensuring that essential services are launched at system boot.

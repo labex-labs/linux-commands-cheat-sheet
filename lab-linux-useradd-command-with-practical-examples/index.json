@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux useradd Command with Practical Examples",
+  "description": "Learn how to create new user accounts, assign passwords, and manage user account properties using the Linux useradd command with practical examples.",
+  "meta": {
+    "title": "Linux useradd Command with Practical Examples",
+    "description": "Learn how to create new user accounts, assign passwords, and manage user account properties using the Linux useradd command with practical examples.",
+    "keywords": "Linux, useradd, user management, user account, password, permissions"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a New User Account",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify user creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the 'newuser' account was created successfully using the 'useradd' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Assign a Password to the New User",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify password set",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can switch to the 'newuser' account using the password you set.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage User Account Properties",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify user properties",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the 'newuser' account properties, such as the comment field and login shell, have been updated correctly. Also, ensure that the user's password is unlocked and they can log in.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

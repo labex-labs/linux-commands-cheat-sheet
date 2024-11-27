@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fc-cache Command with Practical Examples",
+  "description": "Explore the Linux fc-cache command and learn how to manage font caches effectively. Discover practical examples to update and troubleshoot font cache issues on your system.",
+  "meta": {
+    "title": "Linux fc-cache Command with Practical Examples",
+    "description": "Explore the Linux fc-cache command and learn how to manage font caches effectively. Discover practical examples to update and troubleshoot font cache issues on your system.",
+    "keywords": "Linux, fc-cache, font cache, font management, system utilities, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Font Cache Management",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the font cache was updated",
+            "file": "verify1-1.sh",
+            "hint": "The font cache was not updated correctly. Please ensure you have added the \"my-font.ttf\" file to the /usr/share/fonts/ directory and run the fc-cache command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Updating the Font Cache with fc-cache",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the font cache was updated",
+            "file": "verify2-1.sh",
+            "hint": "The font cache was not updated correctly. Please ensure you have added the \"another-font.ttf\" file to the /usr/share/fonts/ directory and run the fc-cache command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting Font Cache Issues",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the font cache was rebuilt",
+            "file": "verify3-1.sh",
+            "hint": "The font cache was not rebuilt correctly. Please ensure you have run the fc-cache command to rebuild the font cache.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

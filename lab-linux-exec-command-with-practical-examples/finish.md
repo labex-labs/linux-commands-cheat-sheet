@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the Linux `exec` system call, which is used to execute a program or command in the current process, replacing the current process image with a new process image. We learned how to use the `exec` system call to execute external commands, and how to redirect input and output with `exec()`. The key takeaways are: 1) The `exec` system call replaces the current process image with a new process image, effectively terminating the original program. 2) The `exec` system call can be used to execute external commands or programs from within a C program. 3) Input and output can be redirected when using the `exec` system call.

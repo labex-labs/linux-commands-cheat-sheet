@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux accton Command with Practical Examples",
+  "description": "Explore the Linux accton command and learn how to manage network interface configuration, troubleshoot network issues, and more with practical examples.",
+  "meta": {
+    "title": "Linux accton Command with Practical Examples",
+    "description": "Explore the Linux accton command and learn how to manage network interface configuration, troubleshoot network issues, and more with practical examples.",
+    "keywords": "Linux, accton, network configuration, network troubleshooting, network management, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the accton Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify accton command status",
+            "file": "verify1-1.sh",
+            "hint": "The accton command should show that accounting is enabled. If it is not enabled, please enable it using the accton command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Network Interface Configuration with accton",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify accton command for network configuration",
+            "file": "verify2-1.sh",
+            "hint": "The accton command should show that accounting is enabled, and the accounting log should contain the network configuration changes you made.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Network Issues Using accton",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify accton command for network troubleshooting",
+            "file": "verify3-1.sh",
+            "hint": "The accton command should show that accounting is enabled, and the accounting log should contain network-related processes after you simulate a network issue.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

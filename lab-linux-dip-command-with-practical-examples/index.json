@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dip Command with Practical Examples",
+  "description": "Explore the dip command in Linux, learn how to establish dial-up connections, and troubleshoot connectivity issues with practical examples.",
+  "meta": {
+    "title": "Linux dip Command with Practical Examples",
+    "description": "Explore the dip command in Linux, learn how to establish dial-up connections, and troubleshoot connectivity issues with practical examples.",
+    "keywords": "Linux, dip, dial-up, networking, communication, troubleshooting, connectivity"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the dip Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dip command version",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the dip command version installed on your system is 3.3.7.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Establishing a Dial-up Connection with dip",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify dialup connection",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the dial-up connection is successfully established.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting Dial-up Connections using dip",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify dial-up connection failure",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the dial-up connection fails due to the invalid phone number in the configuration file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

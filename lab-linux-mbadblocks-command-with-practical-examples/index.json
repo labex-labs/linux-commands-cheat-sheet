@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mbadblocks Command with Practical Examples",
+  "description": "Learn how to use the Linux mbadblocks command to identify, repair, and manage bad blocks on your file system. Gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux mbadblocks Command with Practical Examples",
+    "description": "Learn how to use the Linux mbadblocks command to identify, repair, and manage bad blocks on your file system. Gain practical experience with real-world examples.",
+    "keywords": "Linux, mbadblocks, bad blocks, file system, disk management, disk utilities, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of the mbadblocks Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mbadblocks command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the mbadblocks command is installed on the system. You can install it using the package manager for your Linux distribution.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify and Locate Bad Blocks on a Linux Filesystem",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify bad block identification",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the mbadblocks command is able to identify and mark bad blocks on the file system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Repair and Manage Bad Blocks Using the mbadblocks Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify bad block repair",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the mbadblocks command is able to relocate data from bad blocks and repair the file system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

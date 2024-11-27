@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux apachectl Command with Practical Examples",
+  "description": "Learn how to use the apachectl command to manage the Apache web server, including starting, stopping, restarting, and checking the server status.",
+  "meta": {
+    "title": "Linux apachectl Command with Practical Examples",
+    "description": "Learn how to use the apachectl command to manage the Apache web server, including starting, stopping, restarting, and checking the server status.",
+    "keywords": "apachectl, apache, web server, linux, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the apachectl Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the Apache version",
+            "file": "verify1-1.sh",
+            "hint": "The Apache version should be 2.4.52. Please check the output of `sudo apachectl -v` and ensure the version matches.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Start, Stop, and Restart the Apache Web Server",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Apache server is running",
+            "file": "verify2-1.sh",
+            "hint": "The Apache server should be running after starting it. Please check the output of `sudo apachectl status` and ensure the server is running.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Apache server is stopped",
+            "file": "verify2-2.sh",
+            "hint": "The Apache server should be stopped after running the stop command. Please check the output of `sudo apachectl status` and ensure the server is not running.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Check the Apache Web Server Status",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Apache server status",
+            "file": "verify3-1.sh",
+            "hint": "The Apache server should be running. Please check the output of `sudo apachectl status` and ensure the server is running.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Apache server status details",
+            "file": "verify3-2.sh",
+            "hint": "The Apache server version should be 2.4.52. Please check the output of `sudo apachectl fullstatus` and ensure the version matches.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

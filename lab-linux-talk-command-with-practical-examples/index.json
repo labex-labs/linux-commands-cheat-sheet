@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux talk Command with Practical Examples",
+  "description": "Explore the Linux talk command, learn how to send messages, and manage incoming requests. Gain practical networking and communication skills.",
+  "meta": {
+    "title": "Linux talk Command with Practical Examples",
+    "description": "Explore the Linux talk command, learn how to send messages, and manage incoming requests. Gain practical networking and communication skills.",
+    "keywords": "Linux, talk command, messaging, communication, networking, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the talk Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the talk command usage",
+            "file": "verify1-1.sh",
+            "hint": "Please review the `man talk` command and ensure you understand the usage of the `talk` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Send Messages Using the talk Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the talk session",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure you have successfully initiated a talk session with the user `labex2`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Incoming talk Requests",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the ability to manage incoming talk requests",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure you have demonstrated the ability to manage incoming talk requests by using the `mesg` command to disable and re-enable talk requests.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

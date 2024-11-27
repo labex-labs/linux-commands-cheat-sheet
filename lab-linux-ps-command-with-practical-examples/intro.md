@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `ps` (process status) command to monitor and manage running processes on your system. The `ps` command is a fundamental tool for system administrators and developers, providing detailed information about the processes currently running, including their process ID, user, CPU and memory usage, and more. You will start by understanding the basic usage of the `ps` command, then learn how to filter processes by user, and finally explore monitoring CPU and memory usage of running processes. This lab covers essential system monitoring and management skills that are crucial for effectively managing Linux-based systems.

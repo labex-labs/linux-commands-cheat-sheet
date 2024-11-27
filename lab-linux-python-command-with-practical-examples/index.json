@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux python Command with Practical Examples",
+  "description": "Explore Python's built-in functions, string manipulation, and file/directory management in Linux through practical examples.",
+  "meta": {
+    "title": "Linux python Command with Practical Examples",
+    "description": "Explore Python's built-in functions, string manipulation, and file/directory management in Linux through practical examples.",
+    "keywords": "Python, Linux, Scripting, Programming, String Manipulation, File Management, Directory Management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Explore Python Built-in Functions in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Python built-in functions",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have correctly implemented the Python built-in functions as shown in the step. Check your code and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize Python String Manipulation Commands",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Python string manipulation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have correctly implemented the Python string manipulation commands as shown in the step. Check your code and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate File and Directory Management with Python",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file and directory management",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have correctly implemented the Python file and directory management commands as shown in the step. Check your code and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

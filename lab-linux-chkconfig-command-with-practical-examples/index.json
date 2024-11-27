@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux chkconfig Command with Practical Examples",
+  "description": "Explore the chkconfig command in Linux, learn how to configure service startup behavior, and manage service startup levels with practical examples.",
+  "meta": {
+    "title": "Linux chkconfig Command with Practical Examples",
+    "description": "Explore the chkconfig command in Linux, learn how to configure service startup behavior, and manage service startup levels with practical examples.",
+    "keywords": "Linux, chkconfig, service management, startup, configuration, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of chkconfig Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the status of the nginx service",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the nginx service is enabled in runlevels 2, 3, 4, and 5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Service Startup Behavior Using chkconfig",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the startup behavior of the sshd service",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the sshd service is disabled in runlevel 2 and enabled in runlevels 3, 4, and 5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Service Startup Levels with chkconfig",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the startup levels of the nginx service",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the nginx service is enabled in runlevels 2, 3, 4, and 6, and disabled in runlevel 5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

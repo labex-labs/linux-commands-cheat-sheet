@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux git Command with Practical Examples",
+  "description": "Explore the essential git commands for version control, including initializing a repository, adding and committing files, and managing branches. Gain practical experience with hands-on examples.",
+  "meta": {
+    "title": "Linux git Command with Practical Examples",
+    "description": "Explore the essential git commands for version control, including initializing a repository, adding and committing files, and managing branches. Gain practical experience with hands-on examples.",
+    "keywords": "Git, Linux, Version Control, Scripting, Programming, Repository, Commit, Branch"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Initialize a Git Repository",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Git repository initialization",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have navigated to the project directory and run the `git init` command to initialize the Git repository.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Add and Commit Files to the Git Repository",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file addition and commit",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have created the test.txt file, added it to the Git repository using the `git add` command, and committed the changes using the `git commit` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Git Branch Management",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify branch creation and switching",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have created a new branch called `feature/new-page`, made changes to the `test.txt` file, committed the changes, and then switched back to the `master` branch.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

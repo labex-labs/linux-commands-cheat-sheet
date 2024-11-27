@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ex Command with Practical Examples",
+  "description": "Explore the ex command, a powerful text editor in Linux. Learn the basics, perform editing operations, and automate ex commands using scripts for efficient text processing.",
+  "meta": {
+    "title": "Linux ex Command with Practical Examples",
+    "description": "Explore the ex command, a powerful text editor in Linux. Learn the basics, perform editing operations, and automate ex commands using scripts for efficient text processing.",
+    "keywords": "ex command, Linux text editing, text processing, script automation, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the ex Command Basics",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ex command basics",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the file.txt contains the lines \"This is a new line\" and \"This is another new line\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Basic Editing Operations with ex",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify ex editing operations",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the file.txt contains the line \"This is the replaced line.\", \"This is a new line.\", and does not contain \"second\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate ex Commands Using Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify ex script",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the file.txt contains the line \"This is a new line inserted at the beginning.\", \"This is the replaced line.\", and does not contain \"first\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

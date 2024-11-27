@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ftpcount Command with Practical Examples",
+  "description": "Explore the ftpcount command in Linux, which allows you to monitor and count active FTP sessions on your system. Learn how to install, use, and interpret the output of this useful network utility.",
+  "meta": {
+    "title": "Linux ftpcount Command with Practical Examples",
+    "description": "Explore the ftpcount command in Linux, which allows you to monitor and count active FTP sessions on your system. Learn how to install, use, and interpret the output of this useful network utility.",
+    "keywords": "Linux, ftpcount, FTP, network monitoring, session count, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install the ftpcount Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ftpcount installation",
+            "file": "verify1-1.sh",
+            "hint": "The ftpcount command could not be found. Please verify the installation by running 'sudo apt-get install -y ftpcount' again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use ftpcount to Count FTP Sessions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify ftpcount session count",
+            "file": "verify2-1.sh",
+            "hint": "The ftpcount command did not report 1 active FTP session as expected. Please check your FTP server setup and try running ftpcount again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze ftpcount Output and Understand Session Details",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify ftpcount session details",
+            "file": "verify3-1.sh",
+            "hint": "The ftpcount output did not match the expected details. Please check your FTP server setup and try running ftpcount again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

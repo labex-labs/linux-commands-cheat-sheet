@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `nslookup` command, a powerful tool for querying the Domain Name System (DNS) and troubleshooting DNS-related issues. You started by exploring the basic usage of the `nslookup` command, including how to perform domain name resolution and retrieve information about a domain's DNS records. You then learned how to use `nslookup` to conduct more advanced DNS lookups, such as retrieving all the DNS records associated with a domain. The knowledge gained in this lab will help you effectively troubleshoot and manage DNS-related problems in your network environment.

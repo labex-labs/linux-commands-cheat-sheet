@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux uulog Command with Practical Examples",
+  "description": "Explore the Linux uulog command, learn its syntax, and discover practical examples for viewing, filtering, and searching system log entries.",
+  "meta": {
+    "title": "Linux uulog Command with Practical Examples",
+    "description": "Explore the Linux uulog command, learn its syntax, and discover practical examples for viewing, filtering, and searching system log entries.",
+    "keywords": "Linux, uulog, log, system log, command, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the uulog Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the uulog command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the uulog command is available and can be executed on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "View System Log Entries Using the uulog Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the uulog command for viewing log entries",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the uulog command can display recent log entries from the system logs.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Filter and Search Log Entries with the uulog Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the uulog command for filtering log entries",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the uulog command can filter log entries by priority level and display the expected results.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

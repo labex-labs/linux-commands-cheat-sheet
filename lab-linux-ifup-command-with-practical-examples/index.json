@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ifup Command with Practical Examples",
+  "description": "Learn how to use the ifup command to configure and troubleshoot network interfaces on Linux. Understand the purpose, syntax, and practical examples of this essential networking tool.",
+  "meta": {
+    "title": "Linux ifup Command with Practical Examples",
+    "description": "Learn how to use the ifup command to configure and troubleshoot network interfaces on Linux. Understand the purpose, syntax, and practical examples of this essential networking tool.",
+    "keywords": "linux, ifup, network interface, configuration, troubleshooting, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the ifup Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ifup command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `ifup` command could not activate the `eth0` interface. Please check the command syntax and ensure that the network interface is configured correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure a Network Interface Using the ifup Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify network interface configuration",
+            "file": "verify2-1.sh",
+            "hint": "The `eth1` interface could not be configured with the specified IP address. Please check the network interface configuration file and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Network Interface Issues with ifup",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify ifup command troubleshooting",
+            "file": "verify3-1.sh",
+            "hint": "The `ifup` command was able to bring up the `eth1` interface, even though it was previously disabled. Please ensure that you have properly simulated the network interface issue and try the troubleshooting steps again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mmount Command with Practical Examples",
+  "description": "Explore the Linux mmount command, its syntax, and practical examples of mounting file systems. Learn how to effectively manage disk and file system utilities on your Linux system.",
+  "meta": {
+    "title": "Linux mmount Command with Practical Examples",
+    "description": "Explore the Linux mmount command, its syntax, and practical examples of mounting file systems. Learn how to effectively manage disk and file system utilities on your Linux system.",
+    "keywords": "Linux, mount, file system, disk management, command line, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Concept of Mounting in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify understanding of mounting concept",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the `/mnt/external_drive` directory exists, which indicates an understanding of the mounting concept. If the directory does not exist, the script will fail, and you should review the step content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the mmount Command Syntax and Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify understanding of mount command syntax",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the `/mnt/data` mount point is present in the output of the `mount` command, which indicates an understanding of the mount command syntax. If the mount point is not found, the script will fail, and you should review the step content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Mount a File System Using the mmount Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file system mount",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the `/mnt/data` mount point is present in the output of the `mount` command, which indicates that the file system has been successfully mounted. If the mount point is not found, the script will fail, and you should review the step content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

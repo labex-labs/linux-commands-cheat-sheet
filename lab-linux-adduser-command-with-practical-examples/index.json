@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux adduser Command with Practical Examples",
+  "description": "Explore the Linux adduser command with practical examples. Learn how to create new user accounts, set passwords and expiration, and add users to existing groups for effective system management.",
+  "meta": {
+    "title": "Linux adduser Command with Practical Examples",
+    "description": "Explore the Linux adduser command with practical examples. Learn how to create new user accounts, set passwords and expiration, and add users to existing groups for effective system management.",
+    "keywords": "Linux, adduser, user management, system administration, account creation, password, groups"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a New User Account",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify user creation",
+            "file": "verify1-1.sh",
+            "hint": "The user 'newuser' should have been created successfully. Please check if the user exists on the system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Set User Password and Expiration",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify password change",
+            "file": "verify2-1.sh",
+            "hint": "The password expiration date for the 'newuser' account should be set to December 31, 2023.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Add User to Existing Groups",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify user group membership",
+            "file": "verify3-1.sh",
+            "hint": "The 'newuser' account should be a member of the 'sudo' group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

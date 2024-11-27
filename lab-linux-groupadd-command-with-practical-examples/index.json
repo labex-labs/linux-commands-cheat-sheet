@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux groupadd Command with Practical Examples",
+  "description": "Explore the Linux groupadd command with practical examples, including creating new groups, adding users to groups, and modifying group properties. Enhance your user and permission management skills.",
+  "meta": {
+    "title": "Linux groupadd Command with Practical Examples",
+    "description": "Explore the Linux groupadd command with practical examples, including creating new groups, adding users to groups, and modifying group properties. Enhance your user and permission management skills.",
+    "keywords": "Linux, groupadd, user management, permission management, group creation, group modification"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a New Group",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify group creation",
+            "file": "verify1-1.sh",
+            "hint": "The \"developers\" group does not seem to have been created. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Add Users to a Group",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify user added to group",
+            "file": "verify2-1.sh",
+            "hint": "The \"john\" user does not seem to have been added to the \"developers\" group. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify Group Properties",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify group properties modified",
+            "file": "verify3-1.sh",
+            "hint": "The properties of the \"finance\" group do not seem to have been modified as expected. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

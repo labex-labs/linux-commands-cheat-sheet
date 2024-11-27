@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `printf` command in Linux, which provides more flexibility than the `echo` command in formatting and printing output to the console. You explored the basic usage of `printf`, including how to print variables and perform simple calculations. Additionally, you learned about the various formatting specifiers supported by `printf`, such as `%s` for strings, `%d` for integers, `%f` for floating-point numbers, `%x` for hexadecimal numbers, and `%o` for octal numbers. These formatting options allow you to control the output format and layout to suit your needs.

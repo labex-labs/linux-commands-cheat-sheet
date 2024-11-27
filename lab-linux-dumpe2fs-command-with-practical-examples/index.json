@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dumpe2fs Command with Practical Examples",
+  "description": "Explore the Linux dumpe2fs command, which provides detailed information about an Ext2/Ext3/Ext4 filesystem. Learn how to retrieve metadata, analyze statistics, and gain a deeper understanding of your file system.",
+  "meta": {
+    "title": "Linux dumpe2fs Command with Practical Examples",
+    "description": "Explore the Linux dumpe2fs command, which provides detailed information about an Ext2/Ext3/Ext4 filesystem. Learn how to retrieve metadata, analyze statistics, and gain a deeper understanding of your file system.",
+    "keywords": "Linux, dumpe2fs, Ext2, Ext3, Ext4, filesystem, metadata, statistics"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of dumpe2fs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the dumpe2fs command output",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have run the `dumpe2fs /dev/sda1` command and that the output contains the expected filesystem information, such as the Filesystem volume name.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieve Detailed Information About an Ext2/Ext3/Ext4 Filesystem",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the dumpe2fs command output",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have run the `dumpe2fs /dev/sda1` command and that the output contains the expected filesystem features information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Filesystem Metadata and Statistics Using dumpe2fs",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the dumpe2fs command output",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have run the `dumpe2fs /dev/sda1` command and that the output contains the expected filesystem inode information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux restore Command with Practical Examples",
+  "description": "Learn how to use the Linux restore command to recover specific files or entire directory structures from backup archives. Explore practical examples and understand the purpose and usage of this essential backup and restoration tool.",
+  "meta": {
+    "title": "Linux restore Command with Practical Examples",
+    "description": "Learn how to use the Linux restore command to recover specific files or entire directory structures from backup archives. Explore practical examples and understand the purpose and usage of this essential backup and restoration tool.",
+    "keywords": "Linux, restore, backup, recovery, archive, file, directory, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the restore Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose and usage of the restore command",
+            "file": "verify1-1.sh",
+            "hint": "The output of `sudo restore --help` should contain information about the purpose and usage of the `restore` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Restore a Specific File from a Backup Archive",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the restoration of the specific file",
+            "file": "verify2-1.sh",
+            "hint": "The `sample_file.txt` file should exist in the `~/project` directory, and its contents should match the expected \"This is a sample file.\"",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Restore an Entire Directory Structure from a Backup Archive",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the restoration of the entire directory structure",
+            "file": "verify3-1.sh",
+            "hint": "The `backup_dir` directory and all its subdirectories and files should be restored successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

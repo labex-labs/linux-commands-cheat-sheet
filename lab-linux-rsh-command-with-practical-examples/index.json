@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux rsh Command with Practical Examples",
+  "description": "Explore the rsh command in Linux, learn how to establish remote shell connections, and execute remote commands effectively.",
+  "meta": {
+    "title": "Linux rsh Command with Practical Examples",
+    "description": "Explore the rsh command in Linux, learn how to establish remote shell connections, and execute remote commands effectively.",
+    "keywords": "Linux, rsh, remote shell, remote command execution, system management, system monitoring"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the rsh Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify rsh command installation",
+            "file": "verify1-1.sh",
+            "hint": "The rsh command does not seem to be installed on your system. Please install the rsh-client package and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Establishing Remote Shell Connection",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify remote shell connection",
+            "file": "verify2-1.sh",
+            "hint": "Unable to establish a remote shell connection to the remote system. Please check your network connectivity and permissions, and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Executing Remote Commands with rsh",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify remote command execution",
+            "file": "verify3-1.sh",
+            "hint": "Unable to execute remote commands using the rsh command. Please check your network connectivity and permissions, and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

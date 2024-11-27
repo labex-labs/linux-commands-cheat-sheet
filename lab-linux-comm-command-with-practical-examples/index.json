@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux comm Command with Practical Examples",
+  "description": "Explore the powerful comm command in Linux, learn how to compare and contrast sorted files, and customize the output with various options. Enhance your text processing and editing skills.",
+  "meta": {
+    "title": "Linux comm Command with Practical Examples",
+    "description": "Explore the powerful comm command in Linux, learn how to compare and contrast sorted files, and customize the output with various options. Enhance your text processing and editing skills.",
+    "keywords": "Linux, comm command, file comparison, text processing, file editing, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the comm Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose and syntax of the comm command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the comm command is installed and that the help output mentions comparing sorted files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compare and Contrast Two Sorted Files Using the comm Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the comparison of two sorted files using comm",
+            "file": "verify2-1.sh",
+            "hint": "Verify that the comm command correctly identifies the unique and common lines between the two files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the Output of the comm Command with Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the customization of comm command output",
+            "file": "verify3-1.sh",
+            "hint": "Verify that the comm command options correctly customize the output as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

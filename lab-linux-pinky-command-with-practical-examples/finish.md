@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the Linux `pinky` command, which is a utility that displays information about the currently logged-in users. We learned how to use the `pinky` command to display basic user information, such as the username, terminal, idle time, login time, and remote host. We also explored various options and flags, including `-l` to display detailed user information, `-f` to show the user's full name, `-h` to display the user's home directory, and `-i` to show the user's idle time. These practical examples demonstrated the versatility of the `pinky` command in providing user-related information in a Linux environment.

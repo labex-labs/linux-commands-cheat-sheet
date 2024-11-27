@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `zdiff` command in Linux to compare the contents of compressed files, such as `.gz`, `.bz2`, or `.xz` files. The `zdiff` command is a useful tool for working with compressed data, as it allows you to identify differences between the contents of these files, which can be helpful when troubleshooting issues or verifying the integrity of compressed data. You will start by understanding the purpose and syntax of the `zdiff` command, and then you will learn how to use it to compare compressed files and troubleshoot any differences that may arise.

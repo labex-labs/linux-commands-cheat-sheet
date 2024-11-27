@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkisofs Command with Practical Examples",
+  "description": "Explore the mkisofs command, a powerful tool for creating ISO images on Linux. Learn how to create basic ISO images, customize them with directories and files, and gain practical experience through hands-on examples.",
+  "meta": {
+    "title": "Linux mkisofs Command with Practical Examples",
+    "description": "Explore the mkisofs command, a powerful tool for creating ISO images on Linux. Learn how to create basic ISO images, customize them with directories and files, and gain practical experience through hands-on examples.",
+    "keywords": "Linux, mkisofs, ISO, image creation, file system, disk utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to mkisofs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mkisofs command is installed",
+            "file": "verify1-1.sh",
+            "hint": "The `mkisofs` command is not installed. Please install the `cdrkit` package using the command provided in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a Basic ISO Image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify ISO image creation",
+            "file": "verify2-1.sh",
+            "hint": "The ISO image file `~/project/basic.iso` was not created. Please check the `mkisofs` command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing ISO Image with Directories and Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom ISO image creation",
+            "file": "verify3-1.sh",
+            "hint": "The custom ISO image file `~/project/custom.iso` was not created. Please check the `mkisofs` command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

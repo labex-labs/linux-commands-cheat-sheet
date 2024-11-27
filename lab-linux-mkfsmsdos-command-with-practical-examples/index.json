@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkfs.msdos Command with Practical Examples",
+  "description": "Explore the Linux mkfs.msdos command, learn how to create FAT32 file systems, and customize file system parameters for your storage needs.",
+  "meta": {
+    "title": "Linux mkfs.msdos Command with Practical Examples",
+    "description": "Explore the Linux mkfs.msdos command, learn how to create FAT32 file systems, and customize file system parameters for your storage needs.",
+    "keywords": "mkfs.msdos, FAT32, file system, disk utilities, storage management, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of mkfs.msdos Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mkfs.msdos version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that the `mkfs.msdos` command is installed and the version matches the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a FAT32 File System Using mkfs.msdos",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify FAT32 file system creation",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the `fat32_disk.img` file has a valid FAT32 file system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize FAT32 File System Parameters with mkfs.msdos",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify custom FAT32 file system parameters",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the `fat32_disk.img` file has the expected volume label and volume ID.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

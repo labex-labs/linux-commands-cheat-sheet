@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bzip2recover Command with Practical Examples",
+  "description": "Explore the bzip2recover command, a powerful tool for recovering corrupted bzip2 files. Learn how to use it effectively with practical examples and advanced options.",
+  "meta": {
+    "title": "Linux bzip2recover Command with Practical Examples",
+    "description": "Explore the bzip2recover command, a powerful tool for recovering corrupted bzip2 files. Learn how to use it effectively with practical examples and advanced options.",
+    "keywords": "bzip2, bzip2recover, data recovery, compression, backup, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of bzip2recover Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify bzip2recover command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the bzip2recover command is available in your environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Recover Corrupted bzip2 Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify bzip2recover command usage for corrupted file",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the bzip2recover command successfully recovers the data from the corrupted bzip2 file and the recovered file contains the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced bzip2recover Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify bzip2recover command usage with advanced options",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the bzip2recover command with advanced options (e.g., -s, -f, -v) successfully recovers the data from the corrupted bzip2 file and the recovered file contains the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux localectl Command with Practical Examples",
+  "description": "Explore the localectl command in Linux, which allows you to manage system locale settings, customize keyboard layouts, and configure keymaps effectively.",
+  "meta": {
+    "title": "Linux localectl Command with Practical Examples",
+    "description": "Explore the localectl command in Linux, which allows you to manage system locale settings, customize keyboard layouts, and configure keymaps effectively.",
+    "keywords": "Linux, localectl, locale, keyboard layout, keymap, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the localectl Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the localectl status command",
+            "file": "verify1-1.sh",
+            "hint": "The `localectl status` command should show that the system locale is set to `en_US.UTF-8`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage System Locale Settings with localectl",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the system locale is set to fr_FR.UTF-8",
+            "file": "verify2-1.sh",
+            "hint": "The `localectl status` command should show that the system locale is set to `fr_FR.UTF-8`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize Keyboard Layout and Keymaps with localectl",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the keyboard layout is set to German",
+            "file": "verify3-1.sh",
+            "hint": "The `localectl status` command should show that the X11 keyboard layout is set to `de` (German).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

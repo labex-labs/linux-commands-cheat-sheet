@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux chgrp Command with Practical Examples",
+  "description": "Explore the chgrp command in Linux, learn how to change the group ownership of files and directories, and discover practical examples to enhance your user and permission management skills.",
+  "meta": {
+    "title": "Linux chgrp Command with Practical Examples",
+    "description": "Explore the chgrp command in Linux, learn how to change the group ownership of files and directories, and discover practical examples to enhance your user and permission management skills.",
+    "keywords": "Linux, chgrp, group ownership, file management, user permissions, command line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the chgrp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the group ownership of the file.txt file",
+            "file": "verify1-1.sh",
+            "hint": "The group ownership of the file.txt file should be changed to the admin group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Change the Group Ownership of a File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the group ownership of the myfile.txt file",
+            "file": "verify2-1.sh",
+            "hint": "The group ownership of the myfile.txt file should be changed to the admin group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Change the Group Ownership of Multiple Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the group ownership of the files",
+            "file": "verify3-1.sh",
+            "hint": "The group ownership of both file1.txt and file2.txt should be changed to the admin group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

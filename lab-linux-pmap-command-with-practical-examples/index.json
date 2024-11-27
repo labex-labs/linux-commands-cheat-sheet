@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux pmap Command with Practical Examples",
+  "description": "Explore the pmap command in Linux, a powerful tool for analyzing memory usage and identifying memory leaks in processes. Learn practical examples to optimize system performance.",
+  "meta": {
+    "title": "Linux pmap Command with Practical Examples",
+    "description": "Explore the pmap command in Linux, a powerful tool for analyzing memory usage and identifying memory leaks in processes. Learn practical examples to optimize system performance.",
+    "keywords": "Linux, pmap, memory usage, memory leaks, system monitoring, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the pmap Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify pmap command output",
+            "file": "verify1-1.sh",
+            "hint": "The `pmap` command did not return the expected output. Please ensure that you have run the `pmap` command with the correct process ID (PID).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyzing Memory Usage of a Process",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify pmap -x output",
+            "file": "verify2-1.sh",
+            "hint": "The `pmap -x` command did not return the expected output. Please ensure that you have run the command with the correct process ID (PID).",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify pmap -d output",
+            "file": "verify2-2.sh",
+            "hint": "The `pmap -d` command did not return the expected output. Please ensure that you have run the command with the correct process ID (PID).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identifying Memory Leaks with pmap",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify memory leak",
+            "file": "verify3-1.sh",
+            "hint": "The memory usage of the Python process did not increase significantly, which suggests that a memory leak may not have been detected. Please ensure that the Python script is running and generating a memory leak.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

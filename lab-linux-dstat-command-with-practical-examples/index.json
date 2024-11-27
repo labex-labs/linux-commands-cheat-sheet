@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dstat Command with Practical Examples",
+  "description": "Explore the dstat command, a versatile system monitoring tool, and learn how to use it to monitor CPU utilization, memory usage, and other system metrics on your Linux machine.",
+  "meta": {
+    "title": "Linux dstat Command with Practical Examples",
+    "description": "Explore the dstat command, a versatile system monitoring tool, and learn how to use it to monitor CPU utilization, memory usage, and other system metrics on your Linux machine.",
+    "keywords": "dstat, Linux, system monitoring, CPU utilization, memory usage, system metrics"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to dstat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dstat command installation",
+            "file": "verify1-1.sh",
+            "hint": "The dstat command does not seem to be installed. Please install the dstat package using the provided commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitoring CPU Utilization with dstat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify CPU utilization monitoring with dstat",
+            "file": "verify2-1.sh",
+            "hint": "The dstat command does not seem to be displaying CPU utilization information. Please ensure that the dstat command is installed and try running the command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitoring Memory Usage with dstat",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify memory usage monitoring with dstat",
+            "file": "verify3-1.sh",
+            "hint": "The dstat command does not seem to be displaying memory usage information. Please ensure that the dstat command is installed and try running the command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

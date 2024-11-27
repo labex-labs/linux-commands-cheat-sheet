@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux groupmod Command with Practical Examples",
+  "description": "Explore the Linux groupmod command with practical examples. Learn how to modify a group's name and GID, enabling effective user and permission management on your Linux system.",
+  "meta": {
+    "title": "Linux groupmod Command with Practical Examples",
+    "description": "Explore the Linux groupmod command with practical examples. Learn how to modify a group's name and GID, enabling effective user and permission management on your Linux system.",
+    "keywords": "Linux, groupmod, group management, user management, permissions, GID, group name"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the groupmod Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the groupmod command syntax",
+            "file": "verify1-1.sh",
+            "hint": "The `groupmod` command syntax could not be verified. Please check the output of `sudo groupmod --help` and ensure it matches the expected format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify a Group's Name Using the groupmod Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the group name change",
+            "file": "verify2-1.sh",
+            "hint": "The group name could not be verified. Please check the output of `getent group developers` and ensure the group name has been changed to \"developers\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Change a Group's GID Using the groupmod Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the group GID change",
+            "file": "verify3-1.sh",
+            "hint": "The group GID could not be verified. Please check the output of `getent group developers` and ensure the GID has been changed to 2000.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

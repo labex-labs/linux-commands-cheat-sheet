@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux cron Command with Practical Examples",
+  "description": "Explore the powerful cron service in Linux, learn how to schedule and manage cron jobs, and configure notifications and logging for effective system maintenance.",
+  "meta": {
+    "title": "Linux cron Command with Practical Examples",
+    "description": "Explore the powerful cron service in Linux, learn how to schedule and manage cron jobs, and configure notifications and logging for effective system maintenance.",
+    "keywords": "cron, Linux, system administration, task scheduling, automation, system configuration, logging, notifications"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the cron Service and Crontab",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify cron service status",
+            "file": "verify1-1.sh",
+            "hint": "The cron service should be active and running. Please check the status of the cron service using the `systemctl status cron` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Scheduling a Simple Cron Job",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify cron job execution",
+            "file": "verify2-1.sh",
+            "hint": "The cron job should be running every minute and appending the current date and time to the `cron_output.log` file. Please check the contents of the `cron_output.log` file to ensure the cron job is executing correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configuring Cron Notifications and Logging",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify cron email notifications",
+            "file": "verify3-1.sh",
+            "hint": "The cron job output should be sent to the `labex@example.com` email address. Check the `/var/mail/labex` file to ensure the email notification is being received.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify cron logging",
+            "file": "verify3-2.sh",
+            "hint": "The cron service should be logging detailed information to the `/var/log/cron.log` file. Check the log file to ensure the cron job execution is being logged.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

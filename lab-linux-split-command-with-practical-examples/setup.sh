@@ -1,14 +1,7 @@
 #!/bin/bash
 
-# Create the project directory if it doesn't exist
-if [ ! -d ~/project ]; then
-  mkdir ~/project
-fi
+# Create a large file for the examples
+head -n 10000 /dev/urandom > ~/project/large_file.txt
 
-# Change to the project directory
-cd ~/project
-
-# Create the large_file.txt file if it doesn't exist
-if [ ! -f large_file.txt ]; then
-  touch large_file.txt
-fi
+# Split the large file into multiple parts
+split -b 1m ~/project/large_file.txt ~/project/split_

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mke2fs Command with Practical Examples",
+  "description": "Explore the mke2fs command in Linux, learn how to create Ext4 filesystems, and customize filesystem parameters for your storage needs.",
+  "meta": {
+    "title": "Linux mke2fs Command with Practical Examples",
+    "description": "Explore the mke2fs command in Linux, learn how to create Ext4 filesystems, and customize filesystem parameters for your storage needs.",
+    "keywords": "Linux, mke2fs, Ext4, filesystem, partition, disk, storage, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mke2fs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mke2fs command help",
+            "file": "verify1-1.sh",
+            "hint": "The mke2fs command help output should contain the \"Usage: mke2fs\" string.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create an Ext4 Filesystem on a Partition",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Ext4 filesystem creation",
+            "file": "verify2-1.sh",
+            "hint": "The /dev/sdb1 partition should have an Ext4 filesystem.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize Filesystem Parameters with mke2fs",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Ext4 filesystem parameters",
+            "file": "verify3-1.sh",
+            "hint": "The Ext4 filesystem on /dev/sdb1 should have the following parameters:\n- Block size: 4096 bytes\n- Inode size: 8192 bytes\n- Volume name: \"my_filesystem\"",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux who Command with Practical Examples",
+  "description": "Explore the Linux who command, learn how to use it, and discover practical examples to understand user sessions and system activity.",
+  "meta": {
+    "title": "Linux who Command with Practical Examples",
+    "description": "Explore the Linux who command, learn how to use it, and discover practical examples to understand user sessions and system activity.",
+    "keywords": "Linux, who command, user management, system activity, session information, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the who Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the output of the `who` command",
+            "file": "verify1-1.sh",
+            "hint": "The `who` command should display information about the current user, `labex`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Output of the who Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the output of the `who` command with multiple users",
+            "file": "verify2-1.sh",
+            "hint": "The `who` command should display information about both the `labex` and `testuser` users.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Filter the Output of the who Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the filtered output of the `who` command",
+            "file": "verify3-1.sh",
+            "hint": "The filtered output of the `who` command should show the username `labex`, the login time `2023-04-11 09:15`, and the remote host `(172.17.0.1)`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

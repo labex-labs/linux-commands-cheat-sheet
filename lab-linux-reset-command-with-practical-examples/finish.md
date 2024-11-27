@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose of the `reset` command in Linux, which is used to restore the terminal to a known state when it has become unresponsive or corrupted. You demonstrated this by intentionally corrupting the terminal and then using the `reset` command to restore it to its default state. Additionally, you learned how to restore the terminal to a known state by switching to a different virtual console, running the `reset` command, and then switching back to the original console. This can be useful when the terminal has become unresponsive or has been corrupted, as it allows you to continue working without having to restart your system.

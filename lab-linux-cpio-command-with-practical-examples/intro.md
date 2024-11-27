@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `cpio` command, a powerful tool for creating and extracting archives, as well as performing selective archiving and extraction. The lab covers the purpose and syntax of the `cpio` command, and provides practical examples of creating and extracting archives using the command. Additionally, you will learn how to perform selective archiving and extraction with `cpio`. The lab is designed to help you develop skills in compression and archiving, which are essential for managing and organizing files and directories in a Linux environment.

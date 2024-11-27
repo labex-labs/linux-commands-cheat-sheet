@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fsck.ext2 Command with Practical Examples",
+  "description": "Explore the fsck.ext2 command in Linux, learn how to check and repair ext2 file systems, and perform forced file system checks with practical examples.",
+  "meta": {
+    "title": "Linux fsck.ext2 Command with Practical Examples",
+    "description": "Explore the fsck.ext2 command in Linux, learn how to check and repair ext2 file systems, and perform forced file system checks with practical examples.",
+    "keywords": "Linux, fsck.ext2, ext2, file system, disk utilities, repair, check, forced check"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the fsck.ext2 Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify fsck.ext2 command version",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the fsck.ext2 command version is 1.46.5 on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Checking and Repairing an ext2 File System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file system repair",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the file system was properly repaired by the fsck.ext2 command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Performing a Forced File System Check",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify forced file system check",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the forced file system check using the -f option modified the file system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

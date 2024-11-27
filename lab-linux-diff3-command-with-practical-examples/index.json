@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux diff3 Command with Practical Examples",
+  "description": "Explore the diff3 command in Linux, learn how to merge conflicting files, and resolve conflicts in a three-way merge with practical examples.",
+  "meta": {
+    "title": "Linux diff3 Command with Practical Examples",
+    "description": "Explore the diff3 command in Linux, learn how to merge conflicting files, and resolve conflicts in a three-way merge with practical examples.",
+    "keywords": "Linux, diff3, merge, conflict, three-way merge, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of diff3 Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of diff3 command",
+            "file": "verify1-1.sh",
+            "hint": "The diff3 command is used to compare three files and identify the differences between them. Please review the output of the `diff3 --help` command to verify its purpose.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Merge Conflicting Files Using diff3",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the use of diff3 for merging conflicting files",
+            "file": "verify2-1.sh",
+            "hint": "The diff3 command should be used to merge the conflicting changes in the three files. Please verify that the merged output contains the desired changes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Resolve Conflicts in a Three-Way Merge",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the resolution of conflicts in the three-way merge",
+            "file": "verify3-1.sh",
+            "hint": "The diff3 command should be used to resolve the conflicts in the three-way merge. Please verify that the merged output contains the desired changes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

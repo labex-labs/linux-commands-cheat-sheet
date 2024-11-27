@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux jobs Command with Practical Examples",
+  "description": "Explore the Linux jobs command, learn to manage background processes, and discover practical examples to enhance your process management skills.",
+  "meta": {
+    "title": "Linux jobs Command with Practical Examples",
+    "description": "Explore the Linux jobs command, learn to manage background processes, and discover practical examples to enhance your process management skills.",
+    "keywords": "Linux, jobs command, process management, background processes, command-line, shell, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the jobs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify background process management",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure you have executed the commands to start, suspend, resume, and terminate the background process using the `jobs` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Background Processes with jobs",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify background process management",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure you have executed the commands to start, suspend, resume, and terminate the background processes using the `jobs` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using jobs Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify practical examples",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure you have executed the commands to start, suspend, resume, and terminate the background processes using the `jobs` command as demonstrated in the examples.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

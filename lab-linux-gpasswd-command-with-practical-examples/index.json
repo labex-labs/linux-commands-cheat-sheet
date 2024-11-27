@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux gpasswd Command with Practical Examples",
+  "description": "Learn how to use the Linux gpasswd command to manage user group memberships. Add and remove users from groups, and explore practical examples to enhance your user and permission management skills.",
+  "meta": {
+    "title": "Linux gpasswd Command with Practical Examples",
+    "description": "Learn how to use the Linux gpasswd command to manage user group memberships. Add and remove users from groups, and explore practical examples to enhance your user and permission management skills.",
+    "keywords": "Linux, gpasswd, user management, group management, permissions, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the gpasswd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the gpasswd command help output",
+            "file": "verify1-1.sh",
+            "hint": "The gpasswd command help output does not match the expected format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Add a User to a Group Using gpasswd",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the user has been added to the group",
+            "file": "verify2-1.sh",
+            "hint": "The user labex does not appear to be a member of the developers group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Remove a User from a Group Using gpasswd",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the user has been removed from the group",
+            "file": "verify3-1.sh",
+            "hint": "The user labex is still a member of the developers group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

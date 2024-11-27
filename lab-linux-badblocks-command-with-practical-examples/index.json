@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux badblocks Command with Practical Examples",
+  "description": "Explore the badblocks command in Linux, learn how to scan disks for bad blocks, and discover techniques to repair damaged areas on your storage devices.",
+  "meta": {
+    "title": "Linux badblocks Command with Practical Examples",
+    "description": "Explore the badblocks command in Linux, learn how to scan disks for bad blocks, and discover techniques to repair damaged areas on your storage devices.",
+    "keywords": "badblocks, disk utilities, file system, storage, repair, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to badblocks Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify badblocks command version",
+            "file": "verify1-1.sh",
+            "hint": "The badblocks command version should be 1.46.2.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Scanning a Disk for Bad Blocks",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify disk scan",
+            "file": "verify2-1.sh",
+            "hint": "The badblocks command should not find any bad blocks on the /dev/sdb disk.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Repairing Bad Blocks on a Disk",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify bad block repair",
+            "file": "verify3-1.sh",
+            "hint": "The e2fsck command should be able to check and repair the /dev/sdb disk without finding any bad blocks.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

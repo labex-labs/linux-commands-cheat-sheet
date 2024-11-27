@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the powerful Linux strace command, which allows us to trace and monitor the system calls made by a running process. We started by introducing the strace command and installing it on our system. We then used strace to trace the system calls made by the simple `ls` command, gaining insights into how the program interacts with the operating system. Next, we delved deeper into using strace to trace system calls, creating a simple Python script and observing the sequence of system calls it makes. By analyzing the strace output, we can better understand program behavior and debug issues that may arise.

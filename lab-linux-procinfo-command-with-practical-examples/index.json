@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux procinfo Command with Practical Examples",
+  "description": "Explore the Linux procinfo command and learn how to monitor system information, customize output, and gain practical insights into system performance and resource utilization.",
+  "meta": {
+    "title": "Linux procinfo Command with Practical Examples",
+    "description": "Explore the Linux procinfo command and learn how to monitor system information, customize output, and gain practical insights into system performance and resource utilization.",
+    "keywords": "Linux, procinfo, system monitoring, system information, performance, resource utilization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to procinfo Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify procinfo command installation",
+            "file": "verify1-1.sh",
+            "hint": "It seems that the `procinfo` command is not installed. Please follow the installation steps provided in the introduction.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitoring System Information with procinfo",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify CPU information",
+            "file": "verify2-1.sh",
+            "hint": "It seems that the CPU information is not being displayed correctly. Please check the usage of the `procinfo -C` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify memory information",
+            "file": "verify2-2.sh",
+            "hint": "It seems that the memory information is not being displayed correctly. Please check the usage of the `procinfo -M` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing procinfo Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify CPU-only output",
+            "file": "verify3-1.sh",
+            "hint": "It seems that the CPU-only output is not being displayed correctly. Please check the usage of the `procinfo -C` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify custom output format",
+            "file": "verify3-2.sh",
+            "hint": "It seems that the custom output format is not being displayed correctly. Please check the usage of the `procinfo -f` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

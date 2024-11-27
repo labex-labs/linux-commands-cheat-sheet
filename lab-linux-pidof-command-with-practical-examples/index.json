@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux pidof Command with Practical Examples",
+  "description": "Explore the Linux pidof command and its practical applications for finding the process ID (PID) of running processes. Learn how to locate multiple processes with the same name and gain insights into system monitoring and management.",
+  "meta": {
+    "title": "Linux pidof Command with Practical Examples",
+    "description": "Explore the Linux pidof command and its practical applications for finding the process ID (PID) of running processes. Learn how to locate multiple processes with the same name and gain insights into system monitoring and management.",
+    "keywords": "Linux, pidof, process ID, PID, system monitoring, process management, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the pidof Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the pidof command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can use the `pidof` command to find the PID of the `nginx` process.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Find the PID of a Running Process",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify finding the PID of a running process",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use the `pidof` command to find the PID of the running Python process.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Locate Multiple Processes with the Same Name",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify locating multiple processes with the same name",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use the `pidof` command to find the PIDs of multiple running `nginx` processes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,5 @@
+# Introduction
+
+In this lab, you will learn how to manage files and directories using basic Linux commands, as well as understand and use redirection and pipes in the Linux terminal. You will also explore automating repetitive tasks with shell scripting. These skills are essential for effective process management in a Linux environment. The lab covers practical examples and hands-on exercises to help you develop a solid understanding of these Linux utilities and techniques.
+
+The lab starts by introducing you to essential file and directory management commands, such as `ls`, `cd`, `mkdir`, `touch`, `rm`, and `mv`. You will learn how to navigate the file system, create and delete files and directories, and move files between directories. The second part of the lab focuses on redirection and pipes, which allow you to control the input and output of commands and chain them together for more complex operations. Finally, you will explore shell scripting, a powerful tool for automating repetitive tasks and streamlining your workflow.

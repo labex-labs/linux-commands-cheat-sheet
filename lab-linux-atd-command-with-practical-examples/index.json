@@ -1,0 +1,64 @@
+{
+  "type": "lab",
+  "title": "Linux atd Command with Practical Examples",
+  "description": "Explore the Linux atd command for scheduling one-time tasks, learn how to monitor and control scheduled tasks, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux atd Command with Practical Examples",
+    "description": "Explore the Linux atd command for scheduling one-time tasks, learn how to monitor and control scheduled tasks, and gain practical experience with real-world examples.",
+    "keywords": "Linux, atd, task scheduling, process management, one-time tasks, job control"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the atd Command",
+        "text": "step1.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Scheduling a One-Time Task with atd",
+        "text": "step2.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Monitoring and Controlling Scheduled Tasks",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Scheduled Task Execution",
+            "file": "verify3-1.sh",
+            "hint": "The scheduled task should have created the file ~/project/output.txt. Check if the file exists.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Scheduled Task Removal",
+            "file": "verify3-2.sh",
+            "hint": "The scheduled task with job ID 3 should have been removed from the queue. Check the output of the `atq` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

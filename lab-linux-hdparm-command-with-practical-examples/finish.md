@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and functionality of the `hdparm` command in Linux. The `hdparm` command is a powerful utility that allows you to interact with and configure various parameters of your hard disk drives (HDDs) and solid-state drives (SSDs). It provides key functionalities such as disk performance measurement, disk configuration optimization, and disk information retrieval. You then explored how to use `hdparm` to measure the performance of your disk, including read/write speeds, cache settings, and other parameters. Finally, you learned how to optimize disk performance using `hdparm` by adjusting various disk parameters, such as enabling advanced power management features and setting the read-ahead cache size.

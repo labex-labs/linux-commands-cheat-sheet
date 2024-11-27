@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and basic syntax of the `unzip` command in Linux, which is used to extract files from compressed ZIP archives. You explored the various options available with the `unzip` command, such as updating existing files, overwriting files, excluding specific files, and extracting files to a specified directory. You then learned how to extract files from a compressed ZIP archive using the `unzip` command, creating a sample ZIP file and extracting its contents. Finally, you discovered how to unzip a password-protected ZIP file, providing the correct password to access the archived files.

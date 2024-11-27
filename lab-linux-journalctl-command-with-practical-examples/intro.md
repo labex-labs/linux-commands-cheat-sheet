@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `journalctl` command, which is a powerful tool for viewing and analyzing the system logs maintained by the systemd journal. The lab will cover the purpose and functionality of `journalctl`, as well as its various filtering options to help you effectively manage and troubleshoot your Linux system. We will start by understanding the purpose of the systemd journal and how to use `journalctl` to access the logs. Then, we will dive deeper into the filtering capabilities of `journalctl` to help you quickly find the relevant information you need. Finally, we will demonstrate practical examples of using `journalctl` commands to analyze the system logs.

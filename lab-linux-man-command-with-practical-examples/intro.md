@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to effectively use the Linux `man` command to access and navigate the online reference manuals for various commands, system calls, and other aspects of the Linux operating system. You will start by understanding the purpose and usage of the `man` command, then explore the structure and navigation of man pages, and finally perform targeted searches and filtering to quickly find the information you need. This lab provides practical examples and insights to help you become more proficient in utilizing the powerful `man` command, which is an essential tool for Linux users and system administrators.

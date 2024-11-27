@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mingetty Command with Practical Examples",
+  "description": "Explore the Linux mingetty command and its practical applications, including automatic login configuration and customizing the login prompt. Enhance your Linux system management skills.",
+  "meta": {
+    "title": "Linux mingetty Command with Practical Examples",
+    "description": "Explore the Linux mingetty command and its practical applications, including automatic login configuration and customizing the login prompt. Enhance your Linux system management skills.",
+    "keywords": "Linux, mingetty, command, login, prompt, automatic, configuration, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the mingetty Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mingetty version",
+            "file": "verify1-1.sh",
+            "hint": "The mingetty version should be 1.08. Please ensure that the correct version is installed on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure mingetty for Automatic Login",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify automatic login",
+            "file": "verify2-1.sh",
+            "hint": "The automatic login for the 'labex' user is not working as expected. Please ensure that the mingetty configuration is set up correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the mingetty Login Prompt",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify customized login prompt",
+            "file": "verify3-1.sh",
+            "hint": "The customized login prompt is not being displayed as expected. Please ensure that the mingetty configuration file is updated correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

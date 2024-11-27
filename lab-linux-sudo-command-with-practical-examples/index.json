@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sudo Command with Practical Examples",
+  "description": "Explore the power of the sudo command in Linux. Learn how to manage user permissions, secure your system, and execute commands with elevated privileges.",
+  "meta": {
+    "title": "Linux sudo Command with Practical Examples",
+    "description": "Explore the power of the sudo command in Linux. Learn how to manage user permissions, secure your system, and execute commands with elevated privileges.",
+    "keywords": "sudo, Linux, user permissions, system security, elevated privileges"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Importance of the sudo Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the user can execute a command with sudo",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the user can execute a command with sudo without being prompted for a password.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage User Permissions with sudo",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the new user can execute a command with sudo",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the newuser can execute a command with sudo without being prompted for a password.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Secure Your System with Proper sudo Usage",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the sudo timeout is set correctly",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the sudo timeout is set to 5 minutes in the /etc/sudoers file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

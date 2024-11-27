@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux units Command with Practical Examples",
+  "description": "Explore the versatile Linux units command and learn how to convert between different time units and perform arithmetic operations with practical examples.",
+  "meta": {
+    "title": "Linux units Command with Practical Examples",
+    "description": "Explore the versatile Linux units command and learn how to convert between different time units and perform arithmetic operations with practical examples.",
+    "keywords": "Linux, units, command, time, conversion, arithmetic, examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the units Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the units command is installed",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have installed the units package using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Convert Between Different Time Units",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify time unit conversions",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you are able to perform the time unit conversions correctly using the units command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Arithmetic Operations with units",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify arithmetic operations with units",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you are able to perform the arithmetic operations with units correctly using the units command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

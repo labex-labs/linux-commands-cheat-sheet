@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux compress Command with Practical Examples",
+  "description": "Explore the Linux compress command, learn how to compress and decompress files, and discover advanced options for efficient data compression.",
+  "meta": {
+    "title": "Linux compress Command with Practical Examples",
+    "description": "Explore the Linux compress command, learn how to compress and decompress files, and discover advanced options for efficient data compression.",
+    "keywords": "Linux, compress, decompress, compression, archiving, file management, data storage"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduce the Linux compress Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify compress command version",
+            "file": "verify1-1.sh",
+            "hint": "The `compress` command version should be 4.3.1.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compress and Decompress Files Using compress Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify compressed file creation",
+            "file": "verify2-1.sh",
+            "hint": "The compressed file `example.txt.Z` should be created.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify decompressed file",
+            "file": "verify2-2.sh",
+            "hint": "The decompressed file `example.txt` should be created.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced Options of compress Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify compressed output to stdout",
+            "file": "verify3-1.sh",
+            "hint": "The compressed output to stdout should match the original file content.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify forced compression",
+            "file": "verify3-2.sh",
+            "hint": "The compressed file `example.txt.Z` should be larger than the original `example.txt` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

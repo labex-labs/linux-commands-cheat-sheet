@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux cpio Command with Practical Examples",
+  "description": "Explore the cpio command in Linux, learn its syntax, and practice creating and extracting archives with practical examples.",
+  "meta": {
+    "title": "Linux cpio Command with Practical Examples",
+    "description": "Explore the cpio command in Linux, learn its syntax, and practice creating and extracting archives with practical examples.",
+    "keywords": "cpio, compression, archiving, Linux, file management, backup, restore"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the cpio Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify cpio command usage",
+            "file": "verify1-1.sh",
+            "hint": "The cpio command should display the available modes (copy-in, copy-out, copy-pass) when using the --help option.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Extract Archives Using the cpio Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify archive creation",
+            "file": "verify2-1.sh",
+            "hint": "The archive.cpio file should be created in the ~/project directory, and it should contain the file1.txt and file2.txt files.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify archive extraction",
+            "file": "verify2-2.sh",
+            "hint": "The sample_dir directory should be created in the ~/project directory, and it should contain the file1.txt and file2.txt files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Selective Archiving and Extraction with cpio",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify selective archiving",
+            "file": "verify3-1.sh",
+            "hint": "The sample_archive.cpio file should only contain the files in the sample_dir directory, and not the file4.txt and file5.txt files.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify selective extraction",
+            "file": "verify3-2.sh",
+            "hint": "The sample_dir directory should only contain the file1.txt, file2.txt, and file3.txt files, and the file4.txt and file5.txt files should not be extracted.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

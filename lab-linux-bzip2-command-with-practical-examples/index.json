@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux bzip2 Command with Practical Examples",
+  "description": "Explore the bzip2 compression utility in Linux, learn how to compress and decompress files, and discover advanced bzip2 options and techniques.",
+  "meta": {
+    "title": "Linux bzip2 Command with Practical Examples",
+    "description": "Explore the bzip2 compression utility in Linux, learn how to compress and decompress files, and discover advanced bzip2 options and techniques.",
+    "keywords": "bzip2, compression, decompression, Linux, file management, archiving, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the bzip2 Compression Utility",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify sample.txt file creation",
+            "file": "verify1-1.sh",
+            "hint": "The sample.txt file does not exist in the ~/project directory. Please create the file as instructed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compress and Decompress Files with bzip2",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify sample.txt.bz2 file creation",
+            "file": "verify2-1.sh",
+            "hint": "The sample.txt.bz2 file does not exist in the ~/project directory. Please compress the sample.txt file as instructed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify sample.txt file decompression",
+            "file": "verify2-2.sh",
+            "hint": "The sample.txt file does not exist in the ~/project directory. Please decompress the sample.txt.bz2 file as instructed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced bzip2 Options and Techniques",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify bzip2 compression level",
+            "file": "verify3-1.sh",
+            "hint": "The sample.txt.bz2 file does not exist or the compression level is not set to the maximum (level 9). Please compress the sample.txt file using the -9 option.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify bzip2 archive creation",
+            "file": "verify3-2.sh",
+            "hint": "The bzip2 archive file or one of the sample files does not exist. Please create the bzip2 archive as instructed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

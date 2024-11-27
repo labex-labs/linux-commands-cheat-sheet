@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the `insmod` command in Linux, which is used to insert a kernel module into the running kernel. We first checked the current kernel version and the available kernel modules using the `uname -r` and `lsmod` commands. Then, we created a simple kernel module that prints a "Hello, kernel!" message when loaded and a "Goodbye, kernel!" message when unloaded. We compiled the kernel module using the `gcc` command and the `linux-headers-$(uname -r)` package, which contains the header files needed for the current kernel version. Finally, we used the `insmod` command to insert the compiled kernel module into the running kernel.

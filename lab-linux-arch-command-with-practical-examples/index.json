@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux arch Command with Practical Examples",
+  "description": "Explore the arch command in Linux, learn how to identify your system's hardware architecture, and discover practical scenarios for using this powerful tool.",
+  "meta": {
+    "title": "Linux arch Command with Practical Examples",
+    "description": "Explore the arch command in Linux, learn how to identify your system's hardware architecture, and discover practical scenarios for using this powerful tool.",
+    "keywords": "Linux, arch command, hardware architecture, system monitoring, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the arch Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the output of the arch command",
+            "file": "verify1-1.sh",
+            "hint": "The arch command should return 'x86_64' as the output. Please check the output of the arch command and ensure it matches the expected value.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identify the Hardware Architecture of Your Linux System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the output of the arch command",
+            "file": "verify2-1.sh",
+            "hint": "The arch command should return 'x86_64' as the output. Please check the output of the arch command and ensure it matches the expected value.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the output of the uname -m command",
+            "file": "verify2-2.sh",
+            "hint": "The uname -m command should return 'x86_64' as the output. Please check the output of the uname -m command and ensure it matches the expected value.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the arch Command with Practical Scenarios",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the output of the arch command in a script",
+            "file": "verify3-1.sh",
+            "hint": "The arch command should return 'x86_64' as the output when executed in a script. Please check the output of the arch command in your script and ensure it matches the expected value.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the installation of a package based on the system architecture",
+            "file": "verify3-2.sh",
+            "hint": "The package installation based on the system architecture should be successful. Please check the output of the package installation command and ensure it completed without any errors.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

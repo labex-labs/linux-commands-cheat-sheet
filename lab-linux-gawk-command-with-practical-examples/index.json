@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux gawk Command with Practical Examples",
+  "description": "Explore the powerful gawk command in Linux, learn how to extract data from text files, perform calculations, and transform data efficiently.",
+  "meta": {
+    "title": "Linux gawk Command with Practical Examples",
+    "description": "Explore the powerful gawk command in Linux, learn how to extract data from text files, perform calculations, and transform data efficiently.",
+    "keywords": "gawk, text processing, data extraction, data transformation, Linux, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to gawk Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify gawk version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that you have GNU Awk version 5.1.0 installed on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Extracting Data from Text Files using gawk",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify age extraction",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that you can correctly extract the ages from the data.txt file using gawk.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify name and city extraction",
+            "file": "verify2-2.sh",
+            "hint": "Please ensure that you can correctly extract the name and city from the data.txt file using gawk.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Performing Calculations and Transformations with gawk",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify average age calculation",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that you can correctly calculate the average age using gawk.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify age transformation",
+            "file": "verify3-2.sh",
+            "hint": "Please ensure that you can correctly transform the ages to years and months using gawk.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify tax bracket report",
+            "file": "verify3-3.sh",
+            "hint": "Please ensure that you can correctly generate the tax bracket report using gawk.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

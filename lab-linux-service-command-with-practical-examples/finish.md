@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we first explored the Linux `service` command, which is a utility used to manage system services. We learned the basic syntax of the `service` command and how to use it to start, stop, restart, and check the status of system services, such as the Apache web server. We also discussed that the `service` command is a wrapper around the underlying system service management mechanism, which can vary depending on the Linux distribution. In the second part of the lab, we learned how to use the `service` command to manage system services, including listing all available services, starting and stopping services, and checking their status.

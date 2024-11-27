@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the `chfn` command, which allows users to modify their personal information such as full name, office location, and phone numbers. We first learned how to check the current user information using the `chfn` command without any options. Then, we demonstrated how to update different fields, including the full name, office location, office phone number, and home phone number, using the appropriate options such as `-f`, `-o`, `-p`, and `-h`. The lab provided a comprehensive understanding of the `chfn` command and its practical applications in managing user information on a Linux system.

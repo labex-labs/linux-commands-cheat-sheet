@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux su Command with Practical Examples",
+  "description": "Explore the Linux su command and learn how to switch users, manage privileges, and execute commands with elevated permissions.",
+  "meta": {
+    "title": "Linux su Command with Practical Examples",
+    "description": "Explore the Linux su command and learn how to switch users, manage privileges, and execute commands with elevated permissions.",
+    "keywords": "Linux, su command, user management, privilege management, command execution"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the su Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify user switching",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you can successfully switch to the root user using the `su` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Switch User with su Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify user switching",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can successfully switch to the labex user using the `su` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Privileges with su Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can successfully install the htop package using the su or sudo command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

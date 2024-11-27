@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux watch Command with Practical Examples",
+  "description": "Explore the powerful Linux watch command and its practical applications, including monitoring system processes and tracking file changes.",
+  "meta": {
+    "title": "Linux watch Command with Practical Examples",
+    "description": "Explore the powerful Linux watch command and its practical applications, including monitoring system processes and tracking file changes.",
+    "keywords": "Linux, watch command, system monitoring, process management, file changes"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the watch Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the watch command is working",
+            "file": "verify1-1.sh",
+            "hint": "Please make sure you have executed the command `watch -n 5 df -h` in your terminal.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitor System Processes with watch",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the watch command is monitoring system processes",
+            "file": "verify2-1.sh",
+            "hint": "Please make sure you have executed the command `watch -n 5 'ps aux'` in your terminal.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitor File Changes with watch",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the watch command is monitoring file changes",
+            "file": "verify3-1.sh",
+            "hint": "Please make sure you have executed the commands:\n1. `watch -n 5 'ls -l ~/project/files'`\n2. `watch -n 5 'cat ~/project/files/file1.txt'`\nin your terminal.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

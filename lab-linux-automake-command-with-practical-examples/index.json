@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux automake Command with Practical Examples",
+  "description": "Explore the automake command in Linux, a tool for generating Makefiles. Learn how to create a basic automake project, customize configuration, and apply practical examples.",
+  "meta": {
+    "title": "Linux automake Command with Practical Examples",
+    "description": "Explore the automake command in Linux, a tool for generating Makefiles. Learn how to create a basic automake project, customize configuration, and apply practical examples.",
+    "keywords": "Linux, automake, Makefile, scripting, programming, configuration, build automation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Automake",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Automake installation",
+            "file": "verify1-1.sh",
+            "hint": "Automake does not appear to be installed. Please install Automake using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a Basic Automake Project",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Automake project creation",
+            "file": "verify2-1.sh",
+            "hint": "It appears that the Automake project files (configure.ac and Makefile.am) have not been created. Please follow the steps to create the basic Automake project.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing Automake Configuration",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Automake project customization",
+            "file": "verify3-1.sh",
+            "hint": "It appears that the Automake project has not been properly customized. Please follow the steps to add the custom install step and the debug configuration option.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

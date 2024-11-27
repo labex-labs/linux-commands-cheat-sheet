@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned about the `zipinfo` command in Linux, which is used to display detailed information about the contents of a zip file. We started by understanding the basic usage of the `zipinfo` command, including how to install the necessary package and create a sample zip file. We then explored various options available with the `zipinfo` command, such as the `-l` flag for a more concise listing and the `-v` flag for verbose output. Finally, we learned how to analyze the contents of a zip file using the `zipinfo` command, including file names, sizes, compression methods, and modification dates.

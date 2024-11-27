@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and usage of the `mkbootdisk` command in Linux. This command allows you to create a bootable USB drive or CD/DVD from an ISO image or a running Linux system, which is particularly useful for installing or troubleshooting a Linux distribution. You explored the basic syntax to create a bootable USB drive from an ISO image and from a live Linux system. Then, you learned how to identify the USB drive you want to use and the steps to create a bootable USB drive using the `mkbootdisk` command. The lab provided practical examples and guidance to ensure the successful creation of a bootable USB drive.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bg Command with Practical Examples",
+  "description": "Explore the Linux bg command, learn how to suspend and move foreground processes to the background, and manage background processes effectively.",
+  "meta": {
+    "title": "Linux bg Command with Practical Examples",
+    "description": "Explore the Linux bg command, learn how to suspend and move foreground processes to the background, and manage background processes effectively.",
+    "keywords": "Linux, bg command, process management, background processes, suspend, foreground, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the bg Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the bg command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the suspended 'sleep 60' process is running in the background after using the 'bg' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Suspend a Foreground Process and Move it to the Background",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the process is in the background",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the 'sleep 120' process is running in the background after using the 'bg' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "List and Manage Background Processes",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the background processes",
+            "file": "verify3-1.sh",
+            "hint": "Make sure there are three background processes running (sleep 60, sleep 120, and sleep 180).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux pppstats Command with Practical Examples",
+  "description": "Explore the pppstats command in Linux, learn how to monitor PPP interface statistics, and analyze PPP connection performance with practical examples.",
+  "meta": {
+    "title": "Linux pppstats Command with Practical Examples",
+    "description": "Explore the pppstats command in Linux, learn how to monitor PPP interface statistics, and analyze PPP connection performance with practical examples.",
+    "keywords": "Linux, pppstats, PPP, network monitoring, connection performance, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the pppstats Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify pppstats command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the ppp package is installed and the pppstats command is available in your environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitoring PPP Interface Statistics",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify pppstats monitoring",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the PPP connection can be established and the pppstats command is displaying the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyzing PPP Connection Performance",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify pppstats analysis",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the PPP connection can be established and the pppstats command is displaying the expected output fields.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

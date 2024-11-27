@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux scriptreplay Command with Practical Examples",
+  "description": "Explore the scriptreplay command in Linux, which allows you to record and replay terminal sessions, with practical examples to enhance your system administration skills.",
+  "meta": {
+    "title": "Linux scriptreplay Command with Practical Examples",
+    "description": "Explore the scriptreplay command in Linux, which allows you to record and replay terminal sessions, with practical examples to enhance your system administration skills.",
+    "keywords": "Linux, scriptreplay, script, terminal recording, system administration, utility, replay, session"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the scriptreplay Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the script command is installed",
+            "file": "verify1-1.sh",
+            "hint": "The script command is required for this lab. Please install it using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the recording.log file exists",
+            "file": "verify1-2.sh",
+            "hint": "The recording.log file should have been created in the previous steps. Please check if the file exists in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Recording Terminal Sessions with script Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the recording.log file exists",
+            "file": "verify2-1.sh",
+            "hint": "The recording.log file should have been created in this step. Please check if the file exists in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the recording.log file contains the expected content",
+            "file": "verify2-2.sh",
+            "hint": "The recording.log file should contain the commands executed during the recording session. Please check the content of the file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Replaying Recorded Sessions with scriptreplay Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the scriptreplay command is available",
+            "file": "verify3-1.sh",
+            "hint": "The scriptreplay command is required for this step. Please ensure it is installed on your system.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the recorded session can be replayed",
+            "file": "verify3-2.sh",
+            "hint": "The recorded session should be replayed correctly using the scriptreplay command. Please check if the expected output is displayed during the replay.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

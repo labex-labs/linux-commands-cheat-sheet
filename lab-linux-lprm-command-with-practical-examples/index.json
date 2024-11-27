@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux lprm Command with Practical Examples",
+  "description": "Explore the Linux lprm command for removing print jobs, including how to remove a specific job or all jobs. Learn practical examples to manage your print queue effectively.",
+  "meta": {
+    "title": "Linux lprm Command with Practical Examples",
+    "description": "Explore the Linux lprm command for removing print jobs, including how to remove a specific job or all jobs. Learn practical examples to manage your print queue effectively.",
+    "keywords": "Linux, lprm, print job, remove, queue, command, examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the lprm Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the lprm command removes a specific print job",
+            "file": "verify1-1.sh",
+            "hint": "The lprm command did not successfully remove the print job with ID 1. Please try the command again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the lprm command removes all print jobs",
+            "file": "verify1-2.sh",
+            "hint": "The lprm command did not successfully remove all print jobs from the queue. Please try the command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Removing a Specific Print Job",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the lprm command removes a specific print job",
+            "file": "verify2-1.sh",
+            "hint": "The lprm command did not successfully remove the print job with ID 2. Please try the command again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the print queue no longer contains the removed job",
+            "file": "verify2-2.sh",
+            "hint": "The print queue still contains the print job with ID 2, which should have been removed. Please check the output of the lpq command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Removing All Print Jobs",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the lprm command removes all print jobs",
+            "file": "verify3-1.sh",
+            "hint": "The lprm command did not successfully remove all print jobs from the queue. Please try the command again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the print queue is empty",
+            "file": "verify3-2.sh",
+            "hint": "The print queue still contains entries, which means not all print jobs were removed. Please check the output of the lpq command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

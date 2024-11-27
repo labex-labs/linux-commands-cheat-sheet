@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn about the `acpi` command, a utility that provides information about the Advanced Configuration and Power Interface (ACPI) on your system. The lab covers the basics of the `acpi` command, how to monitor battery status, and how to customize its behavior. You will start by checking if the `acpi` command is installed on your system, and if not, you will learn how to install it. Then, you will explore the basic usage of the `acpi` command and dive deeper into monitoring battery status. Finally, you will learn how to customize the `acpi` command's behavior to suit your needs.

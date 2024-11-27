@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bison Command with Practical Examples",
+  "description": "Explore the bison command, a powerful tool for generating parsers in Linux. Learn how to create custom parsers, handle syntax errors, and apply bison in practical scenarios.",
+  "meta": {
+    "title": "Linux bison Command with Practical Examples",
+    "description": "Explore the bison command, a powerful tool for generating parsers in Linux. Learn how to create custom parsers, handle syntax errors, and apply bison in practical scenarios.",
+    "keywords": "bison, parser generator, syntax error handling, Linux, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to bison Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify bison installation and example.y file",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have installed the bison package and created the example.y file in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Generating Parsers with bison",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify parser generation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have generated the parser files (example.tab.c, example.tab.h, example.lex.c) and compiled the final executable (example).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Handling Syntax Errors in bison",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify error handling",
+            "file": "verify3-1.sh",
+            "hint": "Make sure your parser can correctly handle syntax errors and still process valid input.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

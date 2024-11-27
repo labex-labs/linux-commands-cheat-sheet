@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux quotacheck Command with Practical Examples",
+  "description": "Explore the Linux quotacheck command with practical examples. Learn how to install the quota package, enable quota on a filesystem, and use the quotacheck command to check quota information.",
+  "meta": {
+    "title": "Linux quotacheck Command with Practical Examples",
+    "description": "Explore the Linux quotacheck command with practical examples. Learn how to install the quota package, enable quota on a filesystem, and use the quotacheck command to check quota information.",
+    "keywords": "Linux, quotacheck, quota, filesystem, system configuration, system settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Quota Package on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify quota package installation",
+            "file": "verify1-1.sh",
+            "hint": "The quota package does not appear to be installed. Please run the installation command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Enable Quota on a Filesystem",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify quota enabled on /mnt/quota",
+            "file": "verify2-1.sh",
+            "hint": "Quota does not appear to be enabled on the /mnt/quota filesystem. Please run the quota enabling command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use quotacheck Command to Check Quota Information",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify quotacheck output",
+            "file": "verify3-1.sh",
+            "hint": "The quotacheck command does not appear to have successfully scanned the /mnt/quota filesystem. Please run the command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

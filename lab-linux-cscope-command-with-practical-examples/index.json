@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Linux cscope Command with Practical Examples",
+  "description": "Explore the cscope command in Linux, a powerful tool for source code navigation and analysis. Learn how to install, understand the basics, and perform efficient code searches and navigation.",
+  "meta": {
+    "title": "Linux cscope Command with Practical Examples",
+    "description": "Explore the cscope command in Linux, a powerful tool for source code navigation and analysis. Learn how to install, understand the basics, and perform efficient code searches and navigation.",
+    "keywords": "cscope, Linux, source code, code navigation, code analysis, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install cscope on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify cscope installation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the cscope package is installed and the version matches the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Understand the Basics of cscope",
+        "text": "step2.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Perform Source Code Navigation with cscope",
+        "text": "step3.md",
+        "verify": [],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

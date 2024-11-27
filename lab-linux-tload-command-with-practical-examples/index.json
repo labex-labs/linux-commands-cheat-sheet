@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Linux tload Command with Practical Examples",
+  "description": "Explore the Linux tload command, a powerful tool for monitoring system load average. Learn how to interpret tload output and identify performance issues on your system.",
+  "meta": {
+    "title": "Linux tload Command with Practical Examples",
+    "description": "Explore the Linux tload command, a powerful tool for monitoring system load average. Learn how to interpret tload output and identify performance issues on your system.",
+    "keywords": "Linux, tload, system monitoring, load average, performance, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the tload Command",
+        "text": "step1.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Monitor System Load Average Using tload",
+        "text": "step2.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Interpret tload Output and Identify Performance Issues",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify tload output",
+            "file": "verify3-1.sh",
+            "hint": "The 1-minute load average should be less than 2.0 to pass the verification.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the powerful `ip` command in Linux to manage network interfaces and troubleshoot network issues. The lab covers the basic syntax and options of the `ip` command, as well as practical examples of managing network interfaces and using the command to diagnose network problems. You will explore commands to display information about network interfaces, configure IP addresses, and work with routing tables. This lab is designed to provide you with a solid understanding of the `ip` command and its practical applications in network administration and troubleshooting.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux access Command with Practical Examples",
+  "description": "Explore the Linux access command and learn how to manage file permissions and ownership. Discover practical examples to enhance your Linux skills.",
+  "meta": {
+    "title": "Linux access Command with Practical Examples",
+    "description": "Explore the Linux access command and learn how to manage file permissions and ownership. Discover practical examples to enhance your Linux skills.",
+    "keywords": "Linux, access command, file permissions, chmod, chown, file ownership, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding File Permissions in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify file permissions",
+            "file": "verify1-1.sh",
+            "hint": "The file permissions for example.txt should be -rw-r--r--",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modifying File Permissions with the chmod Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file permissions",
+            "file": "verify2-1.sh",
+            "hint": "The file permissions for example.txt should be -rw-r--r--",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Changing File Ownership with the chown Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file ownership",
+            "file": "verify3-1.sh",
+            "hint": "The file example.txt should be owned by the user and group 'labex'",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

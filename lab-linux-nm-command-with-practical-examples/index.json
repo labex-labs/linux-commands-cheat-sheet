@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux nm Command with Practical Examples",
+  "description": "Explore the Linux nm command, which displays symbol information for object files. Learn how to use nm to view executable symbols, filter results, and gain practical insights.",
+  "meta": {
+    "title": "Linux nm Command with Practical Examples",
+    "description": "Explore the Linux nm command, which displays symbol information for object files. Learn how to use nm to view executable symbols, filter results, and gain practical insights.",
+    "keywords": "Linux, nm command, symbol information, executable, object files, filtering, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the nm Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the creation of the hello.c file",
+            "file": "verify1-1.sh",
+            "hint": "Please make sure you have created the hello.c file in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Displaying Symbol Information of an Executable",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the output of nm command",
+            "file": "verify2-1.sh",
+            "hint": "Please make sure the output of the nm command includes the \"main\" and \"printf\" symbols.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Filtering Symbol Information Using nm Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the output of nm command with filtering options",
+            "file": "verify3-1.sh",
+            "hint": "Please make sure the output of the nm -T command includes the \"main\" symbol.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

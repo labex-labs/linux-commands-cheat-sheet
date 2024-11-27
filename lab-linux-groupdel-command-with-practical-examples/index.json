@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux groupdel Command with Practical Examples",
+  "description": "Explore the Linux groupdel command and learn how to delete groups effectively. This lab covers the purpose of groupdel, creating test groups, and deleting groups using practical examples.",
+  "meta": {
+    "title": "Linux groupdel Command with Practical Examples",
+    "description": "Explore the Linux groupdel command and learn how to delete groups effectively. This lab covers the purpose of groupdel, creating test groups, and deleting groups using practical examples.",
+    "keywords": "Linux, groupdel, user management, permission management, group deletion, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the groupdel Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the testgroup was deleted",
+            "file": "verify1-1.sh",
+            "hint": "The `testgroup` should have been deleted from the system. Please check the `/etc/group` file to ensure the group no longer exists.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create Test Groups for Demonstration",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the test groups were created",
+            "file": "verify2-1.sh",
+            "hint": "The test groups `group1`, `group2`, and `group3` should have been created successfully. Please check the `/etc/group` file to ensure all three groups exist.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Delete Groups Using the groupdel Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the groups were deleted",
+            "file": "verify3-1.sh",
+            "hint": "The `group1` and `group2` groups should have been deleted from the system. Please check the `/etc/group` file to ensure these groups no longer exist.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

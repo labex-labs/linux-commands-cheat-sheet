@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux snap Command with Practical Examples",
+  "description": "Explore the power of the Snap package manager in Linux. Learn how to install, update, and manage Snap packages through practical examples, enhancing your Linux package management skills.",
+  "meta": {
+    "title": "Linux snap Command with Practical Examples",
+    "description": "Explore the power of the Snap package manager in Linux. Learn how to install, update, and manage Snap packages through practical examples, enhancing your Linux package management skills.",
+    "keywords": "Linux, Snap, Package Management, Snap Packages, Package Installation, Package Updating, Package Management Commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Snap Packages",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Snap version",
+            "file": "verify1-1.sh",
+            "hint": "The Snap version installed on your system should be 2.57.4. Please check the output of the `snap version` command and ensure that the version matches the expected value.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Installing and Updating Snap Packages",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify VLC Snap package installation",
+            "file": "verify2-1.sh",
+            "hint": "The VLC Snap package should be installed on your system. Please check the output of the `snap list` command and ensure that the VLC package is present.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify VLC Snap package update",
+            "file": "verify2-2.sh",
+            "hint": "The VLC Snap package should be updated to the latest version (3.0.17.3). Please check the output of the `snap list vlc` command and ensure that the version matches the expected value.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Managing Snap Packages with Snap Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Snap package search",
+            "file": "verify3-1.sh",
+            "hint": "The `snap find gimp` command should display the GIMP Snap package. Please check the output and ensure that the GIMP package is listed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Snap package information",
+            "file": "verify3-2.sh",
+            "hint": "The `snap info gimp` command should display the correct information about the GIMP Snap package, including the summary \"GNU Image Manipulation Program\". Please check the output and ensure that the information is as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

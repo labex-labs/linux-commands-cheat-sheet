@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux tune2fs Command with Practical Examples",
+  "description": "Explore the tune2fs command, a powerful tool for managing ext2/ext3/ext4 file systems. Learn how to modify filesystem behavior, backup and restore metadata, and optimize disk performance.",
+  "meta": {
+    "title": "Linux tune2fs Command with Practical Examples",
+    "description": "Explore the tune2fs command, a powerful tool for managing ext2/ext3/ext4 file systems. Learn how to modify filesystem behavior, backup and restore metadata, and optimize disk performance.",
+    "keywords": "tune2fs, ext2, ext3, ext4, filesystem, metadata, backup, restore, disk performance"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the tune2fs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the tune2fs command output",
+            "file": "verify1-1.sh",
+            "hint": "The `tune2fs -l /dev/sda1` command did not display the Filesystem UUID information. Please ensure you have executed the command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify the Filesystem Behavior Using tune2fs",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the maximum mount count",
+            "file": "verify2-1.sh",
+            "hint": "The maximum mount count was not set to 30 as expected. Please check the output of the `tune2fs -l /dev/sda1` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the file system check interval",
+            "file": "verify2-2.sh",
+            "hint": "The file system check interval was not set to 30 days as expected. Please check the output of the `tune2fs -l /dev/sda1` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Backup and Restore Filesystem Metadata with tune2fs",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the backup file creation",
+            "file": "verify3-1.sh",
+            "hint": "The backup file `backup.txt` was not created. Please check the output of the `tune2fs -f -j /dev/sda1 backup.txt` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the file system metadata restoration",
+            "file": "verify3-2.sh",
+            "hint": "The file system metadata was not restored correctly. Please check the output of the `tune2fs -l /dev/sda1` command and compare it with the original file system information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux lsblk Command with Practical Examples",
+  "description": "Explore the lsblk command in Linux, which lists information about block devices. Learn how to use various options and filters to effectively manage and monitor your system's storage devices.",
+  "meta": {
+    "title": "Linux lsblk Command with Practical Examples",
+    "description": "Explore the lsblk command in Linux, which lists information about block devices. Learn how to use various options and filters to effectively manage and monitor your system's storage devices.",
+    "keywords": "lsblk, block devices, storage management, system monitoring, Linux commands"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the lsblk Command and Its Purpose",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lsblk command output",
+            "file": "verify1-1.sh",
+            "hint": "The lsblk command should display the main storage device 'sda' in the output. Please check your command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "List All Block Devices on the System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lsblk -a output",
+            "file": "verify2-1.sh",
+            "hint": "The lsblk -a command should display the loop devices in the output. Please check your command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify lsblk -t output",
+            "file": "verify2-2.sh",
+            "hint": "The lsblk -t command should display the disk devices in the output. Please check your command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Additional Options and Filters with lsblk",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify lsblk --output output",
+            "file": "verify3-1.sh",
+            "hint": "The lsblk --output command should display the name, size, and mount point of the block devices, including 'sda'. Please check your command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify lsblk --json output",
+            "file": "verify3-2.sh",
+            "hint": "The lsblk --json command should display the block device information in JSON format. Please check your command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

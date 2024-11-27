@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux nc(netcat) Command with Practical Examples",
+  "description": "Explore the powerful nc (netcat) command in Linux, learn how to use it for TCP and UDP server-client communication, and discover practical examples to enhance your networking skills.",
+  "meta": {
+    "title": "Linux nc(netcat) Command with Practical Examples",
+    "description": "Explore the powerful nc (netcat) command in Linux, learn how to use it for TCP and UDP server-client communication, and discover practical examples to enhance your networking skills.",
+    "keywords": "netcat, nc command, TCP server, TCP client, UDP server, UDP client, networking, communication, Linux"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to nc (netcat) Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify netcat installation",
+            "file": "verify1-1.sh",
+            "hint": "Looks like the netcat package was not installed successfully. Please try running the installation command again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Using nc for TCP Server and Client Communication",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify TCP server and client communication",
+            "file": "verify2-1.sh",
+            "hint": "It seems the TCP server and client communication was not established successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Using nc for UDP Server and Client Communication",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify UDP server and client communication",
+            "file": "verify3-1.sh",
+            "hint": "It seems the UDP server and client communication was not established successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

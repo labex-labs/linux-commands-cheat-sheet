@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux ulimit Command with Practical Examples",
+  "description": "Explore the ulimit command in Linux, learn to adjust resource limits for processes, and discover practical examples to optimize system performance.",
+  "meta": {
+    "title": "Linux ulimit Command with Practical Examples",
+    "description": "Explore the ulimit command in Linux, learn to adjust resource limits for processes, and discover practical examples to optimize system performance.",
+    "keywords": "Linux, ulimit, resource limits, system configuration, process management, performance optimization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the ulimit Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the ulimit command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you can set the core file size limit using the `ulimit -c` command and verify the new limit.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjust Resource Limits for Processes Using ulimit",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the ulimit file size limit",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can set the file size limit using the `ulimit -f` command and create a 1 GB file successfully.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the ulimit open files limit",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that you can set the maximum number of open files using the `ulimit -n` command and verify the new limit.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Practical Examples of Using ulimit",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the ulimit memory limit",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can set the maximum virtual memory size using the `ulimit -v` command and successfully allocate a 1 GB array.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the ulimit process limit",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that you can set the maximum number of user processes using the `ulimit -u` command and successfully spawn 100 child processes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

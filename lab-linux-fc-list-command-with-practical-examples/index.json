@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux fc-list Command with Practical Examples",
+  "description": "Explore the fc-list command in Linux, which allows you to list all available fonts on your system, filter by family, style, and other attributes. Gain practical knowledge for font management and customization.",
+  "meta": {
+    "title": "Linux fc-list Command with Practical Examples",
+    "description": "Explore the fc-list command in Linux, which allows you to list all available fonts on your system, filter by family, style, and other attributes. Gain practical knowledge for font management and customization.",
+    "keywords": "Linux, fc-list, fonts, font management, font customization, font family, font style"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the fc-list Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the fc-list command",
+            "file": "verify1-1.sh",
+            "hint": "The fc-list command should display a list of available fonts, including the \"DejaVu Sans\" font family. Please check the output of the command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "List All Available Fonts on the System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the fc-list command",
+            "file": "verify2-1.sh",
+            "hint": "The fc-list command should display a list of available fonts, including the \"DejaVu Sans\" font family. Please check the output of the command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Filter Fonts by Family, Style, and Other Attributes",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify filtering fonts by family",
+            "file": "verify3-1.sh",
+            "hint": "The fc-list command with the --format option should display a list of fonts in the \"DejaVu Sans\" family. Please check the output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify filtering fonts by style",
+            "file": "verify3-2.sh",
+            "hint": "The fc-list command with the --format option should display a list of bold fonts in the \"DejaVu Sans\" family. Please check the output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

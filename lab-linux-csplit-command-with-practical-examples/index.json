@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Linux csplit Command with Practical Examples",
+  "description": "Explore the csplit command in Linux, learn how to split files into multiple parts, and discover customization options for efficient text processing.",
+  "meta": {
+    "title": "Linux csplit Command with Practical Examples",
+    "description": "Explore the csplit command in Linux, learn how to split files into multiple parts, and discover customization options for efficient text processing.",
+    "keywords": "csplit, Linux, text processing, file splitting, command line, text editing"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the csplit Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the csplit command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the csplit command is installed on your system and that you have the necessary permissions to create and write files in the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Split a File into Multiple Parts Using csplit",
+        "text": "step2.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Customize csplit Behavior with Options",
+        "text": "step3.md",
+        "verify": [],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fsck.minix Command with Practical Examples",
+  "description": "Explore the Linux fsck.minix command, learn how to check and repair Minix file systems, and discover practical examples of its usage.",
+  "meta": {
+    "title": "Linux fsck.minix Command with Practical Examples",
+    "description": "Explore the Linux fsck.minix command, learn how to check and repair Minix file systems, and discover practical examples of its usage.",
+    "keywords": "Linux, fsck.minix, Minix, file system, disk utilities, repair, check, examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the fsck.minix Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify fsck.minix command version",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the fsck.minix command version is 2.38 as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Checking and Repairing Minix File Systems",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Minix file system creation and repair",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the Minix file system is created, corrupted, and then successfully repaired using the fsck.minix command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using fsck.minix",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Minix file system check and repair",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the Minix file system is checked and repaired successfully using the fsck.minix command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

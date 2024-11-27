@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux apropos Command with Practical Examples",
+  "description": "Explore the Linux apropos command, a powerful tool for searching man pages and finding relevant system commands. Learn how to perform basic searches, customize with regular expressions, and discover practical use cases.",
+  "meta": {
+    "title": "Linux apropos Command with Practical Examples",
+    "description": "Explore the Linux apropos command, a powerful tool for searching man pages and finding relevant system commands. Learn how to perform basic searches, customize with regular expressions, and discover practical use cases.",
+    "keywords": "Linux, apropos, man pages, system commands, search, regular expressions, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the apropos Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the user has used the apropos command",
+            "file": "verify1-1.sh",
+            "hint": "It looks like you haven't used the `apropos` command yet. Please run the `apropos` command to search for information related to \"file search\" and \"list directory contents\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Basic Searches with the apropos Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the user has used the apropos command for file compression and network configuration",
+            "file": "verify2-1.sh",
+            "hint": "It looks like you haven't used the `apropos` command to search for commands related to \"file compression\" and \"network configuration\" yet. Please run the `apropos` command with those search terms and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize apropos Searches with Regular Expressions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the user has used the apropos command with regular expressions",
+            "file": "verify3-1.sh",
+            "hint": "It looks like you haven't used the `apropos` command with regular expressions to search for commands that contain \"file\" and end with \"copy\", or start with \"list\" and contain \"directory\". Please run the appropriate `apropos` commands and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

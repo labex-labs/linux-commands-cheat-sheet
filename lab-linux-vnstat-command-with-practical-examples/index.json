@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux vnstat Command with Practical Examples",
+  "description": "Explore the powerful Linux vnstat command for monitoring network traffic. Learn how to install, configure, and generate reports to visualize your network data.",
+  "meta": {
+    "title": "Linux vnstat Command with Practical Examples",
+    "description": "Explore the powerful Linux vnstat command for monitoring network traffic. Learn how to install, configure, and generate reports to visualize your network data.",
+    "keywords": "Linux, vnstat, network monitoring, network traffic, data visualization, Ubuntu"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install vnstat on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify vnstat installation",
+            "file": "verify1-1.sh",
+            "hint": "The vnstat command should return version 2.6. Please check the output of `sudo vnstat --version` and ensure it matches the expected version.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitor Network Traffic Using vnstat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify vnstat network monitoring",
+            "file": "verify2-1.sh",
+            "hint": "The `sudo vnstat -i eth0` command should display the network traffic statistics for the `eth0` interface. Please check the output and ensure it contains the \"rx\" (received) and \"tx\" (transmitted) values.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Generate Reports and Visualize Network Data with vnstat",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify vnstat report generation",
+            "file": "verify3-1.sh",
+            "hint": "The `sudo vnstati -i eth0 -o eth0_report.png` command should generate a PNG image file named `eth0_report.png` in the current directory. Please check if the file exists.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we first explored the concept of mounting in the Linux operating system, understanding that mounting is the process of attaching a file system to a specific location in the Linux directory structure, making the files and directories within that file system accessible to the user. We then delved into the syntax and options of the `mount` command, which is the primary tool used to mount file systems in Linux. The basic syntax includes specifying the file system type, mount options, device, and mount point. With this foundational knowledge, we are now prepared to move on to the next step of actually mounting a file system using the `mount` command.

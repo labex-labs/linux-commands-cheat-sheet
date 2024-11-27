@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux mesg Command with Practical Examples",
+  "description": "Explore the Linux mesg command and learn how to send messages to terminal users, as well as restrict message receiving permissions. Gain practical knowledge for effective communication in a Linux environment.",
+  "meta": {
+    "title": "Linux mesg Command with Practical Examples",
+    "description": "Explore the Linux mesg command and learn how to send messages to terminal users, as well as restrict message receiving permissions. Gain practical knowledge for effective communication in a Linux environment.",
+    "keywords": "Linux, mesg command, terminal, message, communication, permissions, networking"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the mesg Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify message permission status",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the message permission status is set to 'y' to receive messages.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Send Messages to Terminal Users",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify message sent to user",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the message \"Hello, this is a test message.\" was successfully sent to the user.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify broadcast message",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that the broadcast message \"This is a broadcast message to all users.\" was successfully sent.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Restrict Message Receiving Permissions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify message restriction for guest user",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the message receiving permission for the guest user is set to 'n' (no).",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify message permission restoration for guest user",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the message receiving permission for the guest user is set back to 'y' (yes).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

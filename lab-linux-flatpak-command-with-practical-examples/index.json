@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux flatpak Command with Practical Examples",
+  "description": "Explore the Flatpak package management tool for Linux, learn how to install and manage Flatpak applications, and customize Flatpak environments for your specific needs.",
+  "meta": {
+    "title": "Linux flatpak Command with Practical Examples",
+    "description": "Explore the Flatpak package management tool for Linux, learn how to install and manage Flatpak applications, and customize Flatpak environments for your specific needs.",
+    "keywords": "Linux, Flatpak, Package Management, Application Installation, Environment Customization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Flatpak",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Flatpak installation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that Flatpak is installed and the Flathub remote is added correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Installing and Managing Flatpak Applications",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify GIMP Flatpak installation",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the GIMP Flatpak application is installed and can be launched correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing Flatpak Environments",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Custom GIMP Flatpak Runtime",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the GIMP Flatpak application is installed and can be launched using the custom runtime you created.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

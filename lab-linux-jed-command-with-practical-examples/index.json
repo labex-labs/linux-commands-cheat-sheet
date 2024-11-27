@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux jed Command with Practical Examples",
+  "description": "Explore the jed text editor, a powerful and versatile tool for text processing and editing on Linux systems. Learn basic commands, navigation, and customization to enhance your productivity.",
+  "meta": {
+    "title": "Linux jed Command with Practical Examples",
+    "description": "Explore the jed text editor, a powerful and versatile tool for text processing and editing on Linux systems. Learn basic commands, navigation, and customization to enhance your productivity.",
+    "keywords": "jed, text editor, Linux, text processing, text editing, command line, customization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to jed Text Editor",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify jed installation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the jed text editor is installed on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Basic jed Commands and Navigation",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify basic jed commands",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have performed the basic jed commands mentioned in the step, such as moving to the beginning of the line, deleting the current line, copying and pasting the current line, and indenting the current line.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customizing jed Editor Settings",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify jed configuration file",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have created the .jedrc configuration file and added the expected settings, such as setting the tab width to 4 spaces and enabling line numbers.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

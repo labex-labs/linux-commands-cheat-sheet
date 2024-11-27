@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose of the `depmod` command in Linux, which is used to analyze the module dependencies of the kernel modules. The `depmod` command generates a dependency file, `modules.dep`, that contains information about the dependencies between kernel modules. This file is used by the `modprobe` command to automatically load the required kernel modules when a module is requested. You then explored the dependency tree of kernel modules in more detail, learning how to use the `depmod` command to list all the modules and their dependencies, as well as how to troubleshoot module dependencies using the `depmod` command.

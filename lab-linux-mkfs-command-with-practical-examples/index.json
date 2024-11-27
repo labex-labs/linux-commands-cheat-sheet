@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkfs Command with Practical Examples",
+  "description": "Explore the mkfs command in Linux, learn how to create file systems on partitions and format USB drives, and gain practical experience with hands-on examples.",
+  "meta": {
+    "title": "Linux mkfs Command with Practical Examples",
+    "description": "Explore the mkfs command in Linux, learn how to create file systems on partitions and format USB drives, and gain practical experience with hands-on examples.",
+    "keywords": "Linux, mkfs, file system, partition, USB drive, formatting, disk utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the mkfs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify available file system types",
+            "file": "verify1-1.sh",
+            "hint": "The available file system types should include \"ext4\". Please check the output of the \"sudo mkfs.types\" command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a Filesystem on a Partition",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file system creation",
+            "file": "verify2-1.sh",
+            "hint": "The file system should have been created on the /dev/sdb1 partition. Please check the output of the \"sudo blkid\" command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Formatting a USB Drive with the mkfs Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify USB drive formatting",
+            "file": "verify3-1.sh",
+            "hint": "The USB drive should have been formatted with the FAT32 file system. Please check the output of the \"sudo blkid\" command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

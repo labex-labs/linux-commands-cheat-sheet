@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux info Command with Practical Examples",
+  "description": "Explore the Linux info command, its purpose, options, and practical examples to retrieve information about Linux commands and utilities.",
+  "meta": {
+    "title": "Linux info Command with Practical Examples",
+    "description": "Explore the Linux info command, its purpose, options, and practical examples to retrieve information about Linux commands and utilities.",
+    "keywords": "Linux, info command, command-line, utilities, documentation, navigation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the info Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the user has opened the info command",
+            "file": "verify1-1.sh",
+            "hint": "It looks like you haven't opened the info command yet. Please run the \"info\" command to get started.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the info Command Options and Navigational Techniques",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the user has used the info command navigation",
+            "file": "verify2-1.sh",
+            "hint": "It looks like you haven't used the navigation commands within the info command yet. Please try out the various navigation commands, such as 'n', 'p', 'u', 'd', 'l', 'm', 'g', and 's', to explore the info system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Apply the info Command to Retrieve Information About Linux Commands and Utilities",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the user has used the info command to retrieve information about Linux commands",
+            "file": "verify3-1.sh",
+            "hint": "It looks like you haven't used the info command to retrieve information about Linux commands and utilities yet. Please try running commands like \"info ls\", \"info cd\", \"info mkdir\", and \"info grep\" to explore the documentation for these commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

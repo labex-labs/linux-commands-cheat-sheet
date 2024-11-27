@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux bc Command with Practical Examples",
+  "description": "Explore the versatile Linux bc command and learn how to perform basic arithmetic operations, advanced calculations, and functions using practical examples.",
+  "meta": {
+    "title": "Linux bc Command with Practical Examples",
+    "description": "Explore the versatile Linux bc command and learn how to perform basic arithmetic operations, advanced calculations, and functions using practical examples.",
+    "keywords": "bc command, Linux, arithmetic operations, advanced calculations, functions, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the bc Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify bc command installation",
+            "file": "verify1-1.sh",
+            "hint": "The bc command is not installed. Please install it using the provided command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Basic Arithmetic Operations with bc",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify basic arithmetic operations",
+            "file": "verify2-1.sh",
+            "hint": "One or more basic arithmetic operations failed. Please review the step content and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Advanced Calculations and Functions in bc",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify variable assignment and usage",
+            "file": "verify3-1.sh",
+            "hint": "The variable assignment and usage test failed. Please review the step content and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify advanced functions",
+            "file": "verify3-2.sh",
+            "hint": "One or more advanced functions or the scale command failed. Please review the step content and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

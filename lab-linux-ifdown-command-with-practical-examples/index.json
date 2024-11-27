@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ifdown Command with Practical Examples",
+  "description": "Explore the ifdown command in Linux, learn how to disable network interfaces, and troubleshoot network issues effectively.",
+  "meta": {
+    "title": "Linux ifdown Command with Practical Examples",
+    "description": "Explore the ifdown command in Linux, learn how to disable network interfaces, and troubleshoot network issues effectively.",
+    "keywords": "Linux, ifdown, network interface, troubleshoot, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the ifdown Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the eth0 interface is down",
+            "file": "verify1-1.sh",
+            "hint": "The eth0 interface should be in the DOWN state after running the ifdown command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Disable a Network Interface Using the ifdown Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the eth0 interface is down",
+            "file": "verify2-1.sh",
+            "hint": "The eth0 interface should be in the DOWN state after running the ifdown command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Network Interface Issues with the ifdown Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the eth0 interface is up",
+            "file": "verify3-1.sh",
+            "hint": "The eth0 interface should be in the UP state after running the ifup command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

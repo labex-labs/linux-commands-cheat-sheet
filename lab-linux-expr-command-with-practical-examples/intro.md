@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn about the Linux `expr` command and how to use it for various text processing and editing tasks. The `expr` command is a powerful tool that allows you to perform arithmetic operations, string manipulation, and conditional expressions directly from the command line. You will explore the purpose and syntax of the `expr` command, learn how to perform basic arithmetic operations, and apply it for string manipulation and conditional expressions. This lab will equip you with the knowledge to effectively utilize the `expr` command in your daily Linux workflow.

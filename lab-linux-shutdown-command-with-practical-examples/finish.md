@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the Linux `shutdown` command and learned how to shut down the system immediately and schedule a shutdown at a specific time. We understood the basic syntax of the `shutdown` command and its various options, such as shutting down, rebooting, or halting the system. We also learned how to cancel a scheduled shutdown. By using the `shutdown -h now` command, we can immediately initiate the shutdown process and power off the system. Additionally, we explored how to schedule a shutdown at a specific time using the `shutdown` command with the appropriate time argument.

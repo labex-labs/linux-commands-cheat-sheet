@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux readelf Command with Practical Examples",
+  "description": "Explore the readelf command in Linux, learn how to analyze ELF file headers and sections, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux readelf Command with Practical Examples",
+    "description": "Explore the readelf command in Linux, learn how to analyze ELF file headers and sections, and gain practical experience with real-world examples.",
+    "keywords": "Linux, readelf, ELF, file analysis, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of the readelf Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the readelf command output",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `readelf -h /bin/ls` command displays the ELF header information as shown in the example output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Basic Usage of the readelf Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the readelf command options",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `readelf --help` command displays the expected help information, including the description for the `-h` option to display the ELF file header.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the readelf command output for sections",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that the `readelf -S /bin/ls` command displays the section headers of the `/bin/ls` ELF file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze ELF File Headers and Sections Using readelf",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the readelf command output for ELF header",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `readelf -h /bin/ls` command displays the ELF header information as shown in the example output.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the readelf command output for sections",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the `readelf -S /bin/ls` command displays the section headers of the `/bin/ls` ELF file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

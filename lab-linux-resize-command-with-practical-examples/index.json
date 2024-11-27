@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux resize Command with Practical Examples",
+  "description": "Learn how to resize partitions and LVM volumes using the Linux resize command. Explore practical examples and step-by-step instructions to effectively manage storage space on your Linux system.",
+  "meta": {
+    "title": "Linux resize Command with Practical Examples",
+    "description": "Learn how to resize partitions and LVM volumes using the Linux resize command. Explore practical examples and step-by-step instructions to effectively manage storage space on your Linux system.",
+    "keywords": "Linux, resize, partition, LVM, volume, storage, management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the resize Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the resize command usage",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `resize --help` command should include the basic usage syntax for the `resize` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Resize a Partition Using the resize Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the partition resize",
+            "file": "verify2-1.sh",
+            "hint": "The output of the `fdisk -l /dev/sdb` command should show that the `/dev/sdb1` partition has been resized to 15GB.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Resize an LVM Volume Group and Logical Volume",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the LVM volume group and logical volume resize",
+            "file": "verify3-1.sh",
+            "hint": "The output of the `lvdisplay /dev/vg0/lv0` command should show that the logical volume `lv0` has been resized to 10GB.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

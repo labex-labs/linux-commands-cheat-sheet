@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux uuname Command with Practical Examples",
+  "description": "Explore the Linux uuname command and learn how to retrieve system information, combine it with other commands, and apply practical examples to enhance your Linux administration skills.",
+  "meta": {
+    "title": "Linux uuname Command with Practical Examples",
+    "description": "Explore the Linux uuname command and learn how to retrieve system information, combine it with other commands, and apply practical examples to enhance your Linux administration skills.",
+    "keywords": "Linux, uuname, system information, networking, communication, command line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the uuname Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify uuname command version",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the installed version of the uuname command is 4.15.2.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieve System Information Using uuname",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify uuname output",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the output of the `uuname -a` command contains the system name \"ubuntu\", the release \"22.04\", and the machine hardware name \"x86_64\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine uuname with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify uuname with grep",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the output of `uuname -a | grep \"Ubuntu 22.04\"` contains the expected text.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify uuname with awk",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the output of `uuname -a | awk '{print $1, $3}'` is \"ubuntu 22.04\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

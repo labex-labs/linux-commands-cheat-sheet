@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux zgrep Command with Practical Examples",
+  "description": "Explore the zgrep command in Linux, learn how to decompress and search compressed files, and combine zgrep with other commands for efficient data processing.",
+  "meta": {
+    "title": "Linux zgrep Command with Practical Examples",
+    "description": "Explore the zgrep command in Linux, learn how to decompress and search compressed files, and combine zgrep with other commands for efficient data processing.",
+    "keywords": "Linux, zgrep, compression, decompression, file search, data processing, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the zgrep Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the zgrep command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the zgrep command is able to search the compressed file and find the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decompress and Search Compressed Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify decompression and search",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can decompress the file using zcat and search for the expected pattern using grep.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine zgrep with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify combining zgrep with other commands",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can list all compressed files containing the word \"file\" using the combination of ls, xargs, and zgrep.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

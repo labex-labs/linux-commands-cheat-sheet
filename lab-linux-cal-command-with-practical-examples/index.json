@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux cal Command with Practical Examples",
+  "description": "Explore the Linux cal command, learn its syntax, and practice using it to display calendars for the current month, specific years, and months.",
+  "meta": {
+    "title": "Linux cal Command with Practical Examples",
+    "description": "Explore the Linux cal command, learn its syntax, and practice using it to display calendars for the current month, specific years, and months.",
+    "keywords": "Linux, cal command, calendar, system management, system monitoring"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the cal Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current month's calendar is displayed",
+            "file": "verify1-1.sh",
+            "hint": "The `cal` command should display the calendar for the current month and year.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Display the Current Month's Calendar",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the current month's calendar is displayed",
+            "file": "verify2-1.sh",
+            "hint": "The `cal` command should display the calendar for the current month and year.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Display the Calendar for a Specific Year or Month",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the calendar for a specific month is displayed",
+            "file": "verify3-1.sh",
+            "hint": "The `cal 4 2023` command should display the calendar for April 2023.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the calendar for a specific year is displayed",
+            "file": "verify3-2.sh",
+            "hint": "The `cal 2024` command should display the calendar for the year 2024.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux column Command with Practical Examples",
+  "description": "Explore the Linux column command and learn how to format tabular data, customize output, and apply practical examples to enhance your text processing skills.",
+  "meta": {
+    "title": "Linux column Command with Practical Examples",
+    "description": "Explore the Linux column command and learn how to format tabular data, customize output, and apply practical examples to enhance your text processing skills.",
+    "keywords": "Linux, column, command, text processing, data formatting, tabular data, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Column Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the column command is used to format tabular data",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you use the `column` command with the `-t` and `-s,` options to format the data in the `data.txt` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use Column to Format Tabular Data",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the column command is used to format tabular data with various options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you use the `column` command with the `-t`, `-s,`, and `-o20` options to format the data in the `data.csv` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize Column Output with Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the column command is used to customize the output with various options",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you use the `column` command with the `-t`, `-s$'\\t'`, and `-o20` options to format the data in the `data.txt` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

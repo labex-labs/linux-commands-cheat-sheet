@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux fg Command with Practical Examples",
+  "description": "Explore the Linux fg command and learn how to bring background processes to the foreground, manage multiple background processes, and optimize your workflow with practical examples.",
+  "meta": {
+    "title": "Linux fg Command with Practical Examples",
+    "description": "Explore the Linux fg command and learn how to bring background processes to the foreground, manage multiple background processes, and optimize your workflow with practical examples.",
+    "keywords": "Linux, fg command, process management, background processes, foreground, workflow optimization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the fg Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the fg command brings a background process to the foreground",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the `fg` command brings the background `sleep` process to the foreground. Check the process list to verify the process is now running in the foreground.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Bring a Background Process to the Foreground",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the fg command brings a background process to the foreground",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the `fg` command brings the background `sleep` process to the foreground. Check the process list to verify the process is now running in the foreground, then interrupt the process to ensure you can interact with it.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Multiple Background Processes with fg",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify managing multiple background processes with fg",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can bring different background processes to the foreground using the `fg` command with job numbers and PIDs. Verify that the processes are now running in the foreground and that you can interact with them (e.g., by interrupting them).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

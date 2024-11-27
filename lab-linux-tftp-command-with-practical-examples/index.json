@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux tftp Command with Practical Examples",
+  "description": "Explore the tftp command in Linux, learn how to configure a tftp server, and practice transferring files using the tftp client. Gain practical networking skills through hands-on examples.",
+  "meta": {
+    "title": "Linux tftp Command with Practical Examples",
+    "description": "Explore the tftp command in Linux, learn how to configure a tftp server, and practice transferring files using the tftp client. Gain practical networking skills through hands-on examples.",
+    "keywords": "tftp, Linux, networking, file transfer, server configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the tftp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify tftp command version",
+            "file": "verify1-1.sh",
+            "hint": "The tftp command version does not match the expected version 5.2.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configuring the tftp Server",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify tftp server configuration",
+            "file": "verify2-1.sh",
+            "hint": "The tftp server configuration is not correct. Please review the steps and ensure the server is properly configured.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Transferring Files Using the tftp Client",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file upload",
+            "file": "verify3-1.sh",
+            "hint": "The file upload to the tftp server was not successful. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file download",
+            "file": "verify3-2.sh",
+            "hint": "The file download from the tftp server was not successful. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

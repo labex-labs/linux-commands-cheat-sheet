@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned about the File Transfer Protocol (FTP) and how to use the `ftp` command in the Linux terminal to connect to an FTP server. We covered the basic components of an FTP system, including the FTP server, FTP client, and FTP protocol. We also learned about the different file transfer modes, such as ASCII and binary, as well as the authentication methods, including anonymous and authenticated FTP. Finally, we practiced connecting to an anonymous FTP server using the `ftp` command and learned how to navigate the remote file system, transfer files, and disconnect from the server.

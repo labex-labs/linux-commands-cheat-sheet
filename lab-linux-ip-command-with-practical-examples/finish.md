@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the basic syntax and options of the `ip` command in Linux, which is a powerful tool for managing network interfaces and configurations. You explored the general syntax of the `ip` command, including the use of `OBJECT`, `COMMAND`, and `ARGUMENTS`. You also learned about common `ip` command options, such as `-c` for color output, `-f` for specifying the address family, and `-s` for detailed, verbose output. You then practiced using the `ip` command to display information about network interfaces and IP addresses, which can be helpful for troubleshooting network issues.

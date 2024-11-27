@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux strace Command with Practical Examples",
+  "description": "Explore the powerful strace command in Linux, learn how to trace system calls, and debug processes effectively with practical examples.",
+  "meta": {
+    "title": "Linux strace Command with Practical Examples",
+    "description": "Explore the powerful strace command in Linux, learn how to trace system calls, and debug processes effectively with practical examples.",
+    "keywords": "strace, Linux, system calls, process debugging, process management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to strace Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify strace installation",
+            "file": "verify1-1.sh",
+            "hint": "Looks like the strace command is not installed. Please install it first by running the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Tracing System Calls with strace",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify example.py script",
+            "file": "verify2-1.sh",
+            "hint": "It looks like the example.py script was not created in the ~/project directory. Please make sure to create the script as instructed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify strace output",
+            "file": "verify2-2.sh",
+            "hint": "The strace output did not contain the expected 'Hello, World!' message. Please ensure that you're running the strace command correctly on the example.py script.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Debugging Processes with strace",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify example.c script",
+            "file": "verify3-1.sh",
+            "hint": "It looks like the example.c script was not created in the ~/project directory. Please make sure to create the script as instructed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify strace output",
+            "file": "verify3-2.sh",
+            "hint": "The strace output did not contain the expected 'Hello, World!' message. Please ensure that you're running the strace command correctly on the example program.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

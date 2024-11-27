@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux setconsole Command with Practical Examples",
+  "description": "This lab explores the setconsole command in Linux, which allows you to modify the system console device and redirect console output to a file. Learn how to effectively manage your Linux system's console settings.",
+  "meta": {
+    "title": "Linux setconsole Command with Practical Examples",
+    "description": "This lab explores the setconsole command in Linux, which allows you to modify the system console device and redirect console output to a file. Learn how to effectively manage your Linux system's console settings.",
+    "keywords": "Linux, setconsole, console, system configuration, system settings, file redirection"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of setconsole Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current system console device",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the current system console device is /dev/tty1.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Modify the System Console Device",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the system console device has been changed",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the system console device has been changed to /dev/tty2.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Redirect Console Output to a File",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the console output has been redirected to a file",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the console output has been redirected to the /tmp/console.log file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

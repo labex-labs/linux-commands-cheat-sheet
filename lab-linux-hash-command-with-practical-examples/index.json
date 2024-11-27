@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux hash Command with Practical Examples",
+  "description": "Explore the Linux hash command and learn how to calculate hashes of files and directories, as well as verify file integrity using hash checksums.",
+  "meta": {
+    "title": "Linux hash Command with Practical Examples",
+    "description": "Explore the Linux hash command and learn how to calculate hashes of files and directories, as well as verify file integrity using hash checksums.",
+    "keywords": "Linux, hash, file integrity, checksum, hashing, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the Linux hash Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the hash command version",
+            "file": "verify1-1.sh",
+            "hint": "The hash command version should be GNU coreutils 8.32.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Calculating Hashes of Files and Directories",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the hash of sample.txt",
+            "file": "verify2-1.sh",
+            "hint": "The SHA-256 hash of the sample.txt file should be 5d10c2c4d3dc5711938f617416b2b523c4d4f3ecd85a13d7c0c6f88a45b6ebc.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Verifying File Integrity Using hash",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the integrity of sample.txt and sample_dir",
+            "file": "verify3-1.sh",
+            "hint": "The calculated hash values for sample.txt and sample_dir should match the expected values in the sample_checksums.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

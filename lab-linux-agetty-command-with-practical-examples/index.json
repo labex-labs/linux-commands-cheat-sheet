@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux agetty Command with Practical Examples",
+  "description": "Explore the agetty command in Linux, learn how to configure it for serial console access, and manage user login processes effectively.",
+  "meta": {
+    "title": "Linux agetty Command with Practical Examples",
+    "description": "Explore the agetty command in Linux, learn how to configure it for serial console access, and manage user login processes effectively.",
+    "keywords": "agetty, Linux, serial console, login, user management, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of agetty Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify agetty version",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the version of agetty installed on your system matches the expected version (util-linux 2.37.2).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure agetty for Serial Console Access",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify serial-getty service",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the serial-getty@ttyS0.service is active and running on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage User Login Processes with agetty",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify user login process",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `agetty` command successfully logs in the \"testuser\" account on the `tty1` virtual console.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

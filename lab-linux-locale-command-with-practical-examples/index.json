@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux locale Command with Practical Examples",
+  "description": "Explore the Linux locale command and its practical applications. Learn how to understand locales, examine available locales, and change the system locale to observe its impact.",
+  "meta": {
+    "title": "Linux locale Command with Practical Examples",
+    "description": "Explore the Linux locale command and its practical applications. Learn how to understand locales, examine available locales, and change the system locale to observe its impact.",
+    "keywords": "Linux, locale, system configuration, localization, internationalization, language settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Concept of Locales",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current locale settings",
+            "file": "verify1-1.sh",
+            "hint": "The current locale settings should be en_US.UTF-8. Please check the output of the 'locale' command and ensure that the LANG environment variable is set to en_US.UTF-8.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Available Locales on the System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the available locales",
+            "file": "verify2-1.sh",
+            "hint": "The en_US.UTF-8 locale should be available on the system. Please check the output of the 'locale -a' command and ensure that the en_US.UTF-8 locale is listed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Change the System Locale and Observe the Impact",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the locale change",
+            "file": "verify3-1.sh",
+            "hint": "The system locale should be set back to en_US.UTF-8 after the final step. Please check the output of the 'locale' command and ensure that the LANG environment variable is set to en_US.UTF-8.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `renice` command in Linux, which is used to change the priority of a running process. The priority of a process determines how much CPU time it will receive from the system. You also learned how to adjust the priority of a running process using the `renice` command, by specifying the new priority value and the process ID (PID) of the process you want to modify. The priority value can range from -20 (highest priority) to 19 (lowest priority), with 0 being the default. Additionally, you can use the `renice` command to change the priority of all processes owned by a specific user.

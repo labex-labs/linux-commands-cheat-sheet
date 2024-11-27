@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux svn Command with Practical Examples",
+  "description": "Explore the power of the SVN command-line tool on Ubuntu 22.04. Learn how to install Subversion, initialize a local repository, and manage changes through commit, update, and revert operations.",
+  "meta": {
+    "title": "Linux svn Command with Practical Examples",
+    "description": "Explore the power of the SVN command-line tool on Ubuntu 22.04. Learn how to install Subversion, initialize a local repository, and manage changes through commit, update, and revert operations.",
+    "keywords": "Linux, Subversion, SVN, Ubuntu, version control, commit, update, revert"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Subversion (SVN) on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Subversion Installation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure Subversion is installed and the version is 1.14.1.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Initialize a Local SVN Repository",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify SVN Repository Initialization",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the SVN repository directory and README.txt file exist, and the repository is properly initialized.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Commit, Update, and Revert Changes in SVN",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify Commit, Update, and Revert",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the test.txt file contains the expected content, the commit message is present in the repository log, the update operation is successful, and the revert operation restores the file to the original state.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

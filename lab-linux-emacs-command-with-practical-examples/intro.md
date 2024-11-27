@@ -1,0 +1,5 @@
+# Introduction
+
+In this lab, you will learn how to use the powerful emacs text editor on a Ubuntu 22.04 Docker container. The lab covers the basics of getting started with emacs, including installing the necessary package, launching the editor, and exploring some fundamental commands and shortcuts. Additionally, you will learn how to customize emacs by modifying its configuration files. This lab aims to provide you with the essential skills to effectively use emacs for text processing and editing tasks.
+
+The lab is divided into three main steps: "Getting Started with emacs", "Basic emacs Commands and Shortcuts", and "Customizing emacs with Configuration Files". In the first step, you will install the emacs package and launch the editor. The second step introduces you to basic navigation, editing, and file management commands within emacs. Finally, the third step guides you through the process of customizing emacs by modifying its configuration files, allowing you to personalize your editing experience.

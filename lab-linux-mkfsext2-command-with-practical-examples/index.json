@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkfs.ext2 Command with Practical Examples",
+  "description": "Explore the mkfs.ext2 command, which is used to create an ext2 file system on a partition. Learn how to format an ext2 file system with custom parameters for your specific needs.",
+  "meta": {
+    "title": "Linux mkfs.ext2 Command with Practical Examples",
+    "description": "Explore the mkfs.ext2 command, which is used to create an ext2 file system on a partition. Learn how to format an ext2 file system with custom parameters for your specific needs.",
+    "keywords": "Linux, mkfs.ext2, ext2, file system, partition, formatting, disk utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the mkfs.ext2 Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the ext2 file system was created",
+            "file": "verify1-1.sh",
+            "hint": "The `file -s /dev/sdb1` command should output \"ext2 filesystem\" to indicate that the ext2 file system was created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating an ext2 File System on a Partition",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the ext2 file system was created",
+            "file": "verify2-1.sh",
+            "hint": "The `file -s /dev/sdb1` command should output \"ext2 filesystem\" to indicate that the ext2 file system was created successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Formatting an ext2 File System with Custom Parameters",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the ext2 file system was formatted with custom parameters",
+            "file": "verify3-1.sh",
+            "hint": "The `tune2fs -l /dev/sdb1` command should show that the file system was formatted with a block size of 4096 bytes, an inode ratio of 1:8192, and a file system label of \"my_ext2_fs\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

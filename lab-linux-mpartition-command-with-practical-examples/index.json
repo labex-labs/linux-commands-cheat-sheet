@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux mpartition Command with Practical Examples",
+  "description": "Learn how to use the mpartition command to create, resize, and delete partitions on Linux systems. Explore practical examples and understand the syntax and purpose of this essential disk management tool.",
+  "meta": {
+    "title": "Linux mpartition Command with Practical Examples",
+    "description": "Learn how to use the mpartition command to create, resize, and delete partitions on Linux systems. Explore practical examples and understand the syntax and purpose of this essential disk management tool.",
+    "keywords": "Linux, mpartition, partitions, disk management, file system, resize, delete"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mpartition Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the mpartition command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the mpartition command is available and working correctly on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Manage Partitions Using the mpartition Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the creation of a new partition",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the new partition /dev/sda2 is created and listed in the output of the mpartition -l command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Resize and Delete Partitions with the mpartition Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the resizing of the partition",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the partition /dev/sda2 is resized to 30 GB as expected.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the deletion of the partition",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the partition /dev/sda2 is no longer listed in the output of the mpartition -l command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

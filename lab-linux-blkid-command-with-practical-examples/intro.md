@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `blkid` command, a powerful tool for identifying filesystem types and querying disk attributes. The `blkid` command can be used to locate and print block device information, including filesystem type, UUID, labels, and more. We will start by running the `blkid` command without any arguments to see the overall block device information, and then learn how to query specific block devices and filter the output based on filesystem types. This lab provides practical examples and insights into effectively using the `blkid` command in Linux system administration tasks.

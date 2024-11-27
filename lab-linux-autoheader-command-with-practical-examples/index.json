@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux autoheader Command with Practical Examples",
+  "description": "Explore the autoheader command in Linux, learn its purpose, and discover practical examples to generate configuration header files.",
+  "meta": {
+    "title": "Linux autoheader Command with Practical Examples",
+    "description": "Explore the autoheader command in Linux, learn its purpose, and discover practical examples to generate configuration header files.",
+    "keywords": "Linux, autoheader, configuration, header files, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of autoheader Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify autoheader version",
+            "file": "verify1-1.sh",
+            "hint": "The output of 'autoheader --version' should show that the version of autoheader is 2.71.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install the Necessary Packages for autoheader",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify autoconf package installation",
+            "file": "verify2-1.sh",
+            "hint": "The 'autoconf' package should be installed on the system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Generate Configuration Header Files with autoheader",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify config.h.in file generation",
+            "file": "verify3-1.sh",
+            "hint": "The 'config.h.in' file should be generated in the '~/project/sample-project' directory after running the 'autoheader' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

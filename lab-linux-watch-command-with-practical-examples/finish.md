@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you will learn how to use the `watch` command in Linux to monitor system processes and file changes. First, you will understand the basics of the `watch` command, including how to run it and the available options. Then, you will learn how to use `watch` to monitor system processes, such as tracking changes in disk usage over time. Finally, you will explore how to use `watch` to monitor file changes, which can be useful for tracking configuration files or log files. By the end of this lab, you will have a solid understanding of the `watch` command and how to apply it to various system monitoring tasks.

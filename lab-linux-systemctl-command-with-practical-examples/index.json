@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux systemctl Command with Practical Examples",
+  "description": "Explore the systemctl command, a powerful tool for managing system services in Linux. Learn how to start, stop, enable, and disable services, as well as configure automatic service startup.",
+  "meta": {
+    "title": "Linux systemctl Command with Practical Examples",
+    "description": "Explore the systemctl command, a powerful tool for managing system services in Linux. Learn how to start, stop, enable, and disable services, as well as configure automatic service startup.",
+    "keywords": "systemctl, Linux, system services, service management, service configuration, service startup, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of systemctl",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify systemctl list-units command",
+            "file": "verify1-1.sh",
+            "hint": "The `systemctl list-units --type=service` command did not show the `sshd.service`. Please ensure that the `sshd` service is running on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage System Services Using systemctl Commands",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify systemctl enable command",
+            "file": "verify2-1.sh",
+            "hint": "The `systemctl is-enabled sshd.service` command did not show the `sshd.service` as enabled. Please ensure that you have enabled the `sshd` service to start automatically on system boot.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify systemctl start and stop commands",
+            "file": "verify2-2.sh",
+            "hint": "The `systemctl start sshd.service` and `systemctl stop sshd.service` commands did not work as expected. Please ensure that you can start and stop the `sshd` service using `systemctl`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Automatic Service Startup with systemctl",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify myservice.service configuration",
+            "file": "verify3-1.sh",
+            "hint": "The `myservice.service` is not enabled or running as expected. Please ensure that you have correctly configured the service unit file and enabled and started the service using `systemctl`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify myservice.service output",
+            "file": "verify3-2.sh",
+            "hint": "The expected output \"Running my service\" was not found in the system log (/var/log/syslog). Please check that the `myservice.service` is running and logging the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

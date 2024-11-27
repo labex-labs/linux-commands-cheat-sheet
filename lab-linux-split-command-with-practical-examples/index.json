@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux split Command with Practical Examples",
+  "description": "Explore the Linux split command and its practical applications. Learn how to split files into multiple parts, customize the split options, and efficiently manage your text data.",
+  "meta": {
+    "title": "Linux split Command with Practical Examples",
+    "description": "Explore the Linux split command and its practical applications. Learn how to split files into multiple parts, customize the split options, and efficiently manage your text data.",
+    "keywords": "Linux, split command, file splitting, text processing, text editing, command line, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the split Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the large file was created",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that the large_file.txt file was created in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Split a File into Multiple Parts",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the file was split",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the 5 split files (split_part_aa, split_part_ab, split_part_ac, split_part_ad, split_part_ae) were created in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize the Split Command Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the file was split with custom options",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the files created with the custom split options (custom_00, custom_01, custom_.txt00, custom_.txt01, part_00, part_01, pattern_00, pattern_01) were created in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

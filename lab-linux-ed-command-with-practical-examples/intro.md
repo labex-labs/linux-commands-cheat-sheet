@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the powerful line-oriented text editor `ed` in Unix-like operating systems. The `ed` command provides a versatile set of features for editing text files directly from the command line, making it particularly useful for scripting and automation tasks. You will start by exploring the basic usage of the `ed` command, including creating new files and manipulating text. Then, you will delve into more advanced `ed` command usage, such as working with multiple files and using regular expressions for complex text processing. By the end of this lab, you will have a solid understanding of how to leverage the `ed` command to efficiently edit and manage text files in your daily workflow.

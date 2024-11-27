@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux top Command with Practical Examples",
+  "description": "Explore the powerful top command in Linux, learn its options and customizations, and analyze system performance using real-world examples.",
+  "meta": {
+    "title": "Linux top Command with Practical Examples",
+    "description": "Explore the powerful top command in Linux, learn its options and customizations, and analyze system performance using real-world examples.",
+    "keywords": "Linux, top command, system monitoring, performance analysis, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the top Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify top command execution",
+            "file": "verify1-1.sh",
+            "hint": "Please run the `top` command to complete this step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore top Command Options and Customizations",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify top command customization",
+            "file": "verify2-1.sh",
+            "hint": "Please explore the top command options and customizations to complete this step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze System Performance Using top",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify system performance analysis",
+            "file": "verify3-1.sh",
+            "hint": "Please use the top command to analyze the system performance and identify any potential issues.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

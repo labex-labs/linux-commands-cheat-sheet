@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and use of the `zless` command in Linux. The `zless` command allows you to view the contents of compressed files without having to decompress them first, making it an efficient way to inspect large compressed files. You then explored the syntax and various options available with the `zless` command, such as displaying line numbers and searching for specific patterns within the compressed file. These steps provide you with a solid understanding of how to effectively use the `zless` command when working with compressed files in a Linux environment.

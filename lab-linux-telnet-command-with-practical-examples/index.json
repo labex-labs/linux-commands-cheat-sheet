@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux telnet Command with Practical Examples",
+  "description": "Explore the telnet command in Linux, learn its purpose, syntax, and practical examples for troubleshooting network connectivity and remote server access.",
+  "meta": {
+    "title": "Linux telnet Command with Practical Examples",
+    "description": "Explore the telnet command in Linux, learn its purpose, syntax, and practical examples for troubleshooting network connectivity and remote server access.",
+    "keywords": "telnet, Linux, network, connectivity, remote server, troubleshoot"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the telnet Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the telnet command usage",
+            "file": "verify1-1.sh",
+            "hint": "The telnet command usage information should include the text \"Open a terminal to a remote host\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Connect to a Remote Server Using the telnet Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the telnet connection to a remote server",
+            "file": "verify2-1.sh",
+            "hint": "The telnet command should successfully connect to the www.example.com server on port 80.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Network Connectivity with the telnet Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the telnet connection to a non-existent port",
+            "file": "verify3-1.sh",
+            "hint": "The telnet command should fail to connect to the non-existent port 8080 on www.example.com, and display the \"Connection refused\" message.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the telnet connection to a non-existent host",
+            "file": "verify3-2.sh",
+            "hint": "The telnet command should fail to connect to the non-existent host, and display the \"No route to host\" message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

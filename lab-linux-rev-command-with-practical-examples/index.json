@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux rev Command with Practical Examples",
+  "description": "Explore the Linux rev command and learn how to reverse text in files, reverse lines, and apply practical examples to enhance your command-line skills.",
+  "meta": {
+    "title": "Linux rev Command with Practical Examples",
+    "description": "Explore the Linux rev command and learn how to reverse text in files, reverse lines, and apply practical examples to enhance your command-line skills.",
+    "keywords": "Linux, rev command, reverse text, reverse lines, command-line, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the rev Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the rev command",
+            "file": "verify1-1.sh",
+            "hint": "The verification script checks if the `rev` command is reversing the text and lines correctly. Please ensure that your implementation matches the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Reverse Text in Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify reversing text in files",
+            "file": "verify2-1.sh",
+            "hint": "The verification script checks if the `rev` command is reversing the text in the file correctly. Please ensure that your implementation matches the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Reverse Lines in Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify reversing lines in files",
+            "file": "verify3-1.sh",
+            "hint": "The verification script checks if the `rev` command is reversing the lines in the file correctly. Please ensure that your implementation matches the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

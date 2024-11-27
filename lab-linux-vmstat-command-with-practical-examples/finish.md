@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the vmstat command in Linux, which is a powerful tool for monitoring system performance. You started by understanding the basic usage of the vmstat command and the various columns of information it provides, including CPU, memory, and disk I/O statistics. You then explored how to use the `-a` option to display additional memory-related information, and how to set time intervals and iteration counts to monitor system statistics over time. The key learning points covered in this lab were understanding the vmstat command, monitoring system performance with vmstat, and analyzing CPU, memory, and disk I/O using the vmstat tool.

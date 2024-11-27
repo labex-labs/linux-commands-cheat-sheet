@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux tar Command with Practical Examples",
+  "description": "Explore the tar command in Linux, learn to create and extract archives, and compress and decompress data with practical examples.",
+  "meta": {
+    "title": "Linux tar Command with Practical Examples",
+    "description": "Explore the tar command in Linux, learn to create and extract archives, and compress and decompress data with practical examples.",
+    "keywords": "tar, Linux, compression, archiving, file management, backup, extraction"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of tar Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify tar archive creation",
+            "file": "verify1-1.sh",
+            "hint": "It looks like the tar archive was not created successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Extract tar Archives",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify compressed tar archive",
+            "file": "verify2-1.sh",
+            "hint": "It looks like the compressed tar archive was not created successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify multi-directory tar archive",
+            "file": "verify2-2.sh",
+            "hint": "It looks like the multi-directory tar archive was not created successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compress and Decompress tar Archives",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify bzip2 compressed tar archive",
+            "file": "verify3-1.sh",
+            "hint": "It looks like the bzip2 compressed tar archive was not created successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify xz compressed tar archive",
+            "file": "verify3-2.sh",
+            "hint": "It looks like the xz compressed tar archive was not created successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

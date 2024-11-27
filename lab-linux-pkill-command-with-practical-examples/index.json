@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux pkill Command with Practical Examples",
+  "description": "Explore the pkill command in Linux, learn how to terminate processes by name or ID, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux pkill Command with Practical Examples",
+    "description": "Explore the pkill command in Linux, learn how to terminate processes by name or ID, and gain practical experience with real-world examples.",
+    "keywords": "Linux, pkill, process management, process termination, process ID, process name"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the pkill Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify pkill by process name",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have terminated all Firefox processes using the `pkill -f firefox` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Terminate Processes by Process Name",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify processes terminated by name",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have terminated all Firefox and gedit processes using the `pkill -f firefox` and `pkill -f gedit` commands.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Terminate Processes by Process ID",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify process terminated by PID",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have terminated the `sleep 1000` process using the `pkill -P <PID>` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

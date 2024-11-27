@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux chrt Command with Practical Examples",
+  "description": "Explore the Linux chrt command, which allows you to adjust the real-time priority and scheduling policies of processes, with practical examples to enhance your process management skills.",
+  "meta": {
+    "title": "Linux chrt Command with Practical Examples",
+    "description": "Explore the Linux chrt command, which allows you to adjust the real-time priority and scheduling policies of processes, with practical examples to enhance your process management skills.",
+    "keywords": "Linux, chrt, process management, real-time priority, scheduling policies, command line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the chrt Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current scheduling policy and priority",
+            "file": "verify1-1.sh",
+            "hint": "The current shell process should be using the SCHED_FIFO scheduling policy with a priority of 10. Please check the output of the `chrt -p $$` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjust the Real-Time Priority of a Process",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the real-time priority of the sleep process",
+            "file": "verify2-1.sh",
+            "hint": "The sleep process should be using the SCHED_FIFO scheduling policy with a priority of 20. Please check the output of the `chrt -p $(pgrep sleep)` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Scheduling Policies with the chrt Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the scheduling policies of the sleep processes",
+            "file": "verify3-1.sh",
+            "hint": "The sleep processes should be using the following scheduling policies:\n- SCHED_FIFO with priority 10\n- SCHED_RR with priority 15\n- SCHED_BATCH\n- SCHED_IDLE\nPlease check the output of the `chrt -p` command for each process.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

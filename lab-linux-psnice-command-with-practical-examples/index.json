@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux psnice Command with Practical Examples",
+  "description": "Explore the psnice command in Linux, learn how to adjust process priority, and discover practical use cases for managing system processes efficiently.",
+  "meta": {
+    "title": "Linux psnice Command with Practical Examples",
+    "description": "Explore the psnice command in Linux, learn how to adjust process priority, and discover practical use cases for managing system processes efficiently.",
+    "keywords": "Linux, process management, psnice, priority, system performance, process optimization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the psnice Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the nice value of the current bash process",
+            "file": "verify1-1.sh",
+            "hint": "The nice value of the current bash process should be set to -5 after running the `psnice` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adjusting Process Priority with psnice",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the nice value of the sleep process",
+            "file": "verify2-1.sh",
+            "hint": "The nice value of the sleep process should be set to -5 after using the `psnice` command to increase its priority.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Use Cases of the psnice Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the nice value of the background process",
+            "file": "verify3-1.sh",
+            "hint": "The nice value of the background process should be 0 (default priority) since we did not change its priority using `psnice`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the nice value of the web server process",
+            "file": "verify3-2.sh",
+            "hint": "The nice value of the web server process should be -5 after using `psnice` to increase its priority.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

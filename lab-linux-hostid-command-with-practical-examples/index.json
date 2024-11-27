@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux hostid Command with Practical Examples",
+  "description": "Explore the Linux hostid command, learn how to retrieve the unique host identifier, and discover practical applications for this versatile utility.",
+  "meta": {
+    "title": "Linux hostid Command with Practical Examples",
+    "description": "Explore the Linux hostid command, learn how to retrieve the unique host identifier, and discover practical applications for this versatile utility.",
+    "keywords": "Linux, hostid, host identifier, system information, system administration, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the hostid Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the hostid command output",
+            "file": "verify1-1.sh",
+            "hint": "The hostid command should return a non-empty, 32-bit hexadecimal value. Please ensure that the command is executed correctly and the output is as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Retrieve the Unique Host Identifier",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the hostid command output",
+            "file": "verify2-1.sh",
+            "hint": "The hostid command should return a non-empty, 32-bit hexadecimal value. Please ensure that the command is executed correctly and the output is as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Application of the hostid Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the license key generation",
+            "file": "verify3-1.sh",
+            "hint": "The generated license key should include the host ID value. Please ensure that the license key generation is working as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

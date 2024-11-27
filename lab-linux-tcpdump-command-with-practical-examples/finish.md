@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you will learn how to use the tcpdump command, a powerful network packet analyzer tool, to capture and analyze network traffic on a Linux system. You will start by installing the tcpdump package on an Ubuntu 22.04 Docker container. Then, you will learn how to capture network traffic using tcpdump, including filtering the captured data based on various criteria such as source and destination IP addresses, port numbers, and protocols. By the end of this lab, you will have a solid understanding of how to leverage tcpdump for network troubleshooting, security analysis, and understanding network behavior.

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `dump` command, a powerful tool for creating full system backups. The `dump` command can be used to backup entire file systems, including directories, files, and their metadata. We will learn how to perform a full system backup using `dump` and how to restore data from a `dump` backup. The `dump` command is typically used in conjunction with the `restore` command, which is used to recover data from a `dump` backup. This lab provides practical examples and step-by-step instructions to help you master the `dump` command and effectively manage your system backups.

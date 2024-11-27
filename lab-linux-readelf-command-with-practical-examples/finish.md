@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and functionality of the `readelf` command in Linux. The `readelf` command is a powerful tool used to analyze the contents of ELF (Executable and Linkable Format) files, which are the standard binary format for executables, shared libraries, and object files on Linux and other Unix-like systems. You explored the basic usage of the `readelf` command and learned how to analyze ELF file headers and sections using it. This information can be useful for tasks such as debugging, reverse engineering, and understanding the structure of binary files.

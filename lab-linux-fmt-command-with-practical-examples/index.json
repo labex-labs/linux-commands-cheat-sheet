@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux fmt Command with Practical Examples",
+  "description": "Explore the fmt command in Linux, a powerful tool for formatting text files. Learn how to use it effectively with practical examples and customization options.",
+  "meta": {
+    "title": "Linux fmt Command with Practical Examples",
+    "description": "Explore the fmt command in Linux, a powerful tool for formatting text files. Learn how to use it effectively with practical examples and customization options.",
+    "keywords": "Linux, fmt command, text formatting, text processing, text editing, command line, file manipulation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the fmt Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the sample.txt file has been formatted",
+            "file": "verify1-1.sh",
+            "hint": "The sample.txt file has not been properly formatted using the fmt command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Format Text Files with the fmt Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the sample2.txt file has been formatted to 60 characters",
+            "file": "verify2-1.sh",
+            "hint": "The sample2.txt file has not been properly formatted to 60 characters per line using the fmt command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize fmt Command Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the sample3.txt file has preserved indentation",
+            "file": "verify3-1.sh",
+            "hint": "The sample3.txt file has not preserved the indentation using the -p option of the fmt command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the sample4.txt file has been formatted with 4-space tabs",
+            "file": "verify3-2.sh",
+            "hint": "The sample4.txt file has not been properly formatted with 4-space tabs using the -t option of the fmt command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Linux uupick Command with Practical Examples",
+  "description": "Learn how to use the uupick command to extract files from UUENCODE encoded emails and automate the process with shell scripts. Gain practical networking and communication skills.",
+  "meta": {
+    "title": "Linux uupick Command with Practical Examples",
+    "description": "Learn how to use the uupick command to extract files from UUENCODE encoded emails and automate the process with shell scripts. Gain practical networking and communication skills.",
+    "keywords": "Linux, uupick, UUENCODE, email, file extraction, shell scripting, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the uupick Command",
+        "text": "step1.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Extracting Files from UUENCODE Encoded Emails",
+        "text": "step2.md",
+        "verify": [],
+        "skills": []
+      },
+      {
+        "title": "Automating uupick with Shell Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify uupick command installation",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the sharutils package is installed and the uupick command is available.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

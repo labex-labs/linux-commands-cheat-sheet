@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux zcat Command with Practical Examples",
+  "description": "Explore the versatile zcat command in Linux, which allows you to decompress and view gzipped files without extracting them. Learn practical examples and how to combine zcat with other commands.",
+  "meta": {
+    "title": "Linux zcat Command with Practical Examples",
+    "description": "Explore the versatile zcat command in Linux, which allows you to decompress and view gzipped files without extracting them. Learn practical examples and how to combine zcat with other commands.",
+    "keywords": "zcat, gzip, compression, decompression, Linux commands, file management, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of zcat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of zcat command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the zcat command displays the contents of the gzipped file correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decompress a Gzipped File Using zcat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the decompression of the gzipped file",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the zcat command decompresses the gzipped file and displays the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine zcat with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the combination of zcat with grep",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the combination of zcat and grep can search for the expected content in the gzipped file.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the combination of zcat with wc",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the combination of zcat and wc can correctly count the number of lines in the gzipped file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

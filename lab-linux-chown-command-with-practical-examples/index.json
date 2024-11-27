@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux chown Command with Practical Examples",
+  "description": "Explore the Linux chown command and learn how to change file ownership, including recursive ownership changes, with practical examples.",
+  "meta": {
+    "title": "Linux chown Command with Practical Examples",
+    "description": "Explore the Linux chown command and learn how to change file ownership, including recursive ownership changes, with practical examples.",
+    "keywords": "Linux, chown, file ownership, permissions, user management, recursive, examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding File Ownership and Permissions",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify file ownership and permissions",
+            "file": "verify1-1.sh",
+            "hint": "The file ownership and permissions do not match the expected values. Please ensure that the file `file.txt` in the `~/project` directory is owned by the `labex` user and has the permissions `-rw-r--r--`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Changing File Ownership with chown Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file ownership change",
+            "file": "verify2-1.sh",
+            "hint": "The file ownership does not match the expected values. Please ensure that the file `file.txt` in the `~/project/dir1` directory is owned by the `user1` user and the `group1` group.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify recursive ownership change",
+            "file": "verify2-2.sh",
+            "hint": "The directory ownership does not match the expected values. Please ensure that the directory `dir1` in the `~/project` directory and all its contents are owned by the `user2` user and the `group2` group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Recursive Ownership Change with chown -R",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify recursive ownership change",
+            "file": "verify3-1.sh",
+            "hint": "The directory and file ownership does not match the expected values. Please ensure that the directory `dir2` in the `~/project` directory, all its contents, and the files `file1.txt` and `file2.txt` are owned by the `user3` user and the `group3` group.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

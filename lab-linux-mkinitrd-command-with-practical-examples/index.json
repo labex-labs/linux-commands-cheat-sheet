@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkinitrd Command with Practical Examples",
+  "description": "Explore the mkinitrd command in Linux, learn to create custom initramfs images, and troubleshoot kernel boot issues using practical examples.",
+  "meta": {
+    "title": "Linux mkinitrd Command with Practical Examples",
+    "description": "Explore the mkinitrd command in Linux, learn to create custom initramfs images, and troubleshoot kernel boot issues using practical examples.",
+    "keywords": "mkinitrd, initramfs, kernel, boot, troubleshoot, disk, file system"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of mkinitrd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the initramfs image file exists",
+            "file": "verify1-1.sh",
+            "hint": "The initramfs image file '/boot/initramfs-$(uname -r).img' was not found. Please ensure that you have run the 'mkinitrd' command successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create a Custom initramfs Image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the custom initramfs image file exists",
+            "file": "verify2-1.sh",
+            "hint": "The custom initramfs image file '/boot/custom-initramfs.img' was not found. Please ensure that you have run the 'mkinitrd' command successfully to create the custom initramfs image.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Kernel Boot Issues with mkinitrd",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the initramfs image file exists",
+            "file": "verify3-1.sh",
+            "hint": "The initramfs image file '/boot/initramfs-$(uname -r).img' was not found. Please ensure that you have run the 'mkinitrd' command successfully to recreate the initramfs image.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

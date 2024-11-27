@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `testparm` command in Linux to verify the syntax of Samba configuration files and analyze Samba parameters. The `testparm` command is a utility used to check the validity of the Samba configuration file and display the current Samba settings. You will start by understanding the purpose and syntax of the `testparm` command, then proceed to verify the Samba configuration file syntax and analyze the Samba configuration parameters. This lab covers essential skills for Samba administration and configuration in a networking and communication environment.

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and usage of the `yes` command in Linux. The `yes` command is a simple utility that can be used to generate repeated output, which can be useful in various scenarios such as automating responses to prompts, generating test data, or providing input to other commands. You also learned how to use the `yes` command to generate repeated output, including the ability to specify a custom string to be repeated. Additionally, you explored how the `yes` command can be combined with other Linux commands to automate various tasks, such as deleting files without prompts.

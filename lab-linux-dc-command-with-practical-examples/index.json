@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux dc Command with Practical Examples",
+  "description": "Explore the powerful dc command in Linux, a versatile calculator tool. Learn to perform basic arithmetic operations, handle advanced calculations, and leverage dc's capabilities for various computing tasks.",
+  "meta": {
+    "title": "Linux dc Command with Practical Examples",
+    "description": "Explore the powerful dc command in Linux, a versatile calculator tool. Learn to perform basic arithmetic operations, handle advanced calculations, and leverage dc's capabilities for various computing tasks.",
+    "keywords": "Linux, dc command, calculator, arithmetic, advanced calculations, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the dc Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify dc command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the dc command is installed and available in the environment. Also, verify that the dc command can perform basic arithmetic operations as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform Basic Arithmetic Operations with dc",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify basic arithmetic operations",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the dc command can perform basic arithmetic operations like addition, subtraction, multiplication, and division correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize dc for Advanced Calculations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify advanced calculations",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the dc command can perform advanced calculations like trigonometric functions, logarithms, and exponents correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

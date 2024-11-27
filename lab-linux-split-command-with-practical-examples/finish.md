@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and usage of the split command in Linux. The split command is a powerful tool that allows you to divide a large file into smaller, more manageable pieces, which can be particularly useful when working with large log files, database backups, or other types of data that need to be processed or transferred in smaller chunks. You then learned how to use the split command with different options to split a file into multiple parts, including splitting the file into a specified number of equal-sized parts, splitting the file into parts with a maximum size, and splitting the file based on a line-based approach.

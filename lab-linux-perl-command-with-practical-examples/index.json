@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux perl Command with Practical Examples",
+  "description": "Learn how to use Perl programming language in Linux, including executing Perl scripts and practical examples for file manipulation.",
+  "meta": {
+    "title": "Linux perl Command with Practical Examples",
+    "description": "Learn how to use Perl programming language in Linux, including executing Perl scripts and practical examples for file manipulation.",
+    "keywords": "Perl, Linux, Scripting, Programming, File Manipulation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to Perl Programming in Linux",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Perl version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that Perl version 5.30.0 is installed in your environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Executing Perl Scripts in the Linux Terminal",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Perl script execution",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the Perl script `math.pl` is executed correctly and produces the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Perl Commands for File Manipulation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file contents",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the contents of the `data.txt` file have been modified as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

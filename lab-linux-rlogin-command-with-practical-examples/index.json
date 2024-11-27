@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux rlogin Command with Practical Examples",
+  "description": "Explore the rlogin command in Linux, learn how to establish remote login sessions, execute remote commands, and transfer files securely between systems.",
+  "meta": {
+    "title": "Linux rlogin Command with Practical Examples",
+    "description": "Explore the rlogin command in Linux, learn how to establish remote login sessions, execute remote commands, and transfer files securely between systems.",
+    "keywords": "Linux, rlogin, remote login, remote commands, file transfer, system management, system monitoring"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to rlogin Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify rlogin command availability",
+            "file": "verify1-1.sh",
+            "hint": "The rlogin command is not available on your system. Please ensure that the rlogin package is installed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Establishing Remote Login Session",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify remote login session",
+            "file": "verify2-1.sh",
+            "hint": "It appears that you did not establish a remote login session using the rlogin command. Please follow the steps to connect to the remote system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Executing Remote Commands and Transferring Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify remote command execution",
+            "file": "verify3-1.sh",
+            "hint": "It appears that you did not execute a remote command using the rlogin command. Please follow the steps to execute a command on the remote system.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file transfer",
+            "file": "verify3-2.sh",
+            "hint": "It appears that you did not transfer files between the local and remote systems using the rcp command. Please follow the steps to transfer files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

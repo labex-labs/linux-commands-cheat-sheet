@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux tac Command with Practical Examples",
+  "description": "Explore the tac command in Linux, which reverses the order of lines in a text file. Learn practical examples and how to combine tac with other commands for advanced text processing.",
+  "meta": {
+    "title": "Linux tac Command with Practical Examples",
+    "description": "Explore the tac command in Linux, which reverses the order of lines in a text file. Learn practical examples and how to combine tac with other commands for advanced text processing.",
+    "keywords": "Linux, tac command, text processing, file manipulation, command line, reverse lines, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the tac Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the tac command output",
+            "file": "verify1-1.sh",
+            "hint": "The tac command should reverse the order of lines in the sample.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Reverse the Order of Lines in a Text File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the reversed file contents",
+            "file": "verify2-1.sh",
+            "hint": "The tac command should reverse the order of lines in the sample.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine tac with Other Linux Commands for Advanced Operations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the last occurrence of \"ERROR\" in the log file",
+            "file": "verify3-1.sh",
+            "hint": "The tac and grep commands should find the last occurrence of the \"ERROR\" pattern in the sample.log file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

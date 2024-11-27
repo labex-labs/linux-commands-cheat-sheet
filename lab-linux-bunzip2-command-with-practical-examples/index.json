@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bunzip2 Command with Practical Examples",
+  "description": "Learn how to use the Linux bunzip2 command to extract and decompress compressed files. Explore practical examples and understand the command's syntax and purpose.",
+  "meta": {
+    "title": "Linux bunzip2 Command with Practical Examples",
+    "description": "Learn how to use the Linux bunzip2 command to extract and decompress compressed files. Explore practical examples and understand the command's syntax and purpose.",
+    "keywords": "Linux, bunzip2, compression, decompression, file extraction, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the bunzip2 Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the bunzip2 command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can display the usage information for the `bunzip2` command using the `--help` option.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Extract a Compressed File Using the bunzip2 Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the extracted file",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the `example.txt` file is created and contains the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decompress Multiple Files with bunzip2 Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the decompressed files",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the three decompressed files (`file1.txt`, `file2.txt`, and `file3.txt`) are created and contain the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

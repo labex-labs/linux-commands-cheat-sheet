@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux indent Command with Practical Examples",
+  "description": "Explore the Linux indent command, learn its syntax, and discover practical examples to format C/C++ source code with customizable options for different coding styles.",
+  "meta": {
+    "title": "Linux indent Command with Practical Examples",
+    "description": "Explore the Linux indent command, learn its syntax, and discover practical examples to format C/C++ source code with customizable options for different coding styles.",
+    "keywords": "Linux, indent, code formatting, C, C++, text processing, source code, coding style"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the indent Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the understanding of the indent command syntax",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the indent command is installed in the environment. You can install it using the package manager if it's not present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Format C/C++ Source Code with the indent Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the formatting of the C source code",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the formatted source code in `formatted_sample.c` is different from the original `sample.c` file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize indent Command Options for Specific Coding Styles",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the formatting of the C source code using the \"GNU\" style",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the formatted source code in `formatted_sample.c` matches the expected \"GNU\" coding style.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

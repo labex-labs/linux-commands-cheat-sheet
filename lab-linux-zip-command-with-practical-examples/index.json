@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux zip Command with Practical Examples",
+  "description": "Explore the versatile zip command in Linux, learn how to create and extract zip archives, and discover techniques for compressing and encrypting files.",
+  "meta": {
+    "title": "Linux zip Command with Practical Examples",
+    "description": "Explore the versatile zip command in Linux, learn how to create and extract zip archives, and discover techniques for compressing and encrypting files.",
+    "keywords": "Linux, zip, compression, archiving, encryption, file management, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the zip Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify zip command version",
+            "file": "verify1-1.sh",
+            "hint": "The zip command version should be 3.0. Please check the output of `zip --version` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Extract zip Archives",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify zip archive creation",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the 'my_archive.zip' file was created in the '~/project' directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify zip archive contents",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that the zip archive 'my_archive.zip' contains both 'file1.txt' and 'file2.txt'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compress and Encrypt Files with zip",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify encrypted zip archive creation",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the 'encrypted_archive.zip' file was created in the '~/project' directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify encrypted zip archive contents",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that the encrypted zip archive 'encrypted_archive.zip' contains both 'secret_file.txt' and 'important_document.pdf'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

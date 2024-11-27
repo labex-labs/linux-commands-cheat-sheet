@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to manage printers and configure printer settings using the CUPS (Common Unix Printing System) printing system and the `cupsd` command in a Linux environment. You will start by understanding the CUPS printing system, including checking the status of the CUPS service and exploring the CUPS web interface. Then, you will learn how to manage printers using the `cupsd` command, such as listing available printers and adding new ones. Finally, you will explore how to configure printer settings, such as setting the default printer and adjusting printer options. This lab provides practical examples and hands-on experience with the CUPS printing system, which is a crucial skill for Linux system administration.

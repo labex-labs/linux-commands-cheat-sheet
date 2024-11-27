@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux getty Command with Practical Examples",
+  "description": "Explore the getty command, a crucial tool for managing virtual terminals in Linux. Learn its purpose, various options, and how to configure and manage virtual terminals effectively.",
+  "meta": {
+    "title": "Linux getty Command with Practical Examples",
+    "description": "Explore the getty command, a crucial tool for managing virtual terminals in Linux. Learn its purpose, various options, and how to configure and manage virtual terminals effectively.",
+    "keywords": "linux, getty, virtual terminals, terminal management, networking, communication"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the getty Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the usage of the getty command",
+            "file": "verify1-1.sh",
+            "hint": "The `getty` command usage information should be displayed when running `sudo getty --help`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Different getty Command Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the getty command options",
+            "file": "verify2-1.sh",
+            "hint": "The `getty` command should be able to start virtual terminals with the specified options, and the expected output should be displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure and Manage Virtual Terminals using getty",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the creation of virtual terminals",
+            "file": "verify3-1.sh",
+            "hint": "The `getty` processes for the virtual terminals `tty4`, `tty5`, and `tty6` should be running.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the configuration of virtual terminals",
+            "file": "verify3-2.sh",
+            "hint": "You should be able to switch between the virtual terminals using the `Ctrl+Alt+F4`, `Ctrl+Alt+F5`, and `Ctrl+Alt+F6` key combinations.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

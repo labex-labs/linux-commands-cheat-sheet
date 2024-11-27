@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux objdump Command with Practical Examples",
+  "description": "Explore the powerful objdump command in Linux, learn its syntax, options, and analyze the output on a simple C program.",
+  "meta": {
+    "title": "Linux objdump Command with Practical Examples",
+    "description": "Explore the powerful objdump command in Linux, learn its syntax, options, and analyze the output on a simple C program.",
+    "keywords": "Linux, objdump, command, C programming, binary analysis, disassembly, debugging"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of objdump Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the creation of hello.c file",
+            "file": "verify1-1.sh",
+            "hint": "Please make sure you have created the hello.c file in the ~/project directory as instructed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Basic Syntax and Options of objdump",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the use of objdump options",
+            "file": "verify2-1.sh",
+            "hint": "Please make sure you have executed the commands as instructed in this step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze the Output of objdump on a Simple C Program",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the analysis of objdump output",
+            "file": "verify3-1.sh",
+            "hint": "Please make sure you have analyzed the objdump output as instructed in this step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

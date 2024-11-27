@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mformat Command with Practical Examples",
+  "description": "Explore the mformat command in Linux, learn how to create and format floppy disks, and discover advanced options for various use cases.",
+  "meta": {
+    "title": "Linux mformat Command with Practical Examples",
+    "description": "Explore the mformat command in Linux, learn how to create and format floppy disks, and discover advanced options for various use cases.",
+    "keywords": "mformat, Linux, floppy disk, file system, disk utilities, formatting, disk management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mformat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mformat command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `mformat` command usage information could not be found. Please ensure you have correctly entered the command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create and Format a Floppy Disk Using the mformat Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify floppy disk formatting",
+            "file": "verify2-1.sh",
+            "hint": "The floppy disk does not appear to have been formatted correctly. Please ensure you have used the `mformat` command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Advanced Options and Use Cases of the mformat Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify mformat command options",
+            "file": "verify3-1.sh",
+            "hint": "The `mformat` command does not appear to support the expected format options. Please ensure you have the correct version of the `mformat` command installed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

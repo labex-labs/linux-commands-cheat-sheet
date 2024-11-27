@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux quota Command with Practical Examples",
+  "description": "Explore the Linux quota command and learn how to set, monitor, and manage disk quota usage for users on your system. Gain practical knowledge for effective storage management.",
+  "meta": {
+    "title": "Linux quota Command with Practical Examples",
+    "description": "Explore the Linux quota command and learn how to set, monitor, and manage disk quota usage for users on your system. Gain practical knowledge for effective storage management.",
+    "keywords": "Linux, quota, disk quota, storage management, system configuration, user management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Concept of Disk Quota",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify understanding of disk quota concepts",
+            "file": "verify1-1.sh",
+            "hint": "Please answer the questions about the key concepts of disk quota to verify your understanding.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Set Disk Quota for a User",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify disk quota setup for quota_user",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the quota_user was created and added to the sudo group, disk quota is enabled for the root file system, the disk quota for quota_user is set correctly, and the user can exceed the soft limit.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Monitor and Manage Disk Quota Usage",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify disk quota monitoring and management",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the disk quota usage for quota_user is reported correctly and the disk quota soft limit for quota_user was increased to 1GB.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

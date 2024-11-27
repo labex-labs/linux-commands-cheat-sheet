@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux hostname Command with Practical Examples",
+  "description": "Explore the Linux hostname command and learn how to change the hostname temporarily and permanently, with practical examples to enhance your system administration skills.",
+  "meta": {
+    "title": "Linux hostname Command with Practical Examples",
+    "description": "Explore the Linux hostname command and learn how to change the hostname temporarily and permanently, with practical examples to enhance your system administration skills.",
+    "keywords": "Linux, hostname, system administration, networking, communication, command-line, system configuration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the hostname Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify hostname command",
+            "file": "verify1-1.sh",
+            "hint": "The hostname should be set to 'ubuntu'. Please check the output of the 'hostname' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Change the Hostname Temporarily",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify temporary hostname change",
+            "file": "verify2-1.sh",
+            "hint": "The hostname should be set to 'new-hostname'. Please check the output of the 'hostname' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Change the Hostname Permanently",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify permanent hostname change",
+            "file": "verify3-1.sh",
+            "hint": "The hostname should be set to 'new-hostname'. Please check the output of the 'hostname' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux sar Command with Practical Examples",
+  "description": "Explore the powerful sar command in Linux and learn how to analyze system performance metrics through practical examples.",
+  "meta": {
+    "title": "Linux sar Command with Practical Examples",
+    "description": "Explore the powerful sar command in Linux and learn how to analyze system performance metrics through practical examples.",
+    "keywords": "Linux, sar, system monitoring, performance analysis, system metrics"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the sar Command and Its Purpose",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify sar command installation",
+            "file": "verify1-1.sh",
+            "hint": "The sar command is not installed. Please install the sysstat package using the provided command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore sar Command Options and Flags",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify sar command options",
+            "file": "verify2-1.sh",
+            "hint": "The sar command options are not working as expected. Please ensure that the sysstat package is installed correctly and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze System Performance Metrics Using sar",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify CPU utilization",
+            "file": "verify3-1.sh",
+            "hint": "The CPU utilization metrics are not available. Please ensure that the sar command is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify memory utilization",
+            "file": "verify3-2.sh",
+            "hint": "The memory utilization metrics are not available. Please ensure that the sar command is working correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

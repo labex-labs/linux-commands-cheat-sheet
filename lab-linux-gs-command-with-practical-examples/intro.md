@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, we will explore the Linux `gs` (Ghostscript) command and its practical applications. Ghostscript is a versatile tool that can be used for various tasks, such as converting PDF files to different image formats, optimizing PDF files by reducing file size, and rendering PostScript and PDF files for display or printing. We will start by understanding the purpose and syntax of the `gs` command, and then proceed to demonstrate how to convert PDF files to different image formats and optimize PDF files using Ghostscript. This lab will provide you with a solid understanding of the capabilities of the `gs` command and how to leverage it for your everyday tasks.

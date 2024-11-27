@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux autoupdate Command with Practical Examples",
+  "description": "Explore the power of automatic updates on Linux systems. Learn how to configure and manage automatic updates using the command line, ensuring your system stays secure and up-to-date.",
+  "meta": {
+    "title": "Linux autoupdate Command with Practical Examples",
+    "description": "Explore the power of automatic updates on Linux systems. Learn how to configure and manage automatic updates using the command line, ensuring your system stays secure and up-to-date.",
+    "keywords": "linux, autoupdate, automatic updates, command line, ubuntu, security, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Importance of Automatic Updates",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify understanding of automatic updates",
+            "file": "verify1-1.sh",
+            "hint": "Please review the information provided about the importance of automatic updates.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Automatic Updates on Ubuntu 22.04",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify automatic updates configuration",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the automatic updates configuration file at /etc/apt/apt.conf.d/50unattended-upgrades contains the expected settings.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Automatic Updates Using the Command Line",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify manual unattended-upgrade execution",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the `sudo unattended-upgrade` command is executed successfully without any errors.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

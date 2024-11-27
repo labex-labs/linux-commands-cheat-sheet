@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkfs.minix Command with Practical Examples",
+  "description": "Explore the Linux mkfs.minix command and learn how to create, mount, and interact with Minix file systems. This lab provides practical examples to help you manage disk and file system utilities.",
+  "meta": {
+    "title": "Linux mkfs.minix Command with Practical Examples",
+    "description": "Explore the Linux mkfs.minix command and learn how to create, mount, and interact with Minix file systems. This lab provides practical examples to help you manage disk and file system utilities.",
+    "keywords": "Linux, mkfs.minix, Minix file system, disk management, file system utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the mkfs.minix Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the Minix file system creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the `mkfs.minix /dev/loop0` command was executed successfully. Check the output for any error messages.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a Minix File System",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the Minix file system contents",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `file1.txt` file and `directory1` directory were created successfully in the mounted Minix file system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Mounting and Interacting with the Minix File System",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the Minix file system contents after mounting",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `file1.txt`, `directory1`, `file2.txt`, and `directory2` are present in the mounted Minix file system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

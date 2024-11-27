@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux at Command with Practical Examples",
+  "description": "Explore the Linux file system, manage files and directories, and understand permissions through practical examples.",
+  "meta": {
+    "title": "Linux at Command with Practical Examples",
+    "description": "Explore the Linux file system, manage files and directories, and understand permissions through practical examples.",
+    "keywords": "Linux, at command, file management, permissions, process management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Explore the Linux File System Hierarchy",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the contents of the root directory",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the root directory contains at least 20 subdirectories as shown in the example output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Files and Directories with Essential Commands",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file and directory management",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the my_directory directory has been removed and no files (my_file.txt, my_copied_file.txt, my_moved_file.txt) exist in the project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Understand and Use Linux Permissions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file and directory permissions",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the my_file.txt file has permissions of -rwxr-xr- and the my_directory directory has permissions of drwxr-xr-x.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

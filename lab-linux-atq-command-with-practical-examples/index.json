@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux atq Command with Practical Examples",
+  "description": "Explore the atq command in Linux, which allows you to list and manage scheduled jobs. Learn how to view, remove, and work with cron jobs effectively.",
+  "meta": {
+    "title": "Linux atq Command with Practical Examples",
+    "description": "Explore the atq command in Linux, which allows you to list and manage scheduled jobs. Learn how to view, remove, and work with cron jobs effectively.",
+    "keywords": "Linux, atq, atrm, cron, job scheduling, process management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the atq Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify atq command",
+            "file": "verify1-1.sh",
+            "hint": "The `atq` command should display at least one scheduled job for the 'labex' user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Listing Scheduled Jobs with atq",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify scheduled jobs",
+            "file": "verify2-1.sh",
+            "hint": "The `atq` command should display at least one scheduled job for the 'labex' user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Removing Scheduled Jobs with atrm",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify scheduled jobs removed",
+            "file": "verify3-1.sh",
+            "hint": "The `atq` command should not display any scheduled jobs for the 'labex' user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

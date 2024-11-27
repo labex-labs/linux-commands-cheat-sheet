@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose of the `objdump` command in Linux, which is a powerful tool used to analyze the contents of object files. You created a simple C program, compiled it, and then used `objdump` to disassemble the machine code in the executable, allowing you to understand how the program works at a low level. Next, you explored the basic syntax and options of the `objdump` command, which can be used to extract various types of information from object files, such as the symbol table, relocation information, and more. By the end of the lab, you had a good understanding of how to use `objdump` to analyze the contents of executable files on a Linux system.

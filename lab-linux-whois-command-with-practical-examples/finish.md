@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and syntax of the `whois` command in Linux, which is used to retrieve information about domain names, IP addresses, and other internet resources. You explored the basic command structure, including optional flags to customize the output, and saw examples of the information that can be retrieved, such as the registrant, registration date, and expiration date. You also learned how to use the `whois` command to look up detailed information about a specific domain, and how to handle exceptions when the command returns incomplete or unavailable data.

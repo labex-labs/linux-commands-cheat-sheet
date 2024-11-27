@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux gunzip Command with Practical Examples",
+  "description": "Explore the gunzip command in Linux, learn how to decompress gzipped files, and recursively decompress directories with practical examples.",
+  "meta": {
+    "title": "Linux gunzip Command with Practical Examples",
+    "description": "Explore the gunzip command in Linux, learn how to decompress gzipped files, and recursively decompress directories with practical examples.",
+    "keywords": "gunzip, Linux, compression, decompression, gzip, file management, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of gunzip Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of gunzip command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the sample.txt file is decompressed correctly and contains the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decompress a Gzipped File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the decompression of a gzipped file",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the sample2.txt file is decompressed correctly and contains the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Recursively Decompress Directories",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the recursive decompression of directories",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that all the decompressed files are present and contain the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

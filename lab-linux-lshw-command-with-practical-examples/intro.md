@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `lshw` (List Hardware) command to gather detailed information about the hardware components of your system. The lab covers understanding the purpose of the `lshw` command, exploring various hardware details using the command, and customizing the output to save the information to a file. The `lshw` command is a powerful tool for troubleshooting hardware-related issues, understanding system capabilities, and more. This lab provides practical examples and step-by-step guidance to help you effectively utilize the `lshw` command in your Linux environment.

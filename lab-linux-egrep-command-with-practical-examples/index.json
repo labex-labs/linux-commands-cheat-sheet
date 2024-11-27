@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux egrep Command with Practical Examples",
+  "description": "Explore the powerful egrep command in Linux, learn how to use regular expressions for efficient text processing, and discover practical examples to enhance your text manipulation skills.",
+  "meta": {
+    "title": "Linux egrep Command with Practical Examples",
+    "description": "Explore the powerful egrep command in Linux, learn how to use regular expressions for efficient text processing, and discover practical examples to enhance your text manipulation skills.",
+    "keywords": "egrep, linux, regular expressions, text processing, text editing, grep, command line, pattern matching"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the egrep Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify egrep usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you can use the egrep command to search for the word \"years\" in the data.txt file and that the expected output is displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use egrep to Search for Regular Expressions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify egrep with regular expressions",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can use the egrep command with the regular expression pattern '^J\\w+' to search the data.txt file and that the expected output is displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine egrep with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify egrep with other commands",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can use the egrep command combined with the wc command to count the number of lines in the data.txt file that contain a number between 20 and 40, and that the expected output is displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

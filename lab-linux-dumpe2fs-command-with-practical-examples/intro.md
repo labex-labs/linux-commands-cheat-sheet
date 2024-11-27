@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `dumpe2fs` command in Linux to retrieve detailed information about Ext2, Ext3, or Ext4 filesystems. The `dumpe2fs` command provides a comprehensive overview of filesystem metadata, including block sizes, inode counts, journal information, and various other statistics. This information can be valuable for troubleshooting, monitoring, and understanding the state of your filesystem. To use the `dumpe2fs` command, you will need to provide the device name of the filesystem you want to inspect, such as `/dev/sda1`. The command output includes a wealth of details about the filesystem, which you can analyze to gain a deeper understanding of its configuration and health.

@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux apt Command with Practical Examples",
+  "description": "Explore the apt command in Linux, learn how to install, update, search, and remove packages using practical examples.",
+  "meta": {
+    "title": "Linux apt Command with Practical Examples",
+    "description": "Explore the apt command in Linux, learn how to install, update, search, and remove packages using practical examples.",
+    "keywords": "Linux, apt, package management, software installation, package search, package removal"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the apt Command Structure",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify apt command structure",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can successfully install the `htop` package using the `apt install` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Install and Update Packages Using apt",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify package installation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can successfully install the `tree` package using the `apt install` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package update",
+            "file": "verify2-2.sh",
+            "hint": "Make sure you can successfully update installed packages using the `apt upgrade` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Search and Remove Packages with apt",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify package search",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can successfully search for the `vim` package using the `apt search` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify package removal",
+            "file": "verify3-2.sh",
+            "hint": "Make sure you can successfully remove the `tree` package using the `apt remove` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

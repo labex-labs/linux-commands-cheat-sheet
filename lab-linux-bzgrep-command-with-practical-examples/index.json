@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux bzgrep Command with Practical Examples",
+  "description": "Learn how to use the bzgrep command to search for patterns in compressed files, and combine it with other Linux commands for advanced searches.",
+  "meta": {
+    "title": "Linux bzgrep Command with Practical Examples",
+    "description": "Learn how to use the bzgrep command to search for patterns in compressed files, and combine it with other Linux commands for advanced searches.",
+    "keywords": "bzgrep, Linux, compression, archiving, file search, pattern matching, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of bzgrep Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify bzgrep command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can use the `bzgrep` command to search for a pattern in a compressed file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use bzgrep to Search for Patterns in Compressed Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify bzgrep search in compressed file",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use the `bzgrep` command to search for patterns, including regular expressions, in a compressed file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Combine bzgrep with Other Linux Commands for Advanced Searches",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify advanced bzgrep usage",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use `bzgrep` together with other Linux commands to perform advanced searches on compressed files, such as finding unique words, counting occurrences, and searching recursively.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

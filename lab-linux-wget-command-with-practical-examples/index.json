@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux wget Command with Practical Examples",
+  "description": "Learn how to use the powerful wget command to download files from the internet. Explore practical examples and automate file downloads with wget scripting.",
+  "meta": {
+    "title": "Linux wget Command with Practical Examples",
+    "description": "Learn how to use the powerful wget command to download files from the internet. Explore practical examples and automate file downloads with wget scripting.",
+    "keywords": "wget, Linux, file download, internet, automation, scripting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the wget Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify wget command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `wget` command usage information should be displayed when running `wget --help`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Download Files from the Internet Using wget",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file download",
+            "file": "verify2-1.sh",
+            "hint": "The `file.zip` file should be downloaded and present in the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file name change",
+            "file": "verify2-2.sh",
+            "hint": "The file should be downloaded and saved as `myfile.zip` in the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file download to directory",
+            "file": "verify2-3.sh",
+            "hint": "The `file.zip` file should be downloaded and saved in the `~/downloads` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automate File Downloads with wget Scripting",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file downloads",
+            "file": "verify3-1.sh",
+            "hint": "The script should download the three files (file1.zip, file2.tar.gz, and file3.pdf) to the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file downloads to directory",
+            "file": "verify3-2.sh",
+            "hint": "The script should download the three files (file1.zip, file2.tar.gz, and file3.pdf) to the `~/downloads` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

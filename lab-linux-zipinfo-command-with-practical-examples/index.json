@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux zipinfo Command with Practical Examples",
+  "description": "Explore the powerful zipinfo command in Linux, learn its options, and analyze the contents of zip files with practical examples.",
+  "meta": {
+    "title": "Linux zipinfo Command with Practical Examples",
+    "description": "Explore the powerful zipinfo command in Linux, learn its options, and analyze the contents of zip files with practical examples.",
+    "keywords": "zipinfo, Linux, compression, archiving, zip file, file analysis"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the zipinfo Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the zipinfo command output",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the zipinfo command output includes the three file names (file1.txt, file2.txt, file3.txt) that were added to the sample.zip file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore zipinfo Command Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the zipinfo -l command output",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the zipinfo -l command output includes the three file names (file1.txt, file2.txt, file3.txt) that were added to the sample.zip file.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the zipinfo -v command output",
+            "file": "verify2-2.sh",
+            "hint": "Make sure the zipinfo -v command output includes the three file names (file1.txt, file2.txt, file3.txt) that were added to the sample.zip file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Zip File Contents with zipinfo",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the zipinfo -z command output",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the zipinfo -z command output includes the details for the file1.txt file within the sample.zip archive.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the zipinfo -p command output",
+            "file": "verify3-2.sh",
+            "hint": "Make sure the zipinfo -p command output includes the contents of the file2.txt file within the sample.zip archive.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the zipinfo -s command output",
+            "file": "verify3-3.sh",
+            "hint": "Make sure the zipinfo -s command output includes the expected compression statistics for the sample.zip archive.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

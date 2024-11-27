@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `kill` command to terminate processes and send signals to running processes. The lab covers the purpose of the `kill` command, how to terminate processes using the command, and explores advanced options for the `kill` command. You will start long-running processes and then use the `kill` command to terminate them, as well as learn about the different signals that can be sent to processes. This lab provides practical examples and a solid understanding of the `kill` command, which is an essential tool for process management in Linux.

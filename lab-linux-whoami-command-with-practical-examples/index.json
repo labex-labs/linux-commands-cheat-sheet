@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux whoami Command with Practical Examples",
+  "description": "Explore the Linux whoami command and its practical applications. Learn how to use it to determine your current user identity, integrate it into shell scripts, and manage user permissions effectively.",
+  "meta": {
+    "title": "Linux whoami Command with Practical Examples",
+    "description": "Explore the Linux whoami command and its practical applications. Learn how to use it to determine your current user identity, integrate it into shell scripts, and manage user permissions effectively.",
+    "keywords": "Linux, whoami, user identity, shell script, user permissions, user management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the whoami Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the whoami command output",
+            "file": "verify1-1.sh",
+            "hint": "The whoami command should return the user 'labex'. Please check your terminal output and ensure that the command is working as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Basic Usage of the whoami Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the whoami command in a script",
+            "file": "verify2-1.sh",
+            "hint": "The script 'check_user.sh' should output \"The current user is: labex\". Please check the script and ensure that the whoami command is used correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Utilize the whoami Command in Shell Scripts",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the whoami command in a script with if-else",
+            "file": "verify3-1.sh",
+            "hint": "The script 'check_user_script.sh' should output \"The current user is: labex\" and \"You are the labex user.\" when run. Please check the script and ensure that the whoami command is used correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

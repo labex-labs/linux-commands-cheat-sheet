@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux showkey Command with Practical Examples",
+  "description": "Explore the Linux showkey command, learn how to capture keyboard input, and analyze the output for system configuration and settings.",
+  "meta": {
+    "title": "Linux showkey Command with Practical Examples",
+    "description": "Explore the Linux showkey command, learn how to capture keyboard input, and analyze the output for system configuration and settings.",
+    "keywords": "Linux, showkey, keyboard input, system configuration, settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the showkey Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the showkey command is running",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the `showkey` command is running in your terminal. If not, please start it and try the verification again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Capture Keyboard Input Using the showkey Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the showkey command is capturing keyboard input",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the `showkey` command is capturing keyboard input in your terminal. If not, please try pressing some keys and verify the output again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze the Output of the showkey Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the showkey output includes key codes and characters",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the `showkey` command is displaying the key codes and corresponding characters in the output. If not, please try pressing some keys and verify the output again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

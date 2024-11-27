@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux lastb Command with Practical Examples",
+  "description": "Explore the Linux lastb command, which displays information about failed login attempts. Learn how to analyze login failures and enhance system security.",
+  "meta": {
+    "title": "Linux lastb Command with Practical Examples",
+    "description": "Explore the Linux lastb command, which displays information about failed login attempts. Learn how to analyze login failures and enhance system security.",
+    "keywords": "Linux, lastb, login, security, failed login, user management, permission management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the lastb Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the lastb command output",
+            "file": "verify1-1.sh",
+            "hint": "The lastb command output should contain the user 'labex' in the list of failed login attempts.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Syntax and Options of the lastb Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the lastb command options",
+            "file": "verify2-1.sh",
+            "hint": "The lastb command output with the -d and -n options should contain the terminal information (e.g., tty1).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze Failed Login Attempts Using the lastb Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the lastb command output for failed login attempts",
+            "file": "verify3-1.sh",
+            "hint": "The lastb command output with the -n 10 option should contain failed login attempts for the 'labex' user.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

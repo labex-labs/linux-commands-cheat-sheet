@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we first explored the purpose and usage of the `mkfs.msdos` command, which is used to create a FAT32 file system on a storage device. We learned that the FAT32 file system is widely compatible with various operating systems, making it a popular choice for external storage devices. We then proceeded to create a FAT32 file system on a simulated storage device using the `mkfs.msdos` command, specifying the `-F 32` option to create a FAT32 file system. Finally, we discovered that the `mkfs.msdos` command provides several options to customize the FAT32 file system parameters, allowing users to tailor the file system to their specific needs.

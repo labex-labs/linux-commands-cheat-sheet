@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ipcs Command with Practical Examples",
+  "description": "Explore the Linux ipcs command, its purpose, and practical examples to analyze IPC resources and identify potential issues on your system.",
+  "meta": {
+    "title": "Linux ipcs Command with Practical Examples",
+    "description": "Explore the Linux ipcs command, its purpose, and practical examples to analyze IPC resources and identify potential issues on your system.",
+    "keywords": "Linux, ipcs, IPC, Inter-Process Communication, System Administration, Troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Functionality of ipcs Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the output of the `ipcs` command",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `ipcs` command should contain the \"Shared Memory Segments\", \"Semaphore Arrays\", and \"Message Queues\" sections. Please check the output and ensure that all these sections are present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Different Options and Flags of ipcs Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the output of the `ipcs -m` command",
+            "file": "verify2-1.sh",
+            "hint": "The output of the `ipcs -m` command should contain the \"Shared Memory Segments\" section. Please check the output and ensure that this section is present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyze IPC Resources and Identify Potential Issues",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the output of the `ipcs -a` command",
+            "file": "verify3-1.sh",
+            "hint": "The output of the `ipcs -a` command should contain the \"Shared Memory Segments\", \"Semaphore Arrays\", and \"Message Queues\" sections. Please check the output and ensure that all these sections are present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

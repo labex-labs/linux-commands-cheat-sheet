@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ed Command with Practical Examples",
+  "description": "Explore the powerful Linux ed command for text processing and editing. Learn how to edit text files, perform advanced operations, and enhance your command-line skills.",
+  "meta": {
+    "title": "Linux ed Command with Practical Examples",
+    "description": "Explore the powerful Linux ed command for text processing and editing. Learn how to edit text files, perform advanced operations, and enhance your command-line skills.",
+    "keywords": "ed command, text editing, text processing, command line, Linux, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the ed Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the creation of example.txt",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the file `example.txt` in the `~/project` directory and that it contains the expected content.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Editing Text Files with ed",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the changes in example.txt",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have edited the `example.txt` file in the `~/project` directory as per the instructions, and that the changes have been saved correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Advanced ed Command Usage",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the contents of example.txt",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have edited the `example.txt` file in the `~/project` directory as per the instructions, and that the contents of `example2.txt` have been appended correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

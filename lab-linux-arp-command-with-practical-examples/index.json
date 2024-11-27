@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux arp Command with Practical Examples",
+  "description": "Explore the arp command in Linux, learn its purpose, syntax, and how to manage the ARP cache through practical examples.",
+  "meta": {
+    "title": "Linux arp Command with Practical Examples",
+    "description": "Explore the arp command in Linux, learn its purpose, syntax, and how to manage the ARP cache through practical examples.",
+    "keywords": "Linux, arp command, networking, ARP cache, communication, network troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the arp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the arp command output",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the arp command displays the expected output, including the IP addresses and MAC addresses.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Basic Syntax and Options of the arp Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the arp command options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the arp command displays the expected output, including the IP addresses and MAC addresses, and that the entry for 192.168.1.100 is no longer present.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage the ARP Cache Using the arp Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the arp cache management",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the arp cache no longer contains the entries for 192.168.1.1 and 192.168.1.200, and that the entry for 192.168.1.250 is present with the expected MAC address.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

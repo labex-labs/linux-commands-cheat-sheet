@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux passwd Command with Practical Examples",
+  "description": "Explore the Linux passwd command and learn how to change user passwords, reset forgotten passwords, and manage user permissions effectively.",
+  "meta": {
+    "title": "Linux passwd Command with Practical Examples",
+    "description": "Explore the Linux passwd command and learn how to change user passwords, reset forgotten passwords, and manage user permissions effectively.",
+    "keywords": "Linux, passwd command, user management, password reset, permission management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the passwd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify password change",
+            "file": "verify1-1.sh",
+            "hint": "The password for the 'labex' user was not updated successfully. Please try changing the password again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Changing User Password",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify password change for newuser",
+            "file": "verify2-1.sh",
+            "hint": "The password for the 'newuser' account was not updated successfully. Please try changing the password again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Resetting Forgotten Password",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify password reset for forgottenuser",
+            "file": "verify3-1.sh",
+            "hint": "The password for the 'forgottenuser' account was not reset successfully. Please try resetting the password again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

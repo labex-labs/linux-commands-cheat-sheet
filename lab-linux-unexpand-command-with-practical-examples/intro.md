@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn about the Linux `unexpand` command and how to use it for text processing and editing tasks. The `unexpand` command is used to convert spaces in the input to tabs, which can be helpful when working with text-based data that is often easier to read and manipulate when it is tab-separated. Additionally, you will explore how to use the `unexpand` command to expand tabs to spaces, which can be useful when preparing data for further processing or analysis. The lab covers the purpose of the `unexpand` command, how to use it to convert spaces to tabs and tabs to spaces, as well as how to customize the command with additional options.

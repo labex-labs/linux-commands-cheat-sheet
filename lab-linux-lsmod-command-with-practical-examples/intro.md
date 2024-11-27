@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn about the Linux `lsmod` command and its practical applications. The lab covers the purpose of the `lsmod` command, which is used to display information about the kernel modules currently loaded on the system. You will explore the output of the `lsmod` command and understand how to interpret the information it provides, such as the name, size, and usage of the loaded kernel modules. Additionally, you will learn how to load and unload kernel modules as needed. This lab is designed to help you better manage and troubleshoot the kernel modules on your Linux system.

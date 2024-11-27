@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux zdump Command with Practical Examples",
+  "description": "Explore the Linux zdump command, which displays time zone information. Learn its syntax, understand timezone data, and see practical examples of its usage.",
+  "meta": {
+    "title": "Linux zdump Command with Practical Examples",
+    "description": "Explore the Linux zdump command, which displays time zone information. Learn its syntax, understand timezone data, and see practical examples of its usage.",
+    "keywords": "Linux, zdump, timezone, time zone, system configuration, system settings"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the zdump Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the zdump command output",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `zdump` command should include the \"isdst=\" field, which indicates the daylight saving time status. Please check the output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore Timezone Information Using the zdump Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the zdump command output for multiple timezones",
+            "file": "verify2-1.sh",
+            "hint": "The output of the `zdump` command should include the times for the \"America/New_York\", \"Europe/London\", and \"Asia/Tokyo\" timezones. Please check the output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using the zdump Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the zdump command output for timezone difference",
+            "file": "verify3-1.sh",
+            "hint": "The output of the `zdump` command should include the times for the \"America/New_York\" and \"Asia/Tokyo\" timezones, as well as the time difference between them (EDT and JST). Please check the output and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

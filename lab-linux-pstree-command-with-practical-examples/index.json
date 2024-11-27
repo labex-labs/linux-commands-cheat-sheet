@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux pstree Command with Practical Examples",
+  "description": "Explore the process hierarchy on your Linux system using the pstree command. Learn how to filter and customize the output to gain a deeper understanding of your system's processes.",
+  "meta": {
+    "title": "Linux pstree Command with Practical Examples",
+    "description": "Explore the process hierarchy on your Linux system using the pstree command. Learn how to filter and customize the output to gain a deeper understanding of your system's processes.",
+    "keywords": "Linux, pstree, process hierarchy, process monitoring, system management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the pstree Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the pstree command output",
+            "file": "verify1-1.sh",
+            "hint": "The pstree command should display the process hierarchy, with systemd as the parent process.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore the Process Hierarchy with pstree",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the pstree output for docker processes",
+            "file": "verify2-1.sh",
+            "hint": "The pstree command should display the process hierarchy for the docker service.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Filter and Customize the pstree Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the pstree output for the current process",
+            "file": "verify3-1.sh",
+            "hint": "The pstree command should display the current process (the shell process) in the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

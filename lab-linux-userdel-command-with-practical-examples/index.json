@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux userdel Command with Practical Examples",
+  "description": "Learn how to use the Linux userdel command to delete user accounts, remove their home directories, and manage user permissions on your system.",
+  "meta": {
+    "title": "Linux userdel Command with Practical Examples",
+    "description": "Learn how to use the Linux userdel command to delete user accounts, remove their home directories, and manage user permissions on your system.",
+    "keywords": "Linux, userdel, user management, permission management, delete user account, remove home directory"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the userdel Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify user deletion",
+            "file": "verify1-1.sh",
+            "hint": "The user 'testuser' should have been deleted successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Delete a User Account",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify user deletion",
+            "file": "verify2-1.sh",
+            "hint": "The user 'testuser' should have been deleted successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Remove User's Home Directory and Mail Spool",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify home directory removal",
+            "file": "verify3-1.sh",
+            "hint": "The home directory '/home/testuser' should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify mail spool removal",
+            "file": "verify3-2.sh",
+            "hint": "The mail spool '/var/spool/mail/testuser' should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

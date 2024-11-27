@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we introduced the iftop command, a powerful network monitoring tool in Linux. We learned how to install and run iftop to observe the real-time bandwidth usage of our system. The iftop command displays the source and destination IP addresses, as well as the incoming and outgoing network traffic. We also explored advanced usage scenarios of iftop, such as monitoring specific network interfaces and filtering traffic based on various criteria. By the end of this lab, you should have a good understanding of how to use iftop to effectively monitor and troubleshoot network issues on your Linux system.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux printf Command with Practical Examples",
+  "description": "Explore the power of the printf command in Linux. Learn how to format output, print variables, and evaluate expressions using practical examples.",
+  "meta": {
+    "title": "Linux printf Command with Practical Examples",
+    "description": "Explore the power of the printf command in Linux. Learn how to format output, print variables, and evaluate expressions using practical examples.",
+    "keywords": "Linux, printf, formatting, variables, expressions, utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the printf Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the printf command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have executed the provided `printf` commands correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Formatting Output with printf",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the printf formatting",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have executed the provided `printf` commands correctly and observed the expected output formatting.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Printing Variables and Expressions with printf",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the printf usage with variables and expressions",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have executed the provided `printf` commands correctly and observed the expected output with variable values and expressions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

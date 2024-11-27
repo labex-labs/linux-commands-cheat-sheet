@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the purpose and usage of the `ldd` command in Linux. The `ldd` command is a valuable tool for identifying the dynamic library dependencies of a binary file, which is essential for effective software management and troubleshooting. We created a simple C program that uses a dynamic library, and then used `ldd` to check its dependencies. The output showed that the program depends on the `libmylib.so` dynamic library, which was not found, highlighting a common issue when working with dynamic libraries. Understanding the dynamic dependencies of a binary is crucial for resolving such problems and ensuring the proper functioning of software applications.

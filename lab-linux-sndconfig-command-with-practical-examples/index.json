@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sndconfig Command with Practical Examples",
+  "description": "Explore the sndconfig command in Linux, learn how to configure sound card settings, and troubleshoot sound issues effectively.",
+  "meta": {
+    "title": "Linux sndconfig Command with Practical Examples",
+    "description": "Explore the sndconfig command in Linux, learn how to configure sound card settings, and troubleshoot sound issues effectively.",
+    "keywords": "sndconfig, sound configuration, sound card settings, sound troubleshooting, Linux system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the sndconfig Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify sndconfig version",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that the `sndconfig` command version is 1.4.1 on your system.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Sound Card Settings Using sndconfig",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify sound card configuration",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that the sound card configuration is working correctly. You should be able to hear the test sound when running `sudo sndconfig --test`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshoot Sound Issues with sndconfig",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify sound card detection",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that the sound card is properly detected by the system. The output of `sudo sndconfig --list` should include the \"Intel 82801AA-ICH\" sound card.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

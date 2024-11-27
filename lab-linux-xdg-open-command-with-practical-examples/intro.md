@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `xdg-open` command, a standard way to open files and directories with their default applications in Linux. You will understand the purpose of the `xdg-open` command, which is part of the XDG Base Directory Specification, and how to use it to open files and directories with their default applications. Additionally, you will learn how to customize the default applications for different file types and directories using `xdg-open`. The lab provides practical examples to help you integrate your Linux desktop with various applications and file types.

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux gcc Command with Practical Examples",
+  "description": "Explore the GCC compiler, learn to compile C programs, and discover optimization flags for efficient code.",
+  "meta": {
+    "title": "Linux gcc Command with Practical Examples",
+    "description": "Explore the GCC compiler, learn to compile C programs, and discover optimization flags for efficient code.",
+    "keywords": "GCC, C programming, compiler, optimization, Linux, scripting, programming"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of GCC Compiler",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify GCC version",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the GCC version installed in the environment is 11.3.0.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Compile a Simple C Program with GCC",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify C program compilation",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have successfully compiled the C program and that the 'hello' executable is present in the expected location.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore GCC Compiler Optimization Flags",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify optimization levels",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the C program compiles and runs correctly with different optimization levels (-O0, -O1, -O2, -O3).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ncftp Command with Practical Examples",
+  "description": "Learn how to use the ncftp command to connect to FTP servers, manage files and directories on the server, and perform various file transfer operations in a Linux environment.",
+  "meta": {
+    "title": "Linux ncftp Command with Practical Examples",
+    "description": "Learn how to use the ncftp command to connect to FTP servers, manage files and directories on the server, and perform various file transfer operations in a Linux environment.",
+    "keywords": "ncftp, FTP, file transfer, Linux, networking, command line, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install ncftp on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify ncftp installation",
+            "file": "verify1-1.sh",
+            "hint": "It seems that ncftp is not installed correctly. Please review the installation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Connect to an FTP Server Using ncftp",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify FTP connection",
+            "file": "verify2-1.sh",
+            "hint": "It seems that the FTP server connection was not successful. Please check the FTP server details in the configuration file and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Files and Directories on the FTP Server",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file upload",
+            "file": "verify3-1.sh",
+            "hint": "It seems that the file upload was not successful. Please check the FTP server details and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

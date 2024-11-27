@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cupsd Command with Practical Examples",
+  "description": "Explore the CUPS printing system and learn how to manage printers using the cupsd command. Configure printer settings and gain practical experience with this essential Linux utility.",
+  "meta": {
+    "title": "Linux cupsd Command with Practical Examples",
+    "description": "Explore the CUPS printing system and learn how to manage printers using the cupsd command. Configure printer settings and gain practical experience with this essential Linux utility.",
+    "keywords": "CUPS, cupsd, printing, printer management, Linux utilities"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the CUPS Printing System",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify CUPS service status",
+            "file": "verify1-1.sh",
+            "hint": "The CUPS service should be active and running on the system. Please check the service status and ensure it is in the \"active (running)\" state.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Printers Using the cupsd Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify printer creation",
+            "file": "verify2-1.sh",
+            "hint": "The 'MyPrinter' printer should be listed in the output of the 'sudo cupsd -t' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure Printer Settings with cupsd",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify printer configuration",
+            "file": "verify3-1.sh",
+            "hint": "The printer should have the default paper size set to \"a4\" and the printer should be in the \"paused\" state.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

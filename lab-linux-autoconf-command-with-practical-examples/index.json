@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux autoconf Command with Practical Examples",
+  "description": "Learn how to use the autoconf command to configure and build C programs, from simple to complex projects, with practical examples.",
+  "meta": {
+    "title": "Linux autoconf Command with Practical Examples",
+    "description": "Learn how to use the autoconf command to configure and build C programs, from simple to complex projects, with practical examples.",
+    "keywords": "autoconf, configure, build, C programming, scripting, Linux, automation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of autoconf Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the generated configure script",
+            "file": "verify1-1.sh",
+            "hint": "The configure script was not generated. Make sure you have run the 'autoconf' command to generate it.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Configure and Build a Simple C Program Using autoconf",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the configured and built C program",
+            "file": "verify2-1.sh",
+            "hint": "The C program was not built successfully. Make sure you have run the 'configure' and 'make' commands correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Customize autoconf Configuration Files for Complex Projects",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the customized autoconf configuration",
+            "file": "verify3-1.sh",
+            "hint": "The autoconf configuration files were not customized correctly. Make sure you have followed the steps to create the necessary files and directories.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}
