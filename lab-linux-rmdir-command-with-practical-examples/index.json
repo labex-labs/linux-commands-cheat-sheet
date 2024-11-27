@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux rmdir Command with Practical Examples",
+  "description": "Explore the rmdir command in Linux, learn how to create and delete empty directories, and remove non-empty directories using practical examples.",
+  "meta": {
+    "title": "Linux rmdir Command with Practical Examples",
+    "description": "Explore the rmdir command in Linux, learn how to create and delete empty directories, and remove non-empty directories using practical examples.",
+    "keywords": "Linux, rmdir, directory, file management, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the rmdir Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the rmdir command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created and removed the empty directory using the `rmdir` command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/rm"]
+      },
+      {
+        "title": "Create and Delete Empty Directories",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify creating and deleting empty directories",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created and deleted the empty directories using the `mkdir` and `rmdir` commands correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/rm"]
+      },
+      {
+        "title": "Remove Non-Empty Directories with rmdir",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify removing non-empty directories",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created a non-empty directory and then removed it using the `rm -r` command correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/mkdir"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mdel Command with Practical Examples",
+  "description": "Explore the mdel command in Linux, learn its syntax, and practice creating and managing multiple directories using practical examples.",
+  "meta": {
+    "title": "Linux mdel Command with Practical Examples",
+    "description": "Explore the mdel command in Linux, learn its syntax, and practice creating and managing multiple directories using practical examples.",
+    "keywords": "Linux, mdel command, directory management, file operations, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mdel Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the mdel command syntax",
+            "file": "verify1-1.sh",
+            "hint": "The mdel command is not available in your environment. Please ensure that you are running this lab in the correct environment.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/touch", "linux/rm"]
+      },
+      {
+        "title": "Create and Manage Multiple Directories Using mdel",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the created directories",
+            "file": "verify2-1.sh",
+            "hint": "The directories were not created successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/ls", "linux/rm"]
+      },
+      {
+        "title": "Explore Advanced Options and Scenarios of the mdel Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the directories created with advanced options",
+            "file": "verify3-1.sh",
+            "hint": "The directories were not created successfully or the permissions were not set correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/chmod", "linux/ls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

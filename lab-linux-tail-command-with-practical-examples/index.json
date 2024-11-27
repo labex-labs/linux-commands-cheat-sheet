@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux tail Command with Practical Examples",
+  "description": "Explore the Linux tail command and its practical applications, including monitoring log files and viewing the end of text files.",
+  "meta": {
+    "title": "Linux tail Command with Practical Examples",
+    "description": "Explore the Linux tail command and its practical applications, including monitoring log files and viewing the end of text files.",
+    "keywords": "linux, tail, command, log files, text processing, file editing"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the tail Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose and syntax of the tail command",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure you understand the purpose and basic syntax of the `tail` command, including the `-n` and `-f` options.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tail", "linux/head", "linux/less"]
+      },
+      {
+        "title": "Explore the Basic Usage of the tail Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the basic usage of the tail command",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure you can use the `tail` command to display a specific number of lines, follow a file, and use `tail` with other commands like `grep`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tail", "linux/cat", "linux/grep"]
+      },
+      {
+        "title": "Utilize the tail Command for Monitoring Log Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the usage of tail for monitoring log files",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure you can use the `tail` command to monitor the sample log file, including following the file and searching for specific log entries.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tail", "linux/grep", "linux/less"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

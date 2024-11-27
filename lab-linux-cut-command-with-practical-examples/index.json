@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cut Command with Practical Examples",
+  "description": "Explore the versatile Linux cut command and learn how to extract specific columns from text files. Discover practical examples to enhance your text processing skills.",
+  "meta": {
+    "title": "Linux cut Command with Practical Examples",
+    "description": "Explore the versatile Linux cut command and learn how to extract specific columns from text files. Discover practical examples to enhance your text processing skills.",
+    "keywords": "Linux, cut command, text processing, data extraction, column manipulation, text editing"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the cut Command Syntax and Options",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the cut command syntax and options",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you understand the syntax and options of the `cut` command, including how to extract fields and characters from a text file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cut", "linux/echo", "linux/cat"]
+      },
+      {
+        "title": "Extract Specific Columns from a Text File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify column extraction",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use the `cut` command to extract specific columns from a CSV-like data file. Try different column ranges and delimiters.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cut", "linux/echo", "linux/awk"]
+      },
+      {
+        "title": "Use cut Command with Pipe to Process Data",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify using cut with pipe",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use the `cut` command in combination with other commands like `cat`, `grep`, and `awk` to process data from various sources.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/cut", "linux/awk"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

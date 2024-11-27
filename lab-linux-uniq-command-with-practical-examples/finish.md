@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and syntax of the `uniq` command in Linux, which is used to remove duplicate lines from a file or input stream. You explored the various options available with the `uniq` command, such as counting the occurrences of unique lines, printing only duplicate lines, and ignoring case when comparing lines. You then applied the `uniq` command to remove duplicate lines from a sample file, and learned that it only removes consecutive duplicates. To remove all duplicate lines, you combined the `sort` command with `uniq` to ensure that the lines are arranged in alphabetical order before removing the duplicates.

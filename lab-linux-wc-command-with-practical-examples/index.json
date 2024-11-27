@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux wc Command with Practical Examples",
+  "description": "Explore the Linux wc command and learn how to count words, lines, and characters in files. Discover practical examples of using wc with other Linux commands for efficient text processing.",
+  "meta": {
+    "title": "Linux wc Command with Practical Examples",
+    "description": "Explore the Linux wc command and learn how to count words, lines, and characters in files. Discover practical examples of using wc with other Linux commands for efficient text processing.",
+    "keywords": "Linux, wc command, word count, line count, character count, text processing, file manipulation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the wc Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the wc command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the `sample.txt` file and used the `wc` command correctly to count the lines, words, and characters in the file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/wc", "linux/cat", "linux/echo"]
+      },
+      {
+        "title": "Count Words, Lines, and Characters in a File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the wc command usage for counting words, lines, and characters",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created the `sample.txt` file with the correct content, and that you're using the `wc` command correctly to count the lines, words, and characters in the file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/wc", "linux/cat", "linux/find"]
+      },
+      {
+        "title": "Combine wc with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the wc command usage with other Linux commands",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created the sample text files in the `sample_files` directory, and that you're using the `find` and `wc` commands correctly to count the total number of lines in all the text files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/find", "linux/wc", "linux/grep"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

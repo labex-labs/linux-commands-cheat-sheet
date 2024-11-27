@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux head Command with Practical Examples",
+  "description": "Explore the Linux head command and learn how to use it effectively for text processing and editing tasks. Discover practical examples and master the various options to extract the top lines from files.",
+  "meta": {
+    "title": "Linux head Command with Practical Examples",
+    "description": "Explore the Linux head command and learn how to use it effectively for text processing and editing tasks. Discover practical examples and master the various options to extract the top lines from files.",
+    "keywords": "Linux, head command, text processing, text editing, file manipulation, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the head Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the head command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `head` command is displaying the first 5 lines of the `example.txt` file correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/head", "linux/tail"]
+      },
+      {
+        "title": "Explore head Command Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the head command options",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `head` command with the `-c` option is displaying the first 20 bytes of the `example.txt` file correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/head", "linux/cat", "linux/tail"]
+      },
+      {
+        "title": "Apply head Command in Real-World Scenarios",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the head command in real-world scenarios",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `head` command is displaying the first 5 lines of the `/var/log/syslog` file correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/head", "linux/top", "linux/tail"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

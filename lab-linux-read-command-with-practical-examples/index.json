@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux read Command with Practical Examples",
+  "description": "Explore the Linux read command and learn how to use it to capture user input, store it in variables, and validate the input. Gain practical experience through hands-on examples.",
+  "meta": {
+    "title": "Linux read Command with Practical Examples",
+    "description": "Explore the Linux read command and learn how to use it to capture user input, store it in variables, and validate the input. Gain practical experience through hands-on examples.",
+    "keywords": "Linux, read command, user input, variables, validation, file operations, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the read Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the read command usage",
+            "file": "verify1-1.sh",
+            "hint": "Please make sure you have used the `read` command with the `-p` option to prompt the user for input, and then used the stored variable in an `echo` statement.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/read", "linux/echo"]
+      },
+      {
+        "title": "Read User Input and Store it in a Variable",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the read command usage with variable",
+            "file": "verify2-1.sh",
+            "hint": "Please make sure you have used the `read` command to capture user input and store it in a variable, and then used the stored variable in an `echo` statement.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/read", "linux/echo"]
+      },
+      {
+        "title": "Validate User Input with the read Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the read command usage with input validation",
+            "file": "verify3-1.sh",
+            "hint": "Please make sure you have used a `while` loop with the `read` command to validate user input, and that you have properly checked the input range and displayed the valid input.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/read"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

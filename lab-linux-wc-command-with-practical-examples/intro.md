@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the Linux `wc` (word count) command to count the number of lines, words, and characters in a file. The lab covers understanding the basic usage of the `wc` command, as well as combining it with other Linux commands to perform more advanced text processing tasks. You will start by creating a sample text file and then use the `wc` command to count the lines, words, and characters in the file. Additionally, you will explore how to use the `wc` command with other Linux commands, such as `ls` and `find`, to perform various text processing operations.

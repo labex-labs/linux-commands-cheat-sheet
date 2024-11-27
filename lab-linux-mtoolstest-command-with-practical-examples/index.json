@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mtoolstest Command with Practical Examples",
+  "description": "Explore the mtoolstest command in Linux, learn how to verify its installation, and discover practical examples of its usage for file and directory operations.",
+  "meta": {
+    "title": "Linux mtoolstest Command with Practical Examples",
+    "description": "Explore the mtoolstest command in Linux, learn how to verify its installation, and discover practical examples of its usage for file and directory operations.",
+    "keywords": "Linux, mtoolstest, file management, directory operations, Ubuntu 22.04"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to mtoolstest Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mtoolstest Installation",
+            "file": "verify1-1.sh",
+            "hint": "The mtoolstest command is not installed on your system. Please run the following command to install the mtools package:",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/apt", "linux/sudo"]
+      },
+      {
+        "title": "Verifying mtoolstest Installation on Ubuntu 22.04",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify mtoolstest Version",
+            "file": "verify2-1.sh",
+            "hint": "The mtools package version installed on your system is not the expected version 4.0.26-1. Please ensure you have the correct version installed by running the following command:",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Practical Examples of Using mtoolstest Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify mtoolstest Command Usage",
+            "file": "verify3-1.sh",
+            "hint": "One or more of the mtoolstest command tests failed. Please ensure that the mtools package is properly installed and that you have the necessary permissions to run the mtoolstest command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/echo", "linux/ls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

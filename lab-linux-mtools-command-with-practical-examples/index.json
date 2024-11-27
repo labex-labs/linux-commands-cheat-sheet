@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mtools Command with Practical Examples",
+  "description": "Explore the mtools command-line utilities for managing floppy disk images on Ubuntu 22.04. Learn how to install mtools, use various commands, and perform practical operations on floppy disk images.",
+  "meta": {
+    "title": "Linux mtools Command with Practical Examples",
+    "description": "Explore the mtools command-line utilities for managing floppy disk images on Ubuntu 22.04. Learn how to install mtools, use various commands, and perform practical operations on floppy disk images.",
+    "keywords": "mtools, floppy disk, file management, Ubuntu, command-line, file operations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install mtools Package on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mtools package installation",
+            "file": "verify1-1.sh",
+            "hint": "The mtools package does not appear to be installed correctly. Please review the installation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/apt", "linux/sudo"]
+      },
+      {
+        "title": "Explore mtools Commands and Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify mtools commands usage",
+            "file": "verify2-1.sh",
+            "hint": "The mtools commands do not appear to be working correctly. Please review the usage examples and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Manage Floppy Disk Images with mtools",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify floppy disk image management",
+            "file": "verify3-1.sh",
+            "hint": "The floppy disk image management operations do not appear to be working correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/dd"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

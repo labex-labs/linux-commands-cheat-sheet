@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mcopy Command with Practical Examples",
+  "description": "Explore the Linux mcopy command, learn how to copy files and directories, and discover advanced options for efficient file management.",
+  "meta": {
+    "title": "Linux mcopy Command with Practical Examples",
+    "description": "Explore the Linux mcopy command, learn how to copy files and directories, and discover advanced options for efficient file management.",
+    "keywords": "Linux, mcopy, file management, directory operations, file copying, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the mcopy Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mcopy command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have the `mtools` package installed and that you can use the `mcopy` command to copy a file to the `a:` device.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cp", "linux/mv", "linux/rm"]
+      },
+      {
+        "title": "Copy Files and Directories Using mcopy",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify directory copy",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can copy the entire `source_dir` directory to the `a:` device, and that the two files (`file1.txt` and `file2.txt`) are present in the `a:` device.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cp", "linux/mkdir", "linux/touch"]
+      },
+      {
+        "title": "Explore Advanced mcopy Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify advanced mcopy options",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use the `-a`, `-M`, `-D`, and wildcard options with the `mcopy` command successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cp", "linux/mv", "linux/wildcard"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux patch Command with Practical Examples",
+  "description": "Learn how to use the Linux patch command to apply and revert changes to files. Explore practical examples and understand the syntax and purpose of this powerful text editing tool.",
+  "meta": {
+    "title": "Linux patch Command with Practical Examples",
+    "description": "Learn how to use the Linux patch command to apply and revert changes to files. Explore practical examples and understand the syntax and purpose of this powerful text editing tool.",
+    "keywords": "Linux, patch, file editing, text processing, command line, version control, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the patch Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the patch was applied correctly",
+            "file": "verify1-1.sh",
+            "hint": "The patch did not apply correctly. Please ensure you followed the steps to create and apply the patch file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/diff", "linux/patch", "linux/cat"]
+      },
+      {
+        "title": "Apply a Patch to a File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the patch was applied correctly",
+            "file": "verify2-1.sh",
+            "hint": "The patch was not applied correctly. Please ensure you followed the steps to apply the patch file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/diff", "linux/patch", "linux/cat"]
+      },
+      {
+        "title": "Revert a Patch",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the patch was reverted correctly",
+            "file": "verify3-1.sh",
+            "hint": "The patch was not reverted correctly. Please ensure you followed the steps to revert the patch file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/patch", "linux/diff", "linux/cat"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

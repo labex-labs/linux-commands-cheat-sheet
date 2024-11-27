@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mren Command with Practical Examples",
+  "description": "Explore the mren command in Linux, a powerful tool for renaming multiple files efficiently. Learn practical examples and advanced usage with regular expressions.",
+  "meta": {
+    "title": "Linux mren Command with Practical Examples",
+    "description": "Explore the mren command in Linux, a powerful tool for renaming multiple files efficiently. Learn practical examples and advanced usage with regular expressions.",
+    "keywords": "Linux, mren, file renaming, batch rename, regular expressions, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the mren Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify file renaming",
+            "file": "verify1-1.sh",
+            "hint": "The `mren` command should have renamed all the files with the \"file\" prefix to \"myfile\" with the corresponding number.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mv", "linux/cp", "linux/ls"]
+      },
+      {
+        "title": "Renaming Multiple Files with mren",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file renaming",
+            "file": "verify2-1.sh",
+            "hint": "The `mren` command should have renamed all the \"file\" files to have a consistent \"myfile_\" prefix, and all the image files to have a consistent \"image_\" prefix.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mv", "linux/ls"]
+      },
+      {
+        "title": "Advanced mren Usage with Regular Expressions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file renaming",
+            "file": "verify3-1.sh",
+            "hint": "The `mren` command should have renamed all the report files to the new format \"report_YYYY_MM_DD.txt\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo", "linux/sed", "linux/grep"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

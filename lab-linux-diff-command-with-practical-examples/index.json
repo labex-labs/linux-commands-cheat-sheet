@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux diff Command with Practical Examples",
+  "description": "Explore the Linux diff command, a powerful tool for comparing and analyzing text files. Learn its syntax, practical examples, and advanced options to effectively manage and process text data.",
+  "meta": {
+    "title": "Linux diff Command with Practical Examples",
+    "description": "Explore the Linux diff command, a powerful tool for comparing and analyzing text files. Learn its syntax, practical examples, and advanced options to effectively manage and process text data.",
+    "keywords": "Linux, diff, text processing, file comparison, text editing, command line, terminal"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the diff Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the diff command output",
+            "file": "verify1-1.sh",
+            "hint": "The diff command output should show the difference between the two files, with the first line of each file displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/diff", "linux/cat", "linux/echo"]
+      },
+      {
+        "title": "Compare Two Text Files Using the diff Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the diff command output",
+            "file": "verify2-1.sh",
+            "hint": "The diff command output should show the differences between the two files, with the first and second lines of each file displayed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/diff", "linux/cat", "linux/echo"]
+      },
+      {
+        "title": "Explore Advanced Options of the diff Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the diff command with advanced options",
+            "file": "verify3-1.sh",
+            "hint": "The diff command with the -r option should show the differences between the contents of the dir1 and dir2 directories.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/diff", "linux/echo", "linux/ls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

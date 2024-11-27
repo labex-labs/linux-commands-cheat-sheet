@@ -1,0 +1,5 @@
+# Introduction
+
+In this lab, you will learn how to use the `mzip` command, a utility for compressing and extracting files and directories in Linux. The `mzip` command is part of the `mtools` package, which provides a set of utilities for working with MS-DOS file systems. You will start by understanding the basic usage of the `mzip` command, and then explore how to compress and extract files and directories using this tool. The lab covers the key steps, including installing the `mtools` package, creating new archives, and extracting files from existing archives.
+
+The lab is focused on the basic file and directory operations in Linux, providing practical examples of using the `mzip` command. While the `mzip` command is still available, it is important to note that it is primarily designed for working with MS-DOS file systems and may not be the most widely used compression tool in modern Linux environments. Users may want to consider more widely adopted compression utilities, such as `zip` or `tar`, for their file compression and extraction needs.

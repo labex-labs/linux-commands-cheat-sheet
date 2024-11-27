@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mattrib Command with Practical Examples",
+  "description": "Explore the Linux mattrib command and its practical applications for modifying file attributes, managing multiple files and directories, and understanding its syntax and purpose.",
+  "meta": {
+    "title": "Linux mattrib Command with Practical Examples",
+    "description": "Explore the Linux mattrib command and its practical applications for modifying file attributes, managing multiple files and directories, and understanding its syntax and purpose.",
+    "keywords": "linux, mattrib, file attributes, directory operations, file management, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mattrib Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mattrib command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure you can use the mattrib command to set and clear the read-only attribute on a file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/chmod", "linux/chown", "linux/touch"]
+      },
+      {
+        "title": "Modify File Attributes Using the mattrib Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify setting file attributes",
+            "file": "verify2-1.sh",
+            "hint": "Ensure you can set and clear the read-only attribute on a file using the mattrib command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/chmod", "linux/chown"]
+      },
+      {
+        "title": "Manage Attributes for Multiple Files and Directories",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify setting attributes on multiple files and directories",
+            "file": "verify3-1.sh",
+            "hint": "Ensure you can set the hidden attribute on multiple files and the read-only attribute on multiple directories using the mattrib command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/chmod", "linux/chown", "linux/ls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mmd Command with Practical Examples",
+  "description": "Explore the mmd command in Linux, learn how to create Markdown files, and convert them to HTML and PDF formats for various use cases.",
+  "meta": {
+    "title": "Linux mmd Command with Practical Examples",
+    "description": "Explore the mmd command in Linux, learn how to create Markdown files, and convert them to HTML and PDF formats for various use cases.",
+    "keywords": "Linux, mmd command, Markdown, HTML, PDF, file operations, directory management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the mmd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the creation of the Markdown file",
+            "file": "verify1-1.sh",
+            "hint": "The `mmd` command should have created a new file named `sample.md` in the `~/project` directory. Please check if the file exists.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/touch"]
+      },
+      {
+        "title": "Create Markdown Files Using the mmd Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the creation of Markdown files",
+            "file": "verify2-1.sh",
+            "hint": "The `mmd` command should have created two new files named `sample.md` and `sample2.md` in the `~/project` directory. Please check if both files exist.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/vim"]
+      },
+      {
+        "title": "Convert Markdown Files to HTML and PDF Formats",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the creation of HTML and PDF files",
+            "file": "verify3-1.sh",
+            "hint": "The `mmd` command should have created two new files named `sample.html` and `sample.pdf` in the `~/project` directory. Please check if both files exist.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/mv"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

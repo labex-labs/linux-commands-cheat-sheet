@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux tee Command with Practical Examples",
+  "description": "Explore the versatile tee command in Linux, learn how to redirect output to both a file and the terminal, and append output to existing files.",
+  "meta": {
+    "title": "Linux tee Command with Practical Examples",
+    "description": "Explore the versatile tee command in Linux, learn how to redirect output to both a file and the terminal, and append output to existing files.",
+    "keywords": "Linux, tee command, file operations, terminal, output redirection, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the tee Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the tee command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the output.txt file is created in the current directory after running the tee command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tee", "linux/cat", "linux/redirect"]
+      },
+      {
+        "title": "Redirect Command Output to a File and the Terminal",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the tee command with output redirection",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the output.txt file contains the expected content after using the tee command to redirect the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tee", "linux/cat", "linux/echo"]
+      },
+      {
+        "title": "Append Output to an Existing File with tee",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the tee command with append mode",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the sample.txt file contains the expected content after using the tee -a command to append the output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo", "linux/tee", "linux/cat"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

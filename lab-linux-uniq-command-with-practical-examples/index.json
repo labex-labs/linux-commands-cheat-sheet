@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux uniq Command with Practical Examples",
+  "description": "Explore the uniq command in Linux, learn its syntax, and discover practical examples to remove duplicate lines and count unique occurrences in text files.",
+  "meta": {
+    "title": "Linux uniq Command with Practical Examples",
+    "description": "Explore the uniq command in Linux, learn its syntax, and discover practical examples to remove duplicate lines and count unique occurrences in text files.",
+    "keywords": "Linux, uniq command, text processing, duplicate lines, unique lines, file manipulation"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the uniq Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the uniq command usage",
+            "file": "verify1-1.sh",
+            "hint": "The `uniq` command did not remove the duplicate lines correctly. Please review the usage of the `uniq` command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/uniq", "linux/cat", "linux/echo"]
+      },
+      {
+        "title": "Remove Duplicate Lines from a File",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the removal of duplicate lines",
+            "file": "verify2-1.sh",
+            "hint": "The `uniq` command with `sort` did not remove all the duplicate lines correctly. Please review the usage and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/sort", "linux/uniq", "linux/cat"]
+      },
+      {
+        "title": "Count the Occurrences of Unique Lines",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the count of unique lines",
+            "file": "verify3-1.sh",
+            "hint": "The `uniq -c` command did not correctly count the occurrences of unique lines. Please review the usage and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/uniq", "linux/sort", "linux/echo"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

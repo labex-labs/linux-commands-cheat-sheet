@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux mzip Command with Practical Examples",
+  "description": "Explore the mzip command in Linux, learn how to compress and extract files and directories using this versatile tool, and gain practical experience with real-world examples.",
+  "meta": {
+    "title": "Linux mzip Command with Practical Examples",
+    "description": "Explore the mzip command in Linux, learn how to compress and extract files and directories using this versatile tool, and gain practical experience with real-world examples.",
+    "keywords": "Linux, mzip, compression, extraction, file management, directory operations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the mzip Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mzip command is installed",
+            "file": "verify1-1.sh",
+            "hint": "The mzip command is part of the mtools package. Please install the mtools package using the following command:\nsudo apt-get install -y mtools",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tar", "linux/zip", "linux/unzip"]
+      },
+      {
+        "title": "Compress Files and Directories Using mzip",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify sample_archive.mz creation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created the sample_archive.mz file using the mzip -c command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify sample_archive.mz contents",
+            "file": "verify2-2.sh",
+            "hint": "Make sure the mzip -l command shows the expected files and directories in the sample_archive.mz file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tar", "linux/gzip", "linux/zip"]
+      },
+      {
+        "title": "Extract Compressed Files and Directories with mzip",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify sample_archive.mz extraction",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have extracted the sample_archive.mz file using the mzip -x command. The extracted files and directories should be present in the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/cd"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

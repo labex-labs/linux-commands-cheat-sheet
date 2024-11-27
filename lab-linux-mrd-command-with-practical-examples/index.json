@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mrd Command with Practical Examples",
+  "description": "Explore the mrd command in Linux, a tool for managing directories. Learn its syntax, options, and practical applications through hands-on exercises.",
+  "meta": {
+    "title": "Linux mrd Command with Practical Examples",
+    "description": "Explore the mrd command in Linux, a tool for managing directories. Learn its syntax, options, and practical applications through hands-on exercises.",
+    "keywords": "Linux, mrd command, directory management, file operations, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the mrd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the mrd command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the mrd command is installed and that you can use it to remove multiple directories in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/mkdir", "linux/rm"]
+      },
+      {
+        "title": "Explore the Syntax and Options of the mrd Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the mrd command options",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can use the various options of the mrd command, such as -i, -f, and -r, to remove directories and their contents.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/rm", "linux/rm"]
+      },
+      {
+        "title": "Perform Practical Exercises with the mrd Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the mrd command usage in a practical scenario",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can use the mrd command to remove directories and their contents in a practical scenario, including both non-recursive and recursive removal.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/rm"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

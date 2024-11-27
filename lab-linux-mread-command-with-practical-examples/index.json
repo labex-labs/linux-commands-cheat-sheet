@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mread Command with Practical Examples",
+  "description": "Explore the Linux mread command and learn how to use it for efficient file reading with practical examples.",
+  "meta": {
+    "title": "Linux mread Command with Practical Examples",
+    "description": "Explore the Linux mread command and learn how to use it for efficient file reading with practical examples.",
+    "keywords": "Linux, mread, file reading, command line, file operations, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the mread Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the mread command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `mread` command is available and you can view its usage information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/head", "linux/tail"]
+      },
+      {
+        "title": "Explore mread Command Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the mread command options",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can use the various options of the `mread` command to read files in different ways.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/head", "linux/tail"]
+      },
+      {
+        "title": "Perform File Reading with mread",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file reading with mread",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can use the `mread` command to read files in various ways, such as reading the first/last part of a file, reading the file in chunks, and comparing file contents.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/dd", "linux/diff"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

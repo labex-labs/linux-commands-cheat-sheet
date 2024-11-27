@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned the basics of the `sort` command in Linux, which is used to sort the lines of a file or the output of a command in a specific order. We explored various options to customize the sorting behavior, such as sorting in reverse order, numerically, or based on specific fields. Additionally, we discovered how to combine the `sort` command with other Linux commands like `cat`, `grep`, and `pipe` to perform more complex text processing tasks. Finally, we learned how to sort files by different criteria, including sorting by name or age, and using custom field delimiters.

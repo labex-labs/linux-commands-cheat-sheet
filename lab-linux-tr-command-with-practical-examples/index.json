@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux tr Command with Practical Examples",
+  "description": "Explore the powerful Linux tr command and learn how to translate, delete, squeeze, and complement characters in text processing with practical examples.",
+  "meta": {
+    "title": "Linux tr Command with Practical Examples",
+    "description": "Explore the powerful Linux tr command and learn how to translate, delete, squeeze, and complement characters in text processing with practical examples.",
+    "keywords": "Linux, tr command, text processing, character translation, character deletion, character squeeze, character complement"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the tr Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the tr command translates characters",
+            "file": "verify1-1.sh",
+            "hint": "The tr command should translate all lowercase letters in the input to their uppercase counterparts.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tr", "linux/echo", "linux/cat"]
+      },
+      {
+        "title": "Translate and Delete Characters Using tr",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the tr command translates characters",
+            "file": "verify2-1.sh",
+            "hint": "The tr command should translate all uppercase letters in the input to their lowercase counterparts.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the tr command deletes characters",
+            "file": "verify2-2.sh",
+            "hint": "The tr command should delete the comma (,) and exclamation mark (!) characters from the input.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tr", "linux/echo", "linux/sed"]
+      },
+      {
+        "title": "Squeeze and Complement Characters with tr",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the tr command squeezes characters",
+            "file": "verify3-1.sh",
+            "hint": "The tr command with the -s option should replace the multiple consecutive spaces with a single space.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the tr command complements characters",
+            "file": "verify3-2.sh",
+            "hint": "The tr command with the -c option should extract only the uppercase letters from the input.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tr", "linux/echo", "linux/grep"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

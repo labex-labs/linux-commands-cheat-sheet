@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux paste Command with Practical Examples",
+  "description": "Learn how to use the Linux paste command to combine multiple files, customize the output, and perform efficient text processing tasks.",
+  "meta": {
+    "title": "Linux paste Command with Practical Examples",
+    "description": "Learn how to use the Linux paste command to combine multiple files, customize the output, and perform efficient text processing tasks.",
+    "keywords": "Linux, paste command, text processing, file manipulation, command line, data analysis"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of paste Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the creation of sample files",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the sample files `file1.txt`, `file2.txt`, and `file3.txt` in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the output of the `paste` command",
+            "file": "verify1-2.sh",
+            "hint": "The output of the `paste` command should contain the line \"Apple Red Fruit\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/paste", "linux/echo"]
+      },
+      {
+        "title": "Combine Multiple Files Using paste Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the creation of additional sample files",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created the additional sample files `days.txt` and `numbers.txt` in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the output of the `paste` command",
+            "file": "verify2-2.sh",
+            "hint": "The output of the `paste` command should contain the line \"Monday 1\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/paste", "linux/cat", "linux/echo"]
+      },
+      {
+        "title": "Customize the Output of paste Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the creation of the `fruits.csv` file",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created the `fruits.csv` file in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the output of the customized `paste` command",
+            "file": "verify3-2.sh",
+            "hint": "The output of the customized `paste` command should contain the line \"Apple; Red; apple,red\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/paste", "linux/printf", "linux/awk"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

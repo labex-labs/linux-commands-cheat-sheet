@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mshowfat Command with Practical Examples",
+  "description": "Explore the mshowfat command in Linux, which provides detailed information about the FAT file system structure. Learn how to use mshowfat to analyze and troubleshoot FAT-based storage devices.",
+  "meta": {
+    "title": "Linux mshowfat Command with Practical Examples",
+    "description": "Explore the mshowfat command in Linux, which provides detailed information about the FAT file system structure. Learn how to use mshowfat to analyze and troubleshoot FAT-based storage devices.",
+    "keywords": "Linux, mshowfat, FAT file system, file system analysis, storage device, troubleshooting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the mshowfat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mshowfat command execution",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can successfully execute the `mshowfat` command and view the FAT file system information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/dd", "linux/mount", "linux/sudo"]
+      },
+      {
+        "title": "Displaying File System Information with mshowfat",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify mshowfat command usage",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can successfully use the `mshowfat` command to display information about the FAT file system on both the `fat_image.img` file and the `/dev/sdb1` device.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/dd"]
+      },
+      {
+        "title": "Analyzing FAT File System Structures using mshowfat",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify mshowfat verbose output",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the `mshowfat -v` command displays the detailed information about the FAT file system structure, including the boot sector, FAT tables, and the created directory and file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/touch"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

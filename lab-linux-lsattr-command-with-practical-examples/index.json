@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux lsattr Command with Practical Examples",
+  "description": "Explore the lsattr command in Linux, which allows you to view and manage file attributes. Learn how to use this powerful tool to understand and manipulate file properties, enhancing your file management skills.",
+  "meta": {
+    "title": "Linux lsattr Command with Practical Examples",
+    "description": "Explore the lsattr command in Linux, which allows you to view and manage file attributes. Learn how to use this powerful tool to understand and manipulate file properties, enhancing your file management skills.",
+    "keywords": "Linux, lsattr, file attributes, file management, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the lsattr Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify lsattr command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have run the `lsattr file.txt` command and that the output includes the expected file attributes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/cat", "linux/find"]
+      },
+      {
+        "title": "View File Attributes Using lsattr",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify lsattr command usage",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have run the `lsattr file1.txt file2.txt subdir subdir/file3.txt` command and that the output includes the expected file attributes.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/cat", "linux/chmod"]
+      },
+      {
+        "title": "Manage File Attributes with lsattr",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify lsattr attribute management",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have set the `i` attribute on `file4.txt` and the `a` attribute on `file5.txt` and `file6.txt` using the `lsattr` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/chmod"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sort Command with Practical Examples",
+  "description": "Explore the powerful sort command in Linux, learn how to sort files by different criteria, and combine it with other commands for efficient text processing.",
+  "meta": {
+    "title": "Linux sort Command with Practical Examples",
+    "description": "Explore the powerful sort command in Linux, learn how to sort files by different criteria, and combine it with other commands for efficient text processing.",
+    "keywords": "Linux, sort, text processing, file sorting, command line, text editing"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of sort Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the contents of the data.txt file",
+            "file": "verify1-1.sh",
+            "hint": "The contents of the data.txt file do not match the expected sorted output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/sort", "linux/cat"]
+      },
+      {
+        "title": "Sort Files by Different Criteria",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the contents of the data2.txt file",
+            "file": "verify2-1.sh",
+            "hint": "The contents of the data2.txt file do not match the expected sorted output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/sort", "linux/head", "linux/tail"]
+      },
+      {
+        "title": "Combine sort with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the output of the combined sort and grep command",
+            "file": "verify3-1.sh",
+            "hint": "The output of the combined sort and grep command does not match the expected result.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/sort", "linux/grep", "linux/uniq"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned the basics of the grep command, including how to use it to search for patterns in text files and combine it with other Linux commands. You started by understanding the basic usage of grep, such as searching for specific words, performing case-insensitive searches, and using regular expressions. Then, you explored more advanced pattern matching with grep, learning how to search for lines containing multiple keywords and using regular expressions to find specific patterns in the text. Throughout the lab, you practiced these concepts using sample text files, gaining a solid understanding of the grep command and its practical applications.

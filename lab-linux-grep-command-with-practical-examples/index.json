@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux grep Command with Practical Examples",
+  "description": "Explore the powerful grep command in Linux, learn how to search for patterns in text files, and combine grep with other commands for efficient text processing.",
+  "meta": {
+    "title": "Linux grep Command with Practical Examples",
+    "description": "Explore the powerful grep command in Linux, learn how to search for patterns in text files, and combine grep with other commands for efficient text processing.",
+    "keywords": "grep, Linux, text processing, pattern matching, command line, text editing"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of grep Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify grep basics",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can successfully use the grep command to search for the word \"fox\", perform a case-insensitive search for \"dog\", and find lines starting with \"The\" in the sample.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/grep", "linux/echo", "linux/cat"]
+      },
+      {
+        "title": "Use grep to Search for Patterns in Text Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify grep pattern search",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use grep to search for lines containing both \"dog\" and \"lazy\", as well as lines containing \"dog\" but not \"lazy\" in the sample.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/grep", "linux/sed", "linux/cat"]
+      },
+      {
+        "title": "Combine grep with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify grep with other commands",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use grep to find the ERROR log entries, get the count of ERROR entries, and extract the timestamp and log level from the log entries in the logs.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/grep", "linux/cut", "linux/wc"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

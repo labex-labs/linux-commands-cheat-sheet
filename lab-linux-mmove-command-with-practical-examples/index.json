@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux mmove Command with Practical Examples",
+  "description": "Explore the Linux mmove command and learn how to effectively move files and directories with practical examples. Discover advanced options to enhance your file management skills.",
+  "meta": {
+    "title": "Linux mmove Command with Practical Examples",
+    "description": "Explore the Linux mmove command and learn how to effectively move files and directories with practical examples. Discover advanced options to enhance your file management skills.",
+    "keywords": "Linux, mmove, file management, directory operations, file transfer, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the mmove Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify file move operation",
+            "file": "verify1-1.sh",
+            "hint": "The file `file.txt` should have been moved to the `~/documents/` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mv", "linux/cp", "linux/rm"]
+      },
+      {
+        "title": "Move Files and Directories Using mmove",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file move operation",
+            "file": "verify2-1.sh",
+            "hint": "The file `file.txt` should have been moved to the `~/documents/new_folder/` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify directory move operation",
+            "file": "verify2-2.sh",
+            "hint": "The directory `old_project` should have been moved to the `~/projects/new_project/` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mv", "linux/cp", "linux/rm"]
+      },
+      {
+        "title": "Explore Advanced mmove Options",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file move with prompt",
+            "file": "verify3-1.sh",
+            "hint": "The file `file.txt` should have been moved to the `~/documents/new_folder/` directory after prompting for confirmation.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify directory move with verbose output",
+            "file": "verify3-2.sh",
+            "hint": "The directory `old_project` should have been moved to the `~/projects/new_project/` directory with verbose output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mv", "linux/cp", "linux/rm"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

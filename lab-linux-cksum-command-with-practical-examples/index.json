@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cksum Command with Practical Examples",
+  "description": "Explore the cksum command in Linux, learn how to calculate checksums for files, and verify file integrity using practical examples.",
+  "meta": {
+    "title": "Linux cksum Command with Practical Examples",
+    "description": "Explore the cksum command in Linux, learn how to calculate checksums for files, and verify file integrity using practical examples.",
+    "keywords": "linux, cksum, checksum, file integrity, file operations, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the cksum Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify cksum command usage",
+            "file": "verify1-1.sh",
+            "hint": "Please ensure that you can run the `cksum` command on a file and that the output is displayed correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/wc"]
+      },
+      {
+        "title": "Calculate Checksums for Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify checksum calculation",
+            "file": "verify2-1.sh",
+            "hint": "Please ensure that you can correctly calculate the checksum of the `sample.txt` file using the `cksum` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo", "linux/cat"]
+      },
+      {
+        "title": "Verify File Integrity Using cksum",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file integrity using cksum",
+            "file": "verify3-1.sh",
+            "hint": "Please ensure that you can correctly verify the integrity of a file by comparing the checksum before and after modifying the file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/wget", "linux/echo"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

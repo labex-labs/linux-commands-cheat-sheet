@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux sed Command with Practical Examples",
+  "description": "Explore the power of the sed command in Linux, learning how to perform text substitution, edit multiple files, and more through practical examples.",
+  "meta": {
+    "title": "Linux sed Command with Practical Examples",
+    "description": "Explore the power of the sed command in Linux, learning how to perform text substitution, edit multiple files, and more through practical examples.",
+    "keywords": "sed, Linux, text processing, text editing, substitution, file editing, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of sed Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify basic sed commands",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can perform basic text substitution using the sed command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/sed", "linux/cat", "linux/echo"]
+      },
+      {
+        "title": "Perform Text Substitution Using sed",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify text substitution",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can perform advanced text substitution using the sed command, including using regular expressions and replacing text in multiple files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/sed", "linux/echo", "linux/cat"]
+      },
+      {
+        "title": "Edit Multiple Files with sed",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file editing",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can edit multiple files using the sed command, including in-place editing and using backup files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/sed", "linux/find"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

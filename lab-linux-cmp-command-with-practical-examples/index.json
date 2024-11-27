@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cmp Command with Practical Examples",
+  "description": "Explore the cmp command in Linux, learn how to compare text and binary files, and gain practical experience with hands-on examples.",
+  "meta": {
+    "title": "Linux cmp Command with Practical Examples",
+    "description": "Explore the cmp command in Linux, learn how to compare text and binary files, and gain practical experience with hands-on examples.",
+    "keywords": "Linux, cmp command, file comparison, text files, binary files, command-line tools"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the cmp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the cmp command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have created the `file1.txt` and `file2.txt` files with different content, and that the `cmp` command correctly identifies the difference between them.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/diff"]
+      },
+      {
+        "title": "Compare Two Text Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the cmp command for text file comparison",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have created the `file1.txt` and `file2.txt` files with different content, and that the `cmp` command correctly identifies the difference between them.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/diff"]
+      },
+      {
+        "title": "Compare Binary Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the cmp command for binary file comparison",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have created the `file1.bin` and `file2.bin` files with different random data, and that the `cmp` command correctly identifies the difference between them.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/dd", "linux/diff"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

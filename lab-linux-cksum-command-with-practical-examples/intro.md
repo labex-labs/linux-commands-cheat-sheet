@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `cksum` command in Linux to calculate the checksum of files and verify their integrity. The `cksum` command generates a unique numerical value that represents the contents of a file, which can be used to ensure that the file has not been corrupted or modified. You will start by understanding the basic usage of the `cksum` command, then learn how to calculate checksums for single and multiple files, and finally, how to use the checksums to verify file integrity. This lab covers the essential skills of basic file and directory operations in Linux.

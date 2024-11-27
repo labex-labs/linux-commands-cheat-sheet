@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux awk Command with Practical Examples",
+  "description": "Explore the power of the awk command in Linux, learn how to perform text processing, data manipulation, and analysis with practical examples.",
+  "meta": {
+    "title": "Linux awk Command with Practical Examples",
+    "description": "Explore the power of the awk command in Linux, learn how to perform text processing, data manipulation, and analysis with practical examples.",
+    "keywords": "awk, text processing, data manipulation, data analysis, Linux, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of awk Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify awk command basics",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you are able to print the second field (age) of each line in the data.txt file using the awk command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/awk", "linux/cut"]
+      },
+      {
+        "title": "Perform Text Processing with awk",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify awk text processing",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you can extract the date, time, and log level from each line in the log.txt file, as well as filter and print the lines with the 'ERROR' log level.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/awk", "linux/cut"]
+      },
+      {
+        "title": "Use awk for Data Manipulation and Analysis",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify awk data manipulation",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you can calculate the total revenue for each product and the average price of all products using the awk command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/awk", "linux/cut"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

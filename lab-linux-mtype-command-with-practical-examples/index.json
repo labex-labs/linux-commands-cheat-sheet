@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux mtype Command with Practical Examples",
+  "description": "Explore the Linux mtype command, its options, and practical examples to enhance your understanding of basic file and directory operations.",
+  "meta": {
+    "title": "Linux mtype Command with Practical Examples",
+    "description": "Explore the Linux mtype command, its options, and practical examples to enhance your understanding of basic file and directory operations.",
+    "keywords": "Linux, mtype command, file operations, directory operations, command-line, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the mtype Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify mtype command version",
+            "file": "verify1-1.sh",
+            "hint": "The mtype command should be part of the GNU sharutils package. Please check the version information and ensure it matches the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/more", "linux/less"]
+      },
+      {
+        "title": "Explore mtype Command Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify mtype command options",
+            "file": "verify2-1.sh",
+            "hint": "The mtype command should display the available options when the --help flag is used. Please check the output and ensure it matches the expected format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/less", "linux/more"]
+      },
+      {
+        "title": "Practical Examples of mtype Command Usage",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify mtype command usage for non-ASCII file",
+            "file": "verify3-1.sh",
+            "hint": "The mtype command should be able to properly display the contents of the non-ASCII file. Please check the output and ensure it includes the expected Japanese characters.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify mtype command usage for binary file",
+            "file": "verify3-2.sh",
+            "hint": "The mtype command should be able to display the contents of the binary file in a readable format. Please check the output and ensure it includes the expected hex dump.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/head"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}
