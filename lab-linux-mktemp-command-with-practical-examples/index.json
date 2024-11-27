@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mktemp Command with Practical Examples",
+  "description": "Explore the mktemp command in Linux, learn how to create secure temporary files, and discover practical examples for efficient file management.",
+  "meta": {
+    "title": "Linux mktemp Command with Practical Examples",
+    "description": "Explore the mktemp command in Linux, learn how to create secure temporary files, and discover practical examples for efficient file management.",
+    "keywords": "Linux, mktemp, temporary files, file management, command-line, security"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the mktemp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the mktemp command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `mktemp` command was able to create a temporary file successfully. Check if the file exists in the `/tmp` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/rm"]
+      },
+      {
+        "title": "Creating Temporary Files with mktemp",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the creation of temporary files",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `mktemp` command was able to create a temporary file with the specified template in the `/tmp` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/touch"]
+      },
+      {
+        "title": "Securing Temporary Files with mktemp",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the security of temporary files",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `mktemp` command created a temporary file with the expected permissions (0600). The file should be accessible only by the owner.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/chmod", "linux/mkdir"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

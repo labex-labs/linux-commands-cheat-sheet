@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux dirname Command with Practical Examples",
+  "description": "Learn how to use the dirname command in Linux to retrieve the directory name from a file path. Explore practical examples and combine dirname with other Linux commands.",
+  "meta": {
+    "title": "Linux dirname Command with Practical Examples",
+    "description": "Learn how to use the dirname command in Linux to retrieve the directory name from a file path. Explore practical examples and combine dirname with other Linux commands.",
+    "keywords": "linux, dirname, file path, directory, command line, file operations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of dirname Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of dirname command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure the dirname command is correctly extracting the directory name from the given file path.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo", "linux/cat"]
+      },
+      {
+        "title": "Retrieve the Directory Name from a File Path",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the directory name extraction",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the dirname command is correctly extracting the directory name from the given file path.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cd", "linux/pwd"]
+      },
+      {
+        "title": "Combine dirname with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify changing the working directory",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the dirname command is used correctly to change the working directory to the directory containing the file.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify creating a new directory",
+            "file": "verify3-2.sh",
+            "hint": "Make sure the dirname command is used correctly to create a new directory based on the directory name of the file path.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cd", "linux/mkdir"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

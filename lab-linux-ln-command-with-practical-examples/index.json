@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Linux ln Command with Practical Examples",
+  "description": "Explore the ln command in Linux, learn how to create hard and symbolic links, and understand their practical applications through hands-on examples.",
+  "meta": {
+    "title": "Linux ln Command with Practical Examples",
+    "description": "Explore the ln command in Linux, learn how to create hard and symbolic links, and understand their practical applications through hands-on examples.",
+    "keywords": "Linux, ln command, hard links, symbolic links, file management, directory operations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the Purpose of the ln Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify hard link creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created a hard link named `file1_hardlink.txt` that has the same content as `file1.txt`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify symbolic link creation",
+            "file": "verify1-2.sh",
+            "hint": "Make sure you have created a symbolic link named `file1_symlink.txt` that points to `file1.txt`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ln", "linux/ln", "linux/ln"]
+      },
+      {
+        "title": "Creating Hard Links Using the ln Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify hard link creation",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created a hard link named `file1_hardlink.txt` that has the same content as `file1.txt`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify hard link behavior",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that any changes made to `file1.txt` are also reflected in `file1_hardlink.txt`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ln", "linux/ls", "linux/cat"]
+      },
+      {
+        "title": "Creating Symbolic Links Using the ln Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify symbolic link creation",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created a symbolic link named `file2_symlink.txt` that points to `file2.txt`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify symbolic link to directory",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that you have created a symbolic link named `dir1_symlink` that points to the `dir1` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ln", "linux/ls", "linux/rm"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

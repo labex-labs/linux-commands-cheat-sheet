@@ -1,0 +1,108 @@
+{
+  "type": "lab",
+  "title": "Linux touch Command with Practical Examples",
+  "description": "Explore the versatile Linux touch command to create new files, modify file timestamps, and manage file operations efficiently. Gain practical experience through hands-on examples.",
+  "meta": {
+    "title": "Linux touch Command with Practical Examples",
+    "description": "Explore the versatile Linux touch command to create new files, modify file timestamps, and manage file operations efficiently. Gain practical experience through hands-on examples.",
+    "keywords": "linux, touch command, file management, file creation, timestamp, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the touch Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify file creation",
+            "file": "verify1-1.sh",
+            "hint": "The `touch` command did not create the `new_file.txt` file in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify file modification time update",
+            "file": "verify1-2.sh",
+            "hint": "The modification time of the `new_file.txt` file was not updated using the `touch -m` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/cd", "linux/ls"]
+      },
+      {
+        "title": "Create New Files Using the touch Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify single file creation",
+            "file": "verify2-1.sh",
+            "hint": "The `touch` command did not create the `new_file.txt` file in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify multiple file creation",
+            "file": "verify2-2.sh",
+            "hint": "The `touch` command did not create all the files (file1.txt, file2.txt, file3.txt) in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify wildcard file creation",
+            "file": "verify2-3.sh",
+            "hint": "The `touch` command did not create any files with the `.md` extension in the `~/project` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/cd", "linux/ls"]
+      },
+      {
+        "title": "Modify File Timestamps with the touch Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify access time update",
+            "file": "verify3-1.sh",
+            "hint": "The access time of the `existing_file.txt` file was not updated using the `touch -a` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify modification time update",
+            "file": "verify3-2.sh",
+            "hint": "The modification time of the `existing_file.txt` file was not updated using the `touch -m` command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify timestamp set to specific date",
+            "file": "verify3-3.sh",
+            "hint": "The access and modification times of the `existing_file.txt` file were not set to the specified date and time using the `touch -d` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/date", "linux/cd"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

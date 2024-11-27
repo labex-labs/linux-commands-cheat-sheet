@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mc Command with Practical Examples",
+  "description": "Explore the Midnight Commander (mc) file manager, learn how to install it on Ubuntu 22.04, and perform essential file and directory operations using this powerful command-line tool.",
+  "meta": {
+    "title": "Linux mc Command with Practical Examples",
+    "description": "Explore the Midnight Commander (mc) file manager, learn how to install it on Ubuntu 22.04, and perform essential file and directory operations using this powerful command-line tool.",
+    "keywords": "Linux, Midnight Commander, mc, file management, directory operations, Ubuntu"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Midnight Commander (mc) on Ubuntu 22.04",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify Midnight Commander Installation",
+            "file": "verify1-1.sh",
+            "hint": "Midnight Commander (mc) does not seem to be installed correctly. Please review the installation steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/apt", "linux/sudo"]
+      },
+      {
+        "title": "Explore the Midnight Commander Interface",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify Midnight Commander Interface Exploration",
+            "file": "verify2-1.sh",
+            "hint": "It seems you have not explored the Midnight Commander interface as instructed. Please review the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/cd"]
+      },
+      {
+        "title": "Perform File and Directory Operations using Midnight Commander",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify File and Directory Operations",
+            "file": "verify3-1.sh",
+            "hint": "It seems you have not completed the file and directory operations as instructed. Please review the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/cp", "linux/rm"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

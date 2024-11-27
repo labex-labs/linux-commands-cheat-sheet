@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the powerful Linux `find` command to search for files and directories based on various criteria, such as name, file type, size, and more. The lab covers the basic usage of the `find` command, as well as more advanced techniques to combine it with other commands for more complex searches. You will start by understanding the basic syntax and some practical examples of the `find` command, and then explore how to search for files by name and file type. Finally, you will learn how to combine the `find` command with other commands to perform advanced searches.

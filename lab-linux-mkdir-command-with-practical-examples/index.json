@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux mkdir Command with Practical Examples",
+  "description": "Explore the mkdir command in Linux, learn how to create directories, manage permissions, and work with nested directories through practical examples.",
+  "meta": {
+    "title": "Linux mkdir Command with Practical Examples",
+    "description": "Explore the mkdir command in Linux, learn how to create directories, manage permissions, and work with nested directories through practical examples.",
+    "keywords": "Linux, mkdir, directories, file management, permissions, nested directories"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Create Directories with mkdir Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify directory creation",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have created the following directories:\n- ~/project/mydir\n- ~/project/dir1\n- ~/project/dir2\n- ~/project/dir3\n- ~/project/parent/child/grandchild",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/ls", "linux/cd"]
+      },
+      {
+        "title": "Create Nested Directories with mkdir -p",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify nested directory creation",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have created the following nested directories:\n- ~/project/projects/web-app/src/components\n- ~/project/documents/reports/2023/q1",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/ls", "linux/cd"]
+      },
+      {
+        "title": "Permissions Management with mkdir",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify directory permissions",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have created the following directories with the correct permissions:\n- ~/project/my_dir with permissions 755\n- ~/project/secret_dir with permissions 700",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir", "linux/chmod", "linux/ls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

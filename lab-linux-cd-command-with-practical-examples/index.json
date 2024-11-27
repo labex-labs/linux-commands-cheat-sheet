@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cd Command with Practical Examples",
+  "description": "Explore the Linux cd command, learn how to navigate the file system, and understand the difference between relative and absolute paths.",
+  "meta": {
+    "title": "Linux cd Command with Practical Examples",
+    "description": "Explore the Linux cd command, learn how to navigate the file system, and understand the difference between relative and absolute paths.",
+    "keywords": "Linux, cd command, file system, navigation, relative path, absolute path"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the cd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the current working directory",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the current working directory is /home/labex/project after using the cd command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cd", "linux/pwd", "linux/ls"]
+      },
+      {
+        "title": "Navigate the File System Using cd Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the current working directory",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the current working directory is /home/labex/project/dir1 after using the cd command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cd", "linux/mkdir", "linux/touch"]
+      },
+      {
+        "title": "Explore Relative and Absolute Paths with cd Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the current working directory",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the current working directory is /home/labex/project/dir2 after using the cd command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cd", "linux/pwd", "linux/ls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

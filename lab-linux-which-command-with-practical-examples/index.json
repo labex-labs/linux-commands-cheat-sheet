@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux which Command with Practical Examples",
+  "description": "Explore the Linux which command, learn how to locate the path of executable files, and discover advanced usage scenarios with practical examples.",
+  "meta": {
+    "title": "Linux which Command with Practical Examples",
+    "description": "Explore the Linux which command, learn how to locate the path of executable files, and discover advanced usage scenarios with practical examples.",
+    "keywords": "Linux, which command, executable files, command line, file management, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the which Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the location of the ls command",
+            "file": "verify1-1.sh",
+            "hint": "The `which` command should return the location of the `ls` command as `/usr/bin/ls`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/which", "linux/whereis", "linux/echo"]
+      },
+      {
+        "title": "Locate the Path of Executable Files Using the which Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the location of the hello.sh script",
+            "file": "verify2-1.sh",
+            "hint": "The `which` command should return the location of the `hello.sh` script as `/home/labex/project/hello.sh`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/which", "linux/pwd", "linux/chmod"]
+      },
+      {
+        "title": "Explore Advanced Usage of the which Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the first occurrence of python in PATH",
+            "file": "verify3-1.sh",
+            "hint": "The `which` command should return the first occurrence of the `python` executable, which should be `/usr/bin/python3`.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify all occurrences of python in PATH",
+            "file": "verify3-2.sh",
+            "hint": "The `which -a python` command should return all the occurrences of the `python` executable in the PATH, including `/usr/bin/python3`, `/usr/bin/python3.10`, and `/usr/bin/python`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/which", "linux/echo", "linux/test"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

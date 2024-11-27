@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux od Command with Practical Examples",
+  "description": "Explore the od command in Linux, learn its options, and perform hexadecimal dumps of files with practical examples.",
+  "meta": {
+    "title": "Linux od Command with Practical Examples",
+    "description": "Explore the od command in Linux, learn its options, and perform hexadecimal dumps of files with practical examples.",
+    "keywords": "Linux, od command, file operations, hexadecimal dump, data analysis"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the od Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify od command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the `sample.txt` file and used the `od` command with the correct options to display the file contents in hexadecimal format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Explore od Command Options",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify od command options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created the `binary.txt` file and used the `od` command with the correct options to display the file contents in hexadecimal format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/echo", "linux/cat"]
+      },
+      {
+        "title": "Perform Hexadecimal Dump of Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify hexadecimal dump",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created the `random.txt` file and used the `od` command with the correct options to display the file contents in hexadecimal format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/dd"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux file Command with Practical Examples",
+  "description": "Explore the versatile file command in Linux, learn to identify file types, and handle compressed files effectively.",
+  "meta": {
+    "title": "Linux file Command with Practical Examples",
+    "description": "Explore the versatile file command in Linux, learn to identify file types, and handle compressed files effectively.",
+    "keywords": "Linux, file command, file type, compressed files, file operations, basic Linux skills"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Exploring the file Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the file command usage",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that the `file` command correctly identifies the file types as described in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/echo"]
+      },
+      {
+        "title": "Identifying File Types",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file type identification",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `file` command correctly identifies the file types as described in the step.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/gzip"]
+      },
+      {
+        "title": "Handling Compressed Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify compressed file handling",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the compressed file is correctly identified and its contents are extracted as expected.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tar", "linux/gzip"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

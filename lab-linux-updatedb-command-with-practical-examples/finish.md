@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose of the `updatedb` command in Linux. The `updatedb` command is used to update the locate database, which is a database that stores information about the location of files on the system. This database is used by the `locate` command to quickly search for files on the system. You then learned how to update the locate database using the `updatedb` command. The `updatedb` command scans the entire file system and updates the locate database with the current file locations. This process can take some time, depending on the size of your file system. Finally, you learned how to use the `locate` command to quickly search for files on your system after updating the locate database.

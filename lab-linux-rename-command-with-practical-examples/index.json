@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux rename Command with Practical Examples",
+  "description": "Learn how to use the Linux rename command to efficiently rename files and directories. Explore practical examples and batch renaming techniques.",
+  "meta": {
+    "title": "Linux rename Command with Practical Examples",
+    "description": "Learn how to use the Linux rename command to efficiently rename files and directories. Explore practical examples and batch renaming techniques.",
+    "keywords": "Linux, rename, file, directory, batch, rename command, file operations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the rename Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the rename command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have successfully renamed the .txt files to .doc files using the rename command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mv", "linux/ls"]
+      },
+      {
+        "title": "Rename Files Using the rename Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file renaming",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have successfully renamed the files using the rename command, including renaming a single file and adding a prefix to multiple files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/ls"]
+      },
+      {
+        "title": "Batch Rename Files with the rename Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify batch file renaming",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you have successfully batch renamed the files using the rename command, including renaming all .txt files to .doc and adding a prefix to all .jpg files.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/ls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

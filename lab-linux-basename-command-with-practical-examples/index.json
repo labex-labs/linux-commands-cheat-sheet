@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux basename Command with Practical Examples",
+  "description": "Explore the basename command in Linux, learn how to extract filenames from full paths, and combine it with other commands for efficient file and directory operations.",
+  "meta": {
+    "title": "Linux basename Command with Practical Examples",
+    "description": "Explore the basename command in Linux, learn how to extract filenames from full paths, and combine it with other commands for efficient file and directory operations.",
+    "keywords": "linux, basename, file operations, directory operations, command line, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the basename Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify basename command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you are able to use the basename command to extract the filename from the full path correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cd", "linux/touch"]
+      },
+      {
+        "title": "Use basename to Extract Filename from Full Path",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify basename command usage for filenames",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you are able to use the basename command to extract the filenames from the full paths correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cd", "linux/ls"]
+      },
+      {
+        "title": "Combine basename with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify basename command usage with other commands",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you are able to combine the basename command with other Linux commands to perform file and directory operations.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/mv"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

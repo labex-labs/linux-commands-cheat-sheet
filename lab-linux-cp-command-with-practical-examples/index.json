@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cp Command with Practical Examples",
+  "description": "Explore the versatile Linux cp command through practical examples. Learn how to copy files, directories, and preserve file attributes and timestamps effectively.",
+  "meta": {
+    "title": "Linux cp Command with Practical Examples",
+    "description": "Explore the versatile Linux cp command through practical examples. Learn how to copy files, directories, and preserve file attributes and timestamps effectively.",
+    "keywords": "Linux, cp command, file copy, directory copy, file attributes, timestamps"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of the cp Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify if the sample.txt file was copied",
+            "file": "verify1-1.sh",
+            "hint": "It looks like the `sample.txt` file was not copied successfully. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cp", "linux/mkdir", "linux/touch"]
+      },
+      {
+        "title": "Copy Files and Directories Using the cp Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify if the files and directories were copied correctly",
+            "file": "verify2-1.sh",
+            "hint": "It looks like the files and directories were not copied correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cp", "linux/mkdir", "linux/touch"]
+      },
+      {
+        "title": "Preserve File Attributes and Timestamps with the cp Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify if the file attributes and timestamps were preserved",
+            "file": "verify3-1.sh",
+            "hint": "It looks like the file attributes and timestamps were not preserved correctly. Please review the steps and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cp", "linux/ls", "linux/touch"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

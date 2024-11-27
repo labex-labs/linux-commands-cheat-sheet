@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux readlink Command with Practical Examples",
+  "description": "Explore the readlink command in Linux, learn its syntax and options, and practice resolving symbolic links with practical examples.",
+  "meta": {
+    "title": "Linux readlink Command with Practical Examples",
+    "description": "Explore the readlink command in Linux, learn its syntax and options, and practice resolving symbolic links with practical examples.",
+    "keywords": "readlink, Linux, symbolic links, file operations, directory operations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the readlink Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose of the readlink command",
+            "file": "verify1-1.sh",
+            "hint": "Ensure that you have created the symbolic link `python_link` in the `~/project` directory and that the `readlink` command displays the correct value of `/usr/bin/python3`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ln", "linux/pwd"]
+      },
+      {
+        "title": "Explore the Syntax and Options of the readlink Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the syntax and options of the readlink command",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that the `readlink` command with the `-f`, `-m`, and `-n` options all display the expected value of `/usr/bin/python3` for the `python_link` symbolic link.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ln", "linux/cat"]
+      },
+      {
+        "title": "Practice Resolving Symbolic Links with the readlink Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the resolution of symbolic links",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that the `readlink` command correctly resolves the `ls_link` and `nested_link` symbolic links, and that the `-f` option follows the chain of symbolic links to the final target.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ln", "linux/cd"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux cat Command with Practical Examples",
+  "description": "Explore the versatile Linux cat command through practical examples. Learn to concatenate and display text files, as well as append content to existing files, enhancing your basic file and directory operations skills.",
+  "meta": {
+    "title": "Linux cat Command with Practical Examples",
+    "description": "Explore the versatile Linux cat command through practical examples. Learn to concatenate and display text files, as well as append content to existing files, enhancing your basic file and directory operations skills.",
+    "keywords": "Linux, cat command, file operations, text files, file concatenation, file appending"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the cat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the purpose and syntax of the cat command",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the sample.txt file and used the cat command correctly to display its contents.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/echo", "linux/more"]
+      },
+      {
+        "title": "Concatenate and Display Text Files",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the concatenation of text files",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have created the file1.txt and file2.txt files and used the cat command correctly to concatenate their contents.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/echo", "linux/more"]
+      },
+      {
+        "title": "Append Text to Existing Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the appending of text to an existing file",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created the file3.txt file and used the cat command or the >> operator to append new text to the file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cat", "linux/echo", "linux/redirect"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

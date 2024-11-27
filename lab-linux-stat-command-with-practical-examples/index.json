@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux stat Command with Practical Examples",
+  "description": "Explore the Linux stat command, learn how to retrieve file metadata, and analyze file permissions and ownership with practical examples.",
+  "meta": {
+    "title": "Linux stat Command with Practical Examples",
+    "description": "Explore the Linux stat command, learn how to retrieve file metadata, and analyze file permissions and ownership with practical examples.",
+    "keywords": "Linux, stat command, file metadata, file permissions, file ownership"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the stat Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the stat command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can run the `stat` command on the `~/project/example.txt` file and that the command returns the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/cat"]
+      },
+      {
+        "title": "Retrieve File Metadata Using the stat Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the stat command output",
+            "file": "verify2-1.sh",
+            "hint": "Make sure the `stat` command output for the `~/project/example.txt` file includes the \"regular empty file\" information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "linux/ls"]
+      },
+      {
+        "title": "Analyze File Permissions and Ownership with stat",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the stat command output for file permissions and ownership",
+            "file": "verify3-1.sh",
+            "hint": "Make sure the `stat` command output for the `~/project/example.txt` file shows the correct permissions (-rw-r--r--) and ownership (labex user and labex group).",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/chmod"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

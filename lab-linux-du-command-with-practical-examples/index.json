@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux du Command with Practical Examples",
+  "description": "Explore the Linux du command to measure disk usage, understand its options, and learn how to exclude directories from the measurement process.",
+  "meta": {
+    "title": "Linux du Command with Practical Examples",
+    "description": "Explore the Linux du command to measure disk usage, understand its options, and learn how to exclude directories from the measurement process.",
+    "keywords": "Linux, du command, disk usage, directory, file management, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the du Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the du command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can run the `du` command and see the disk usage of the current directory in human-readable format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/du", "linux/df"]
+      },
+      {
+        "title": "Measure Disk Usage for a Directory",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the disk usage of the test_dir directory",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can measure the disk usage of the `test_dir` directory and see the total size displayed in human-readable format.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/du", "linux/cd", "linux/ls"]
+      },
+      {
+        "title": "Exclude Directories from du Measurement",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the exclusion of directories from du measurement",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can exclude the `subdir1` directory from the `du` command's disk usage measurement.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/du", "linux/cd"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux ls Command with Practical Examples",
+  "description": "Explore the Linux ls command and its practical applications for managing files and directories. Learn how to utilize various options to retrieve detailed file information and navigate directory structures effectively.",
+  "meta": {
+    "title": "Linux ls Command with Practical Examples",
+    "description": "Explore the Linux ls command and its practical applications for managing files and directories. Learn how to utilize various options to retrieve detailed file information and navigate directory structures effectively.",
+    "keywords": "linux, ls command, file management, directory navigation, file information, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basic Usage of ls Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify basic ls command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can list the contents of the current directory using the basic `ls` command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls"]
+      },
+      {
+        "title": "Explore ls Command Options for Detailed File Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify detailed ls command options",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can use the `ls` command with various options to retrieve detailed file information.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls"]
+      },
+      {
+        "title": "Utilize ls Command for Navigating Directory Structures",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify directory navigation with ls",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can use the `ls` command to navigate through directories and list their contents.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/ls", "linux/cd", "linux/pwd"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

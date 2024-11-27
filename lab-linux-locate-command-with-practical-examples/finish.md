@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose and usage of the `locate` command in Linux. The `locate` command is a powerful tool that allows you to quickly search for files and directories on your system by using a pre-built database, which makes it much faster than the `find` command. You then installed the `mlocate` package, which provides the `locate` command and maintains the database of file locations. Finally, you learned how to use the `locate` command with practical examples, including searching for files and directories by name and using wildcards for more complex searches.

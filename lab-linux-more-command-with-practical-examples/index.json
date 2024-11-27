@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux more Command with Practical Examples",
+  "description": "Explore the versatile more command in Linux, learn how to navigate and search through text files, and customize its behavior for efficient file viewing.",
+  "meta": {
+    "title": "Linux more Command with Practical Examples",
+    "description": "Explore the versatile more command in Linux, learn how to navigate and search through text files, and customize its behavior for efficient file viewing.",
+    "keywords": "Linux, more command, file navigation, text search, command customization"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the more Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the more command usage",
+            "file": "verify1-1.sh",
+            "hint": "It seems you have not used the `more` command to view the contents of the `example.txt` file. Please follow the instructions in the step and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/more", "linux/less", "linux/cat"]
+      },
+      {
+        "title": "Navigate and Search Through Text Files with the more Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify navigation and search functionality",
+            "file": "verify2-1.sh",
+            "hint": "It seems you have not used the navigation and search functionality of the `more` command as expected. Please review the instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/more", "linux/less", "linux/cat"]
+      },
+      {
+        "title": "Customize the more Command Behavior and Explore Advanced Features",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify customization and advanced features",
+            "file": "verify3-1.sh",
+            "hint": "It seems you have not used the customization options and advanced features of the `more` command as expected. Please review the instructions and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/more", "linux/less", "linux/grep"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,3 @@
+# Introduction
+
+In this lab, you will learn how to use the `df` command in Linux to understand the purpose and syntax of the command, explore disk usage, and customize the output. The `df` command is a utility that displays information about the file system, including the total size, used space, and available space of each file system. You will also learn how to use various options to customize the output, such as displaying the file system information in a more human-readable format. Additionally, you will explore disk usage by creating sample files and using the `df` command to check the disk usage of the directory where the files are located.

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the purpose and basic syntax of the `more` command in Linux, which allows you to view the contents of a file one page at a time. You explored how to navigate through the file using various commands, such as pressing the Space key to display the next page, the Enter key to display the next line, and the b key to go back one page. Additionally, you learned how to customize the `more` command's behavior using options like `-d` and `-c`. Furthermore, you practiced navigating and searching through larger text files using the `more` command, including the ability to search for specific words or phrases within the file.

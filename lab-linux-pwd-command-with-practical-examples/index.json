@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux pwd Command with Practical Examples",
+  "description": "Explore the Linux pwd command, its purpose, and practical examples of using it with other commands to manage files and directories.",
+  "meta": {
+    "title": "Linux pwd Command with Practical Examples",
+    "description": "Explore the Linux pwd command, its purpose, and practical examples of using it with other commands to manage files and directories.",
+    "keywords": "Linux, pwd, directory, file, command, navigation, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the pwd Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the pwd command",
+            "file": "verify1-1.sh",
+            "hint": "The current working directory should be /home/labex/project. Please run the 'pwd' command to check your current location.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/pwd", "linux/cd", "linux/ls"]
+      },
+      {
+        "title": "Explore the pwd Command in Different Directories",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the pwd command in different directories",
+            "file": "verify2-1.sh",
+            "hint": "Please make sure you can navigate to the subdirectory, parent directory, and root directory, and verify the output of the 'pwd' command in each location.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/cd", "linux/pwd", "linux/ls"]
+      },
+      {
+        "title": "Combine pwd with Other Linux Commands",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify creating a new file in the current directory",
+            "file": "verify3-1.sh",
+            "hint": "Please make sure you can create a new file named 'new_file.txt' in the current working directory using the 'pwd' command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify listing the contents of the root directory",
+            "file": "verify3-2.sh",
+            "hint": "Please make sure you can navigate to the root directory and list its contents using the 'pwd' command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/pwd", "linux/touch", "linux/ls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

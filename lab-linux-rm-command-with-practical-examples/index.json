@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux rm Command with Practical Examples",
+  "description": "Explore the Linux rm command with practical examples. Learn how to remove files and directories, handle confirmation prompts, and force removal for efficient file management.",
+  "meta": {
+    "title": "Linux rm Command with Practical Examples",
+    "description": "Explore the Linux rm command with practical examples. Learn how to remove files and directories, handle confirmation prompts, and force removal for efficient file management.",
+    "keywords": "Linux, rm command, file removal, directory removal, force removal, confirmation prompts"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the rm Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify file removal",
+            "file": "verify1-1.sh",
+            "hint": "The files `file1.txt`, `file2.txt`, and `file3.txt` should have been removed from the `~/project/test_dir` directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/mkdir", "linux/touch"]
+      },
+      {
+        "title": "Removing Files and Directories",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify directory removal",
+            "file": "verify2-1.sh",
+            "hint": "The `~/project/test_dir` directory should have been removed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/mkdir", "linux/touch"]
+      },
+      {
+        "title": "Handling Confirmation Prompts and Force Removal",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify force removal",
+            "file": "verify3-1.sh",
+            "hint": "The `~/project/test_dir` directory and its contents should have been removed without any confirmation prompts.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/rm", "linux/rm"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

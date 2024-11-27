@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `less` command, a powerful text viewer for Linux. You first understood the basic functionality of the `less` command, including how to navigate through text files by moving up and down pages, searching for text, and jumping to the beginning or end of the file. You then practiced these navigation techniques using a larger text file, the full text of "Alice's Adventures in Wonderland" by Lewis Carroll. The `less` command provides efficient ways to view and navigate through text files, making it a valuable tool for working with large or complex documents on the Linux command line.

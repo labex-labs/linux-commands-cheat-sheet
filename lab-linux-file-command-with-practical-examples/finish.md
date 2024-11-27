@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the versatile `file` command in Linux, which is used to determine the type of a file. We learned how to use the `file` command to identify different file types, including text files, binary files, and compressed files. The `file` command can provide valuable information about the contents of a file, even if the file extension doesn't match the actual file type. We also practiced creating sample files and using the `file` command to analyze their types. This lab has equipped us with a better understanding of the `file` command and its practical applications in working with various file types on a Linux system.

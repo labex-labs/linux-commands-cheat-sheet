@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux find Command with Practical Examples",
+  "description": "Explore the power of the Linux find command with practical examples. Learn to search for files by name, file type, and combine find with other commands for advanced file system operations.",
+  "meta": {
+    "title": "Linux find Command with Practical Examples",
+    "description": "Explore the power of the Linux find command with practical examples. Learn to search for files by name, file type, and combine find with other commands for advanced file system operations.",
+    "keywords": "Linux, find command, file search, file type, advanced file operations"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Basics of the find Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify basic find command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can perform the basic file and directory searches using the `find` command as shown in the examples.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/find", "linux/ls", "linux/cd"]
+      },
+      {
+        "title": "Search for Files by Name and File Type",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file search by name and type",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can search for files by name and file type using the `find` command as shown in the examples.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/find"]
+      },
+      {
+        "title": "Combine find with Other Commands for Advanced Searches",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify find with other commands",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can combine the `find` command with other commands like `rm`, `cat`, `cp`, and `mv` to perform advanced file system searches and operations.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/find", "linux/rm", "linux/cp"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

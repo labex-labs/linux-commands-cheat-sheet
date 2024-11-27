@@ -1,0 +1,87 @@
+{
+  "type": "lab",
+  "title": "Linux whereis Command with Practical Examples",
+  "description": "Explore the Linux whereis command and learn how to locate executable files, source code, and manual pages on your system. Customize the search behavior to suit your needs.",
+  "meta": {
+    "title": "Linux whereis Command with Practical Examples",
+    "description": "Explore the Linux whereis command and learn how to locate executable files, source code, and manual pages on your system. Customize the search behavior to suit your needs.",
+    "keywords": "Linux, whereis, command, executable, source code, manual pages, file, directory, search"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of the whereis Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the location of the 'ls' command",
+            "file": "verify1-1.sh",
+            "hint": "The 'whereis' command should return the location of the 'ls' command as '/usr/bin/ls'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/whereis", "linux/which", "linux/locate"]
+      },
+      {
+        "title": "Locate Executable Files, Source Code, and Manual Pages Using whereis",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the location of the 'gcc' command",
+            "file": "verify2-1.sh",
+            "hint": "The 'whereis' command should return the location of the 'gcc' command as '/usr/bin/gcc'.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the location of the 'python3' command",
+            "file": "verify2-2.sh",
+            "hint": "The 'whereis' command should return the location of the 'python3' command as '/usr/bin/python3'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/whereis", "linux/which", "linux/locate"]
+      },
+      {
+        "title": "Customize the Search Behavior of the whereis Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the binary location of 'gcc'",
+            "file": "verify3-1.sh",
+            "hint": "The 'whereis -b gcc' command should return the binary location of 'gcc' as '/usr/bin/gcc'.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the manual page location of 'python3'",
+            "file": "verify3-2.sh",
+            "hint": "The 'whereis -m python3' command should return the manual page location of 'python3' as '/usr/share/man/man1/python3.1.gz'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/whereis"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux tree Command with Practical Examples",
+  "description": "Explore the Linux tree command, a powerful tool for visualizing directory structures. Learn its basic options, and apply it to specific directories and files for practical use cases.",
+  "meta": {
+    "title": "Linux tree Command with Practical Examples",
+    "description": "Explore the Linux tree command, a powerful tool for visualizing directory structures. Learn its basic options, and apply it to specific directories and files for practical use cases.",
+    "keywords": "Linux, tree command, directory structure, file management, practical examples"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the tree Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the tree command is installed",
+            "file": "verify1-1.sh",
+            "hint": "The tree command is not installed. Please run the following command to install it:\nsudo apt-get update\nsudo apt-get install -y tree",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tree", "linux/ls", "linux/cd"]
+      },
+      {
+        "title": "Explore the Basic Options of the tree Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the tree command with -h option",
+            "file": "verify2-1.sh",
+            "hint": "The tree command with -h option did not display the file sizes correctly. Please ensure that the output contains \"1 directory, 2 files\".",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tree", "linux/ls", "linux/du"]
+      },
+      {
+        "title": "Apply the tree Command to Specific Directories and Files",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the tree command with specific directory",
+            "file": "verify3-1.sh",
+            "hint": "The tree command did not display the 'reports' directory correctly. Please ensure that the output contains the 'reports' directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/tree", "linux/mkdir", "linux/touch"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

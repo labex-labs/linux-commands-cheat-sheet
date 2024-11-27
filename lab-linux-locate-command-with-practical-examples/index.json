@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux locate Command with Practical Examples",
+  "description": "Explore the Linux locate command, a powerful tool for quickly searching and finding files on your system. Learn how to install the mlocate package and use locate to search for files and directories.",
+  "meta": {
+    "title": "Linux locate Command with Practical Examples",
+    "description": "Explore the Linux locate command, a powerful tool for quickly searching and finding files on your system. Learn how to install the mlocate package and use locate to search for files and directories.",
+    "keywords": "linux, locate, file search, directory search, mlocate, ubuntu, file management"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Usage of the locate Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the locate command is installed",
+            "file": "verify1-1.sh",
+            "hint": "The locate command is not installed. Please install the mlocate package using the command:\nsudo apt-get install -y mlocate",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/locate", "linux/find", "linux/whereis"]
+      },
+      {
+        "title": "Install the mlocate Package on Ubuntu 22.04",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the mlocate package is installed",
+            "file": "verify2-1.sh",
+            "hint": "The mlocate package is not installed. Please install it using the following commands:\nsudo apt-get update\nsudo apt-get install -y mlocate",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/apt", "linux/locate", "linux/sudo"]
+      },
+      {
+        "title": "Search for Files and Directories Using the locate Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the locate command can find the sample file",
+            "file": "verify3-1.sh",
+            "hint": "The locate command could not find the sample_file.txt file. Please ensure you have created the file in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/locate", "linux/wildcard", "linux/find"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

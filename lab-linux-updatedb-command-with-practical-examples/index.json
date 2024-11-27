@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux updatedb Command with Practical Examples",
+  "description": "Explore the updatedb command in Linux, which updates the locate database for efficient file searches. Learn how to use updatedb and the locate command with practical examples.",
+  "meta": {
+    "title": "Linux updatedb Command with Practical Examples",
+    "description": "Explore the updatedb command in Linux, which updates the locate database for efficient file searches. Learn how to use updatedb and the locate command with practical examples.",
+    "keywords": "Linux, updatedb, locate, file search, database, command line, system administration"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose of updatedb Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify updatedb command execution",
+            "file": "verify1-1.sh",
+            "hint": "The updatedb command should have updated the locate database at /var/lib/mlocate/mlocate.db. Please check if the file exists.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/locate", "linux/find"]
+      },
+      {
+        "title": "Update the Locate Database with updatedb Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify updatedb command execution",
+            "file": "verify2-1.sh",
+            "hint": "The updatedb command should have updated the locate database at /var/lib/mlocate/mlocate.db. Please check if the file exists.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/locate", "linux/sudo"]
+      },
+      {
+        "title": "Search for Files Using the locate Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify locate command usage",
+            "file": "verify3-1.sh",
+            "hint": "The locate command should be able to find the /bin/bash file. Please check the output of the locate bash command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/locate", "linux/find", "linux/whereis"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

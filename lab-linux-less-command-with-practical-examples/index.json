@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux less Command with Practical Examples",
+  "description": "Explore the less command, a powerful text viewer for Linux. Learn how to navigate through text files, search and highlight content, and utilize less effectively for your daily tasks.",
+  "meta": {
+    "title": "Linux less Command with Practical Examples",
+    "description": "Explore the less command, a powerful text viewer for Linux. Learn how to navigate through text files, search and highlight content, and utilize less effectively for your daily tasks.",
+    "keywords": "linux, less command, text viewer, file navigation, text search, text highlighting"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the less Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the less command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have used the less command to view the contents of the sample.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/less", "linux/man", "linux/more"]
+      },
+      {
+        "title": "Navigate Through Text Files with less",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify navigation with less",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you have used the less command to navigate through the book.txt file, such as searching for a character's name or a specific quote.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/less", "linux/cat", "linux/more"]
+      },
+      {
+        "title": "Search and Highlight Text in less",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify search and highlight in less",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have used the less command to search for and highlight the word 'Alice' in the book.txt file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/less", "linux/grep"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

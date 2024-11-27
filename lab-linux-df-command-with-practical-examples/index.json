@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux df Command with Practical Examples",
+  "description": "Explore the Linux df command, a powerful tool for monitoring disk usage. Learn how to customize the output and gain practical insights into your system's storage capacity.",
+  "meta": {
+    "title": "Linux df Command with Practical Examples",
+    "description": "Explore the Linux df command, a powerful tool for monitoring disk usage. Learn how to customize the output and gain practical insights into your system's storage capacity.",
+    "keywords": "Linux, df command, disk usage, file system, storage, capacity, monitoring"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the Purpose and Syntax of the df Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the df command output",
+            "file": "verify1-1.sh",
+            "hint": "The output of the `df` command should display the file system information, including the \"Filesystem\" header. Please check your command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/df", "linux/du", "linux/free"]
+      },
+      {
+        "title": "Explore Disk Usage with the df Command",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the df command output for the sample_files directory",
+            "file": "verify2-1.sh",
+            "hint": "The output of the `df -h ~/project/sample_files` command should display the file system information for the `/home` directory, where the `sample_files` directory is located. Please check your command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/df", "linux/du", "linux/ls"]
+      },
+      {
+        "title": "Customize the df Command Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the df command output with custom options",
+            "file": "verify3-1.sh",
+            "hint": "The output of the `df -h --output=source,fstype,size,used,avail,pcent,target` command should display the file system information with the specified fields. Please check your command and try again.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/df", "linux/du", "linux/du"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

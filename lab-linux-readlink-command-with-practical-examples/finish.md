@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you first learned about the purpose of the `readlink` command in Linux, which is used to display the value of a symbolic link. You created a symbolic link and used `readlink` to display the actual path that the link points to. Then, you explored the syntax and available options of the `readlink` command, such as `-f` to follow all symbolic links, `-e` to exit with an error if the file is not a symbolic link, `-n` to omit the trailing newline character, and `-m` to print the canonical path. By understanding the `readlink` command and its various options, you can effectively work with symbolic links and resolve the actual paths of files and directories in your Linux environment.
