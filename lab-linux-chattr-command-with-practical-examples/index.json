@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Linux chattr Command with Practical Examples",
+  "description": "Explore the Linux chattr command, learn how to modify file attributes, and protect important files with the immutable attribute. Gain a deeper understanding of file management in Linux.",
+  "meta": {
+    "title": "Linux chattr Command with Practical Examples",
+    "description": "Explore the Linux chattr command, learn how to modify file attributes, and protect important files with the immutable attribute. Gain a deeper understanding of file management in Linux.",
+    "keywords": "Linux, chattr, file attributes, immutable, file management, command line"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Understand the chattr Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the chattr command usage",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you can successfully set and remove the immutable and append-only attributes using the chattr command.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/chmod", "linux/rm"]
+      },
+      {
+        "title": "Modify File Attributes Using chattr",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify file immutable attribute",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can set the immutable attribute on a file and that the file cannot be deleted.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify directory append-only attribute",
+            "file": "verify2-2.sh",
+            "hint": "Make sure you can set the append-only attribute on a directory and that files in the directory can only be appended to, not modified.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/echo"]
+      },
+      {
+        "title": "Protect Important Files with Immutable Attribute",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify file protection with immutable attribute",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you can set the immutable attribute on an important file, and that the file cannot be deleted or modified while the attribute is set.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/echo"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

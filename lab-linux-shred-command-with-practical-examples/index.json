@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Linux shred Command with Practical Examples",
+  "description": "Explore the Linux shred command, which securely deletes files by overwriting their contents multiple times, ensuring complete data erasure. Learn practical examples of using shred to delete files and wipe disk partitions.",
+  "meta": {
+    "title": "Linux shred Command with Practical Examples",
+    "description": "Explore the Linux shred command, which securely deletes files by overwriting their contents multiple times, ensuring complete data erasure. Learn practical examples of using shred to delete files and wipe disk partitions.",
+    "keywords": "Linux, shred, file deletion, data erasure, secure deletion, disk wiping"
+  },
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "show_in_tutorial": true,
+  "verified": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction to the shred Command",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Verify the sample file was shredded",
+            "file": "verify1-1.sh",
+            "hint": "The `shred` command should have deleted the `sample_file.txt` file. Verify that the file no longer exists in the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/sudo", "linux/rm"]
+      },
+      {
+        "title": "Securely Deleting Files with shred",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the sample files were shredded",
+            "file": "verify2-1.sh",
+            "hint": "The `shred` command should have deleted the `file1.txt`, `file2.txt`, and `file3.txt` files. Verify that none of these files exist in the current directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/rm", "linux/sudo"]
+      },
+      {
+        "title": "Overwriting Disk Partitions with shred",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify the disk partition was overwritten",
+            "file": "verify3-1.sh",
+            "hint": "The `shred` command should have completely overwritten the `/dev/sda1` partition, making it unrecoverable. Verify that the partition is no longer listed in the output of `sudo fdisk -l`.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/dd", "linux/sudo"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": []
+}

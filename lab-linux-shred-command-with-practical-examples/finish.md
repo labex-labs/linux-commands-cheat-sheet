@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, you learned about the `shred` command in Linux, which is used to securely delete files by overwriting their contents multiple times. You created a sample file and used the `shred` command to overwrite and delete it, exploring various options such as the number of overwrite iterations, adding a final zero overwrite, and removing the file after shredding. You also learned how to securely delete multiple files at once using `shred`. The lab covered the basics of using the `shred` command to ensure that deleted files cannot be recovered using common data recovery techniques.
