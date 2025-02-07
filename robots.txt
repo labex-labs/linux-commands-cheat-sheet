@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://linux-commands.labex.io/sitemap.xml

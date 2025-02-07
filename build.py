@@ -253,17 +253,80 @@ def render_html(commands):
     )
 
 
-# 主函数
+# 在 render_html 函数后添加这两个新函数
+def generate_sitemap():
+    # 获取所有命令的链接
+    def get_url_entries(commands):
+        entries = []
+        # 添加主页
+        entries.append(
+            """    <url>
+        <loc>https://linux-commands.labex.io/</loc>
+        <lastmod>{date}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>"""
+        )
+
+        # 添加所有命令链接
+        for cmd in commands:
+            if cmd["link"] and cmd["link"] != "#":
+                entries.append(
+                    f"""    <url>
+        <loc>{cmd["link"]}</loc>
+        <lastmod>{{date}}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>"""
+                )
+
+        return "\n".join(entries)
+
+    sitemap_template = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{entries}
+</urlset>"""
+
+    from datetime import datetime
+
+    current_date = datetime.now().strftime("%Y-%m-%d")
+
+    # 重新解析 README 获取所有链接
+    all_commands = parse_markdown("README.md")
+    entries = get_url_entries(all_commands)
+
+    with open("sitemap.xml", "w", encoding="utf-8") as f:
+        f.write(sitemap_template.format(entries=entries).format(date=current_date))
+
+    print("Sitemap generated: sitemap.xml")
+
+
+def generate_robots_txt():
+    robots_content = """User-agent: *
+Allow: /
+
+Sitemap: https://linux-commands.labex.io/sitemap.xml"""
+
+    with open("robots.txt", "w", encoding="utf-8") as f:
+        f.write(robots_content)
+
+    print("Robots.txt generated: robots.txt")
+
+
+# 修改主函数
 if __name__ == "__main__":
-    input_file = "README.md"  # 替换为你的 Markdown 文件路径
+    input_file = "README.md"
     output_file = "index.html"
 
     commands = parse_markdown(input_file)
     html_content = render_html(commands)
 
+    # 先运行 prettier 只格式化 HTML
     with open(output_file, "w", encoding="utf-8") as file:
         file.write(html_content)
-
+    os.system(f"prettier --write *.html")
     print(f"HTML file generated: {output_file}")
 
-    os.system(f"prettier --write *")
+    # 然后生成 sitemap.xml 和 robots.txt
+    generate_sitemap()
+    generate_robots_txt()
