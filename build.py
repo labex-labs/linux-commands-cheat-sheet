@@ -459,7 +459,9 @@ def render_html(commands, lang="en", all_langs=None, year=None):
             path = "/" if l == "en" else f"/{l}/"
             lang_name = lang_map.get(l, l.upper())
             if l == lang:
-                links.append(f'<span class="text-white font-bold mx-2">{lang_name}</span>')
+                links.append(
+                    f'<span class="text-white font-bold mx-2">{lang_name}</span>'
+                )
             else:
                 links.append(
                     f'<a href="{path}" class="text-white hover:underline mx-2">{lang_name}</a>'
@@ -491,47 +493,45 @@ def render_html(commands, lang="en", all_langs=None, year=None):
 
 # 在 render_html 函数后添加这两个新函数
 def generate_sitemap(commands_by_lang):
-    # 获取所有命令的链接
-    def get_url_entries(commands_by_lang):
-        entries = []
-        # 添加主页
-        for lang in commands_by_lang.keys():
-            path = f"/{lang}" if lang != "en" else ""
-            entries.append(
-                f"""    <url>
-        <loc>https://linux-commands.labex.io{path}/</loc>
-        <lastmod>{{date}}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>"""
-            )
-
-        # 添加所有命令链接
-        for lang, commands in commands_by_lang.items():
-            for cmd in commands:
-                if cmd["link"] and cmd["link"] != "#":
-                    entries.append(
-                        f"""    <url>
-            <loc>{cmd["link"]}</loc>
-            <lastmod>{{date}}</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
-        </url>"""
-                    )
-
-        return "\\n".join(entries)
-
     sitemap_template = """<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {entries}
 </urlset>"""
 
     current_date = datetime.now().strftime("%Y-%m-%d")
+    base_url = "https://linux-commands.labex.io"
 
-    entries = get_url_entries(commands_by_lang)
+    # All available languages from the build process
+    languages = list(commands_by_lang.keys())
+
+    # Generate xhtml:link entries for the homepage
+    xhtml_links = []
+    for lang in languages:
+        path = f"/{lang}/" if lang != "en" else "/"
+        href = f"{base_url}{path}"
+        xhtml_links.append(
+            f'        <xhtml:link rel="alternate" hreflang="{lang}" href="{href}"/>'
+        )
+
+    # Add x-default link
+    xhtml_links.append(
+        f'        <xhtml:link rel="alternate" hreflang="x-default" href="{base_url}/"/>'
+    )
+
+    # Create the single <url> entry for the homepage with all language alternatives
+    url_entry = f"""    <url>
+        <loc>{base_url}/</loc>
+        <lastmod>{current_date}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+{'\n'.join(xhtml_links)}
+    </url>"""
+
+    final_sitemap_content = sitemap_template.format(entries=url_entry)
 
     with open("sitemap.xml", "w", encoding="utf-8") as f:
-        f.write(sitemap_template.format(entries=entries).format(date=current_date))
+        f.write(final_sitemap_content)
 
     print("Sitemap generated: sitemap.xml")
 
@@ -588,7 +588,7 @@ if __name__ == "__main__":
 
         with open(output_file, "w", encoding="utf-8") as file:
             file.write(html_content)
-        
+
         os.system(f"prettier --write {output_file}")
         print(f"HTML file generated: {output_file}")
 
