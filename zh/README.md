@@ -1,4 +1,11 @@
-# Basic File and Directory Operations
+# Linux 命令大全速查表
+
+*一份包含 491 个 Linux 命令的极简指南*
+
+[🇩🇪 Deutsch](../de/README.md) | [🇺🇸 English](../README.md) | [🇪🇸 Español](../es/README.md) | [🇫🇷 Français](../fr/README.md) | [🇯🇵 日本語](../ja/README.md) | [🇰🇷 한국어](../ko/README.md) | [🇵🇹 Português](../pt/README.md) | [🇷🇺 Русский](../ru/README.md) | **🇨🇳 简体中文**
+
+---
+## Basic File and Directory Operations
 
 | 命令 | 描述 |
 | --- | --- |
@@ -55,7 +62,7 @@
 | [whereis](https://labex.io/zh/tutorials/linux-linux-whereis-command-with-practical-examples-423006) | 探索 Linux whereis 命令，学习如何定位系统中的可执行文件、源代码和手册页。自定义搜索行为以满足你的需求。 |
 | [which](https://labex.io/zh/tutorials/linux-linux-which-command-with-practical-examples-423007) | 探索 Linux which 命令，学习如何定位可执行文件的路径，并通过实用示例了解高级用法场景。 |
 
-# Text Processing and Editing
+## Text Processing and Editing
 
 | 命令 | 描述 |
 | --- | --- |
@@ -104,7 +111,7 @@
 | [vi](https://labex.io/zh/tutorials/linux-linux-vi-command-with-practical-examples-422996) | 探索 Linux 中强大的 vi 文本编辑器，学习其基本导航和编辑命令，并深入了解高效文本处理的高级功能。 |
 | [wc](https://labex.io/zh/tutorials/linux-linux-wc-command-with-practical-examples-423003) | 探索 Linux wc 命令，学习如何统计文件中的单词数、行数和字符数。了解如何将 wc 与其他 Linux 命令结合使用以实现高效的文本处理。 |
 
-# System Monitoring and Management
+## System Monitoring and Management
 
 | 命令 | 描述 |
 | --- | --- |
@@ -158,7 +165,7 @@
 | [w](https://labex.io/zh/tutorials/linux-linux-w-command-with-practical-examples-423000) | 探索 Linux 中的 w 命令，学习如何分析用户登录会话，并监控系统负载和资源利用率，以实现有效的系统管理。 |
 | [watch](https://labex.io/zh/tutorials/linux-linux-watch-command-with-practical-examples-423002) | 探索强大的 Linux watch 命令及其实际应用，包括监控系统进程和跟踪文件变化。 |
 
-# User and Permission Management
+## User and Permission Management
 
 | 命令 | 描述 |
 | --- | --- |
@@ -193,7 +200,7 @@
 | [who](https://labex.io/zh/tutorials/linux-linux-who-command-with-practical-examples-423008) | 探索 Linux who 命令，学习如何使用它，并通过实用示例了解用户会话和系统活动。 |
 | [whoami](https://labex.io/zh/tutorials/linux-linux-whoami-command-with-practical-examples-423009) | 探索 Linux whoami 命令及其实际应用。学习如何使用它来确定当前用户身份，将其集成到 shell 脚本中，并有效管理用户权限。 |
 
-# Networking and Communication
+## Networking and Communication
 
 | 命令 | 描述 |
 | --- | --- |
@@ -266,7 +273,7 @@
 | [write](https://labex.io/zh/tutorials/linux-linux-write-command-with-practical-examples-423011) | 探索 Linux write 命令及其实际应用，包括向特定用户发送消息以及向同一系统上所有已登录用户广播消息。 |
 | [ytalk](https://labex.io/zh/tutorials/linux-linux-ytalk-command-with-practical-examples-423015) | 探索 Linux ytalk 命令，这是一个用于在同一系统上的用户之间进行实时文本通信的工具。学习如何安装、启动并利用 ytalk 的高级功能，以实现高效的协作和远程协助。 |
 
-# Disk and File System Utilities
+## Disk and File System Utilities
 
 | 命令 | 描述 |
 | --- | --- |
@@ -314,7 +321,7 @@
 | [tune2fs](https://labex.io/zh/tutorials/linux-linux-tune2fs-command-with-practical-examples-422968) | 探索 tune2fs 命令，这是一个用于管理 ext2/ext3/ext4 文件系统的强大工具。学习如何修改文件系统行为、备份和恢复元数据，以及优化磁盘性能。 |
 | [umount](https://labex.io/zh/tutorials/linux-linux-umount-command-with-practical-examples-422971) | 探索 Linux umount 命令，学习如何卸载已挂载的文件系统，并通过实用示例有效管理你的文件系统。 |
 
-# Compression and Archiving
+## Compression and Archiving
 
 | 命令 | 描述 |
 | --- | --- |
@@ -342,7 +349,7 @@
 | [zipinfo](https://labex.io/zh/tutorials/linux-linux-zipinfo-command-with-practical-examples-423022) | 探索 Linux 中强大的 zipinfo 命令，学习其选项，并通过实用示例分析 zip 文件的内容。 |
 | [zless](https://labex.io/zh/tutorials/linux-linux-zless-command-with-practical-examples-423023) | 探索 Linux 中的 zless 命令，这是一个用于查看压缩文件的强大工具。学习其语法、选项和实际示例，以提升你的压缩和归档技能。 |
 
-# Process Management
+## Process Management
 
 | 命令 | 描述 |
 | --- | --- |
@@ -371,7 +378,7 @@
 | [strace](https://labex.io/zh/tutorials/linux-linux-strace-command-with-practical-examples-422933) | 探索 Linux 中强大的 strace 命令，学习如何跟踪系统调用，并通过实战示例有效调试进程。 |
 | [tmux](https://labex.io/zh/tutorials/linux-linux-tmux-command-with-practical-examples-422960) | 探索强大的 tmux 命令行工具，用于管理和控制 Linux 系统中的多个终端会话。学习如何导航、管理和自定义 tmux 以提高工作效率。 |
 
-# System Configuration and Settings
+## System Configuration and Settings
 
 | 命令 | 描述 |
 | --- | --- |
@@ -425,7 +432,7 @@
 | [update-rc.d](https://labex.io/zh/tutorials/linux-linux-update-rc-d-command-with-practical-examples-422982) | 学习如何使用 update-rc.d 命令配置服务在启动时自动启动，管理服务启动优先级，并通过实际示例获得实践经验。 |
 | [zdump](https://labex.io/zh/tutorials/linux-linux-zdump-command-with-practical-examples-423019) | 探索 Linux 中的 zdump 命令，该命令用于显示时区信息。学习其语法，理解时区数据，并查看其使用的实际示例。 |
 
-# Package Management
+## Package Management
 
 | 命令 | 描述 |
 | --- | --- |
@@ -442,7 +449,7 @@
 | [yum](https://labex.io/zh/tutorials/linux-linux-yum-command-with-practical-examples-423016) | 探索 Linux 中强大的 yum 包管理器。通过实际示例学习如何安装、更新和删除软件包。通过本实验提升你的系统管理技能。 |
 | [zypper](https://labex.io/zh/tutorials/linux-linux-zypper-command-with-practical-examples-423024) | 探索 zypper 命令，这是一个用于基于 SUSE 的 Linux 发行版的强大包管理工具。通过实战示例学习如何使用 zypper 安装、更新、搜索和删除软件包。 |
 
-# Scripting and Programming
+## Scripting and Programming
 
 | 命令 | 描述 |
 | --- | --- |
@@ -474,7 +481,7 @@
 | [strings](https://labex.io/zh/tutorials/linux-linux-strings-command-with-practical-examples-422934) | 探索 Linux 的 strings 命令，学习如何从二进制、压缩和加密文件中提取字符串。通过实际示例获得实践经验。 |
 | [svn](https://labex.io/zh/tutorials/linux-linux-svn-command-with-practical-examples-422940) | 探索在 Ubuntu 22.04 上使用 SVN 命令行工具的强大功能。学习如何安装 Subversion、初始化本地仓库，并通过提交、更新和回滚操作管理更改。 |
 
-# Backup and Compression
+## Backup and Compression
 
 | 命令 | 描述 |
 | --- | --- |
@@ -488,7 +495,7 @@
 | [uudecode](https://labex.io/zh/tutorials/linux-linux-uudecode-command-with-practical-examples-422990) | 学习如何在 Linux 中使用 uudecode 命令解码 uuencoded 文件。通过实用示例了解这一工具在备份和压缩任务中的用途。 |
 | [uuencode](https://labex.io/zh/tutorials/linux-linux-uuencode-command-with-practical-examples-422991) | 探索 Linux 中的 uuencode 命令，学习如何编码和解码文件，并了解这一多功能工具在备份和压缩工作流中的实际应用。 |
 
-# Miscellaneous Utilities
+## Miscellaneous Utilities
 
 | 命令 | 描述 |
 | --- | --- |

@@ -1,4 +1,11 @@
-# Basic File and Directory Operations
+# Linux コマンドチートシート
+
+*491 個の Linux コマンドをまとめたクリーンでミニマルなガイド*
+
+[🇩🇪 Deutsch](../de/README.md) | [🇺🇸 English](../README.md) | [🇪🇸 Español](../es/README.md) | [🇫🇷 Français](../fr/README.md) | **🇯🇵 日本語** | [🇰🇷 한국어](../ko/README.md) | [🇵🇹 Português](../pt/README.md) | [🇷🇺 Русский](../ru/README.md) | [🇨🇳 简体中文](../zh/README.md)
+
+---
+## Basic File and Directory Operations
 
 | コマンド | 説明 |
 | --- | --- |
@@ -55,7 +62,7 @@
 | [whereis](https://labex.io/ja/tutorials/linux-linux-whereis-command-with-practical-examples-423006) | Explore the Linux whereis command and learn how to locate executable files, source code, and manual pages on your system. Customize the search behavior to suit your needs. |
 | [which](https://labex.io/ja/tutorials/linux-linux-which-command-with-practical-examples-423007) | Explore the Linux which command, learn how to locate the path of executable files, and discover advanced usage scenarios with practical examples. |
 
-# Text Processing and Editing
+## Text Processing and Editing
 
 | コマンド | 説明 |
 | --- | --- |
@@ -104,7 +111,7 @@
 | [vi](https://labex.io/ja/tutorials/linux-linux-vi-command-with-practical-examples-422996) | Explore the powerful vi text editor in Linux, learn its basic navigation and editing commands, and dive into advanced features for efficient text processing. |
 | [wc](https://labex.io/ja/tutorials/linux-linux-wc-command-with-practical-examples-423003) | Explore the Linux wc command and learn how to count words, lines, and characters in files. Discover practical examples of using wc with other Linux commands for efficient text processing. |
 
-# System Monitoring and Management
+## System Monitoring and Management
 
 | コマンド | 説明 |
 | --- | --- |
@@ -158,7 +165,7 @@
 | [w](https://labex.io/ja/tutorials/linux-linux-w-command-with-practical-examples-423000) | Explore the w command in Linux, learn how to analyze user login sessions, and monitor system load and resource utilization for effective system management. |
 | [watch](https://labex.io/ja/tutorials/linux-linux-watch-command-with-practical-examples-423002) | Explore the powerful Linux watch command and its practical applications, including monitoring system processes and tracking file changes. |
 
-# User and Permission Management
+## User and Permission Management
 
 | コマンド | 説明 |
 | --- | --- |
@@ -193,7 +200,7 @@
 | [who](https://labex.io/ja/tutorials/linux-linux-who-command-with-practical-examples-423008) | Explore the Linux who command, learn how to use it, and discover practical examples to understand user sessions and system activity. |
 | [whoami](https://labex.io/ja/tutorials/linux-linux-whoami-command-with-practical-examples-423009) | Explore the Linux whoami command and its practical applications. Learn how to use it to determine your current user identity, integrate it into shell scripts, and manage user permissions effectively. |
 
-# Networking and Communication
+## Networking and Communication
 
 | コマンド | 説明 |
 | --- | --- |
@@ -266,7 +273,7 @@
 | [write](https://labex.io/ja/tutorials/linux-linux-write-command-with-practical-examples-423011) | Explore the Linux write command and its practical applications, including sending messages to specific users and broadcasting messages to all logged-in users on the same system. |
 | [ytalk](https://labex.io/ja/tutorials/linux-linux-ytalk-command-with-practical-examples-423015) | Explore the Linux ytalk command, a tool for real-time text-based communication between users on the same system. Learn how to install, initiate, and utilize advanced features of ytalk for efficient collaboration and remote assistance. |
 
-# Disk and File System Utilities
+## Disk and File System Utilities
 
 | コマンド | 説明 |
 | --- | --- |
@@ -314,7 +321,7 @@
 | [tune2fs](https://labex.io/ja/tutorials/linux-linux-tune2fs-command-with-practical-examples-422968) | Explore the tune2fs command, a powerful tool for managing ext2/ext3/ext4 file systems. Learn how to modify filesystem behavior, backup and restore metadata, and optimize disk performance. |
 | [umount](https://labex.io/ja/tutorials/linux-linux-umount-command-with-practical-examples-422971) | Explore the Linux umount command, learn how to unmount mounted file systems, and discover practical examples to manage your file system effectively. |
 
-# Compression and Archiving
+## Compression and Archiving
 
 | コマンド | 説明 |
 | --- | --- |
@@ -342,7 +349,7 @@
 | [zipinfo](https://labex.io/ja/tutorials/linux-linux-zipinfo-command-with-practical-examples-423022) | Explore the powerful zipinfo command in Linux, learn its options, and analyze the contents of zip files with practical examples. |
 | [zless](https://labex.io/ja/tutorials/linux-linux-zless-command-with-practical-examples-423023) | Explore the zless command in Linux, a powerful tool for viewing compressed files. Learn its syntax, options, and practical examples to enhance your compression and archiving skills. |
 
-# Process Management
+## Process Management
 
 | コマンド | 説明 |
 | --- | --- |
@@ -371,7 +378,7 @@
 | [strace](https://labex.io/ja/tutorials/linux-linux-strace-command-with-practical-examples-422933) | Explore the powerful strace command in Linux, learn how to trace system calls, and debug processes effectively with practical examples. |
 | [tmux](https://labex.io/ja/tutorials/linux-linux-tmux-command-with-practical-examples-422960) | Explore the powerful tmux command-line tool for managing and controlling multiple terminal sessions on a Linux system. Learn how to navigate, manage, and customize tmux for enhanced productivity. |
 
-# System Configuration and Settings
+## System Configuration and Settings
 
 | コマンド | 説明 |
 | --- | --- |
@@ -425,7 +432,7 @@
 | [update-rc.d](https://labex.io/ja/tutorials/linux-linux-update-rc-d-command-with-practical-examples-422982) | Learn how to use the update-rc.d command to configure services to start automatically at boot, manage service startup priorities, and gain practical experience with real-world examples. |
 | [zdump](https://labex.io/ja/tutorials/linux-linux-zdump-command-with-practical-examples-423019) | Explore the Linux zdump command, which displays time zone information. Learn its syntax, understand timezone data, and see practical examples of its usage. |
 
-# Package Management
+## Package Management
 
 | コマンド | 説明 |
 | --- | --- |
@@ -442,7 +449,7 @@
 | [yum](https://labex.io/ja/tutorials/linux-linux-yum-command-with-practical-examples-423016) | Explore the powerful yum package manager in Linux. Learn how to install, update, and remove packages using practical examples. Enhance your system management skills with this comprehensive lab. |
 | [zypper](https://labex.io/ja/tutorials/linux-linux-zypper-command-with-practical-examples-423024) | Explore the zypper command, a powerful package management tool for SUSE-based Linux distributions. Learn how to install, update, search, and remove packages using zypper with practical examples. |
 
-# Scripting and Programming
+## Scripting and Programming
 
 | コマンド | 説明 |
 | --- | --- |
@@ -474,7 +481,7 @@
 | [strings](https://labex.io/ja/tutorials/linux-linux-strings-command-with-practical-examples-422934) | Linux の strings コマンドを探索し、バイナリ、圧縮、および暗号化ファイルから文字列を抽出する方法を学びましょう。実際の例を通じて実践的な経験を積みましょう。 |
 | [svn](https://labex.io/ja/tutorials/linux-linux-svn-command-with-practical-examples-422940) | Explore the power of the SVN command-line tool on Ubuntu 22.04. Learn how to install Subversion, initialize a local repository, and manage changes through commit, update, and revert operations. |
 
-# Backup and Compression
+## Backup and Compression
 
 | コマンド | 説明 |
 | --- | --- |
@@ -488,7 +495,7 @@
 | [uudecode](https://labex.io/ja/tutorials/linux-linux-uudecode-command-with-practical-examples-422990) | Learn how to use the uudecode command in Linux to decode uuencoded files. Explore practical examples and understand the purpose of this useful tool for backup and compression tasks. |
 | [uuencode](https://labex.io/ja/tutorials/linux-linux-uuencode-command-with-practical-examples-422991) | Explore the uuencode command in Linux, learn how to encode and decode files, and discover practical use cases for this versatile tool in backup and compression workflows. |
 
-# Miscellaneous Utilities
+## Miscellaneous Utilities
 
 | コマンド | 説明 |
 | --- | --- |

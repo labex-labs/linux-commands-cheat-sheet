@@ -4,6 +4,19 @@ import requests
 from datetime import datetime
 
 
+LANG_MAP = {
+    "en": "🇺🇸 English",
+    "zh": "🇨🇳 简体中文",
+    "ja": "🇯🇵 日本語",
+    "ko": "🇰🇷 한국어",
+    "ru": "🇷🇺 Русский",
+    "es": "🇪🇸 Español",
+    "fr": "🇫🇷 Français",
+    "pt": "🇵🇹 Português",
+    "de": "🇩🇪 Deutsch",
+}
+
+
 TRANSLATIONS = {
     "en": {
         "title": "Linux Commands Cheat Sheet PDF - {year} | LabEx",
@@ -210,7 +223,8 @@ def render_html(commands, lang="en", all_langs=None, year=None):
     # 计算命令总数
     total_commands = len(commands)
     # 多语言文本
-    t = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
+    t_original = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
+    t = t_original.copy()
     # Format the translated strings
     for key, value in t.items():
         if isinstance(value, str):
@@ -466,23 +480,12 @@ def render_html(commands, lang="en", all_langs=None, year=None):
         )
 
     # Generate language footer links
-    lang_map = {
-        "en": "🇺🇸 English",
-        "zh": "🇨🇳 简体中文",
-        "ja": "🇯🇵 日本語",
-        "ko": "🇰🇷 한국어",
-        "ru": "🇷🇺 Русский",
-        "es": "🇪🇸 Español",
-        "fr": "🇫🇷 Français",
-        "pt": "🇵🇹 Português",
-        "de": "🇩🇪 Deutsch",
-    }
     language_footer_links = ""
     if all_langs and len(all_langs) > 1:
         links = []
         for l in all_langs:
             path = "/" if l == "en" else f"/{l}/"
-            lang_name = lang_map.get(l, l.upper())
+            lang_name = LANG_MAP.get(l, l.upper())
             if l == lang:
                 links.append(
                     f'<span class="text-white font-bold mx-2">{lang_name}</span>'
@@ -516,18 +519,57 @@ def render_html(commands, lang="en", all_langs=None, year=None):
     )
 
 
-def generate_readme(commands, lang="en"):
+def generate_readme(commands, lang="en", all_langs=None):
     """Generates README.md content."""
-    t = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
+    total_commands = len(commands)
+    t_original = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
+    t = t_original.copy()
+    # Format the translated strings
+    for key, value in t.items():
+        if isinstance(value, str):
+            t[key] = value.format(
+                year=datetime.now().year, total_commands=total_commands
+            )
+
+    readme_parts = []
+
+    # 1. Header
+    readme_parts.append(f"# {t.get('h1', 'Linux Commands Cheat Sheet')}")
+    readme_parts.append(f"\n*{t.get('h1_sub', '')}*\n")
+
+    # 2. Language Switcher
+    if all_langs and len(all_langs) > 1:
+        links = []
+        for l in sorted(all_langs):  # sort for consistent order
+            lang_name = LANG_MAP.get(l, l.upper())
+            if l == lang:
+                links.append(f"**{lang_name}**")
+            else:
+                if lang == "en":
+                    # Current file is /README.md
+                    # Link to /zh/README.md
+                    path = f"./{l}/README.md"
+                else:
+                    # Current file is /zh/README.md
+                    if l == "en":
+                        # Link to /README.md
+                        path = "../README.md"
+                    else:
+                        # Link to /de/README.md
+                        path = f"../{l}/README.md"
+                links.append(f"[{lang_name}]({path})")
+        readme_parts.append(" | ".join(links))
+        readme_parts.append("\n---")
+
+    # 3. Command Tables
     # Organize commands by category
     categories = {}
     for command in commands:
         categories.setdefault(command["category"], []).append(command)
 
-    readme_parts = []
     # Preserve category order from API, sort commands alphabetically within each category
     for category, cmds in categories.items():
-        readme_parts.append(f"# {category}\n")
+        readme_parts.append(f"## {category}\n")
         readme_parts.append(
             f"| {t.get('readme_command', 'Command')} | {t.get('readme_description', 'Description')} |"
         )
@@ -645,7 +687,7 @@ if __name__ == "__main__":
         print(f"HTML file generated: {output_file}")
 
         # 生成 README.md
-        readme_content = generate_readme(commands, lang)
+        readme_content = generate_readme(commands, lang, all_langs=languages)
         with open(readme_file, "w", encoding="utf-8") as file:
             file.write(readme_content)
         print(f"README file generated: {readme_file}")
