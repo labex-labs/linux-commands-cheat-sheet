@@ -1,6 +1,7 @@
 import re
 import os
 import requests
+from datetime import datetime
 
 
 # 使用 API 获取数据
@@ -35,13 +36,17 @@ def fetch_commands_from_api(lang="en"):
                     command_name = command_parts[1]
                 else:
                     command_name = lab_name  # Fallback to full name
+            if lang == "en":
+                lab_link = f"https://labex.io/tutorials/{lab_alias}"
+            else:
+                lab_link = f"https://labex.io/{lang}/tutorials/{lab_alias}"
 
             commands.append(
                 {
                     "category": category,
                     "name": command_name,
                     "alias": lab_alias,
-                    "link": f"https://labex.io/tutorials/{lab_alias}",
+                    "link": lab_link,
                     "description": lab.get("description"),
                 }
             )
@@ -49,66 +54,70 @@ def fetch_commands_from_api(lang="en"):
 
 
 # 使用 TailwindCSS 和 Google Fonts 渲染为 HTML
-def render_html(commands, lang="en"):
+def render_html(commands, lang="en", all_langs=None, year=None):
+    if year is None:
+        year = datetime.now().year
+    if all_langs is None:
+        all_langs = ["en", "zh", "ja", "ko"]
     # 计算命令总数
     total_commands = len(commands)
     # 多语言文本
     translations = {
         "en": {
-            "title": "Linux Commands Cheat Sheet PDF - 2025 | LabEx",
+            "title": f"Linux Commands Cheat Sheet PDF - {year} | LabEx",
             "description": "A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users.",
             "keywords": "Linux commands, Linux cheat sheet, linux commands cheat sheet pdf, command-line guide, Linux tips, Linux reference, Linux tutorials",
-            "og_title": "Linux Commands Cheat Sheet PDF - 2025 | LabEx",
+            "og_title": f"Linux Commands Cheat Sheet PDF - {year} | LabEx",
             "og_description": "A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users.",
-            "twitter_title": "Linux Commands Cheat Sheet PDF - 2025 | LabEx",
+            "twitter_title": f"Linux Commands Cheat Sheet PDF - {year} | LabEx",
             "twitter_description": "A comprehensive Linux commands cheat sheet with detailed explanations and examples. Download the best linux commands reference PDF for beginners and advanced users.",
             "h1": "Linux Commands Cheat Sheet",
             "h1_sub": f"A clean and minimal guide to {total_commands} Linux commands",
             "download_pdf": "Download PDF",
             "add_to_bookmarks": "Add to Bookmarks",
-            "copyright": f"&copy; 2025 <a href='https://labex.io'>LabEx</a>. All rights reserved.",
+            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. All rights reserved.",
         },
         "zh": {
-            "title": "Linux 命令大全速查表 PDF - 2025 | LabEx",
+            "title": f"Linux 命令大全速查表 PDF - {year} | LabEx",
             "description": "一份包含详细解释和示例的 Linux 命令大全。为初学者和高级用户提供最佳的 Linux 命令速查表 PDF 下载。",
             "keywords": "Linux 命令，Linux 速查表，linux 命令速查表 pdf, 命令行指南，Linux 技巧，Linux 参考，Linux 教程",
-            "og_title": "Linux 命令大全速查表 PDF - 2025 | LabEx",
+            "og_title": f"Linux 命令大全速查表 PDF - {year} | LabEx",
             "og_description": "一份包含详细解释和示例的 Linux 命令大全。为初学者和高级用户提供最佳的 Linux 命令速查表 PDF 下载。",
-            "twitter_title": "Linux 命令大全速查表 PDF - 2025 | LabEx",
+            "twitter_title": f"Linux 命令大全速查表 PDF - {year} | LabEx",
             "twitter_description": "一份包含详细解释和示例的综合性 Linux 命令速查表。为初学者和高级用户提供最佳的 Linux 命令参考 PDF 下载。",
             "h1": "Linux 命令大全速查表",
             "h1_sub": f"一份包含 {total_commands} 个 Linux 命令的极简指南",
             "download_pdf": "下载 PDF",
             "add_to_bookmarks": "添加到书签",
-            "copyright": f"&copy; 2025 <a href='https://labex.io'>LabEx</a>. 版权所有。",
+            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. 版权所有。",
         },
         "ja": {
-            "title": "Linux コマンドチートシート PDF - 2025 | LabEx",
+            "title": f"Linux コマンドチートシート PDF - {year} | LabEx",
             "description": "詳細な説明と例を含む必須 Linux コマンドの完全なリスト。初心者から上級者向けの最高の Linux コマンドチートシート PDF をダウンロードしてください。",
             "keywords": "Linux コマンド，Linux チートシート，linux コマンド チートシート pdf, コマンドラインガイド，Linux ヒント，Linux リファレンス，Linux チュートリアル",
-            "og_title": "Linux コマンドチートシート PDF - 2025 | LabEx",
+            "og_title": f"Linux コマンドチートシート PDF - {year} | LabEx",
             "og_description": "詳細な説明と例を含む必須 Linux コマンドの完全なリスト。初心者から上級者向けの最高の Linux コマンドチートシート PDF をダウンロードしてください。",
-            "twitter_title": "Linux コマンドチートシート PDF - 2025 | LabEx",
+            "twitter_title": f"Linux コマンドチートシート PDF - {year} | LabEx",
             "twitter_description": "詳細な説明と例を含む包括的な Linux コマンドチートシート。初心者から上級者向けの最高の Linux コマンドリファレンス PDF をダウンロードしてください。",
             "h1": "Linux コマンドチートシート",
             "h1_sub": f"{total_commands} 個の Linux コマンドをまとめたクリーンでミニマルなガイド",
             "download_pdf": "PDF をダウンロード",
             "add_to_bookmarks": "ブックマークに追加",
-            "copyright": f"&copy; 2025 <a href='https://labex.io'>LabEx</a>. 無断複写・転載を禁じます。",
+            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. 無断複写・転載を禁じます。",
         },
         "ko": {
-            "title": "리눅스 명령어 치트 시트 PDF - 2025 | LabEx",
+            "title": f"리눅스 명령어 치트 시트 PDF - {year} | LabEx",
             "description": "자세한 설명과 예제가 포함된 필수 리눅스 명령어 전체 목록. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 치트 시트 PDF 를 다운로드하세요.",
             "keywords": "리눅스 명령어, 리눅스 치트 시트, 리눅스 명령어 치트 시트 pdf, 명령줄 가이드, 리눅스 팁, 리눅스 참조, 리눅스 튜토리얼",
-            "og_title": "리눅스 명령어 치트 시트 PDF - 2025 | LabEx",
+            "og_title": f"리눅스 명령어 치트 시트 PDF - {year} | LabEx",
             "og_description": "자세한 설명과 예제가 포함된 필수 리눅스 명령어 전체 목록. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 치트 시트 PDF 를 다운로드하세요.",
-            "twitter_title": "리눅스 명령어 치트 시트 PDF - 2025 | LabEx",
+            "twitter_title": f"리눅스 명령어 치트 시트 PDF - {year} | LabEx",
             "twitter_description": "자세한 설명과 예제가 포함된 포괄적인 리눅스 명령어 치트 시트. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 참조 PDF 를 다운로드하세요.",
             "h1": "리눅스 명령어 치트 시트",
             "h1_sub": f"{total_commands}개의 리눅스 명령어에 대한 깔끔하고 최소한의 가이드",
             "download_pdf": "PDF 다운로드",
             "add_to_bookmarks": "북마크에 추가",
-            "copyright": f"&copy; 2025 <a href='https://labex.io'>LabEx</a>. 모든 권리 보유.",
+            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. 모든 권리 보유.",
         },
     }
     t = translations.get(lang, translations["en"])
@@ -310,6 +319,9 @@ def render_html(commands, lang="en"):
         <footer class="bg-[#2E7EEE] text-white py-6">
             <div class="container mx-auto text-center">
                 <p class="text-sm">{t['copyright']}</p>
+                <div class="mt-4">
+                    {{language_footer_links}}
+                </div>
             </div>
         </footer>
     </body>
@@ -358,6 +370,22 @@ def render_html(commands, lang="en"):
             category=category, category_id=category_id
         )
 
+    # Generate language footer links
+    lang_map = {"en": "English", "zh": "简体中文", "ja": "日本語", "ko": "한국어"}
+    language_footer_links = ""
+    if all_langs and len(all_langs) > 1:
+        links = []
+        for l in all_langs:
+            path = "/" if l == "en" else f"/{l}/"
+            lang_name = lang_map.get(l, l.upper())
+            if l == lang:
+                links.append(f'<span class="text-white font-bold mx-2">{lang_name}</span>')
+            else:
+                links.append(
+                    f'<a href="{path}" class="text-white hover:underline mx-2">{lang_name}</a>'
+                )
+        language_footer_links = " | ".join(links)
+
     # Generate categories and commands
     rendered_categories = ""
     for category, cmds in categories.items():
@@ -377,6 +405,7 @@ def render_html(commands, lang="en"):
     return html_template.format(
         nav_links=nav_links,
         categories=rendered_categories,
+        language_footer_links=language_footer_links,
     )
 
 
@@ -417,8 +446,6 @@ def generate_sitemap(commands_by_lang):
 {entries}
 </urlset>"""
 
-    from datetime import datetime
-
     current_date = datetime.now().strftime("%Y-%m-%d")
 
     entries = get_url_entries(commands_by_lang)
@@ -445,6 +472,7 @@ Sitemap: https://linux-commands.labex.io/sitemap.xml"""
 if __name__ == "__main__":
     languages = ["en", "zh", "ja", "ko"]
     commands_by_lang = {}
+    current_year = datetime.now().year
 
     # 1. 获取英文版本作为基准
     print("Fetching English commands as baseline...")
@@ -474,7 +502,9 @@ if __name__ == "__main__":
             if not os.path.exists(output_dir):
                 os.makedirs(output_dir)
 
-        html_content = render_html(commands, lang)
+        html_content = render_html(
+            commands, lang, all_langs=languages, year=current_year
+        )
 
         with open(output_file, "w", encoding="utf-8") as file:
             file.write(html_content)
