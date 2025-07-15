@@ -4,8 +4,10 @@ import requests
 
 
 # 使用 API 获取数据
-def fetch_commands_from_api():
+def fetch_commands_from_api(lang="en"):
     url = "https://labex.io/api/v2/courses/linux-commands-cheatsheet/labs"
+    if lang != "en":
+        url += f"?lang={lang}"
     print(f"Fetching commands from {url}...")
     try:
         response = requests.get(url, timeout=10)
@@ -25,18 +27,20 @@ def fetch_commands_from_api():
             if not all([lab_name, lab_alias]):
                 continue
 
-            # Parse command name from lab name
-            # e.g. "Linux ls Command with Practical Examples" -> "ls"
-            command_parts = lab_name.split()
-            if len(command_parts) > 1 and command_parts[0] == "Linux":
-                command_name = command_parts[1]
-            else:
-                command_name = lab_name  # Fallback to full name
+            command_name = ""
+            # Parse command name from lab name, ONLY for English
+            if lang == "en":
+                command_parts = lab_name.split()
+                if len(command_parts) > 1 and command_parts[0] == "Linux":
+                    command_name = command_parts[1]
+                else:
+                    command_name = lab_name  # Fallback to full name
 
             commands.append(
                 {
                     "category": category,
                     "name": command_name,
+                    "alias": lab_alias,
                     "link": f"https://labex.io/tutorials/{lab_alias}",
                     "description": lab.get("description"),
                 }
@@ -45,23 +49,83 @@ def fetch_commands_from_api():
 
 
 # 使用 TailwindCSS 和 Google Fonts 渲染为 HTML
-def render_html(commands):
+def render_html(commands, lang="en"):
     # 计算命令总数
     total_commands = len(commands)
-    html_template = """
+    # 多语言文本
+    translations = {
+        "en": {
+            "title": "Linux Commands Cheat Sheet PDF - 2025 | LabEx",
+            "description": "A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users.",
+            "keywords": "Linux commands, Linux cheat sheet, linux commands cheat sheet pdf, command-line guide, Linux tips, Linux reference, Linux tutorials",
+            "og_title": "Linux Commands Cheat Sheet PDF - 2025 | LabEx",
+            "og_description": "A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users.",
+            "twitter_title": "Linux Commands Cheat Sheet PDF - 2025 | LabEx",
+            "twitter_description": "A comprehensive Linux commands cheat sheet with detailed explanations and examples. Download the best linux commands reference PDF for beginners and advanced users.",
+            "h1": "Linux Commands Cheat Sheet",
+            "h1_sub": f"A clean and minimal guide to {total_commands} Linux commands",
+            "download_pdf": "Download PDF",
+            "add_to_bookmarks": "Add to Bookmarks",
+            "copyright": f"&copy; 2025 <a href='https://labex.io'>LabEx</a>. All rights reserved.",
+        },
+        "zh": {
+            "title": "Linux 命令大全速查表 PDF - 2025 | LabEx",
+            "description": "一份包含详细解释和示例的 Linux 命令大全。为初学者和高级用户提供最佳的 Linux 命令速查表 PDF 下载。",
+            "keywords": "Linux 命令，Linux 速查表，linux 命令速查表 pdf, 命令行指南，Linux 技巧，Linux 参考，Linux 教程",
+            "og_title": "Linux 命令大全速查表 PDF - 2025 | LabEx",
+            "og_description": "一份包含详细解释和示例的 Linux 命令大全。为初学者和高级用户提供最佳的 Linux 命令速查表 PDF 下载。",
+            "twitter_title": "Linux 命令大全速查表 PDF - 2025 | LabEx",
+            "twitter_description": "一份包含详细解释和示例的综合性 Linux 命令速查表。为初学者和高级用户提供最佳的 Linux 命令参考 PDF 下载。",
+            "h1": "Linux 命令大全速查表",
+            "h1_sub": f"一份包含 {total_commands} 个 Linux 命令的极简指南",
+            "download_pdf": "下载 PDF",
+            "add_to_bookmarks": "添加到书签",
+            "copyright": f"&copy; 2025 <a href='https://labex.io'>LabEx</a>. 版权所有。",
+        },
+        "ja": {
+            "title": "Linux コマンドチートシート PDF - 2025 | LabEx",
+            "description": "詳細な説明と例を含む必須 Linux コマンドの完全なリスト。初心者から上級者向けの最高の Linux コマンドチートシート PDF をダウンロードしてください。",
+            "keywords": "Linux コマンド，Linux チートシート，linux コマンド チートシート pdf, コマンドラインガイド，Linux ヒント，Linux リファレンス，Linux チュートリアル",
+            "og_title": "Linux コマンドチートシート PDF - 2025 | LabEx",
+            "og_description": "詳細な説明と例を含む必須 Linux コマンドの完全なリスト。初心者から上級者向けの最高の Linux コマンドチートシート PDF をダウンロードしてください。",
+            "twitter_title": "Linux コマンドチートシート PDF - 2025 | LabEx",
+            "twitter_description": "詳細な説明と例を含む包括的な Linux コマンドチートシート。初心者から上級者向けの最高の Linux コマンドリファレンス PDF をダウンロードしてください。",
+            "h1": "Linux コマンドチートシート",
+            "h1_sub": f"{total_commands} 個の Linux コマンドをまとめたクリーンでミニマルなガイド",
+            "download_pdf": "PDF をダウンロード",
+            "add_to_bookmarks": "ブックマークに追加",
+            "copyright": f"&copy; 2025 <a href='https://labex.io'>LabEx</a>. 無断複写・転載を禁じます。",
+        },
+        "ko": {
+            "title": "리눅스 명령어 치트 시트 PDF - 2025 | LabEx",
+            "description": "자세한 설명과 예제가 포함된 필수 리눅스 명령어 전체 목록. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 치트 시트 PDF 를 다운로드하세요.",
+            "keywords": "리눅스 명령어, 리눅스 치트 시트, 리눅스 명령어 치트 시트 pdf, 명령줄 가이드, 리눅스 팁, 리눅스 참조, 리눅스 튜토리얼",
+            "og_title": "리눅스 명령어 치트 시트 PDF - 2025 | LabEx",
+            "og_description": "자세한 설명과 예제가 포함된 필수 리눅스 명령어 전체 목록. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 치트 시트 PDF 를 다운로드하세요.",
+            "twitter_title": "리눅스 명령어 치트 시트 PDF - 2025 | LabEx",
+            "twitter_description": "자세한 설명과 예제가 포함된 포괄적인 리눅스 명령어 치트 시트. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 참조 PDF 를 다운로드하세요.",
+            "h1": "리눅스 명령어 치트 시트",
+            "h1_sub": f"{total_commands}개의 리눅스 명령어에 대한 깔끔하고 최소한의 가이드",
+            "download_pdf": "PDF 다운로드",
+            "add_to_bookmarks": "북마크에 추가",
+            "copyright": f"&copy; 2025 <a href='https://labex.io'>LabEx</a>. 모든 권리 보유.",
+        },
+    }
+    t = translations.get(lang, translations["en"])
+    html_template = f"""
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="{lang}">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Linux Commands Cheat Sheet PDF - 2025 | LabEx</title>
+        <title>{t['title']}</title>
         <meta
         name="description"
-        content="A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users."
+        content="{t['description']}"
         />
         <meta
         name="keywords"
-        content="Linux commands, Linux cheat sheet, linux commands cheat sheet pdf, command-line guide, Linux tips, Linux reference, Linux tutorials"
+        content="{t['keywords']}"
         />
         <meta name="author" content="labex.io" />
         <meta name="robots" content="index, follow" />
@@ -70,11 +134,11 @@ def render_html(commands):
         <!-- Open Graph Tags -->
         <meta
         property="og:title"
-        content="Linux Commands Cheat Sheet PDF - 2025 | LabEx"
+        content="{t['og_title']}"
         />
         <meta
         property="og:description"
-        content="A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users."
+        content="{t['og_description']}"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://linux-commands.labex.io" />
@@ -88,11 +152,11 @@ def render_html(commands):
         <meta name="twitter:card" content="summary_large_image" />
         <meta
         name="twitter:title"
-        content="Linux Commands Cheat Sheet PDF - 2025 | LabEx"
+        content="{t['twitter_title']}"
         />
         <meta
         name="twitter:description"
-        content="A comprehensive Linux commands cheat sheet with detailed explanations and examples. Download the best linux commands reference PDF for beginners and advanced users."
+        content="{t['twitter_description']}"
         />
         <meta
         name="twitter:image"
@@ -110,37 +174,37 @@ def render_html(commands):
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFCX52ZJTZ"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){{dataLayer.push(arguments);}}
+        function gtag(){{{{dataLayer.push(arguments);}}}}
         gtag('js', new Date());
 
         gtag('config', 'G-ZFCX52ZJTZ');
         </script>
         
         <style>
-            :root {{
+            :root {{{{
                 --theme-color: #2E7EEE;
                 counter-reset: command-counter;
-            }}
-            body {{
+            }}}}
+            body {{{{
                 font-family: "IBM Plex Mono", monospace;
                 font-weight: 400;
                 font-style: normal;
-            }}
-            nav {{
+            }}}}
+            nav {{{{
                 background-color: #f8fafc;
                 padding: 0.75rem 1rem;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 overflow-x: auto;
                 white-space: nowrap;
-            }}
-            nav ul {{
+            }}}}
+            nav ul {{{{
                 display: inline-flex;
                 gap: 1rem;
                 margin: 0;
                 padding: 0;
                 list-style: none;
-            }}
-            nav li a {{
+            }}}}
+            nav li a {{{{
                 display: inline-block;
                 font-size: 0.875rem;
                 font-weight: 600;
@@ -151,17 +215,17 @@ def render_html(commands):
                 background-color: #ffffff;
                 white-space: nowrap;
                 transition: all 0.3s ease-in-out;
-            }}
-            nav li a:hover {{
+            }}}}
+            nav li a:hover {{{{
                 color: #ffffff;
                 background-color: var(--theme-color);
                 border-color: var(--theme-color);
-            }}
-            .card {{
+            }}}}
+            .card {{{{
                 position: relative;
                 counter-increment: command-counter;
-            }}
-            .card::before {{
+            }}}}
+            .card::before {{{{
                 content: counter(command-counter);
                 position: absolute;
                 top: -10px;
@@ -179,31 +243,31 @@ def render_html(commands):
                 font-weight: 600;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 z-index: 1;
-            }}
-            .card:hover {{
+            }}}}
+            .card:hover {{{{
                 border-color: var(--theme-color);
-            }}
+            }}}}
         </style>
         <script>
-        function addToBookmarks() {{
-            if (window.sidebar && window.sidebar.addPanel) {{ // Firefox
+        function addToBookmarks() {{{{
+            if (window.sidebar && window.sidebar.addPanel) {{{{ // Firefox
                 window.sidebar.addPanel(document.title, window.location.href, '');
-            }} else if (window.external && ('AddFavorite' in window.external)) {{ // IE
+            }}}} else if (window.external && ('AddFavorite' in window.external)) {{{{ // IE
                 window.external.AddFavorite(window.location.href, document.title);
-            }} else {{ // Chrome, Safari, Opera, etc.
+            }}}} else {{{{ // Chrome, Safari, Opera, etc.
                 alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
-            }}
-        }}
+            }}}}
+        }}}}
         </script>
     </head>
     <body class="bg-gray-100 text-gray-800">
         <header class="bg-[#2E7EEE] text-white py-16">
             <div class="container mx-auto text-center">
-                <h1 class="text-4xl font-extrabold">Linux Commands Cheat Sheet</h1>
-                <p class="mt-2 text-lg">A clean and minimal guide to {total_commands} Linux commands</p>
-                <img src="assets/labex-logo-white.svg" alt="LabEx Logo" class="mx-auto mt-8">
+                <h1 class="text-4xl font-extrabold">{t['h1']}</h1>
+                <p class="mt-2 text-lg">{t['h1_sub']}</p>
+                <img src="/assets/labex-logo-white.svg" alt="LabEx Logo" class="mx-auto mt-8">
                 <a
-                href="assets/linux-commands-cheat-sheet.pdf"
+                href="/assets/linux-commands-cheat-sheet.pdf"
                 download
                 class="inline-flex items-center mt-6 px-6 py-3 bg-white text-[#2E7EEE] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
                 >
@@ -221,7 +285,7 @@ def render_html(commands):
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     />
                 </svg>
-                Download PDF
+                {t['download_pdf']}
                 </a>
             </div>
         </header>
@@ -233,19 +297,19 @@ def render_html(commands):
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
                         </svg>
-                        Add to Bookmarks
+                        {t['add_to_bookmarks']}
                         </a>
                     </li>
-                    {nav_links}
+                    {{nav_links}}
                 </ul>
             </div>
         </nav>
         <main class="container mx-auto p-8">
-            {categories}
+            {{categories}}
         </main>
         <footer class="bg-[#2E7EEE] text-white py-6">
             <div class="container mx-auto text-center">
-                <p class="text-sm">&copy; 2025 <a href="https://labex.io">LabEx</a>. All rights reserved.</p>
+                <p class="text-sm">{t['copyright']}</p>
             </div>
         </footer>
     </body>
@@ -313,38 +377,40 @@ def render_html(commands):
     return html_template.format(
         nav_links=nav_links,
         categories=rendered_categories,
-        total_commands=total_commands,
     )
 
 
 # 在 render_html 函数后添加这两个新函数
-def generate_sitemap(commands):
+def generate_sitemap(commands_by_lang):
     # 获取所有命令的链接
-    def get_url_entries(commands):
+    def get_url_entries(commands_by_lang):
         entries = []
         # 添加主页
-        entries.append(
-            """    <url>
-        <loc>https://linux-commands.labex.io/</loc>
-        <lastmod>{date}</lastmod>
+        for lang in commands_by_lang.keys():
+            path = f"/{lang}" if lang != "en" else ""
+            entries.append(
+                f"""    <url>
+        <loc>https://linux-commands.labex.io{path}/</loc>
+        <lastmod>{{date}}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>"""
-        )
+            )
 
         # 添加所有命令链接
-        for cmd in commands:
-            if cmd["link"] and cmd["link"] != "#":
-                entries.append(
-                    f"""    <url>
-        <loc>{cmd["link"]}</loc>
-        <lastmod>{{date}}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>"""
-                )
+        for lang, commands in commands_by_lang.items():
+            for cmd in commands:
+                if cmd["link"] and cmd["link"] != "#":
+                    entries.append(
+                        f"""    <url>
+            <loc>{cmd["link"]}</loc>
+            <lastmod>{{date}}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+        </url>"""
+                    )
 
-        return "\n".join(entries)
+        return "\\n".join(entries)
 
     sitemap_template = """<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -355,9 +421,7 @@ def generate_sitemap(commands):
 
     current_date = datetime.now().strftime("%Y-%m-%d")
 
-    # We will use the fetched commands directly
-    all_commands = commands
-    entries = get_url_entries(all_commands)
+    entries = get_url_entries(commands_by_lang)
 
     with open("sitemap.xml", "w", encoding="utf-8") as f:
         f.write(sitemap_template.format(entries=entries).format(date=current_date))
@@ -379,17 +443,48 @@ Sitemap: https://linux-commands.labex.io/sitemap.xml"""
 
 # 修改主函数
 if __name__ == "__main__":
-    output_file = "index.html"
+    languages = ["en", "zh", "ja", "ko"]
+    commands_by_lang = {}
 
-    commands = fetch_commands_from_api()
-    html_content = render_html(commands)
+    # 1. 获取英文版本作为基准
+    print("Fetching English commands as baseline...")
+    english_commands = fetch_commands_from_api("en")
+    alias_to_name_map = {cmd["alias"]: cmd["name"] for cmd in english_commands}
+    commands_by_lang["en"] = english_commands
 
-    # 先运行 prettier 只格式化 HTML
-    with open(output_file, "w", encoding="utf-8") as file:
-        file.write(html_content)
-    os.system(f"prettier --write *.html")
-    print(f"HTML file generated: {output_file}")
+    # 2. 获取其他语言版本
+    for lang in languages:
+        if lang == "en":
+            continue
+        print(f"\nFetching commands for {lang}...")
+        lang_commands = fetch_commands_from_api(lang)
+        for cmd in lang_commands:
+            # 使用英文的 command_name
+            cmd["name"] = alias_to_name_map.get(cmd["alias"], cmd["alias"])
+        commands_by_lang[lang] = lang_commands
 
-    # 然后生成 sitemap.xml 和 robots.txt
-    generate_sitemap(commands)
+    # 3. 为每种语言生成 HTML 文件
+    for lang, commands in commands_by_lang.items():
+        if lang == "en":
+            output_dir = "."
+            output_file = "index.html"
+        else:
+            output_dir = lang
+            output_file = f"{lang}/index.html"
+            if not os.path.exists(output_dir):
+                os.makedirs(output_dir)
+
+        html_content = render_html(commands, lang)
+
+        with open(output_file, "w", encoding="utf-8") as file:
+            file.write(html_content)
+        
+        os.system(f"prettier --write {output_file}")
+        print(f"HTML file generated: {output_file}")
+
+    # 4. 生成 sitemap.xml 和 robots.txt
+    print("\nGenerating sitemap and robots.txt...")
+    generate_sitemap(commands_by_lang)
     generate_robots_txt()
+
+    print("\nBuild process completed.")
