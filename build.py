@@ -4,6 +4,154 @@ import requests
 from datetime import datetime
 
 
+TRANSLATIONS = {
+    "en": {
+        "title": "Linux Commands Cheat Sheet PDF - {year} | LabEx",
+        "description": "A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users.",
+        "keywords": "Linux commands, Linux cheat sheet, linux commands cheat sheet pdf, command-line guide, Linux tips, Linux reference, Linux tutorials",
+        "og_title": "Linux Commands Cheat Sheet PDF - {year} | LabEx",
+        "og_description": "A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users.",
+        "twitter_title": "Linux Commands Cheat Sheet PDF - {year} | LabEx",
+        "twitter_description": "A comprehensive Linux commands cheat sheet with detailed explanations and examples. Download the best linux commands reference PDF for beginners and advanced users.",
+        "h1": "Linux Commands Cheat Sheet",
+        "h1_sub": "A clean and minimal guide to {total_commands} Linux commands",
+        "download_pdf": "Download PDF",
+        "add_to_bookmarks": "Add to Bookmarks",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. All rights reserved.",
+        "readme_command": "Command",
+        "readme_description": "Description",
+    },
+    "zh": {
+        "title": "Linux 命令大全速查表 PDF - {year} | LabEx",
+        "description": "一份包含详细解释和示例的 Linux 命令大全。为初学者和高级用户提供最佳的 Linux 命令速查表 PDF 下载。",
+        "keywords": "Linux 命令，Linux 速查表，linux 命令速查表 pdf, 命令行指南，Linux 技巧，Linux 参考，Linux 教程",
+        "og_title": "Linux 命令大全速查表 PDF - {year} | LabEx",
+        "og_description": "一份包含详细解释和示例的 Linux 命令大全。为初学者和高级用户提供最佳的 Linux 命令速查表 PDF 下载。",
+        "twitter_title": "Linux 命令大全速查表 PDF - {year} | LabEx",
+        "twitter_description": "一份包含详细解释和示例的综合性 Linux 命令速查表。为初学者和高级用户提供最佳的 Linux 命令参考 PDF 下载。",
+        "h1": "Linux 命令大全速查表",
+        "h1_sub": "一份包含 {total_commands} 个 Linux 命令的极简指南",
+        "download_pdf": "下载 PDF",
+        "add_to_bookmarks": "添加到书签",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. 版权所有。",
+        "readme_command": "命令",
+        "readme_description": "描述",
+    },
+    "ja": {
+        "title": "Linux コマンドチートシート PDF - {year} | LabEx",
+        "description": "詳細な説明と例を含む必須 Linux コマンドの完全なリスト。初心者から上級者向けの最高の Linux コマンドチートシート PDF をダウンロードしてください。",
+        "keywords": "Linux コマンド，Linux チートシート，linux コマンド チートシート pdf, コマンドラインガイド，Linux ヒント，Linux リファレンス，Linux チュートリアル",
+        "og_title": "Linux コマンドチートシート PDF - {year} | LabEx",
+        "og_description": "詳細な説明と例を含む必須 Linux コマンドの完全なリスト。初心者から上級者向けの最高の Linux コマンドチートシート PDF をダウンロードしてください。",
+        "twitter_title": "Linux コマンドチートシート PDF - {year} | LabEx",
+        "twitter_description": "詳細な説明と例を含む包括的な Linux コマンドチートシート。初心者から上級者向けの最高の Linux コマンドリファレンス PDF をダウンロードしてください。",
+        "h1": "Linux コマンドチートシート",
+        "h1_sub": "{total_commands} 個の Linux コマンドをまとめたクリーンでミニマルなガイド",
+        "download_pdf": "PDF をダウンロード",
+        "add_to_bookmarks": "ブックマークに追加",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. 無断複写・転載を禁じます。",
+        "readme_command": "コマンド",
+        "readme_description": "説明",
+    },
+    "ko": {
+        "title": "리눅스 명령어 치트 시트 PDF - {year} | LabEx",
+        "description": "자세한 설명과 예제가 포함된 필수 리눅스 명령어 전체 목록. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 치트 시트 PDF 를 다운로드하세요。",
+        "keywords": "리눅스 명령어, 리눅스 치트 시트, 리눅스 명령어 치트 시트 pdf, 명령줄 가이드, 리눅스 팁, 리눅스 참조, 리눅스 튜토리얼",
+        "og_title": "리눅스 명령어 치트 시트 PDF - {year} | LabEx",
+        "og_description": "자세한 설명과 예제가 포함된 필수 리눅스 명령어 전체 목록. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 치트 시트 PDF 를 다운로드하세요。",
+        "twitter_title": "리눅스 명령어 치트 시트 PDF - {year} | LabEx",
+        "twitter_description": "자세한 설명과 예제가 포함된 포괄적인 리눅스 명령어 치트 시트. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 참조 PDF 를 다운로드하세요。",
+        "h1": "리눅스 명령어 치트 시트",
+        "h1_sub": "{total_commands}개의 리눅스 명령어에 대한 깔끔하고 최소한의 가이드",
+        "download_pdf": "PDF 다운로드",
+        "add_to_bookmarks": "북마크에 추가",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. 모든 권리 보유.",
+        "readme_command": "명령어",
+        "readme_description": "설명",
+    },
+    "ru": {
+        "title": "Шпаргалка по командам Linux PDF - {year} | LabEx",
+        "description": "Полный список основных команд Linux с подробными объяснениями и примерами. Скачайте лучшую шпаргалку по командам Linux в формате PDF для начинающих и опытных пользователей.",
+        "keywords": "Команды Linux, шпаргалка Linux, шпаргалка по командам linux pdf, руководство по командной строке, советы по Linux, справочник по Linux, уроки по Linux",
+        "og_title": "Шпаргалка по командам Linux PDF - {year} | LabEx",
+        "og_description": "Полный список основных команд Linux с подробными объяснениями и примерами. Скачайте лучшую шпаргалку по командам Linux в формате PDF для начинающих и опытных пользователей.",
+        "twitter_title": "Шпаргалка по командам Linux PDF - {year} | LabEx",
+        "twitter_description": "Подробная шпаргалка по командам Linux с подробными объяснениями и примерами. Скачайте лучший справочник по командам Linux в формате PDF для начинающих и опытных пользователей.",
+        "h1": "Шпаргалка по командам Linux",
+        "h1_sub": "Краткое и минималистичное руководство по {total_commands} командам Linux",
+        "download_pdf": "Скачать PDF",
+        "add_to_bookmarks": "Добавить в закладки",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. Все права защищены.",
+        "readme_command": "Команда",
+        "readme_description": "Описание",
+    },
+    "es": {
+        "title": "Hoja de trucos de comandos de Linux PDF - {year} | LabEx",
+        "description": "Una lista completa de comandos esenciales de Linux con explicaciones y ejemplos detallados. Descargue la mejor hoja de trucos de comandos de Linux en PDF para principiantes y usuarios avanzados.",
+        "keywords": "Comandos de Linux, hoja de trucos de Linux, hoja de trucos de comandos de linux pdf, guía de línea de comandos, consejos de Linux, referencia de Linux, tutoriales de Linux",
+        "og_title": "Hoja de trucos de comandos de Linux PDF - {year} | LabEx",
+        "og_description": "Una lista completa de comandos esenciales de Linux con explicaciones y ejemplos detallados. Descargue la mejor hoja de trucos de comandos de Linux en PDF para principiantes y usuarios avanzados.",
+        "twitter_title": "Hoja de trucos de comandos de Linux PDF - {year} | LabEx",
+        "twitter_description": "Una completa hoja de trucos de comandos de Linux con explicaciones y ejemplos detallados. Descargue la mejor referencia de comandos de Linux en PDF para principiantes y usuarios avanzados.",
+        "h1": "Hoja de trucos de comandos de Linux",
+        "h1_sub": "Una guía limpia y mínima de {total_commands} comandos de Linux",
+        "download_pdf": "Descargar PDF",
+        "add_to_bookmarks": "Añadir a marcadores",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. Todos los derechos reservados.",
+        "readme_command": "Comando",
+        "readme_description": "Descripción",
+    },
+    "fr": {
+        "title": "Aide-mémoire des commandes Linux PDF - {year} | LabEx",
+        "description": "Une liste complète des commandes Linux essentielles avec des explications et des exemples détaillés. Téléchargez le meilleur aide-mémoire des commandes Linux en PDF pour les débutants et les utilisateurs avancés.",
+        "keywords": "Commandes Linux, aide-mémoire Linux, aide-mémoire commandes linux pdf, guide de ligne de commande, astuces Linux, référence Linux, tutoriels Linux",
+        "og_title": "Aide-mémoire des commandes Linux PDF - {year} | LabEx",
+        "og_description": "Une liste complète des commandes Linux essentielles avec des explications et des exemples détaillés. Téléchargez le meilleur aide-mémoire des commandes Linux en PDF pour les débutants et les utilisateurs avancés.",
+        "twitter_title": "Aide-mémoire des commandes Linux PDF - {year} | LabEx",
+        "twitter_description": "Un aide-mémoire complet des commandes Linux avec des explications et des exemples détaillés. Téléchargez la meilleure référence de commandes Linux en PDF pour les débutants et les utilisateurs avancés.",
+        "h1": "Aide-mémoire des commandes Linux",
+        "h1_sub": "Un guide propre et minimal pour {total_commands} commandes Linux",
+        "download_pdf": "Télécharger le PDF",
+        "add_to_bookmarks": "Ajouter aux favoris",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. Tous droits réservés.",
+        "readme_command": "Commande",
+        "readme_description": "Description",
+    },
+    "pt": {
+        "title": "Folha de dicas de comandos do Linux PDF - {year} | LabEx",
+        "description": "Uma lista completa de comandos essenciais do Linux com explicações e exemplos detalhados. Baixe a melhor folha de dicas de comandos do Linux em PDF para iniciantes e usuários avançados.",
+        "keywords": "Comandos do Linux, folha de dicas do Linux, folha de dicas de comandos do linux pdf, guia de linha de comando, dicas do Linux, referência do Linux, tutoriais do Linux",
+        "og_title": "Folha de dicas de comandos do Linux PDF - {year} | LabEx",
+        "og_description": "Uma lista completa de comandos essenciais do Linux com explicações e exemplos detalhados. Baixe a melhor folha de dicas de comandos do Linux em PDF para iniciantes e usuários avançados.",
+        "twitter_title": "Folha de dicas de comandos do Linux PDF - {year} | LabEx",
+        "twitter_description": "Uma folha de dicas abrangente de comandos do Linux com explicações e exemplos detalhados. Baixe a melhor referência de comandos do Linux em PDF para iniciantes e usuários avançados.",
+        "h1": "Folha de dicas de comandos do Linux",
+        "h1_sub": "Um guia limpo e mínimo para {total_commands} comandos do Linux",
+        "download_pdf": "Baixar PDF",
+        "add_to_bookmarks": "Adicionar aos Favoritos",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. Todos os direitos reservados.",
+        "readme_command": "Comando",
+        "readme_description": "Descrição",
+    },
+    "de": {
+        "title": "Linux-Befehle Spickzettel PDF - {year} | LabEx",
+        "description": "Eine vollständige Liste der wichtigsten Linux-Befehle mit detaillierten Erklärungen und Beispielen. Laden Sie den besten Linux-Befehle-Spickzettel als PDF für Anfänger und Fortgeschrittene herunter.",
+        "keywords": "Linux-Befehle, Linux-Spickzettel, linux-befehle spickzettel pdf, Kommandozeilen-Anleitung, Linux-Tipps, Linux-Referenz, Linux-Tutorials",
+        "og_title": "Linux-Befehle Spickzettel PDF - {year} | LabEx",
+        "og_description": "Eine vollständige Liste der wichtigsten Linux-Befehle mit detaillierten Erklärungen und Beispielen. Laden Sie den besten Linux-Befehle-Spickzettel als PDF für Anfänger und Fortgeschrittene herunter.",
+        "twitter_title": "Linux-Befehle Spickzettel PDF - {year} | LabEx",
+        "twitter_description": "Ein umfassender Linux-Befehle-Spickzettel mit detaillierten Erklärungen und Beispielen. Laden Sie die beste Linux-Befehlsreferenz als PDF für Anfänger und Fortgeschrittene herunter.",
+        "h1": "Linux-Befehle Spickzettel",
+        "h1_sub": "Eine saubere und minimale Anleitung zu {total_commands} Linux-Befehlen",
+        "download_pdf": "PDF herunterladen",
+        "add_to_bookmarks": "Zu Lesezeichen hinzufügen",
+        "copyright": "&copy; {year} <a href='https://labex.io'>LabEx</a>. Alle Rechte vorbehalten.",
+        "readme_command": "Befehl",
+        "readme_description": "Beschreibung",
+    },
+}
+
+
 # 使用 API 获取数据
 def fetch_commands_from_api(lang="en"):
     url = "https://labex.io/api/v2/courses/linux-commands-cheatsheet/labs"
@@ -62,135 +210,12 @@ def render_html(commands, lang="en", all_langs=None, year=None):
     # 计算命令总数
     total_commands = len(commands)
     # 多语言文本
-    translations = {
-        "en": {
-            "title": f"Linux Commands Cheat Sheet PDF - {year} | LabEx",
-            "description": "A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users.",
-            "keywords": "Linux commands, Linux cheat sheet, linux commands cheat sheet pdf, command-line guide, Linux tips, Linux reference, Linux tutorials",
-            "og_title": f"Linux Commands Cheat Sheet PDF - {year} | LabEx",
-            "og_description": "A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users.",
-            "twitter_title": f"Linux Commands Cheat Sheet PDF - {year} | LabEx",
-            "twitter_description": "A comprehensive Linux commands cheat sheet with detailed explanations and examples. Download the best linux commands reference PDF for beginners and advanced users.",
-            "h1": "Linux Commands Cheat Sheet",
-            "h1_sub": f"A clean and minimal guide to {total_commands} Linux commands",
-            "download_pdf": "Download PDF",
-            "add_to_bookmarks": "Add to Bookmarks",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. All rights reserved.",
-        },
-        "zh": {
-            "title": f"Linux 命令大全速查表 PDF - {year} | LabEx",
-            "description": "一份包含详细解释和示例的 Linux 命令大全。为初学者和高级用户提供最佳的 Linux 命令速查表 PDF 下载。",
-            "keywords": "Linux 命令，Linux 速查表，linux 命令速查表 pdf, 命令行指南，Linux 技巧，Linux 参考，Linux 教程",
-            "og_title": f"Linux 命令大全速查表 PDF - {year} | LabEx",
-            "og_description": "一份包含详细解释和示例的 Linux 命令大全。为初学者和高级用户提供最佳的 Linux 命令速查表 PDF 下载。",
-            "twitter_title": f"Linux 命令大全速查表 PDF - {year} | LabEx",
-            "twitter_description": "一份包含详细解释和示例的综合性 Linux 命令速查表。为初学者和高级用户提供最佳的 Linux 命令参考 PDF 下载。",
-            "h1": "Linux 命令大全速查表",
-            "h1_sub": f"一份包含 {total_commands} 个 Linux 命令的极简指南",
-            "download_pdf": "下载 PDF",
-            "add_to_bookmarks": "添加到书签",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. 版权所有。",
-        },
-        "ja": {
-            "title": f"Linux コマンドチートシート PDF - {year} | LabEx",
-            "description": "詳細な説明と例を含む必須 Linux コマンドの完全なリスト。初心者から上級者向けの最高の Linux コマンドチートシート PDF をダウンロードしてください。",
-            "keywords": "Linux コマンド，Linux チートシート，linux コマンド チートシート pdf, コマンドラインガイド，Linux ヒント，Linux リファレンス，Linux チュートリアル",
-            "og_title": f"Linux コマンドチートシート PDF - {year} | LabEx",
-            "og_description": "詳細な説明と例を含む必須 Linux コマンドの完全なリスト。初心者から上級者向けの最高の Linux コマンドチートシート PDF をダウンロードしてください。",
-            "twitter_title": f"Linux コマンドチートシート PDF - {year} | LabEx",
-            "twitter_description": "詳細な説明と例を含む包括的な Linux コマンドチートシート。初心者から上級者向けの最高の Linux コマンドリファレンス PDF をダウンロードしてください。",
-            "h1": "Linux コマンドチートシート",
-            "h1_sub": f"{total_commands} 個の Linux コマンドをまとめたクリーンでミニマルなガイド",
-            "download_pdf": "PDF をダウンロード",
-            "add_to_bookmarks": "ブックマークに追加",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. 無断複写・転載を禁じます。",
-        },
-        "ko": {
-            "title": f"리눅스 명령어 치트 시트 PDF - {year} | LabEx",
-            "description": "자세한 설명과 예제가 포함된 필수 리눅스 명령어 전체 목록. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 치트 시트 PDF 를 다운로드하세요.",
-            "keywords": "리눅스 명령어, 리눅스 치트 시트, 리눅스 명령어 치트 시트 pdf, 명령줄 가이드, 리눅스 팁, 리눅스 참조, 리눅스 튜토리얼",
-            "og_title": f"리눅스 명령어 치트 시트 PDF - {year} | LabEx",
-            "og_description": "자세한 설명과 예제가 포함된 필수 리눅스 명령어 전체 목록. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 치트 시트 PDF 를 다운로드하세요.",
-            "twitter_title": f"리눅스 명령어 치트 시트 PDF - {year} | LabEx",
-            "twitter_description": "자세한 설명과 예제가 포함된 포괄적인 리눅스 명령어 치트 시트. 초보자와 고급 사용자를 위한 최고의 리눅스 명령어 참조 PDF 를 다운로드하세요.",
-            "h1": "리눅스 명령어 치트 시트",
-            "h1_sub": f"{total_commands}개의 리눅스 명령어에 대한 깔끔하고 최소한의 가이드",
-            "download_pdf": "PDF 다운로드",
-            "add_to_bookmarks": "북마크에 추가",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. 모든 권리 보유.",
-        },
-        "ru": {
-            "title": f"Шпаргалка по командам Linux PDF - {year} | LabEx",
-            "description": "Полный список основных команд Linux с подробными объяснениями и примерами. Скачайте лучшую шпаргалку по командам Linux в формате PDF для начинающих и опытных пользователей.",
-            "keywords": "Команды Linux, шпаргалка Linux, шпаргалка по командам linux pdf, руководство по командной строке, советы по Linux, справочник по Linux, уроки по Linux",
-            "og_title": f"Шпаргалка по командам Linux PDF - {year} | LabEx",
-            "og_description": "Полный список основных команд Linux с подробными объяснениями и примерами. Скачайте лучшую шпаргалку по командам Linux в формате PDF для начинающих и опытных пользователей.",
-            "twitter_title": f"Шпаргалка по командам Linux PDF - {year} | LabEx",
-            "twitter_description": "Подробная шпаргалка по командам Linux с подробными объяснениями и примерами. Скачайте лучший справочник по командам Linux в формате PDF для начинающих и опытных пользователей.",
-            "h1": "Шпаргалка по командам Linux",
-            "h1_sub": f"Краткое и минималистичное руководство по {total_commands} командам Linux",
-            "download_pdf": "Скачать PDF",
-            "add_to_bookmarks": "Добавить в закладки",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. Все права защищены.",
-        },
-        "es": {
-            "title": f"Hoja de trucos de comandos de Linux PDF - {year} | LabEx",
-            "description": "Una lista completa de comandos esenciales de Linux con explicaciones y ejemplos detallados. Descargue la mejor hoja de trucos de comandos de Linux en PDF para principiantes y usuarios avanzados.",
-            "keywords": "Comandos de Linux, hoja de trucos de Linux, hoja de trucos de comandos de linux pdf, guía de línea de comandos, consejos de Linux, referencia de Linux, tutoriales de Linux",
-            "og_title": f"Hoja de trucos de comandos de Linux PDF - {year} | LabEx",
-            "og_description": "Una lista completa de comandos esenciales de Linux con explicaciones y ejemplos detallados. Descargue la mejor hoja de trucos de comandos de Linux en PDF para principiantes y usuarios avanzados.",
-            "twitter_title": f"Hoja de trucos de comandos de Linux PDF - {year} | LabEx",
-            "twitter_description": "Una completa hoja de trucos de comandos de Linux con explicaciones y ejemplos detallados. Descargue la mejor referencia de comandos de Linux en PDF para principiantes y usuarios avanzados.",
-            "h1": "Hoja de trucos de comandos de Linux",
-            "h1_sub": f"Una guía limpia y mínima de {total_commands} comandos de Linux",
-            "download_pdf": "Descargar PDF",
-            "add_to_bookmarks": "Añadir a marcadores",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. Todos los derechos reservados.",
-        },
-        "fr": {
-            "title": f"Aide-mémoire des commandes Linux PDF - {year} | LabEx",
-            "description": "Une liste complète des commandes Linux essentielles avec des explications et des exemples détaillés. Téléchargez le meilleur aide-mémoire des commandes Linux en PDF pour les débutants et les utilisateurs avancés.",
-            "keywords": "Commandes Linux, aide-mémoire Linux, aide-mémoire commandes linux pdf, guide de ligne de commande, astuces Linux, référence Linux, tutoriels Linux",
-            "og_title": f"Aide-mémoire des commandes Linux PDF - {year} | LabEx",
-            "og_description": "Une liste complète des commandes Linux essentielles avec des explications et des exemples détaillés. Téléchargez le meilleur aide-mémoire des commandes Linux en PDF pour les débutants et les utilisateurs avancés.",
-            "twitter_title": f"Aide-mémoire des commandes Linux PDF - {year} | LabEx",
-            "twitter_description": "Un aide-mémoire complet des commandes Linux avec des explications et des exemples détaillés. Téléchargez la meilleure référence de commandes Linux en PDF pour les débutants et les utilisateurs avancés.",
-            "h1": "Aide-mémoire des commandes Linux",
-            "h1_sub": f"Un guide propre et minimal pour {total_commands} commandes Linux",
-            "download_pdf": "Télécharger le PDF",
-            "add_to_bookmarks": "Ajouter aux favoris",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. Tous droits réservés.",
-        },
-        "pt": {
-            "title": f"Folha de dicas de comandos do Linux PDF - {year} | LabEx",
-            "description": "Uma lista completa de comandos essenciais do Linux com explicações e exemplos detalhados. Baixe a melhor folha de dicas de comandos do Linux em PDF para iniciantes e usuários avançados.",
-            "keywords": "Comandos do Linux, folha de dicas do Linux, folha de dicas de comandos do linux pdf, guia de linha de comando, dicas do Linux, referência do Linux, tutoriais do Linux",
-            "og_title": f"Folha de dicas de comandos do Linux PDF - {year} | LabEx",
-            "og_description": "Uma lista completa de comandos essenciais do Linux com explicações e exemplos detalhados. Baixe a melhor folha de dicas de comandos do Linux em PDF para iniciantes e usuários avançados.",
-            "twitter_title": f"Folha de dicas de comandos do Linux PDF - {year} | LabEx",
-            "twitter_description": "Uma folha de dicas abrangente de comandos do Linux com explicações e exemplos detalhados. Baixe a melhor referência de comandos do Linux em PDF para iniciantes e usuários avançados.",
-            "h1": "Folha de dicas de comandos do Linux",
-            "h1_sub": f"Um guia limpo e mínimo para {total_commands} comandos do Linux",
-            "download_pdf": "Baixar PDF",
-            "add_to_bookmarks": "Adicionar aos Favoritos",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. Todos os direitos reservados.",
-        },
-        "de": {
-            "title": f"Linux-Befehle Spickzettel PDF - {year} | LabEx",
-            "description": "Eine vollständige Liste der wichtigsten Linux-Befehle mit detaillierten Erklärungen und Beispielen. Laden Sie den besten Linux-Befehle-Spickzettel als PDF für Anfänger und Fortgeschrittene herunter.",
-            "keywords": "Linux-Befehle, Linux-Spickzettel, linux-befehle spickzettel pdf, Kommandozeilen-Anleitung, Linux-Tipps, Linux-Referenz, Linux-Tutorials",
-            "og_title": f"Linux-Befehle Spickzettel PDF - {year} | LabEx",
-            "og_description": "Eine vollständige Liste der wichtigsten Linux-Befehle mit detaillierten Erklärungen und Beispielen. Laden Sie den besten Linux-Befehle-Spickzettel als PDF für Anfänger und Fortgeschrittene herunter.",
-            "twitter_title": f"Linux-Befehle Spickzettel PDF - {year} | LabEx",
-            "twitter_description": "Ein umfassender Linux-Befehle-Spickzettel mit detaillierten Erklärungen und Beispielen. Laden Sie die beste Linux-Befehlsreferenz als PDF für Anfänger und Fortgeschrittene herunter.",
-            "h1": "Linux-Befehle Spickzettel",
-            "h1_sub": f"Eine saubere und minimale Anleitung zu {total_commands} Linux-Befehlen",
-            "download_pdf": "PDF herunterladen",
-            "add_to_bookmarks": "Zu Lesezeichen hinzufügen",
-            "copyright": f"&copy; {year} <a href='https://labex.io'>LabEx</a>. Alle Rechte vorbehalten.",
-        },
-    }
-    t = translations.get(lang, translations["en"])
+    t = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
+    # Format the translated strings
+    for key, value in t.items():
+        if isinstance(value, str):
+            t[key] = value.format(year=year, total_commands=total_commands)
+
     html_template = f"""
     <!DOCTYPE html>
     <html lang="{lang}">
@@ -491,6 +516,31 @@ def render_html(commands, lang="en", all_langs=None, year=None):
     )
 
 
+def generate_readme(commands, lang="en"):
+    """Generates README.md content."""
+    t = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
+    # Organize commands by category
+    categories = {}
+    for command in commands:
+        categories.setdefault(command["category"], []).append(command)
+
+    readme_parts = []
+    # Preserve category order from API, sort commands alphabetically within each category
+    for category, cmds in categories.items():
+        readme_parts.append(f"# {category}\n")
+        readme_parts.append(
+            f"| {t.get('readme_command', 'Command')} | {t.get('readme_description', 'Description')} |"
+        )
+        readme_parts.append("| --- | --- |")
+        for cmd in sorted(cmds, key=lambda x: x["name"]):
+            # Ensure description is not None
+            description = cmd.get("description") or ""
+            readme_parts.append(f"| [{cmd['name']}]({cmd['link']}) | {description} |")
+        readme_parts.append("")  # Add a newline for spacing
+
+    return "\n".join(readme_parts)
+
+
 # 在 render_html 函数后添加这两个新函数
 def generate_sitemap(commands_by_lang):
     sitemap_template = """<?xml version="1.0" encoding="UTF-8"?>
@@ -576,9 +626,11 @@ if __name__ == "__main__":
         if lang == "en":
             output_dir = "."
             output_file = "index.html"
+            readme_file = "README.md"
         else:
             output_dir = lang
             output_file = f"{lang}/index.html"
+            readme_file = f"{lang}/README.md"
             if not os.path.exists(output_dir):
                 os.makedirs(output_dir)
 
@@ -591,6 +643,12 @@ if __name__ == "__main__":
 
         os.system(f"prettier --write {output_file}")
         print(f"HTML file generated: {output_file}")
+
+        # 生成 README.md
+        readme_content = generate_readme(commands, lang)
+        with open(readme_file, "w", encoding="utf-8") as file:
+            file.write(readme_content)
+        print(f"README file generated: {readme_file}")
 
     # 4. 生成 sitemap.xml 和 robots.txt
     print("\nGenerating sitemap and robots.txt...")
