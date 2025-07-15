@@ -1,30 +1,46 @@
 import re
 import os
+import requests
 
 
-# 解析 Markdown 文件
-def parse_markdown(file_path):
+# 使用 API 获取数据
+def fetch_commands_from_api():
+    url = "https://labex.io/api/v2/courses/linux-commands-cheatsheet/labs"
+    print(f"Fetching commands from {url}...")
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()  # Will raise an HTTPError for bad responses (4xx or 5xx)
+        api_data = response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching data from API: {e}")
+        return []
+
     commands = []
-    with open(file_path, "r", encoding="utf-8") as file:
-        content = file.read()
-        sections = re.split(r"^#\s", content, flags=re.M)[1:]  # 按一级标题分割
-        for section in sections:
-            category, *lines = section.splitlines()
-            table_lines = [line for line in lines if "|" in line]
-            if table_lines:
-                for row in table_lines[2:]:  # 跳过表头
-                    cols = [col.strip() for col in row.split("|")[1:-1]]
-                    if len(cols) == 2:
-                        command_link = re.search(r"\((.*?)\)", cols[0])
-                        command_name = re.sub(r"\[|\]\(.*?\)", "", cols[0]).strip()
-                        commands.append(
-                            {
-                                "category": category.strip(),
-                                "name": command_name,
-                                "link": command_link.group(1) if command_link else "#",
-                                "description": cols[1],
-                            }
-                        )
+    for stage in api_data.get("stages", []):
+        category = stage.get("name")
+        for lab in stage.get("labs", []):
+            lab_name = lab.get("name")
+            lab_alias = lab.get("alias")
+
+            if not all([lab_name, lab_alias]):
+                continue
+
+            # Parse command name from lab name
+            # e.g. "Linux ls Command with Practical Examples" -> "ls"
+            command_parts = lab_name.split()
+            if len(command_parts) > 1 and command_parts[0] == "Linux":
+                command_name = command_parts[1]
+            else:
+                command_name = lab_name  # Fallback to full name
+
+            commands.append(
+                {
+                    "category": category,
+                    "name": command_name,
+                    "link": f"https://labex.io/tutorials/{lab_alias}",
+                    "description": lab.get("description"),
+                }
+            )
     return commands
 
 
@@ -36,33 +52,60 @@ def render_html(commands):
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Linux Commands Cheat Sheet - Full List - 2024 | LabEx</title>
-        <meta name="description" content="A full list of essential Linux commands with detailed explanations and examples. Best linux commands cheat sheet for beginners and advanced users.">
-        <meta name="keywords" content="Linux commands, Linux cheat sheet, command-line guide, Linux tips, Linux reference, Linux tutorials">
-        <meta name="author" content="labex.io">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://linux-commands.labex.io">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Linux Commands Cheat Sheet PDF - 2025 | LabEx</title>
+        <meta
+        name="description"
+        content="A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users."
+        />
+        <meta
+        name="keywords"
+        content="Linux commands, Linux cheat sheet, linux commands cheat sheet pdf, command-line guide, Linux tips, Linux reference, Linux tutorials"
+        />
+        <meta name="author" content="labex.io" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://linux-commands.labex.io" />
 
         <!-- Open Graph Tags -->
-        <meta property="og:title" content="Linux Commands Cheat Sheet - Full List - 2024 | LabEx">
-        <meta property="og:description" content="A full list of essential Linux commands with detailed explanations and examples. Best linux commands cheat sheet for beginners and advanced users.">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://linux-commands.labex.io">
-        <meta property="og:image" content="https://linux-commands.labex.io/assets/og-image.png">
-        <meta property="og:site_name" content="Linux Commands Cheat Sheet">
+        <meta
+        property="og:title"
+        content="Linux Commands Cheat Sheet PDF - 2025 | LabEx"
+        />
+        <meta
+        property="og:description"
+        content="A full list of essential Linux commands with detailed explanations and examples. Download the best linux commands cheat sheet PDF for beginners and advanced users."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://linux-commands.labex.io" />
+        <meta
+        property="og:image"
+        content="https://linux-commands.labex.io/assets/og-image.png"
+        />
+        <meta property="og:site_name" content="Linux Commands Cheat Sheet" />
 
         <!-- Twitter Card Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Linux Commands Cheat Sheet - Full List - 2024 | LabEx">
-        <meta name="twitter:description" content="A comprehensive Linux commands cheat sheet with detailed explanations and examples. Best linux commands reference for beginners and advanced users.">
-        <meta name="twitter:image" content="https://linux-commands.labex.io/assets/og-image.png">
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+        name="twitter:title"
+        content="Linux Commands Cheat Sheet PDF - 2025 | LabEx"
+        />
+        <meta
+        name="twitter:description"
+        content="A comprehensive Linux commands cheat sheet with detailed explanations and examples. Download the best linux commands reference PDF for beginners and advanced users."
+        />
+        <meta
+        name="twitter:image"
+        content="https://linux-commands.labex.io/assets/og-image.png"
+        />
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Parkinsans:wght@300..800&display=swap"
+        rel="stylesheet"
+        />
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFCX52ZJTZ"></script>
         <script>
@@ -159,6 +202,27 @@ def render_html(commands):
                 <h1 class="text-4xl font-extrabold">Linux Commands Cheat Sheet</h1>
                 <p class="mt-2 text-lg">A clean and minimal guide to {total_commands} Linux commands</p>
                 <img src="assets/labex-logo-white.svg" alt="LabEx Logo" class="mx-auto mt-8">
+                <a
+                href="assets/linux-commands-cheat-sheet.pdf"
+                download
+                class="inline-flex items-center mt-6 px-6 py-3 bg-white text-[#2E7EEE] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
+                >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                </svg>
+                Download PDF
+                </a>
             </div>
         </header>
         <nav>
@@ -181,7 +245,7 @@ def render_html(commands):
         </main>
         <footer class="bg-[#2E7EEE] text-white py-6">
             <div class="container mx-auto text-center">
-                <p class="text-sm">&copy; 2024 <a href="https://labex.io">LabEx</a>. All rights reserved.</p>
+                <p class="text-sm">&copy; 2025 <a href="https://labex.io">LabEx</a>. All rights reserved.</p>
             </div>
         </footer>
     </body>
@@ -254,7 +318,7 @@ def render_html(commands):
 
 
 # 在 render_html 函数后添加这两个新函数
-def generate_sitemap():
+def generate_sitemap(commands):
     # 获取所有命令的链接
     def get_url_entries(commands):
         entries = []
@@ -291,8 +355,8 @@ def generate_sitemap():
 
     current_date = datetime.now().strftime("%Y-%m-%d")
 
-    # 重新解析 README 获取所有链接
-    all_commands = parse_markdown("README.md")
+    # We will use the fetched commands directly
+    all_commands = commands
     entries = get_url_entries(all_commands)
 
     with open("sitemap.xml", "w", encoding="utf-8") as f:
@@ -315,10 +379,9 @@ Sitemap: https://linux-commands.labex.io/sitemap.xml"""
 
 # 修改主函数
 if __name__ == "__main__":
-    input_file = "README.md"
     output_file = "index.html"
 
-    commands = parse_markdown(input_file)
+    commands = fetch_commands_from_api()
     html_content = render_html(commands)
 
     # 先运行 prettier 只格式化 HTML
@@ -328,5 +391,5 @@ if __name__ == "__main__":
     print(f"HTML file generated: {output_file}")
 
     # 然后生成 sitemap.xml 和 robots.txt
-    generate_sitemap()
+    generate_sitemap(commands)
     generate_robots_txt()
