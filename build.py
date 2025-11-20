@@ -385,7 +385,7 @@ def render_html(commands, lang="en", all_langs=None, year=None):
                 <p class="mt-2 text-lg">{t['h1_sub']}</p>
                 <img src="/assets/labex-logo-white.svg" alt="LabEx Logo" class="mx-auto mt-8">
                 <a
-                href="/assets/linux-commands-cheatsheet.pdf"
+                href="https://cdn.jsdelivr.net/gh/labex-labs/files/pdf/linux-commands-cheatsheet.pdf"
                 download
                 class="inline-flex items-center mt-6 px-6 py-3 bg-white text-[#2E7EEE] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
                 >
