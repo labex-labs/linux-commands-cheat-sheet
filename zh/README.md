@@ -13,14 +13,14 @@
 | [cat](https://labex.io/zh/tutorials/linux-linux-cat-command-with-practical-examples-422589) | 通过实用示例探索多功能 Linux cat 命令。学习如何连接和显示文本文件，以及向现有文件追加内容，提升你的基本文件和目录操作技能。 |
 | [cd](https://labex.io/zh/tutorials/linux-linux-cd-command-with-practical-examples-422591) | 探索 Linux cd 命令，学习如何在文件系统中导航，并理解相对路径和绝对路径的区别。 |
 | [chattr](https://labex.io/zh/tutorials/linux-linux-chattr-command-with-practical-examples-422594) | 探索 Linux chattr 命令，学习如何修改文件属性，并使用不可变属性保护重要文件。深入了解 Linux 中的文件管理。 |
-| [cksum](https://labex.io/zh/tutorials/linux-verify-file-integrity-with-linux-cksum-422605) | 探索 Linux 中的 cksum 命令，学习如何计算文件的校验和，并通过实用示例验证文件完整性。 |
+| [cksum](https://labex.io/zh/tutorials/linux-linux-cksum-command-with-practical-examples-422605) | 探索 Linux 中的 cksum 命令，学习如何计算文件的校验和，并通过实用示例验证文件完整性。 |
 | [cmp](https://labex.io/zh/tutorials/linux-linux-cmp-command-with-practical-examples-422609) | 探索 Linux 中的 cmp 命令，学习如何比较文本文件和二进制文件，并通过动手示例获得实践经验。 |
 | [cp](https://labex.io/zh/tutorials/linux-linux-cp-command-with-practical-examples-422615) | 通过实用示例探索 Linux cp 命令的多功能性。学习如何高效地复制文件、目录，并保留文件属性和时间戳。 |
 | [df](https://labex.io/zh/tutorials/linux-linux-df-command-with-practical-examples-422632) | 探索 Linux df 命令，这是一个用于监控磁盘使用情况的强大工具。学习如何自定义输出，并深入了解你系统的存储容量。 |
 | [dirname](https://labex.io/zh/tutorials/linux-linux-dirname-command-with-practical-examples-422640) | 学习如何在 Linux 中使用 dirname 命令从文件路径中提取目录名称。探索实用示例，并将 dirname 与其他 Linux 命令结合使用。 |
 | [dirs](https://labex.io/zh/tutorials/linux-linux-dirs-command-with-practical-examples-422641) | 探索 Linux dirs 命令，帮助你管理目录栈、高效导航目录，并了解这一强大工具的实际应用场景。 |
 | [du](https://labex.io/zh/tutorials/linux-linux-du-command-with-practical-examples-422652) | 探索 Linux du 命令以测量磁盘使用情况，了解其选项，并学习如何从测量过程中排除目录。 |
-| [file](https://labex.io/zh/tutorials/linux-how-to-identify-file-types-with-the-linux-file-command-422681) | 探索 Linux 中功能强大的 file 命令，学习如何识别文件类型并有效处理压缩文件。 |
+| [file](https://labex.io/zh/tutorials/linux-linux-file-command-with-practical-examples-422681) | 探索 Linux 中功能强大的 file 命令，学习如何识别文件类型并有效处理压缩文件。 |
 | [find](https://labex.io/zh/tutorials/linux-linux-find-command-with-practical-examples-422682) | 通过实用示例探索 Linux find 命令的强大功能。学习按名称、文件类型搜索文件，并将 find 命令与其他命令结合使用以进行高级文件系统操作。 |
 | [less](https://labex.io/zh/tutorials/linux-linux-less-command-with-practical-examples-422758) | 探索 less 命令，这是一个强大的 Linux 文本查看器。学习如何浏览文本文件、搜索和高亮内容，并在日常任务中高效使用 less。 |
 | [ln](https://labex.io/zh/tutorials/linux-linux-ln-command-with-practical-examples-422760) | 探索 Linux 中的 ln 命令，学习如何创建硬链接和符号链接，并通过实际示例了解它们的实际应用。 |
@@ -49,14 +49,14 @@
 | [od](https://labex.io/zh/tutorials/linux-linux-od-command-with-practical-examples-422848) | 探索 Linux 中的 od 命令，学习其选项，并通过实用示例执行文件的十六进制转储。 |
 | [pwd](https://labex.io/zh/tutorials/linux-linux-pwd-command-with-practical-examples-422870) | 探索 Linux pwd 命令的用途，以及如何结合其他命令管理文件和目录的实际示例。 |
 | [read](https://labex.io/zh/tutorials/linux-linux-read-command-with-practical-examples-422880) | 探索 Linux read 命令，学习如何使用它捕获用户输入、将其存储在变量中并验证输入。通过动手示例获得实践经验。 |
-| [readlink](https://labex.io/zh/tutorials/linux-how-to-resolve-symbolic-links-with-the-readlink-command-422882) | 探索 Linux 中的 readlink 命令，学习其语法和选项，并通过实用示例练习解析符号链接。 |
+| [readlink](https://labex.io/zh/tutorials/linux-linux-readlink-command-with-practical-examples-422882) | 探索 Linux 中的 readlink 命令，学习其语法和选项，并通过实用示例练习解析符号链接。 |
 | [rename](https://labex.io/zh/tutorials/linux-linux-rename-command-with-practical-examples-422884) | 学习如何使用 Linux rename 命令高效地重命名文件和目录。探索实用示例和批量重命名技巧。 |
 | [rm](https://labex.io/zh/tutorials/linux-linux-rm-command-with-practical-examples-422892) | 通过实用示例探索 Linux rm 命令。学习如何删除文件和目录、处理确认提示以及强制删除，以实现高效的文件管理。 |
 | [rmdir](https://labex.io/zh/tutorials/linux-linux-rmdir-command-with-practical-examples-422893) | 探索 Linux 中的 rmdir 命令，学习如何创建和删除空目录，并通过实用示例了解如何删除非空目录。 |
 | [shred](https://labex.io/zh/tutorials/linux-linux-shred-command-with-practical-examples-422917) | 探索 Linux shred 命令，该命令通过多次覆盖文件内容来安全删除文件，确保数据完全擦除。学习使用 shred 删除文件和擦除磁盘分区的实用示例。 |
 | [stat](https://labex.io/zh/tutorials/linux-linux-stat-command-with-practical-examples-422932) | 探索 Linux stat 命令，学习如何检索文件元数据，并通过实际示例分析文件权限和所有权。 |
 | [tee](https://labex.io/zh/tutorials/linux-linux-tee-command-with-practical-examples-422953) | 探索 Linux 中多功能的 tee 命令，学习如何将输出同时重定向到文件和终端，以及如何将输出追加到现有文件中。 |
-| [touch](https://labex.io/zh/tutorials/linux-create-and-manage-files-with-the-linux-touch-command-422962) | 探索功能强大的 Linux touch 命令，用于创建新文件、修改文件时间戳以及高效管理文件操作。通过实际示例获得实践经验。 |
+| [touch](https://labex.io/zh/tutorials/linux-linux-touch-command-with-practical-examples-422962) | 探索功能强大的 Linux touch 命令，用于创建新文件、修改文件时间戳以及高效管理文件操作。通过实际示例获得实践经验。 |
 | [tree](https://labex.io/zh/tutorials/linux-linux-tree-command-with-practical-examples-422966) | 探索 Linux tree 命令，这是一个用于可视化目录结构的强大工具。学习其基本选项，并将其应用于特定目录和文件以实现实际用例。 |
 | [updatedb](https://labex.io/zh/tutorials/linux-linux-updatedb-command-with-practical-examples-422983) | 探索 Linux 中的 updatedb 命令，该命令用于更新 locate 数据库以实现高效文件搜索。通过实用示例学习如何使用 updatedb 和 locate 命令。 |
 | [whereis](https://labex.io/zh/tutorials/linux-linux-whereis-command-with-practical-examples-423006) | 探索 Linux whereis 命令，学习如何定位系统中的可执行文件、源代码和手册页。自定义搜索行为以满足你的需求。 |
@@ -257,7 +257,7 @@
 | [tcpdump](https://labex.io/zh/tutorials/linux-linux-tcpdump-command-with-practical-examples-422952) | 学习如何使用强大的 tcpdump 命令在 Linux 系统上捕获和分析网络流量。探索过滤和监控网络数据的实用示例和技巧。 |
 | [telnet](https://labex.io/zh/tutorials/linux-linux-telnet-command-with-practical-examples-422954) | 探索 Linux 中的 telnet 命令，了解其用途、语法以及用于排查网络连接和远程服务器访问的实际示例。 |
 | [testparm](https://labex.io/zh/tutorials/linux-linux-testparm-command-with-practical-examples-422955) | 探索 Linux 中的 testparm 命令，该命令用于验证 Samba 配置文件的语法并分析 Samba 参数。学习实用示例，以有效管理和排查 Samba 设置问题。 |
-| [tftp](https://labex.io/zh/tutorials/linux-linux-tftp-command-with-practical-examples-422956) | 探索 Linux 中的 tftp 命令，学习如何配置 tftp 服务器，并练习使用 tftp 客户端传输文件。通过实践示例获得实用的网络技能。 |
+| [tftp](https://labex.io/zh/tutorials/linux-linux-tftp-command-with-practical-examples-422956) | 探索 Linux 中的 tftp 命令，学习如何配置 tftp 服务器，并通过 tftp 客户端练习文件传输。通过实践示例掌握实用的网络技能。 |
 | [tracepath](https://labex.io/zh/tutorials/linux-linux-tracepath-command-with-practical-examples-422964) | 探索 Linux 中的 tracepath 命令，学习如何追踪到远程主机的路径，并通过实用示例排查网络问题。 |
 | [traceroute](https://labex.io/zh/tutorials/linux-linux-traceroute-command-with-practical-examples-422965) | 探索 Linux 中的 traceroute 命令，学习如何追踪到目标的网络路径，并通过实用示例排查网络问题。 |
 | [tty](https://labex.io/zh/tutorials/linux-linux-tty-command-with-practical-examples-422967) | 探索 Linux tty 命令，学习如何识别当前终端设备、管理终端会话，并通过实战示例提升你的系统管理技能。 |
@@ -556,7 +556,7 @@
 | [seq](https://labex.io/zh/tutorials/linux-linux-seq-command-with-practical-examples-422907) | 探索 Linux 中多功能的 seq 命令，学习如何生成数字序列，并通过步长和格式化进行自定义。 |
 | [sleep](https://labex.io/zh/tutorials/linux-linux-sleep-command-with-practical-examples-422920) | 探索 Linux sleep 命令及其实际应用。学习如何使用 sleep 设置时间间隔，并将其与其他命令结合以实现高效的任务自动化。 |
 | [units](https://labex.io/zh/tutorials/linux-linux-units-command-with-practical-examples-422977) | 探索功能强大的 Linux units 命令，并通过实用示例学习如何在不同时间单位之间进行转换以及执行算术运算。 |
-| [whatis](https://labex.io/zh/tutorials/linux-quickly-identify-linux-command-purposes-with-whatis-423005) | 探索 Linux whatis 命令的用途、语法和实际用例。学习如何有效利用此工具快速获取命令和系统组件的信息。 |
+| [whatis](https://labex.io/zh/tutorials/linux-linux-whatis-command-with-practical-examples-423005) | 探索 Linux whatis 命令的用途、语法和实际用例。学习如何有效利用此工具快速获取命令和系统组件的信息。 |
 | [xargs](https://labex.io/zh/tutorials/linux-linux-xargs-command-with-practical-examples-423012) | 探索 Linux 中 xargs 命令的强大功能，学习如何使用参数执行命令，并将其与其他工具结合以实现高效的工作流。 |
 | [xdg-open](https://labex.io/zh/tutorials/linux-linux-xdg-open-command-with-practical-examples-423013) | 探索 Linux 中功能强大的 xdg-open 命令，它允许你通过默认应用程序打开文件和目录，并自定义默认关联。 |
 | [yes](https://labex.io/zh/tutorials/linux-linux-yes-command-with-practical-examples-423014) | 探索多功能的 Linux yes 命令，学习如何使用它生成重复输出，与其他命令结合使用，并自动化各种任务。 |
